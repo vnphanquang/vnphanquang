@@ -1,16 +1,13 @@
-### Hi there 👋
+```bash
+git commit -m "Hello world. This is vnphanquang"
+```
 
-<!--
-**vnphanquang/vnphanquang** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## Don't just code. Develop!
 
-Here are some ideas to get you started:
+### `ls vnphanquang | grep socials`
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+![][social.twitter]
+
+### `ls vnphanquang | grep technologies`
+
+[social.twitter]: [./social_icons/twitter.svg]
