@@ -1,45 +1,259 @@
-```bash
-git commit -m "Hello world. This is vnphanquang"
-```
+<h1 align="center">vnphanquang</h1>
 
-### - `ls vnphanquang | grep socials`
+<p align="center">
+  <img src="./icons/avataaars.svg" alt="vnphanquang" height="100"/>
+</p>
 
-<a href="https://twitter.com/vnphanquang" target="_blank">
-    <img src="https://raw.githubusercontent.com/vnphanquang/vnphanquang/master/social_icons/twitter.svg" alt="vnphanquang | twitter" height="60px" />
-</a>
+<h3 align="center">Ho Chi Minh, Vietnam</h3>
 
-<a href="https://www.linkedin.com/in/vnphanquang" target="_blank">
-    <img src="https://raw.githubusercontent.com/vnphanquang/vnphanquang/master/social_icons/linkedin.svg" alt="vnphanquang | linkedin" height="60px" />
-</a>
+<br />
 
-<a href="https://www.instagram.com/vnphanquang" target="_blank">
-    <img src="https://raw.githubusercontent.com/vnphanquang/vnphanquang/master/social_icons/instagram.svg" alt="vnphanquang | instagram" height="60px" />
-</a>
+<!-- icon: https://simpleicons.org/?q=angular -->
 
-<a href="https://stackoverflow.com/story/vnphanquang" target="_blank">
-    <img src="https://raw.githubusercontent.com/vnphanquang/vnphanquang/master/social_icons/stackoverflow.svg" alt="vnphanquang | stackoverflow" height="60px" />
-</a>
+<p align="center">
+  <a href="https://twitter.com/vnphanquang" target="blank">
+    <img
+      align="center"
+      src="./icons/socials/twitter.svg" alt="vnphanquang"
+      height="30"
+    />
+  </a>
+  <a href="https://linkedin.com/in/vnphanquang" target="blank">
+    <img
+      align="center"
+      src="./icons/socials/linkedin.svg"
+      alt="vnphanquang"
+      height="30"
+    />
+  </a>
+  <a href="https://stackoverflow.com/users/9943094" target="blank">
+    <img
+      align="center"
+      src="./icons/socials/stackoverflow.svg"
+      alt="stackoverflow vnphanquang"
+      height="30"
+    />
+  </a>
+  <a href="https://instagram.com/vnphanquang" target="blank">
+    <img
+      align="center"
+      src="./icons/socials/instagram.svg"
+      alt="vnphanquang instagram"
+      height="30"
+    />
+  </a>
+  <a href="https://jsfiddle.net/user/vnphanquang" target="blank">
+    <img
+      align="center"
+      src="./icons/socials/jsfiddle.svg"
+      alt="vnphanquang jsfiddle"
+      height="30"
+    />
+  </a>
+</p>
 
-### - `ls vnphanquang | grep languages`
+<br />
 
-<a href="https://tc39.es/" target="_blank">
-    <img src="https://raw.githubusercontent.com/vnphanquang/vnphanquang/master/languages/javascript.svg" alt="languages | javascript" height="40px" />
-</a>
+<p align="center">
+  <a href="https://www.buymeacoffee.com/vnphanquang">
+    <img
+      src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
+      height="50"
+      width="210"
+      alt="buy vnphanquang a coffee"
+    />
+  </a>
+</p>
 
-<a href="https://www.typescriptlang.org/" target="_blank">
-    <img src="https://raw.githubusercontent.com/vnphanquang/vnphanquang/master/languages/typescript.svg" alt="languages | typescript" height="40px" />
-</a>
+<details>
+  <summary>🤓 About me</summary>
 
-<a href="https://www.rust-lang.org/" target="_blank">
-    <img src="https://raw.githubusercontent.com/vnphanquang/vnphanquang/master/languages/rust.svg" alt="languages | rust" height="40px" />
-</a>
+  <br />
 
-<a href="https://www.python.org/" target="_blank">
-    <img src="https://raw.githubusercontent.com/vnphanquang/vnphanquang/master/languages/python.svg" alt="languages | python" height="40px" />
-</a>
+  My name is Quang Phan. I am a learner and a developer. This is where I dedicate my energy to the open source community.
 
-<a href="http://www.gnu.org/software/bash/" target="_blank">
-    <img src="https://raw.githubusercontent.com/vnphanquang/vnphanquang/master/languages/bash.svg" alt="languages | bash" height="40px" />
-</a>
+  You are probably bored already so get back to whatever you are doing and see you out there on the field.
 
-## *Don't just code. Develop!*
+  In case you want to reach me, find me at `vnphanquang` on most social platforms.
+
+  Cheers!
+
+  <br />
+</details>
+
+<details>
+  <summary>👍 Current Favorite Technologies</summary>
+  <br />
+  <p align="left">
+    <a href="https://svelte.dev" target="_blank" rel="noreferrer">
+      <img
+        src="./icons/tech/svelte.svg"
+        alt="svelte"
+        height="40"
+      />
+    </a>
+    <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer">
+      <img
+        src="./icons/tech/tailwind.svg"
+        alt="tailwind"
+        height="40"
+      />
+    </a>
+    <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer">
+      <img
+        src="./icons/tech/typescript.svg"
+        alt="typescript"
+        height="40"
+      />
+    </a>
+    <a href="https://www.postgresql.org" target="_blank" rel="noreferrer">
+      <img
+        src="./icons/tech/postgres.svg"
+        alt="postgresql"
+        height="40"
+      />
+    </a>
+    <a href="https://graphql.org" target="_blank" rel="noreferrer">
+      <img
+        src="./icons/tech/graphql.svg"
+        alt="graphql"
+        height="40"
+      />
+    </a>
+    <a href="https://www.rust-lang.org" target="_blank" rel="noreferrer">
+      <img
+        src="./icons/tech/rust.svg"
+        alt="rust"
+        height="40"
+      />
+    </a>
+    <a href="https://xstate.js.org/" target="_blank" rel="noreferrer">
+      <img
+        src="./icons/tech/xstate.svg"
+        alt="xstate"
+        height="40"
+      />
+    </a>
+    <a href="https://pnpm.io/" target="_blank" rel="noreferrer">
+      <img
+        src="./icons/tech/pnpm.svg"
+        alt="pnpm"
+        height="40"
+      />
+    </a>
+  </p>
+  <br />
+</details>
+
+<details>
+  <summary>🛠️ Other Languages and Tools</summary>
+  <br />
+  <p align="left">
+    <a href="https://angular.io" target="_blank" rel="noreferrer">
+      <img
+        src="./icons/tech/angular.svg"
+        alt="angular"
+        height="40"
+      />
+    </a>
+    <a
+      href="https://www.gnu.org/software/bash/"
+      target="_blank"
+      rel="noreferrer"
+    >
+      <img
+        src="./icons/tech/bash.svg"
+        alt="bash"
+        height="40"
+      />
+    </a>
+    <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer">
+      <img
+        src="./icons/tech/css3.svg"
+        alt="css3"
+        height="40"
+      />
+    </a>
+    <a href="https://www.docker.com/" target="_blank" rel="noreferrer">
+      <img
+        src="./icons/tech/docker.svg"
+        alt="docker"
+        height="40"
+      />
+    </a>
+    <a href="https://www.electronjs.org" target="_blank" rel="noreferrer">
+      <img
+        src="./icons/tech/electron.svg"
+        alt="electron"
+        height="40"
+      />
+    </a>
+    <a href="https://git-scm.com/" target="_blank" rel="noreferrer">
+      <img
+        src="./icons/tech/git.svg"
+        alt="git"
+        height="40"
+      />
+    </a>
+    <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer">
+      <img
+        src="./icons/tech/html5.svg"
+        alt="html5"
+        height="40"
+      />
+    </a>
+    <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer">
+      <img
+        src="./icons/tech/mongodb.svg"
+        alt="mongodb"
+        height="40"
+      />
+    </a>
+    <a href="https://nestjs.com/" target="_blank" rel="noreferrer">
+      <img
+        src="./icons/tech/nestjs.svg"
+        alt="nestjs"
+        height="40"
+      />
+    </a>
+    <a href="https://www.python.org" target="_blank" rel="noreferrer">
+      <img
+        src="./icons/tech/python.svg"
+        alt="python"
+        height="40"
+      />
+    </a>
+    <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
+      <img
+        src="./icons/tech/react.svg"
+        alt="react"
+        height="40"
+      />
+    </a>
+    <a href="https://www.graphile.org/postgraphile/" target="_blank" rel="noreferrer">
+      <img
+        src="./icons/tech/postgraphile.svg"
+        alt="postgraphile"
+        height="40"
+      />
+    </a>
+    <a href="https://rollupjs.org/" target="_blank" rel="noreferrer">
+      <img
+        src="./icons/tech/rollup.svg"
+        alt="rollup"
+        height="40"
+      />
+    <a href="https://kubernetes.io/" target="_blank" rel="noreferrer">
+      <img
+        src="./icons/tech/kubernetes.svg"
+        alt="kubernetes"
+        height="40"
+      />
+    </a>
+  </p>
+  <br />
+</details>
+
+<!--START_SECTION:waka-->
+<!--END_SECTION:waka-->
+
