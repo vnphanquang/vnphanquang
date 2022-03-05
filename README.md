@@ -1,7 +1,9 @@
 <h1 align="center">vnphanquang</h1>
 
 <p align="center">
-  <img src="./icons/avataaars.svg" alt="vnphanquang" height="100"/>
+  <a href="https://github.com/vnphanquang">
+    <img src="./icons/avataaars.svg" alt="vnphanquang" height="100"/>
+  </a>
 </p>
 
 <h3 align="center">Ho Chi Minh, Vietnam</h3>
@@ -77,9 +79,9 @@
   In case you want to reach me, find me at `vnphanquang` on most social platforms.
 
   Cheers!
-
-  <br />
 </details>
+
+<br />
 
 <details>
   <summary>👍 Current Favorite Technologies</summary>
@@ -142,8 +144,9 @@
       />
     </a>
   </p>
-  <br />
 </details>
+
+<br />
 
 <details>
   <summary>🛠️ Other Languages and Tools</summary>
@@ -251,8 +254,9 @@
       />
     </a>
   </p>
-  <br />
 </details>
+
+<br />
 
 <!--START_SECTION:waka-->
 
@@ -261,4 +265,3 @@ Markdown   43 mins         █████████████████�
 ```
 
 <!--END_SECTION:waka-->
-
