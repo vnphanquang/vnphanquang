@@ -258,11 +258,11 @@
 
 <br />
 
+📈 This week I spent my time with:
+
 <!--START_SECTION:waka-->
 
 ```text
-From: 04 March 2021 - To: 04 March 2022
-
 Markdown                   █████████████████████████   100.00 %
 ```
 
