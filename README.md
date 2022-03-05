@@ -20,6 +20,7 @@
       height="30"
     />
   </a>
+  &nbsp; &nbsp;
   <a href="https://linkedin.com/in/vnphanquang" target="blank">
     <img
       align="center"
@@ -28,6 +29,7 @@
       height="30"
     />
   </a>
+  &nbsp; &nbsp;
   <a href="https://stackoverflow.com/users/9943094" target="blank">
     <img
       align="center"
@@ -36,6 +38,7 @@
       height="30"
     />
   </a>
+  &nbsp; &nbsp;
   <a href="https://instagram.com/vnphanquang" target="blank">
     <img
       align="center"
@@ -44,6 +47,7 @@
       height="30"
     />
   </a>
+  &nbsp; &nbsp;
   <a href="https://jsfiddle.net/user/vnphanquang" target="blank">
     <img
       align="center"
@@ -74,7 +78,7 @@
 
   My name is Quang Phan. I am a learner and a developer. This is where I dedicate my energy to the open source community.
 
-  You are probably bored already so get back to whatever you are doing and see you out there on the field.
+  You are probably bored already so get back to whatever you were doing. See you out there on the field.
 
   In case you want to reach me, find me at `vnphanquang` on most social platforms.
 
