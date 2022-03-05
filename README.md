@@ -261,9 +261,7 @@
 <!--START_SECTION:waka-->
 
 ```text
-From: 25 February 2022 - To: 04 March 2022
-
-Total Time: 43 mins
+From: 04 March 2021 - To: 04 March 2022
 
 Markdown                   █████████████████████████   100.00 %
 ```
