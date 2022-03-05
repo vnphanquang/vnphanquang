@@ -261,7 +261,11 @@
 <!--START_SECTION:waka-->
 
 ```text
-Markdown   43 mins         █████████████████████████   100.00 %
+From: 25 February 2022 - To: 04 March 2022
+
+Total Time: 43 mins
+
+Markdown                   █████████████████████████   100.00 %
 ```
 
 <!--END_SECTION:waka-->
