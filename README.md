@@ -582,5 +582,7 @@ Other                      ░░░░░░░░░░░░░░░░░�
 <br />
 
 <p align="center">
-  <img src="./images/signature.svg" height="80" />
+  <a href="https://github.com/vnphanquang">
+    <img src="./images/signature.svg" height="80" />
+  </a>
 </p>
