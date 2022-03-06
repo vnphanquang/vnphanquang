@@ -1,7 +1,7 @@
 <h1 align="center">vnphanquang</h1>
 
 <p align="center">
-  <a href="https://github.com/vnphanquang">
+  <a href="https://github.com/vnphanquang" target="_blank">
     <img src="./images/avataaars.svg" alt="vnphanquang" height="100"/>
   </a>
 </p>
@@ -15,7 +15,7 @@
 <!-- icon: https://simpleicons.org -->
 
 <p align="center">
-  <a href="https://twitter.com/vnphanquang" target="blank">
+  <a href="https://twitter.com/vnphanquang" target="_blank">
     <img
       align="center"
       src="./images/socials/twitter.svg" alt="vnphanquang"
@@ -23,7 +23,7 @@
     />
   </a>
   &nbsp; &nbsp;
-  <a href="https://linkedin.com/in/vnphanquang" target="blank">
+  <a href="https://linkedin.com/in/vnphanquang" target="_blank">
     <img
       align="center"
       src="./images/socials/linkedin.svg"
@@ -32,7 +32,7 @@
     />
   </a>
   &nbsp; &nbsp;
-  <a href="https://stackoverflow.com/users/9943094" target="blank">
+  <a href="https://stackoverflow.com/users/9943094" target="_blank">
     <img
       align="center"
       src="./images/socials/stackoverflow.svg"
@@ -41,7 +41,7 @@
     />
   </a>
   &nbsp; &nbsp;
-  <a href="https://instagram.com/vnphanquang" target="blank">
+  <a href="https://instagram.com/vnphanquang" target="_blank">
     <img
       align="center"
       src="./images/socials/instagram.svg"
@@ -50,7 +50,7 @@
     />
   </a>
   &nbsp; &nbsp;
-  <a href="https://jsfiddle.net/user/vnphanquang" target="blank">
+  <a href="https://jsfiddle.net/user/vnphanquang" target="_blank">
     <img
       align="center"
       src="./images/socials/jsfiddle.svg"
@@ -63,7 +63,7 @@
 <br />
 
 <p align="center">
-  <a href="https://www.buymeacoffee.com/vnphanquang">
+  <a href="https://www.buymeacoffee.com/vnphanquang" target="_blank>
     <img
       src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
       height="50"
@@ -543,7 +543,7 @@
   <summary>💾 Current Setup</summary>
   <br />
   <p align="left">
-    Nothing impressive for now, just a typical linux and i3 based setup.
+    Nothing impressive for now, just a typical linux and i3 based setup
   </p>
   <p align="left">
     My keyboard: <a href="https://www.zsa.io/moonlander" target="_blank" rel="noreferrer">ZSA Moonlander</a>
@@ -582,7 +582,7 @@ Other                      ░░░░░░░░░░░░░░░░░�
 <br />
 
 <p align="center">
-  <a href="https://github.com/vnphanquang">
+  <a href="https://github.com/vnphanquang" target="_blank">
     <img src="./images/signature.svg" height="80" />
   </a>
 </p>
