@@ -63,11 +63,11 @@
 <br />
 
 <p align="center">
-  <a href="https://www.buymeacoffee.com/vnphanquang" target="_blank>
+  <a href="https://www.buymeacoffee.com/vnphanquang" target="_blank">
     <img
       src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
-      height="50"
-      width="210"
+      height="60"
+      width="217"
       alt="buy vnphanquang a coffee"
     />
   </a>
