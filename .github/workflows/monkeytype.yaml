@@ -15,6 +15,6 @@ jobs:
           monkeytype_api_key: ${{ secrets.MONKEYTYPE_API_KEY }}
           mode: 'words'
           mode2: '50'
-          style: 'flat'
-          logoVariant: 'for-the-badge'
+          style: 'for-the-badge'
+          logoVariant: 'one'
           label: 'monkeytype'
