@@ -547,7 +547,11 @@
   </p>
   <p align="left">
     My keyboard: <a href="https://www.zsa.io/moonlander" target="_blank" rel="noreferrer">ZSA Moonlander</a>
+
+[![monkeytype.badge]][monkeytype]
+
   </p>
+
 </details>
 
 <br />
@@ -575,3 +579,6 @@ glhf!
     <img src="./images/signature.svg" height="80" />
   </a>
 </p>
+
+[monkeytype.badge]: https://img.shields.io/endpoint?style=flat&url=https%3A%2F%2Fmonkeytype-badge-vhd5lan7mmhz.runkit.sh
+[monkeytype]: https://monkeytype.com/

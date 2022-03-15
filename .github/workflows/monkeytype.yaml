@@ -1,0 +1,20 @@
+name: Monkeytype Readme
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * 0'
+
+jobs:
+  update-readme:
+    name: Update this repo's README
+    runs-on: ubuntu-latest
+    steps:
+      - uses: vnphanquang/monkeytype-readme@main
+        with:
+          monkeytype_api_key: ${{ secrets.MONKEYTYPE_API_KEY }}
+          mode: 'words'
+          mode2: '50'
+          style: 'flat'
+          logoVariant: 'for-the-badge'
+          label: 'monkeytype'
