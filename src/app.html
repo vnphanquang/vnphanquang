@@ -1,0 +1,44 @@
+<!doctype html>
+<html data-color-scheme="%cookie-color-scheme%">
+  <head>
+    <!-- general metadata tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="msapplication-TileColor" content="#201e1a" />
+
+    <!-- favicons -->
+    <link rel="icon" type="image/x-icon" href="%sveltekit.assets%/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="%sveltekit.assets%/apple-touch-icon.png" />
+    <link rel="mask-icon" href="%sveltekit.assets%/safari-pinned-tab.svg" color="#ef4623" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="%sveltekit.assets%/images/favicon/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="%sveltekit.assets%/images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="%sveltekit.assets%/images/favicon/android/android-chrome-192x192.png"
+    />
+
+    <!-- web manifest & well known resources -->
+    <link rel="manifest" href="%sveltekit.assets%/site.webmanifest" />
+    <link type="text/plain" rel="author" href="https://vnphanquang.com/humans.txt" />
+
+    <!-- <svelte:head> -->
+    %sveltekit.head%
+    <!-- </svelte:head> -->
+  </head>
+  <body>
+    <!-- SvelteKit Hydrated Content -->
+    <div class="contents">%sveltekit.body%</div>
+  </body>
+</html>

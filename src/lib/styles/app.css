@@ -1,0 +1,38 @@
+@import url('../assets/fonts/inter/inter.font.css');
+@import url('../assets/fonts/phanquang-calligraphr/phanquang-calligraphr.font.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --header-height: 50px;
+
+    --color-fg: theme('colors.black');
+    --color-bg: theme('colors.white');
+    --color-link: #1773CE;
+
+    @dark {
+      --color-fg: theme('colors.white');
+      --color-bg: theme('colors.black');
+      --color-link: #0A84FE;
+    }
+  }
+
+  html {
+    height: 100%;
+    color: theme('colors.fg.DEFAULT');
+    background-color: theme('colors.bg.DEFAULT');
+    font-family: theme('fontFamily.inter');
+  }
+
+  *:disabled {
+    cursor: not-allowed;
+  }
+
+  *[id] {
+    scroll-margin: calc(1.5 * theme('spacing.header'));
+  }
+}
+

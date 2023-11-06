@@ -1,0 +1,21 @@
+vnphanquang
+
+Developer: Quang Phan
+Github: https://github.com/vnphanquang
+Twitter: https://twitter.com/vnphanquang
+From: Vietnam
+
+/* SITE */
+
+Last update: 2023-11-06
+Language: English
+Doctype: HTML5
+
+/* TECHNOLOGY */
+
+Svelte: https://svelte.dev/
+Svelte-kit: https://kit.svelte.dev/
+Tailwind CSS: https://tailwindcss.com/
+Cloudflare: https://cloudflare.com/
+Typescript: https://www.typescriptlang.org/
+

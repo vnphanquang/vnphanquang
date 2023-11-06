@@ -1,0 +1,80 @@
+@custom-selector :--icon .c-link--icon;
+@custom-selector :--__icon :is(img, svg);
+@custom-selector :--preserved .c-link--preserved;
+
+.c-link {
+  &:where(:not(:--icon)) {
+    --underline-color: currentcolor;
+
+    will-change: background-size;
+
+    display: inline;
+
+    background-image: linear-gradient(to right, var(--underline-color), var(--underline-color));
+    background-repeat: no-repeat;
+    background-position: left bottom;
+
+    transition: color 250ms ease-in-out;
+
+    &:where(:not(:--preserved)) {
+      color: theme('colors.link.DEFAULT');
+      background-size: 100% var(--underline-height, 1px);
+
+      &:hover {
+        animation: underline-swipe 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+      }
+    }
+
+    &:where(:--preserved) {
+      background-position: left bottom;
+      background-size: 0 var(--underline-height, 1px);
+      transition: color 250ms ease-in-out, background-size 250ms ease-in-out;
+
+      &:--current,
+      &:hover {
+        background-size: 100% var(--underline-height, 1px);
+      }
+    }
+  }
+
+  &:where(:--icon) {
+    & :--__icon {
+      transform-origin: center;
+      transition: transform 200ms ease;
+    }
+
+    &:hover {
+      & :--__icon {
+        transform: scale(1.05);
+      }
+    }
+
+    &:active {
+      & :--__icon {
+        transform: scale(0.95);
+      }
+    }
+  }
+}
+
+@keyframes underline-swipe {
+  0% {
+    background-position: right bottom;
+    background-size: 100% var(--underline-height, 1px);
+  }
+
+  50% {
+    background-position: right bottom;
+    background-size: 0 var(--underline-height, 1px);
+  }
+
+  51% {
+    background-position: left bottom;
+    background-size: 0 var(--underline-height, 1px);
+  }
+
+  100% {
+    background-position: left bottom;
+    background-size: 100% var(--underline-height, 1px);
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json.schemastore.org/web-manifest-combined.json",
+  "name": "vnphanquang",
+  "short_name": "vnphanquang",
+  "description": "A personal website of vnphanquang",
+  "theme_color": "#000000",
+  "background_color": "#FFFFFF",
+  "start_url": "https://vnphanquang.com",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "/images/favicon/android/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/favicon/android/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "screenshots": []
+}
