@@ -13,7 +13,7 @@
   }
 </script>
 
-<main class="mx-auto max-w-2xl px-6 py-10 mdpx-10 md:py-20 space-y-10 relative overflow-hidden">
+<div class="mx-auto max-w-2xl px-6 py-10 mdpx-10 md:py-20 space-y-10 relative overflow-hidden">
   <header class="sticky top-0 py-4 z-10">
     <label class="swap w-fit ml-auto bg-bg">
       <!-- this hidden checkbox controls the state -->
@@ -39,7 +39,7 @@
     </label>
   </header>
 
-  <div class="prose dark:prose-invert">
+  <main class="prose dark:prose-invert">
     <section class="font-phanquang tracking-wide">
       <h1 class="font-bold">A Personal Digital Laboratory</h1>
       <p class="italic text-2xl">"It's not a lavatory!" - Quang Phan</p>
@@ -76,6 +76,7 @@
         <div class="flex flex-col gap-1 items-center shrink-0">
           <a href="/vnphanquang_cv.pdf" class="c-link c-link--icon" external>
             <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="56" height="56"><path d="M30.13 51.31h20a1.75 1.75 0 0 0 1.75-1.75v-5.12a11.067 11.067 0 0 0-4.4-8.832 9.977 9.977 0 1 0-14.713 0 11.08 11.08 0 0 0-4.387 8.832v5.12a1.75 1.75 0 0 0 1.75 1.75zm10-28.894a6.477 6.477 0 1 1-6.477 6.477 6.485 6.485 0 0 1 6.473-6.476zM31.88 44.44a7.576 7.576 0 0 1 3.87-6.594 9.857 9.857 0 0 0 8.754 0 7.56 7.56 0 0 1 3.876 6.594v3.37h-16.5z"/><path d="M112.654 4.75H15.346A1.75 1.75 0 0 0 13.6 6.5v115a1.75 1.75 0 0 0 1.75 1.75h97.308a1.75 1.75 0 0 0 1.75-1.75V6.5a1.75 1.75 0 0 0-1.754-1.75zm-1.75 115H17.1V8.25h93.8z"/><path d="M26.346 65.75h75.308a1.75 1.75 0 1 0 0-3.5H26.346a1.75 1.75 0 0 0 0 3.5zM26.346 80.194h75.308a1.75 1.75 0 0 0 0-3.5H26.346a1.75 1.75 0 0 0 0 3.5zM26.346 109.083h75.308a1.75 1.75 0 0 0 0-3.5H26.346a1.75 1.75 0 0 0 0 3.5zM26.346 94.639h75.308a1.75 1.75 0 1 0 0-3.5H26.346a1.75 1.75 0 0 0 0 3.5zM64 22.417h37.654a1.75 1.75 0 0 0 0-3.5H64a1.75 1.75 0 0 0 0 3.5zM64 36.861h37.654a1.75 1.75 0 0 0 0-3.5H64a1.75 1.75 0 0 0 0 3.5zM64 51.306h37.654a1.75 1.75 0 0 0 0-3.5H64a1.75 1.75 0 0 0 0 3.5z"/></svg>
+            <span class="sr-only">vnphanquang's Curriculum Vitae</span>
           </a>
           <p class="text-sm">My CV</p>
         </div>
@@ -95,18 +96,18 @@
       </div>
       <Mail />
     </section>
-  </div>
+  </main>
 
   <footer>
     <hr />
-    <p class="text-gray-500 text-sm mt-4">
+    <p class="text-[#6e7582] text-sm mt-4">
       <a
         class="c-link c-link--preserved"
         href="https://github.com/vnphanquang/vnphanquang/blob/main/LICENSE">MIT</a
       > 2023-Present © Quang Phan
     </p>
   </footer>
-</main>
+</div>
 
 <style lang="postcss">
   /* from DaisyUI: https://daisyui.com/components/swap/ */
