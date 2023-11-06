@@ -2,6 +2,7 @@
   import { PUBLIC_MODE } from '$env/static/public';
   import { setColorSchemeContext } from '$lib/contexts/colorScheme';
 
+  import OpenGraphImage from '../lib/assets/images/OpenGraph.jpg';
   import '../lib/styles/app.css';
 
   import type { LayoutData } from './$types';
@@ -17,8 +18,8 @@
   $: ogDescription = description;
   $: ogType = 'profile';
   $: ogUrl = canonical;
-  $: ogImage = 'FIXME: to be filled';
-  $: ogImageAlt = '';
+  $: ogImage = OpenGraphImage;
+  $: ogImageAlt = 'Text stating digital playground of vnphanquang on 3D tiled background';
 
   $: twitterTitle = title;
   $: twitterDescription = description;
