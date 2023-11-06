@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://github.com/vnphanquang" target="_blank">
-    <img src="./images/avataaars.svg" alt="vnphanquang" height="100"/>
+    <img src="./.github/images/avataaars.svg" alt="vnphanquang" height="100"/>
   </a>
 </p>
 
@@ -16,7 +16,7 @@
   <a href="https://twitter.com/vnphanquang" target="_blank">
     <img
       align="center"
-      src="./images/socials/twitter.svg" alt="vnphanquang"
+      src="./.github/images/socials/twitter.svg" alt="vnphanquang"
       height="30"
     />
   </a>
@@ -24,7 +24,7 @@
   <a href="https://linkedin.com/in/vnphanquang" target="_blank">
     <img
       align="center"
-      src="./images/socials/linkedin.svg"
+      src="./.github/images/socials/linkedin.svg"
       alt="vnphanquang"
       height="30"
     />
@@ -33,7 +33,7 @@
   <a href="https://stackoverflow.com/users/9943094" target="_blank">
     <img
       align="center"
-      src="./images/socials/stackoverflow.svg"
+      src="./.github/images/socials/stackoverflow.svg"
       alt="stackoverflow vnphanquang"
       height="30"
     />
@@ -42,7 +42,7 @@
   <a href="https://instagram.com/vnphanquang" target="_blank">
     <img
       align="center"
-      src="./images/socials/instagram.svg"
+      src="./.github/images/socials/instagram.svg"
       alt="vnphanquang instagram"
       height="30"
     />
@@ -51,7 +51,7 @@
   <a href="https://jsfiddle.net/user/vnphanquang" target="_blank">
     <img
       align="center"
-      src="./images/socials/jsfiddle.svg"
+      src="./.github/images/socials/jsfiddle.svg"
       alt="vnphanquang jsfiddle"
       height="30"
     />
@@ -122,56 +122,56 @@
   <p align="left">
     <a href="https://svelte.dev" target="_blank" rel="noreferrer">
       <img
-        src="./images/tech/svelte.svg"
+        src="./.github/images/tech/svelte.svg"
         alt="svelte"
         height="40"
       />
     </a>
     <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer">
       <img
-        src="./images/tech/tailwind.svg"
+        src="./.github/images/tech/tailwind.svg"
         alt="tailwind"
         height="40"
       />
     </a>
     <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer">
       <img
-        src="./images/tech/typescript.svg"
+        src="./.github/images/tech/typescript.svg"
         alt="typescript"
         height="40"
       />
     </a>
     <a href="https://www.postgresql.org" target="_blank" rel="noreferrer">
       <img
-        src="./images/tech/postgres.svg"
+        src="./.github/images/tech/postgres.svg"
         alt="postgresql"
         height="40"
       />
     </a>
     <a href="https://graphql.org" target="_blank" rel="noreferrer">
       <img
-        src="./images/tech/graphql.svg"
+        src="./.github/images/tech/graphql.svg"
         alt="graphql"
         height="40"
       />
     </a>
     <a href="https://www.rust-lang.org" target="_blank" rel="noreferrer">
       <img
-        src="./images/tech/rust.svg"
+        src="./.github/images/tech/rust.svg"
         alt="rust"
         height="40"
       />
     </a>
     <a href="https://xstate.js.org/" target="_blank" rel="noreferrer">
       <img
-        src="./images/tech/xstate.svg"
+        src="./.github/images/tech/xstate.svg"
         alt="xstate"
         height="40"
       />
     </a>
     <a href="https://pnpm.io/" target="_blank" rel="noreferrer">
       <img
-        src="./images/tech/pnpm.svg"
+        src="./.github/images/tech/pnpm.svg"
         alt="pnpm"
         height="40"
       />
@@ -190,21 +190,21 @@
     <p algin="left">
       <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer">
         <img
-          src="./images/tech/typescript.svg"
+          src="./.github/images/tech/typescript.svg"
           alt="typescript"
           height="40"
         />
       </a>
       <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer">
         <img
-          src="./images/tech/html5.svg"
+          src="./.github/images/tech/html5.svg"
           alt="html5"
           height="40"
         />
       </a>
       <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer">
         <img
-          src="./images/tech/css3.svg"
+          src="./.github/images/tech/css3.svg"
           alt="css3"
           height="40"
         />
@@ -215,21 +215,21 @@
         rel="noreferrer"
       >
         <img
-          src="./images/tech/bash.svg"
+          src="./.github/images/tech/bash.svg"
           alt="bash"
           height="40"
         />
       </a>
       <a href="https://www.rust-lang.org" target="_blank" rel="noreferrer">
         <img
-          src="./images/tech/rust.svg"
+          src="./.github/images/tech/rust.svg"
           alt="rust"
           height="40"
         />
       </a>
       <a href="https://www.python.org" target="_blank" rel="noreferrer">
         <img
-          src="./images/tech/python.svg"
+          src="./.github/images/tech/python.svg"
           alt="python"
           height="40"
         />
@@ -243,70 +243,70 @@
     <p align="left">
       <a href="https://svelte.dev" target="_blank" rel="noreferrer">
         <img
-          src="./images/tech/svelte.svg"
+          src="./.github/images/tech/svelte.svg"
           alt="svelte"
           height="40"
         />
       </a>
       <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer">
         <img
-          src="./images/tech/tailwind.svg"
+          src="./.github/images/tech/tailwind.svg"
           alt="tailwind"
           height="40"
         />
       </a>
       <a href="https://xstate.js.org/" target="_blank" rel="noreferrer">
         <img
-          src="./images/tech/xstate.svg"
+          src="./.github/images/tech/xstate.svg"
           alt="xstate"
           height="40"
         />
       </a>
       <a href="https://rxjs.dev" target="_blank" rel="noreferrer">
         <img
-          src="./images/tech/rxjs.svg"
+          src="./.github/images/tech/rxjs.svg"
           alt="rxjs"
           height="40"
         />
       </a>
       <a href="https://angular.io" target="_blank" rel="noreferrer">
         <img
-          src="./images/tech/angular.svg"
+          src="./.github/images/tech/angular.svg"
           alt="angular"
           height="40"
         />
       </a>
       <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
         <img
-          src="./images/tech/react.svg"
+          src="./.github/images/tech/react.svg"
           alt="react"
           height="40"
         />
       </a>
       <a href="https://www.electronjs.org" target="_blank" rel="noreferrer">
         <img
-          src="./images/tech/electron.svg"
+          src="./.github/images/tech/electron.svg"
           alt="electron"
           height="40"
         />
       </a>
       <a href="https://nestjs.com/" target="_blank" rel="noreferrer">
         <img
-          src="./images/tech/nestjs.svg"
+          src="./.github/images/tech/nestjs.svg"
           alt="nestjs"
           height="40"
         />
       </a>
       <a href="https://www.graphile.org/postgraphile/" target="_blank" rel="noreferrer">
         <img
-          src="./images/tech/postgraphile.svg"
+          src="./.github/images/tech/postgraphile.svg"
           alt="postgraphile"
           height="40"
         />
       </a>
       <a href="https://expressjs.com/" target="_blank" rel="noreferrer">
         <img
-          src="./images/tech/express.svg"
+          src="./.github/images/tech/express.svg"
           alt="express"
           height="40"
         />
@@ -320,21 +320,21 @@
     <p align="left">
       <a href="https://www.postgresql.org" target="_blank" rel="noreferrer">
         <img
-          src="./images/tech/postgres.svg"
+          src="./.github/images/tech/postgres.svg"
           alt="postgresql"
           height="40"
         />
       </a>
       <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer">
         <img
-          src="./images/tech/mongodb.svg"
+          src="./.github/images/tech/mongodb.svg"
           alt="mongodb"
           height="40"
         />
       </a>
       <a href="https://redis.io/" target="_blank" rel="noreferrer">
         <img
-          src="./images/tech/redis.svg"
+          src="./.github/images/tech/redis.svg"
           alt="redis"
           height="40"
         />
@@ -348,38 +348,38 @@
     <p align="left">
       <a href="https://graphql.org" target="_blank" rel="noreferrer">
         <img
-          src="./images/tech/graphql.svg"
+          src="./.github/images/tech/graphql.svg"
           alt="graphql"
           height="40"
         />
       </a>
       <a href="https://www.docker.com/" target="_blank" rel="noreferrer">
         <img
-          src="./images/tech/docker.svg"
+          src="./.github/images/tech/docker.svg"
           alt="docker"
           height="40"
         />
       </a>
       <a href="https://kubernetes.io/" target="_blank" rel="noreferrer"> <img
-          src="./images/tech/kubernetes.svg"
+          src="./.github/images/tech/kubernetes.svg"
           alt="kubernetes"
           height="40"
         />
       </a>
       <a href="https://www.digitalocean.com/" target="_blank" rel="noreferrer"> <img
-          src="./images/tech/digitalocean.svg"
+          src="./.github/images/tech/digitalocean.svg"
           alt="digitalocean"
           height="40"
         />
       </a>
       <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img
-          src="./images/tech/linux.svg"
+          src="./.github/images/tech/linux.svg"
           alt="linux"
           height="40"
         />
       </a>
       <a href="https://ubuntu.com/" target="_blank" rel="noreferrer"> <img
-          src="./images/tech/ubuntu.svg"
+          src="./.github/images/tech/ubuntu.svg"
           alt="ubuntu"
           height="40"
         />
@@ -393,28 +393,28 @@
     <p align="left">
       <a href="https://rollupjs.org/" target="_blank" rel="noreferrer">
         <img
-          src="./images/tech/rollup.svg"
+          src="./.github/images/tech/rollup.svg"
           alt="rollup"
           height="40"
         />
       </a>
       <a href="https://vitejs.dev/" target="_blank" rel="noreferrer">
         <img
-          src="./images/tech/vite.svg"
+          src="./.github/images/tech/vite.svg"
           alt="vite"
           height="40"
         />
       </a>
       <a href="https://www.snowpack.dev/" target="_blank" rel="noreferrer">
         <img
-          src="./images/tech/snowpack.svg"
+          src="./.github/images/tech/snowpack.svg"
           alt="snowpack"
           height="40"
         />
       </a>
       <a href="https://webpack.js.org/" target="_blank" rel="noreferrer">
         <img
-          src="./images/tech/webpack.svg"
+          src="./.github/images/tech/webpack.svg"
           alt="webpack"
           height="40"
         />
@@ -428,91 +428,91 @@
     <p align="left">
       <a href="https://git-scm.com/" target="_blank" rel="noreferrer">
         <img
-          src="./images/tech/git.svg"
+          src="./.github/images/tech/git.svg"
           alt="git"
           height="40"
         />
       </a>
       <a href="https://editorconfig.org/" target="_blank" rel="noreferrer">
         <img
-          src="./images/tech/editorconfig.svg"
+          src="./.github/images/tech/editorconfig.svg"
           alt="editorconfig"
           height="40"
         />
       </a>
       <a href="https://eslint.org/" target="_blank" rel="noreferrer">
         <img
-          src="./images/tech/eslint.svg"
+          src="./.github/images/tech/eslint.svg"
           alt="eslint"
           height="40"
         />
       </a>
       <a href="https://prettier.io/" target="_blank" rel="noreferrer">
         <img
-          src="./images/tech/prettier.svg"
+          src="./.github/images/tech/prettier.svg"
           alt="prettier"
           height="40"
         />
       </a>
       <a href="https://pnpm.io/" target="_blank" rel="noreferrer">
         <img
-          src="./images/tech/pnpm.svg"
+          src="./.github/images/tech/pnpm.svg"
           alt="pnpm"
           height="40"
         />
       </a>
       <a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer">
         <img
-          src="./images/tech/vscode.svg"
+          src="./.github/images/tech/vscode.svg"
           alt="vscode"
           height="40"
         />
       </a>
       <a href="https://www.jetbrains.com/datagrip/" target="_blank" rel="noreferrer">
         <img
-          src="./images/tech/datagrip.svg"
+          src="./.github/images/tech/datagrip.svg"
           alt="datagrip"
           height="40"
         />
       </a>
       <a href="https://i3wm.org/" target="_blank" rel="noreferrer">
         <img
-          src="./images/tech/i3wm.svg"
+          src="./.github/images/tech/i3wm.svg"
           alt="i3wm"
           height="40"
         />
       </a>
       <a href="https://www.vim.org/" target="_blank" rel="noreferrer">
         <img
-          src="./images/tech/vim.svg"
+          src="./.github/images/tech/vim.svg"
           alt="vim"
           height="40"
         />
       </a>
       <a href="https://github.com/tmux/tmux/wiki" target="_blank" rel="noreferrer">
         <img
-          src="./images/tech/tmux.svg"
+          src="./.github/images/tech/tmux.svg"
           alt="tmux"
           height="40"
         />
       </a>
       <a href="https://alacritty.org/" target="_blank" rel="noreferrer">
         <img
-          src="./images/tech/alacritty.svg"
+          src="./.github/images/tech/alacritty.svg"
           alt="alacritty"
           height="40"
         />
       </a>
       <a href="https://fishshell.com/" target="_blank" rel="noreferrer">
         <img
-          src="./images/tech/fish.svg"
+          src="./.github/images/tech/fish.svg"
           alt="fish"
           height="40"
         />
       </a>
       <a href="https://www.spotify.com" target="_blank" rel="noreferrer">
         <img
-          src="./images/tech/spotify.svg"
+          src="./.github/images/tech/spotify.svg"
           alt="spotify"
           height="40"
         />
@@ -570,54 +570,54 @@ glhf!
 
 ![Profile Views](http://img.shields.io/badge/Profile%20Views-0-blue)
 
-**I'm an Early 🐤** 
+**I'm an Early 🐤**
 
 ```text
-🌞 Morning                6872 commits        █████████░░░░░░░░░░░░░░░░   36.00 % 
-🌆 Daytime                7918 commits        ██████████░░░░░░░░░░░░░░░   41.48 % 
-🌃 Evening                4167 commits        █████░░░░░░░░░░░░░░░░░░░░   21.83 % 
-🌙 Night                  133 commits         ░░░░░░░░░░░░░░░░░░░░░░░░░   00.70 % 
+🌞 Morning                6872 commits        █████████░░░░░░░░░░░░░░░░   36.00 %
+🌆 Daytime                7918 commits        ██████████░░░░░░░░░░░░░░░   41.48 %
+🌃 Evening                4167 commits        █████░░░░░░░░░░░░░░░░░░░░   21.83 %
+🌙 Night                  133 commits         ░░░░░░░░░░░░░░░░░░░░░░░░░   00.70 %
 ```
-📅 **I'm Most Productive on Monday** 
+📅 **I'm Most Productive on Monday**
 
 ```text
-Monday                   4530 commits        ██████░░░░░░░░░░░░░░░░░░░   23.73 % 
-Tuesday                  3353 commits        ████░░░░░░░░░░░░░░░░░░░░░   17.56 % 
-Wednesday                2800 commits        ████░░░░░░░░░░░░░░░░░░░░░   14.67 % 
-Thursday                 2769 commits        ████░░░░░░░░░░░░░░░░░░░░░   14.50 % 
-Friday                   2732 commits        ████░░░░░░░░░░░░░░░░░░░░░   14.31 % 
-Saturday                 1559 commits        ██░░░░░░░░░░░░░░░░░░░░░░░   08.17 % 
-Sunday                   1347 commits        ██░░░░░░░░░░░░░░░░░░░░░░░   07.06 % 
+Monday                   4530 commits        ██████░░░░░░░░░░░░░░░░░░░   23.73 %
+Tuesday                  3353 commits        ████░░░░░░░░░░░░░░░░░░░░░   17.56 %
+Wednesday                2800 commits        ████░░░░░░░░░░░░░░░░░░░░░   14.67 %
+Thursday                 2769 commits        ████░░░░░░░░░░░░░░░░░░░░░   14.50 %
+Friday                   2732 commits        ████░░░░░░░░░░░░░░░░░░░░░   14.31 %
+Saturday                 1559 commits        ██░░░░░░░░░░░░░░░░░░░░░░░   08.17 %
+Sunday                   1347 commits        ██░░░░░░░░░░░░░░░░░░░░░░░   07.06 %
 ```
 
 
-📊 **This Week I Spent My Time On** 
+📊 **This Week I Spent My Time On**
 
 ```text
 🕑︎ Time Zone: Asia/Ho_Chi_Minh
 
-💬 Programming Languages: 
-Other                    3 hrs 10 mins       ████████░░░░░░░░░░░░░░░░░   30.43 % 
-TypeScript               1 hr 16 mins        ███░░░░░░░░░░░░░░░░░░░░░░   12.16 % 
-CSS                      1 hr 4 mins         ███░░░░░░░░░░░░░░░░░░░░░░   10.33 % 
-INI                      1 hr 3 mins         ███░░░░░░░░░░░░░░░░░░░░░░   10.18 % 
-JavaScript               59 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   09.42 % 
+💬 Programming Languages:
+Other                    3 hrs 10 mins       ████████░░░░░░░░░░░░░░░░░   30.43 %
+TypeScript               1 hr 16 mins        ███░░░░░░░░░░░░░░░░░░░░░░   12.16 %
+CSS                      1 hr 4 mins         ███░░░░░░░░░░░░░░░░░░░░░░   10.33 %
+INI                      1 hr 3 mins         ███░░░░░░░░░░░░░░░░░░░░░░   10.18 %
+JavaScript               59 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   09.42 %
 
-🔥 Editors: 
-VS Code                  10 hrs 26 mins      █████████████████████████   100.00 % 
+🔥 Editors:
+VS Code                  10 hrs 26 mins      █████████████████████████   100.00 %
 
-💻 Operating System: 
-Linux                    10 hrs 26 mins      █████████████████████████   100.00 % 
+💻 Operating System:
+Linux                    10 hrs 26 mins      █████████████████████████   100.00 %
 ```
 
-**I Mostly Code in TypeScript** 
+**I Mostly Code in TypeScript**
 
 ```text
-TypeScript               21 repos            ████████░░░░░░░░░░░░░░░░░   33.87 % 
-JavaScript               16 repos            ██████░░░░░░░░░░░░░░░░░░░   25.81 % 
-Svelte                   9 repos             ████░░░░░░░░░░░░░░░░░░░░░   14.52 % 
-HTML                     5 repos             ██░░░░░░░░░░░░░░░░░░░░░░░   08.06 % 
-Python                   2 repos             █░░░░░░░░░░░░░░░░░░░░░░░░   03.23 % 
+TypeScript               21 repos            ████████░░░░░░░░░░░░░░░░░   33.87 %
+JavaScript               16 repos            ██████░░░░░░░░░░░░░░░░░░░   25.81 %
+Svelte                   9 repos             ████░░░░░░░░░░░░░░░░░░░░░   14.52 %
+HTML                     5 repos             ██░░░░░░░░░░░░░░░░░░░░░░░   08.06 %
+Python                   2 repos             █░░░░░░░░░░░░░░░░░░░░░░░░   03.23 %
 ```
 
 
@@ -633,7 +633,7 @@ Python                   2 repos             █░░░░░░░░░░�
 
 <p align="center">
   <a href="https://github.com/vnphanquang" target="_blank">
-    <img src="./images/signature.svg" height="80" />
+    <img src="./.github/images/signature.svg" height="80" />
   </a>
 </p>
 
@@ -649,4 +649,4 @@ Python                   2 repos             █░░░░░░░░░░�
 [vscode.vim]: https://marketplace.visualstudio.com/items?itemName=vscodevim.vim
 
 [.config]: https://github.com/vnphanquang/.config
-[local.images.setup]: ./images/setup.png
+[local.images.setup]: ./.github/images/setup.png
