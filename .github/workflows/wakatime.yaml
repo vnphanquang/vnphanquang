@@ -3,13 +3,13 @@ name: Waka Readme
 on:
   workflow_dispatch:
   schedule:
-    # Runs at every 12AM UTC
+    # At every 12AM UTC
     - cron: "0 0 * * *"
-  push:
-      branches:
-        - master
-      paths:
-        - ".github/workflows/wakatime.yaml"
+  # push:
+  #     branches:
+  #       - master
+  #     paths:
+  #       - ".github/workflows/wakatime.yaml"
 
 jobs:
   update-readme:

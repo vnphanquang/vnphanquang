@@ -3,7 +3,13 @@ name: Monkeytype Readme
 on:
   workflow_dispatch:
   schedule:
+    # At 00:00 on Sunday
     - cron: '0 0 * * 0'
+  # push:
+  #     branches:
+  #       - master
+  #     paths:
+  #       - ".github/workflows/monkeytype.yaml"
 
 jobs:
   update-readme:
