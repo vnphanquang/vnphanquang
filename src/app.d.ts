@@ -14,7 +14,33 @@ declare global {
     interface Locals {
       colorScheme: ColorScheme;
     }
-    // interface PageData {}
+    interface PageData {
+      colorScheme: ColorScheme;
+			meta?: {
+				title?: string;
+				description?: string;
+				keywords?: string[];
+				canonical?: string;
+				structured?: string; // Structured Data LD+JSON
+				og?: {
+					title?: string;
+					description?: string;
+					type?: 'website' | 'article' | 'profile';
+					image?: string;
+					imageAlt?: string;
+					url?: string;
+				};
+				twitter?: {
+					title?: string;
+					description?: string;
+					card?: string;
+					image?: string;
+					imageAlt?: string;
+					site?: string;
+					creator?: string;
+				};
+			};
+    }
 
     interface Platform {
       context: {

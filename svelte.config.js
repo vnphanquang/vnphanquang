@@ -4,8 +4,8 @@ import { fileURLToPath } from 'url';
 
 import adapter from '@sveltejs/adapter-cloudflare';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
+import { walk } from 'estree-walker';
 import MagicString from 'magic-string';
-import { walk } from 'svelte/compiler';
 import { parse } from 'svelte-parse-markup';
 
 import pkg from './package.json' assert { type: 'json' };

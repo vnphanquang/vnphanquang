@@ -17,7 +17,7 @@
   <header class="sticky top-0 py-4 z-10">
     <label class="swap w-fit ml-auto bg-bg">
       <!-- this hidden checkbox controls the state -->
-      <input type="checkbox" hidden bind:checked={isLight} on:change={handleColorSchemeSwitch} />
+      <input type="checkbox" hidden bind:checked={isLight} onchange={handleColorSchemeSwitch} />
       <!-- sun icon -->
       <svg
         class="swap-on fill-current w-10 h-10"

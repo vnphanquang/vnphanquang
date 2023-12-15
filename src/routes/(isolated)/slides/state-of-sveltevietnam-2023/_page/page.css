@@ -1,0 +1,103 @@
+@import url('reveal.js/dist/reveal.css');
+@import url('reveal.js/dist/theme/black.css');
+@import url('$lib/assets/fonts/inter/inter.font.css');
+@import url('$lib/assets/fonts/lora/lora.font.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    @apply font-inter;
+
+    --r-background-color: transparent;
+    --r-main-font: inter, sans-serif;
+    --r-heading-font: lora, serif;
+    --r-main-font-size: 24px;
+    --r-heading-text-transform: none;
+
+    color: white;
+
+    background-color: black;
+    background-image: url('./images/background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  .reveal {
+    & h2 {
+      @apply font-lora text-6xl;
+
+      text-decoration: none;
+    }
+
+    & p {
+      @apply my-10;
+    }
+  }
+}
+
+@layer components {
+  /* from DaisyUI */
+  .stats {
+    overflow-x: auto;
+    display: inline-grid;
+    grid-auto-flow: column;
+
+    color: currentcolor;
+
+		background-color: transparent;
+    border-radius: 4px;
+  }
+
+  :where(.stats)>:not([hidden])~:not([hidden]) {
+    border-left-width: 1px;
+  }
+
+  .stat {
+    --tw-border-opacity: .1;
+
+    display: inline-grid;
+    grid-template-columns: repeat(1,1fr);
+    column-gap: 1rem;
+
+    width: 100%;
+    padding: 1rem 1.5rem;
+
+    border-color: theme('colors.gray.900');
+  }
+
+  .stat-title {
+    grid-column-start: 1;
+    color: theme('colors.gray.400');
+    white-space: nowrap;
+  }
+
+  .stat-figure {
+    grid-column-start: 2;
+    grid-row: span 3/span 3;
+    grid-row-start: 1;
+    place-self: center;
+    justify-self: end;
+  }
+
+  .stat-value {
+    grid-column-start: 1;
+
+    font-size: 2.25rem;
+    font-weight: 800;
+    line-height: 1.75;
+    white-space: nowrap;
+  }
+
+  .stat-desc {
+    grid-column-start: 1;
+
+    font-size: .75rem;
+    line-height: 1rem;
+    color: theme('colors.gray.400');
+    white-space: nowrap;
+  }
+}

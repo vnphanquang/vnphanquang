@@ -3,6 +3,7 @@ const theme = {
   extend: {
     fontFamily: {
       inter: ['Inter', 'sans-serif'],
+      lora: ['Lora', 'serif'],
       phanquang: ['PhanQuang-Calligraphr', 'serif'],
     },
     spacing: {

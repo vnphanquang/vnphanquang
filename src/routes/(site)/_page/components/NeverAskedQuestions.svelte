@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { cubicOut } from 'svelte/easing';
   import { slide } from 'svelte/transition';
 
   import NEVER_ASKED_QUESTIONS from '../neverAskedQuestions.json';
@@ -48,7 +49,7 @@
       id="naq-expansion-toggle"
       type="checkbox"
       class="toggle"
-      on:change={onChangeExpansionRule}
+      onchange={onChangeExpansionRule}
       bind:checked={naqOnlyExpandOne}
     />
   </div>
@@ -69,7 +70,7 @@
               type="radio"
               id={htmlId}
               {name}
-              on:change={() => onExpansionsChanged(index)}
+              onchange={() => onExpansionsChanged(index)}
               bind:group={expandedId}
               value={id}
               hidden
@@ -79,7 +80,7 @@
               type="checkbox"
               id={htmlId}
               {name}
-              on:change={() => onExpansionsChanged(index)}
+              onchange={() => onExpansionsChanged(index)}
               bind:checked
               value={id}
               hidden
@@ -103,7 +104,7 @@
           {#if shouldExpand}
             <div
               class="prose mx-6 mt-4 max-w-none border-l px-4 py-2"
-              transition:slide
+              transition:slide={{ duration: 250, easing: cubicOut }}
             >
               {#each answer as paragraph}
                 <p class="text-sm">{paragraph}</p>

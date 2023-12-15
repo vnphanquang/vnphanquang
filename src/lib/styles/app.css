@@ -22,9 +22,9 @@
 
   html {
     height: 100%;
+    font-family: theme('fontFamily.inter');
     color: theme('colors.fg.DEFAULT');
     background-color: theme('colors.bg.DEFAULT');
-    font-family: theme('fontFamily.inter');
   }
 
   *:disabled {

@@ -10,7 +10,7 @@
 
 <div class="{cls}">
   <div class="relative h-[200px]">
-    <AnimatedMail on:click={() => (letter = true)} />
+    <AnimatedMail onclick={() => (letter = true)} />
   </div>
 
   {#if letter}
@@ -20,11 +20,11 @@
         class="relative max-h-[90vh] w-10/12 max-w-3xl overflow-auto bg-bg p-6 shadow-2xl border-letter md:w-8/12 md:p-20 z-px"
         transition:fly={{ y: 20, duration: 250 }}
         use:clickoutside
-        on:clickoutside={() => (letter = false)}
+        onclickoutside={() => (letter = false)}
       >
         <button
           type="button"
-          on:click={() => (letter = false)}
+          onclick={() => (letter = false)}
           class="c-btn-icon absolute top-4 right-4"
           aria-label="Close"
         >

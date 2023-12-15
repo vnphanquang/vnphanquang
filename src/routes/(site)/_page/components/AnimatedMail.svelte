@@ -1,13 +1,17 @@
 <script lang="ts">
   export let variant: 'button' | 'static' = 'button';
   export let shadow = true;
+  export let onclick = () => {};
   let cls = '';
   export { cls as class };
 </script>
 
 <div
   class="letter-image {cls}"
-  on:click|stopPropagation
+  onclick={(e) => {
+    e.preventDefault();
+    onclick();
+  }}
   role={variant === 'button' ? 'button' : ''}
   aria-label="Mail"
 >

@@ -1,33 +1,39 @@
 <script lang="ts">
+	import { page } from '$app/stores';
   import { PUBLIC_MODE } from '$env/static/public';
   import { setColorSchemeContext } from '$lib/contexts/colorScheme';
 
   import OpenGraphImage from '../lib/assets/images/OpenGraph.jpg';
-  import '../lib/styles/app.css';
 
   import type { LayoutData } from './$types';
 
   export let data: LayoutData;
 
-  $: title = 'vnphanquang';
-  $: description = 'A nonsensical personal website and digital playground';
-  $: keywords = ['personal', 'website', 'playground'];
-  $: canonical = 'https://vnphanquang.com';
+	const DEFAULT_KEYWORDS = ['personal', 'website', 'playground'];
 
-  $: ogTitle = title;
-  $: ogDescription = description;
-  $: ogType = 'profile';
-  $: ogUrl = canonical;
-  $: ogImage = OpenGraphImage;
-  $: ogImageAlt = 'Text stating digital playground of vnphanquang on 3D tiled background';
+	$: meta = $page.data.meta;
 
-  $: twitterTitle = title;
-  $: twitterDescription = description;
-  $: twitterImage = ogImage;
-  $: twitterImageAlt = ogImageAlt;
-  $: twitterCard = 'summary_large_image';
-  $: twitterSite = '@vnphanquang';
-  $: twitterCreator = '@vnphanquang';
+	$: title = meta?.title ?? 'vnphanquang';
+	$: description =
+		meta?.description ?? 'A nonsensical personal website and digital playground';
+	$: keywords = meta?.keywords ? [...DEFAULT_KEYWORDS, ...meta.keywords] : DEFAULT_KEYWORDS;
+	$: canonical = meta?.canonical ?? `${$page.url.origin}${$page.url.pathname}`;
+
+	$: ogTitle = meta?.og?.title ?? title;
+	$: ogDescription = meta?.og?.description ?? description;
+	$: ogType = meta?.og?.type ?? 'website';
+	$: ogUrl = meta?.og?.url ?? canonical;
+	$: ogImage = meta?.og?.image ?? OpenGraphImage;
+	$: absoluteOgImage = ogImage.startsWith('/') ? `${$page.url.origin}${ogImage}` : ogImage;
+	$: ogImageAlt = meta?.og?.imageAlt ?? title;
+
+	$: twitterTitle = meta?.twitter?.title ?? ogTitle;
+	$: twitterDescription = meta?.twitter?.description ?? ogDescription;
+	$: twitterImage = meta?.twitter?.image ?? absoluteOgImage;
+	$: twitterImageAlt = meta?.twitter?.imageAlt ?? ogImageAlt;
+	$: twitterCard = meta?.twitter?.card ?? 'summary_large_image';
+	$: twitterSite = meta?.twitter?.site ?? '@vnphanquang';
+	$: twitterCreator = meta?.twitter?.creator ?? '@vnphanquang';
 
   setColorSchemeContext(data.colorScheme);
 </script>
@@ -41,7 +47,7 @@
   <meta property="og:title" content={ogTitle} />
   <meta property="og:description" content={ogDescription} />
   <meta property="og:type" content={ogType} />
-  <meta property="og:image" content={ogImage} />
+	<meta property="og:image" content={absoluteOgImage} />
   <meta property="og:image:alt" content={ogImageAlt} />
   <meta property="og:url" content={ogUrl} />
 
@@ -54,6 +60,7 @@
   <meta name="twitter:creator" content={twitterCreator} />
 
   <link href={canonical} rel="canonical" />
+	<link type="text/plain" rel="author" href="{$page.url.origin}/humans.txt" />
 
   <meta name="mode" content={PUBLIC_MODE} />
 </svelte:head>
