@@ -51,7 +51,7 @@
       <h2 class="sr-only" id="my-works">My Works</h2>
       <p>
         Hello there! You have reached this corner of the web where I conduct or record my
-        nonsensical experiments:
+        <strong><i>nonsensical</i></strong> experiments:
       </p>
       <ul>
         <li>
@@ -149,3 +149,4 @@
     }
   }
 </style>
+
