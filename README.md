@@ -8,58 +8,6 @@
 
 <p align="center">Ho Chi Minh, Vietnam</p>
 
-<br />
-
-<!-- icon: https://simpleicons.org -->
-
-<p align="center">
-  <a href="https://twitter.com/vnphanquang" target="_blank">
-    <img
-      align="center"
-      src="./.github/images/socials/twitter.svg" alt="vnphanquang"
-      height="30"
-    />
-  </a>
-  &nbsp; &nbsp;
-  <a href="https://linkedin.com/in/vnphanquang" target="_blank">
-    <img
-      align="center"
-      src="./.github/images/socials/linkedin.svg"
-      alt="vnphanquang"
-      height="30"
-    />
-  </a>
-  &nbsp; &nbsp;
-  <a href="https://stackoverflow.com/users/9943094" target="_blank">
-    <img
-      align="center"
-      src="./.github/images/socials/stackoverflow.svg"
-      alt="stackoverflow vnphanquang"
-      height="30"
-    />
-  </a>
-  &nbsp; &nbsp;
-  <a href="https://instagram.com/vnphanquang" target="_blank">
-    <img
-      align="center"
-      src="./.github/images/socials/instagram.svg"
-      alt="vnphanquang instagram"
-      height="30"
-    />
-  </a>
-  &nbsp; &nbsp;
-  <a href="https://jsfiddle.net/user/vnphanquang" target="_blank">
-    <img
-      align="center"
-      src="./.github/images/socials/jsfiddle.svg"
-      alt="vnphanquang jsfiddle"
-      height="30"
-    />
-  </a>
-</p>
-
-<br />
-
 <details>
   <summary>🤓 About me</summary>
 
@@ -117,429 +65,16 @@
 <br />
 
 <details>
-  <summary>👍 Current Favorite Technologies</summary>
-  <br />
-  <p align="left">
-    <a href="https://svelte.dev" target="_blank" rel="noreferrer">
-      <img
-        src="./.github/images/tech/svelte.svg"
-        alt="svelte"
-        height="40"
-      />
-    </a>
-    <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer">
-      <img
-        src="./.github/images/tech/tailwind.svg"
-        alt="tailwind"
-        height="40"
-      />
-    </a>
-    <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer">
-      <img
-        src="./.github/images/tech/typescript.svg"
-        alt="typescript"
-        height="40"
-      />
-    </a>
-    <a href="https://www.postgresql.org" target="_blank" rel="noreferrer">
-      <img
-        src="./.github/images/tech/postgres.svg"
-        alt="postgresql"
-        height="40"
-      />
-    </a>
-    <a href="https://graphql.org" target="_blank" rel="noreferrer">
-      <img
-        src="./.github/images/tech/graphql.svg"
-        alt="graphql"
-        height="40"
-      />
-    </a>
-    <a href="https://www.rust-lang.org" target="_blank" rel="noreferrer">
-      <img
-        src="./.github/images/tech/rust.svg"
-        alt="rust"
-        height="40"
-      />
-    </a>
-    <a href="https://xstate.js.org/" target="_blank" rel="noreferrer">
-      <img
-        src="./.github/images/tech/xstate.svg"
-        alt="xstate"
-        height="40"
-      />
-    </a>
-    <a href="https://pnpm.io/" target="_blank" rel="noreferrer">
-      <img
-        src="./.github/images/tech/pnpm.svg"
-        alt="pnpm"
-        height="40"
-      />
-    </a>
-  </p>
-</details>
-
-<br />
-
-<details>
-  <summary>🛠️ Other Languages and Tools</summary>
-  <br />
-  <details open>
-    <summary>Languages</summary>
-    <br />
-    <p algin="left">
-      <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer">
-        <img
-          src="./.github/images/tech/typescript.svg"
-          alt="typescript"
-          height="40"
-        />
-      </a>
-      <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer">
-        <img
-          src="./.github/images/tech/html5.svg"
-          alt="html5"
-          height="40"
-        />
-      </a>
-      <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer">
-        <img
-          src="./.github/images/tech/css3.svg"
-          alt="css3"
-          height="40"
-        />
-      </a>
-      <a
-        href="https://www.gnu.org/software/bash/"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <img
-          src="./.github/images/tech/bash.svg"
-          alt="bash"
-          height="40"
-        />
-      </a>
-      <a href="https://www.rust-lang.org" target="_blank" rel="noreferrer">
-        <img
-          src="./.github/images/tech/rust.svg"
-          alt="rust"
-          height="40"
-        />
-      </a>
-      <a href="https://www.python.org" target="_blank" rel="noreferrer">
-        <img
-          src="./.github/images/tech/python.svg"
-          alt="python"
-          height="40"
-        />
-      </a>
-    </p>
-  </details>
-
-  <details open>
-    <summary>Frameworks</summary>
-    <br />
-    <p align="left">
-      <a href="https://svelte.dev" target="_blank" rel="noreferrer">
-        <img
-          src="./.github/images/tech/svelte.svg"
-          alt="svelte"
-          height="40"
-        />
-      </a>
-      <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer">
-        <img
-          src="./.github/images/tech/tailwind.svg"
-          alt="tailwind"
-          height="40"
-        />
-      </a>
-      <a href="https://xstate.js.org/" target="_blank" rel="noreferrer">
-        <img
-          src="./.github/images/tech/xstate.svg"
-          alt="xstate"
-          height="40"
-        />
-      </a>
-      <a href="https://rxjs.dev" target="_blank" rel="noreferrer">
-        <img
-          src="./.github/images/tech/rxjs.svg"
-          alt="rxjs"
-          height="40"
-        />
-      </a>
-      <a href="https://angular.io" target="_blank" rel="noreferrer">
-        <img
-          src="./.github/images/tech/angular.svg"
-          alt="angular"
-          height="40"
-        />
-      </a>
-      <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
-        <img
-          src="./.github/images/tech/react.svg"
-          alt="react"
-          height="40"
-        />
-      </a>
-      <a href="https://www.electronjs.org" target="_blank" rel="noreferrer">
-        <img
-          src="./.github/images/tech/electron.svg"
-          alt="electron"
-          height="40"
-        />
-      </a>
-      <a href="https://nestjs.com/" target="_blank" rel="noreferrer">
-        <img
-          src="./.github/images/tech/nestjs.svg"
-          alt="nestjs"
-          height="40"
-        />
-      </a>
-      <a href="https://www.graphile.org/postgraphile/" target="_blank" rel="noreferrer">
-        <img
-          src="./.github/images/tech/postgraphile.svg"
-          alt="postgraphile"
-          height="40"
-        />
-      </a>
-      <a href="https://expressjs.com/" target="_blank" rel="noreferrer">
-        <img
-          src="./.github/images/tech/express.svg"
-          alt="express"
-          height="40"
-        />
-      </a>
-    </p>
-  </details>
-
-  <details open>
-    <summary>Databases</summary>
-    <br />
-    <p align="left">
-      <a href="https://www.postgresql.org" target="_blank" rel="noreferrer">
-        <img
-          src="./.github/images/tech/postgres.svg"
-          alt="postgresql"
-          height="40"
-        />
-      </a>
-      <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer">
-        <img
-          src="./.github/images/tech/mongodb.svg"
-          alt="mongodb"
-          height="40"
-        />
-      </a>
-      <a href="https://redis.io/" target="_blank" rel="noreferrer">
-        <img
-          src="./.github/images/tech/redis.svg"
-          alt="redis"
-          height="40"
-        />
-      </a>
-    </p>
-  </details>
-
-  <details open>
-    <summary>Architecture</summary>
-    <br />
-    <p align="left">
-      <a href="https://graphql.org" target="_blank" rel="noreferrer">
-        <img
-          src="./.github/images/tech/graphql.svg"
-          alt="graphql"
-          height="40"
-        />
-      </a>
-      <a href="https://www.docker.com/" target="_blank" rel="noreferrer">
-        <img
-          src="./.github/images/tech/docker.svg"
-          alt="docker"
-          height="40"
-        />
-      </a>
-      <a href="https://kubernetes.io/" target="_blank" rel="noreferrer"> <img
-          src="./.github/images/tech/kubernetes.svg"
-          alt="kubernetes"
-          height="40"
-        />
-      </a>
-      <a href="https://www.digitalocean.com/" target="_blank" rel="noreferrer"> <img
-          src="./.github/images/tech/digitalocean.svg"
-          alt="digitalocean"
-          height="40"
-        />
-      </a>
-      <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img
-          src="./.github/images/tech/linux.svg"
-          alt="linux"
-          height="40"
-        />
-      </a>
-      <a href="https://ubuntu.com/" target="_blank" rel="noreferrer"> <img
-          src="./.github/images/tech/ubuntu.svg"
-          alt="ubuntu"
-          height="40"
-        />
-      </a>
-    </p>
-  </details>
-
-  <details open>
-    <summary>Build Tools</summary>
-    <br />
-    <p align="left">
-      <a href="https://rollupjs.org/" target="_blank" rel="noreferrer">
-        <img
-          src="./.github/images/tech/rollup.svg"
-          alt="rollup"
-          height="40"
-        />
-      </a>
-      <a href="https://vitejs.dev/" target="_blank" rel="noreferrer">
-        <img
-          src="./.github/images/tech/vite.svg"
-          alt="vite"
-          height="40"
-        />
-      </a>
-      <a href="https://www.snowpack.dev/" target="_blank" rel="noreferrer">
-        <img
-          src="./.github/images/tech/snowpack.svg"
-          alt="snowpack"
-          height="40"
-        />
-      </a>
-      <a href="https://webpack.js.org/" target="_blank" rel="noreferrer">
-        <img
-          src="./.github/images/tech/webpack.svg"
-          alt="webpack"
-          height="40"
-        />
-      </a>
-    </p>
-  </details>
-
-  <details open>
-    <summary>Toolings</summary>
-    <br />
-    <p align="left">
-      <a href="https://git-scm.com/" target="_blank" rel="noreferrer">
-        <img
-          src="./.github/images/tech/git.svg"
-          alt="git"
-          height="40"
-        />
-      </a>
-      <a href="https://editorconfig.org/" target="_blank" rel="noreferrer">
-        <img
-          src="./.github/images/tech/editorconfig.svg"
-          alt="editorconfig"
-          height="40"
-        />
-      </a>
-      <a href="https://eslint.org/" target="_blank" rel="noreferrer">
-        <img
-          src="./.github/images/tech/eslint.svg"
-          alt="eslint"
-          height="40"
-        />
-      </a>
-      <a href="https://prettier.io/" target="_blank" rel="noreferrer">
-        <img
-          src="./.github/images/tech/prettier.svg"
-          alt="prettier"
-          height="40"
-        />
-      </a>
-      <a href="https://pnpm.io/" target="_blank" rel="noreferrer">
-        <img
-          src="./.github/images/tech/pnpm.svg"
-          alt="pnpm"
-          height="40"
-        />
-      </a>
-      <a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer">
-        <img
-          src="./.github/images/tech/vscode.svg"
-          alt="vscode"
-          height="40"
-        />
-      </a>
-      <a href="https://www.jetbrains.com/datagrip/" target="_blank" rel="noreferrer">
-        <img
-          src="./.github/images/tech/datagrip.svg"
-          alt="datagrip"
-          height="40"
-        />
-      </a>
-      <a href="https://i3wm.org/" target="_blank" rel="noreferrer">
-        <img
-          src="./.github/images/tech/i3wm.svg"
-          alt="i3wm"
-          height="40"
-        />
-      </a>
-      <a href="https://www.vim.org/" target="_blank" rel="noreferrer">
-        <img
-          src="./.github/images/tech/vim.svg"
-          alt="vim"
-          height="40"
-        />
-      </a>
-      <a href="https://github.com/tmux/tmux/wiki" target="_blank" rel="noreferrer">
-        <img
-          src="./.github/images/tech/tmux.svg"
-          alt="tmux"
-          height="40"
-        />
-      </a>
-      <a href="https://alacritty.org/" target="_blank" rel="noreferrer">
-        <img
-          src="./.github/images/tech/alacritty.svg"
-          alt="alacritty"
-          height="40"
-        />
-      </a>
-      <a href="https://fishshell.com/" target="_blank" rel="noreferrer">
-        <img
-          src="./.github/images/tech/fish.svg"
-          alt="fish"
-          height="40"
-        />
-      </a>
-      <a href="https://www.spotify.com" target="_blank" rel="noreferrer">
-        <img
-          src="./.github/images/tech/spotify.svg"
-          alt="spotify"
-          height="40"
-        />
-      </a>
-    </p>
-  </details>
-
-</details>
-
-<br />
-
-<details>
   <summary>💾 Current Setup</summary>
   <br />
 
-My keyboard: [ZSA Moonlander](https://www.zsa.io/moonlander)
-
-[![monkeytype.badge]][monkeytype]
+My keyboard: [ZSA Moonlander](https://www.zsa.io/moonlander) [![monkeytype.badge]][monkeytype]
 
 See my [.config] here for all my setup.
 
-I mostly use Linux:
+I mostly use Linux: [i3wm] & [polybar], [alacritty], [fish], [tmux], [neovim],
 
-- setup with [i3wm], [polybar] - [alacritty], [tmux], [vim],
-- but I use [Vim plugin][vscode.vim] with [VS Code][vscode] mostly (hey vim-ers, don't judge me 🧑‍⚖️).
-
-  [![setup screenshot][local.images.setup]][.config]
+[![setup screenshot][local.images.setup]][.config]
 
 I also use mac at work sometimes but only when i am forced too 😂.
 
@@ -570,55 +105,55 @@ glhf!
 
 ![Profile Views](http://img.shields.io/badge/Profile%20Views-15-blue)
 
-**I'm an Early 🐤** 
+**I'm an Early 🐤**
 
 ```text
-🌞 Morning                2733 commits        ██████░░░░░░░░░░░░░░░░░░░   24.60 % 
-🌆 Daytime                3859 commits        █████████░░░░░░░░░░░░░░░░   34.74 % 
-🌃 Evening                4336 commits        ██████████░░░░░░░░░░░░░░░   39.03 % 
-🌙 Night                  181 commits         ░░░░░░░░░░░░░░░░░░░░░░░░░   01.63 % 
+🌞 Morning                2733 commits        ██████░░░░░░░░░░░░░░░░░░░   24.60 %
+🌆 Daytime                3859 commits        █████████░░░░░░░░░░░░░░░░   34.74 %
+🌃 Evening                4336 commits        ██████████░░░░░░░░░░░░░░░   39.03 %
+🌙 Night                  181 commits         ░░░░░░░░░░░░░░░░░░░░░░░░░   01.63 %
 ```
-📅 **I'm Most Productive on Friday** 
+📅 **I'm Most Productive on Friday**
 
 ```text
-Monday                   1562 commits        ████░░░░░░░░░░░░░░░░░░░░░   14.06 % 
-Tuesday                  1793 commits        ████░░░░░░░░░░░░░░░░░░░░░   16.14 % 
-Wednesday                1476 commits        ███░░░░░░░░░░░░░░░░░░░░░░   13.29 % 
-Thursday                 1029 commits        ██░░░░░░░░░░░░░░░░░░░░░░░   09.26 % 
-Friday                   2147 commits        █████░░░░░░░░░░░░░░░░░░░░   19.33 % 
-Saturday                 1788 commits        ████░░░░░░░░░░░░░░░░░░░░░   16.10 % 
-Sunday                   1314 commits        ███░░░░░░░░░░░░░░░░░░░░░░   11.83 % 
+Monday                   1562 commits        ████░░░░░░░░░░░░░░░░░░░░░   14.06 %
+Tuesday                  1793 commits        ████░░░░░░░░░░░░░░░░░░░░░   16.14 %
+Wednesday                1476 commits        ███░░░░░░░░░░░░░░░░░░░░░░   13.29 %
+Thursday                 1029 commits        ██░░░░░░░░░░░░░░░░░░░░░░░   09.26 %
+Friday                   2147 commits        █████░░░░░░░░░░░░░░░░░░░░   19.33 %
+Saturday                 1788 commits        ████░░░░░░░░░░░░░░░░░░░░░   16.10 %
+Sunday                   1314 commits        ███░░░░░░░░░░░░░░░░░░░░░░   11.83 %
 ```
 
 
-📊 **This Week I Spent My Time On** 
+📊 **This Week I Spent My Time On**
 
 ```text
 🕑︎ Time Zone: Asia/Ho_Chi_Minh
 
-💬 Programming Languages: 
-Gettext Catalog          9 hrs 49 mins       ████████░░░░░░░░░░░░░░░░░   33.45 % 
-Svelte                   5 hrs 45 mins       █████░░░░░░░░░░░░░░░░░░░░   19.60 % 
-TypeScript               4 hrs 8 mins        ████░░░░░░░░░░░░░░░░░░░░░   14.12 % 
-JavaScript               2 hrs 31 mins       ██░░░░░░░░░░░░░░░░░░░░░░░   08.62 % 
-CSS                      1 hr 52 mins        ██░░░░░░░░░░░░░░░░░░░░░░░   06.38 % 
+💬 Programming Languages:
+Gettext Catalog          9 hrs 49 mins       ████████░░░░░░░░░░░░░░░░░   33.45 %
+Svelte                   5 hrs 45 mins       █████░░░░░░░░░░░░░░░░░░░░   19.60 %
+TypeScript               4 hrs 8 mins        ████░░░░░░░░░░░░░░░░░░░░░   14.12 %
+JavaScript               2 hrs 31 mins       ██░░░░░░░░░░░░░░░░░░░░░░░   08.62 %
+CSS                      1 hr 52 mins        ██░░░░░░░░░░░░░░░░░░░░░░░   06.38 %
 
-🔥 Editors: 
-Neovim                   19 hrs 30 mins      █████████████████░░░░░░░░   66.44 % 
-VS Code                  9 hrs 51 mins       ████████░░░░░░░░░░░░░░░░░   33.56 % 
+🔥 Editors:
+Neovim                   19 hrs 30 mins      █████████████████░░░░░░░░   66.44 %
+VS Code                  9 hrs 51 mins       ████████░░░░░░░░░░░░░░░░░   33.56 %
 
-💻 Operating System: 
-Linux                    29 hrs 21 mins      █████████████████████████   100.00 % 
+💻 Operating System:
+Linux                    29 hrs 21 mins      █████████████████████████   100.00 %
 ```
 
-**I Mostly Code in JavaScript** 
+**I Mostly Code in JavaScript**
 
 ```text
-JavaScript               25 repos            █████████░░░░░░░░░░░░░░░░   35.71 % 
-TypeScript               18 repos            ██████░░░░░░░░░░░░░░░░░░░   25.71 % 
-HTML                     3 repos             █░░░░░░░░░░░░░░░░░░░░░░░░   04.29 % 
-CSS                      2 repos             █░░░░░░░░░░░░░░░░░░░░░░░░   02.86 % 
-Jupyter Notebook         1 repo              ░░░░░░░░░░░░░░░░░░░░░░░░░   01.43 % 
+JavaScript               25 repos            █████████░░░░░░░░░░░░░░░░   35.71 %
+TypeScript               18 repos            ██████░░░░░░░░░░░░░░░░░░░   25.71 %
+HTML                     3 repos             █░░░░░░░░░░░░░░░░░░░░░░░░   04.29 %
+CSS                      2 repos             █░░░░░░░░░░░░░░░░░░░░░░░░   02.86 %
+Jupyter Notebook         1 repo              ░░░░░░░░░░░░░░░░░░░░░░░░░   01.43 %
 ```
 
 
@@ -645,7 +180,8 @@ Jupyter Notebook         1 repo              ░░░░░░░░░░░�
 [polybar]: https://github.com/polybar/polybar
 [i3wm]: https://i3wm.org/
 [tmux]: https://github.com/tmux/tmux/wiki
-[vim]: https://www.vim.org/
+[fish]: https://fishshell.com/
+[neovim]: https://neovim.io/
 [vscode]: https://code.visualstudio.com/
 [vscode.vim]: https://marketplace.visualstudio.com/items?itemName=vscodevim.vim
 
