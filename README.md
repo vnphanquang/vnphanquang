@@ -101,9 +101,9 @@ glhf!
   <br />
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-6%2C020%20hrs%2041%20mins-blue?style=flat)
+![Code Time](http://img.shields.io/badge/Code%20Time-6%2C023%20hrs%2030%20mins-blue?style=flat)
 
-![AI Code Time](http://img.shields.io/badge/AI%20Code%20Time-2%20hrs%2045%20mins-blue?style=flat)
+![AI Code Time](http://img.shields.io/badge/AI%20Code%20Time-2%20hrs%2048%20mins-blue?style=flat)
 
 ![Profile Views](http://img.shields.io/badge/Profile%20Views-0-blue?style=flat)
 
@@ -134,39 +134,39 @@ Sunday                   3115 commits        █░░░░░░░░░░�
 🕑︎ Time Zone: Asia/Ho_Chi_Minh
 
 💬 Programming Languages: 
-TypeScript               6 hrs 1 min         █████████░░░░░░░░░░░░░░░░   36.74 % 
-Svelte                   5 hrs 48 mins       █████████░░░░░░░░░░░░░░░░   35.50 % 
-Markdown                 2 hrs 49 mins       ████░░░░░░░░░░░░░░░░░░░░░   17.28 % 
-JSON                     41 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   04.21 % 
-SCSS                     19 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   02.02 % 
+TypeScript               6 hrs 1 min         ███████░░░░░░░░░░░░░░░░░░   26.66 % 
+Svelte                   5 hrs 48 mins       ██████░░░░░░░░░░░░░░░░░░░   25.76 % 
+Nix                      5 hrs 19 mins       ██████░░░░░░░░░░░░░░░░░░░   23.58 % 
+Markdown                 3 hrs 39 mins       ████░░░░░░░░░░░░░░░░░░░░░   16.21 % 
+JSON                     41 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   03.06 % 
 
 🔥 Editors: 
-Neovim                   16 hrs 22 mins      █████████████████████████   100.00 % 
+Neovim                   22 hrs 34 mins      █████████████████████████   100.00 % 
 
 💻 Operating System: 
-Linux                    16 hrs 22 mins      █████████████████████████   100.00 % 
+Linux                    22 hrs 34 mins      █████████████████████████   100.00 % 
 ```
 
 🤖 **AI Coding This Week** 
 
 ```text
-⏱ AI Coding Time: 16 mins (1.69%)
+⏱ AI Coding Time: 23 mins (1.77%)
 
-✍️ 15 lines written by AI, 1,275 lines written by hand (1.16% AI-written)
+✍️ 15 lines written by AI, 1,982 lines written by hand (0.75% AI-written)
 
-🔤 185,935 Input Tokens, 7,338 Output Tokens
+🔤 208,107 Input Tokens, 7,589 Output Tokens
 
-💵 $0.67 Estimated AI Cost This Week
+💵 $0.74 Estimated AI Cost This Week
 
-🧠 5 AI Sessions, 6 AI Prompts
+🧠 7 AI Sessions, 11 AI Prompts
 
 OpenCode                 52 lines            █████████████████████████   100.00 % 
 
 🔎 AI Coding Insights:
-🧑‍💻 Mostly Hands-On — 1.16% of written lines came from AI
-📄 Detailed Prompter — average 1,060 characters per prompt
-🎯 One-Shot Prompter — average 1 prompts per session
-🔍 Hands-On Reviewer — 97.66% of changed lines were hand-edited
+🧑‍💻 Mostly Hands-On — 0.75% of written lines came from AI
+📄 Detailed Prompter — average 634 characters per prompt
+🔁 Iterative Prompter — average 2 prompts per session
+🔍 Hands-On Reviewer — 98.44% of changed lines were hand-edited
 ```
 
 **I Mostly Code in TypeScript** 
@@ -182,7 +182,7 @@ Jupyter Notebook         1 repo              ░░░░░░░░░░░�
 
 
 
- Last Updated on 01/08/2026 03:15:34 UTC
+ Last Updated on 02/08/2026 03:13:16 UTC
 <!--END_SECTION:waka-->
 
 </details>
