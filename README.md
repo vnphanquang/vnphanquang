@@ -101,9 +101,9 @@ glhf!
   <br />
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-6%2C023%20hrs%2030%20mins-blue?style=flat)
+![Code Time](http://img.shields.io/badge/Code%20Time-6%2C029%20hrs%2057%20mins-blue?style=flat)
 
-![AI Code Time](http://img.shields.io/badge/AI%20Code%20Time-2%20hrs%2048%20mins-blue?style=flat)
+![AI Code Time](http://img.shields.io/badge/AI%20Code%20Time-2%20hrs%2055%20mins-blue?style=flat)
 
 ![Profile Views](http://img.shields.io/badge/Profile%20Views-0-blue?style=flat)
 
@@ -113,17 +113,17 @@ glhf!
 🌞 Morning                16619 commits       ███████░░░░░░░░░░░░░░░░░░   28.17 % 
 🌆 Daytime                28859 commits       ████████████░░░░░░░░░░░░░   48.91 % 
 🌃 Evening                13077 commits       ██████░░░░░░░░░░░░░░░░░░░   22.16 % 
-🌙 Night                  449 commits         ░░░░░░░░░░░░░░░░░░░░░░░░░   00.76 % 
+🌙 Night                  450 commits         ░░░░░░░░░░░░░░░░░░░░░░░░░   00.76 % 
 ```
 📅 **I'm Most Productive on Thursday** 
 
 ```text
 Monday                   7517 commits        ███░░░░░░░░░░░░░░░░░░░░░░   12.74 % 
 Tuesday                  5789 commits        ██░░░░░░░░░░░░░░░░░░░░░░░   09.81 % 
-Wednesday                12925 commits       █████░░░░░░░░░░░░░░░░░░░░   21.91 % 
+Wednesday                12925 commits       █████░░░░░░░░░░░░░░░░░░░░   21.90 % 
 Thursday                 14087 commits       ██████░░░░░░░░░░░░░░░░░░░   23.87 % 
 Friday                   8786 commits        ████░░░░░░░░░░░░░░░░░░░░░   14.89 % 
-Saturday                 6785 commits        ███░░░░░░░░░░░░░░░░░░░░░░   11.50 % 
+Saturday                 6786 commits        ███░░░░░░░░░░░░░░░░░░░░░░   11.50 % 
 Sunday                   3115 commits        █░░░░░░░░░░░░░░░░░░░░░░░░   05.28 % 
 ```
 
@@ -134,39 +134,39 @@ Sunday                   3115 commits        █░░░░░░░░░░�
 🕑︎ Time Zone: Asia/Ho_Chi_Minh
 
 💬 Programming Languages: 
-TypeScript               6 hrs 1 min         ███████░░░░░░░░░░░░░░░░░░   26.66 % 
-Svelte                   5 hrs 48 mins       ██████░░░░░░░░░░░░░░░░░░░   25.76 % 
-Nix                      5 hrs 19 mins       ██████░░░░░░░░░░░░░░░░░░░   23.58 % 
-Markdown                 3 hrs 39 mins       ████░░░░░░░░░░░░░░░░░░░░░   16.21 % 
-JSON                     41 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   03.06 % 
+Nix                      12 hrs 20 mins      ██████████░░░░░░░░░░░░░░░   38.34 % 
+Markdown                 6 hrs 5 mins        █████░░░░░░░░░░░░░░░░░░░░   18.91 % 
+TypeScript               6 hrs 1 min         █████░░░░░░░░░░░░░░░░░░░░   18.69 % 
+Svelte                   5 hrs 48 mins       █████░░░░░░░░░░░░░░░░░░░░   18.06 % 
+JSON                     41 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   02.14 % 
 
 🔥 Editors: 
-Neovim                   22 hrs 34 mins      █████████████████████████   100.00 % 
+Neovim                   32 hrs 11 mins      █████████████████████████   100.00 % 
 
 💻 Operating System: 
-Linux                    22 hrs 34 mins      █████████████████████████   100.00 % 
+Linux                    32 hrs 11 mins      █████████████████████████   100.00 % 
 ```
 
 🤖 **AI Coding This Week** 
 
 ```text
-⏱ AI Coding Time: 23 mins (1.77%)
+⏱ AI Coding Time: 53 mins (2.74%)
 
-✍️ 15 lines written by AI, 1,982 lines written by hand (0.75% AI-written)
+✍️ 15 lines written by AI, 3,628 lines written by hand (0.41% AI-written)
 
-🔤 208,107 Input Tokens, 7,589 Output Tokens
+🔤 375,532 Input Tokens, 10,540 Output Tokens
 
-💵 $0.74 Estimated AI Cost This Week
+💵 $1.28 Estimated AI Cost This Week
 
-🧠 7 AI Sessions, 11 AI Prompts
+🧠 14 AI Sessions, 19 AI Prompts
 
 OpenCode                 52 lines            █████████████████████████   100.00 % 
 
 🔎 AI Coding Insights:
-🧑‍💻 Mostly Hands-On — 0.75% of written lines came from AI
-📄 Detailed Prompter — average 634 characters per prompt
-🔁 Iterative Prompter — average 2 prompts per session
-🔍 Hands-On Reviewer — 98.44% of changed lines were hand-edited
+🧑‍💻 Mostly Hands-On — 0.41% of written lines came from AI
+📝 Concise Prompter — average 448 characters per prompt
+🎯 One-Shot Prompter — average 1 prompts per session
+🔍 Hands-On Reviewer — 99.11% of changed lines were hand-edited
 ```
 
 **I Mostly Code in TypeScript** 
@@ -182,7 +182,7 @@ Jupyter Notebook         1 repo              ░░░░░░░░░░░�
 
 
 
- Last Updated on 02/08/2026 03:13:16 UTC
+ Last Updated on 03/08/2026 03:17:46 UTC
 <!--END_SECTION:waka-->
 
 </details>
