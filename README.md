@@ -101,7 +101,73 @@ glhf!
   <br />
 
 <!--START_SECTION:waka-->
+![Code Time](http://img.shields.io/badge/Code%20Time-6%2C071%20hrs%2032%20mins-blue?style=flat)
+
+![AI Code Time](http://img.shields.io/badge/AI%20Code%20Time-5%20hrs%2035%20mins-blue?style=flat)
+
 ![Profile Views](http://img.shields.io/badge/Profile%20Views-0-blue?style=flat)
+
+**I'm an Early 🐤** 
+
+```text
+🌞 Morning                16751 commits       ███████░░░░░░░░░░░░░░░░░░   28.23 % 
+🌆 Daytime                29008 commits       ████████████░░░░░░░░░░░░░   48.89 % 
+🌃 Evening                13124 commits       ██████░░░░░░░░░░░░░░░░░░░   22.12 % 
+🌙 Night                  452 commits         ░░░░░░░░░░░░░░░░░░░░░░░░░   00.76 % 
+```
+📅 **I'm Most Productive on Thursday** 
+
+```text
+Monday                   7581 commits        ███░░░░░░░░░░░░░░░░░░░░░░   12.78 % 
+Tuesday                  5810 commits        ██░░░░░░░░░░░░░░░░░░░░░░░   09.79 % 
+Wednesday                13009 commits       █████░░░░░░░░░░░░░░░░░░░░   21.92 % 
+Thursday                 14145 commits       ██████░░░░░░░░░░░░░░░░░░░   23.84 % 
+Friday                   8825 commits        ████░░░░░░░░░░░░░░░░░░░░░   14.87 % 
+Saturday                 6831 commits        ███░░░░░░░░░░░░░░░░░░░░░░   11.51 % 
+Sunday                   3134 commits        █░░░░░░░░░░░░░░░░░░░░░░░░   05.28 % 
+```
+
+
+📊 **This Week I Spent My Time On** 
+
+```text
+🕑︎ Time Zone: Asia/Ho_Chi_Minh
+
+💬 Programming Languages: 
+Nix                      32 hrs 24 mins      ██████████████░░░░░░░░░░░   57.32 % 
+Markdown                 9 hrs 13 mins       ████░░░░░░░░░░░░░░░░░░░░░   16.32 % 
+YAML                     2 hrs 38 mins       █░░░░░░░░░░░░░░░░░░░░░░░░   04.69 % 
+fish                     2 hrs 26 mins       █░░░░░░░░░░░░░░░░░░░░░░░░   04.33 % 
+Svelte                   2 hrs 24 mins       █░░░░░░░░░░░░░░░░░░░░░░░░   04.26 % 
+
+🔥 Editors: 
+Neovim                   56 hrs 32 mins      █████████████████████████   100.00 % 
+
+💻 Operating System: 
+Linux                    56 hrs 32 mins      █████████████████████████   100.00 % 
+```
+
+🤖 **AI Coding This Week** 
+
+```text
+⏱ AI Coding Time: 2 hrs 46 mins (4.92%)
+
+✍️ 82 lines written by AI, 7,082 lines written by hand (1.14% AI-written)
+
+🔤 569,349 Input Tokens, 27,800 Output Tokens
+
+💵 $2.13 Estimated AI Cost This Week
+
+🧠 28 AI Sessions, 34 AI Prompts
+
+OpenCode                 83 lines            █████████████████████████   100.00 % 
+
+🔎 AI Coding Insights:
+🧑‍💻 Mostly Hands-On — 1.14% of written lines came from AI
+📄 Detailed Prompter — average 729 characters per prompt
+🎯 One-Shot Prompter — average 1 prompts per session
+🔍 Hands-On Reviewer — 99.24% of changed lines were hand-edited
+```
 
 **I Mostly Code in TypeScript** 
 
@@ -116,7 +182,7 @@ Jupyter Notebook         1 repo              ░░░░░░░░░░░�
 
 
 
- Last Updated on 07/08/2026 01:38:41 UTC
+ Last Updated on 08/08/2026 00:45:21 UTC
 <!--END_SECTION:waka-->
 
 </details>
