@@ -101,7 +101,7 @@ glhf!
   <br />
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-6%2C110%20hrs%2054%20mins-blue?style=flat)
+![Code Time](http://img.shields.io/badge/Code%20Time-6%2C115%20hrs%2050%20mins-blue?style=flat)
 
 ![AI Code Time](http://img.shields.io/badge/AI%20Code%20Time-5%20hrs%2045%20mins-blue?style=flat)
 
@@ -110,20 +110,20 @@ glhf!
 **I'm an Early 🐤** 
 
 ```text
-🌞 Morning                16666 commits       ███████░░░░░░░░░░░░░░░░░░   28.21 % 
-🌆 Daytime                28928 commits       ████████████░░░░░░░░░░░░░   48.96 % 
-🌃 Evening                13048 commits       ██████░░░░░░░░░░░░░░░░░░░   22.08 % 
-🌙 Night                  446 commits         ░░░░░░░░░░░░░░░░░░░░░░░░░   00.75 % 
+🌞 Morning                16670 commits       ███████░░░░░░░░░░░░░░░░░░   28.21 % 
+🌆 Daytime                28932 commits       ████████████░░░░░░░░░░░░░   48.96 % 
+🌃 Evening                13052 commits       ██████░░░░░░░░░░░░░░░░░░░   22.08 % 
+🌙 Night                  445 commits         ░░░░░░░░░░░░░░░░░░░░░░░░░   00.75 % 
 ```
 📅 **I'm Most Productive on Thursday** 
 
 ```text
-Monday                   7585 commits        ███░░░░░░░░░░░░░░░░░░░░░░   12.84 % 
+Monday                   7593 commits        ███░░░░░░░░░░░░░░░░░░░░░░   12.85 % 
 Tuesday                  5769 commits        ██░░░░░░░░░░░░░░░░░░░░░░░   09.76 % 
 Wednesday                12965 commits       █████░░░░░░░░░░░░░░░░░░░░   21.94 % 
-Thursday                 14043 commits       ██████░░░░░░░░░░░░░░░░░░░   23.77 % 
+Thursday                 14047 commits       ██████░░░░░░░░░░░░░░░░░░░   23.77 % 
 Friday                   8777 commits        ████░░░░░░░░░░░░░░░░░░░░░   14.85 % 
-Saturday                 6815 commits        ███░░░░░░░░░░░░░░░░░░░░░░   11.53 % 
+Saturday                 6814 commits        ███░░░░░░░░░░░░░░░░░░░░░░   11.53 % 
 Sunday                   3134 commits        █░░░░░░░░░░░░░░░░░░░░░░░░   05.30 % 
 ```
 
@@ -134,38 +134,38 @@ Sunday                   3134 commits        █░░░░░░░░░░�
 🕑︎ Time Zone: Asia/Ho_Chi_Minh
 
 💬 Programming Languages: 
-Nix                      21 hrs 38 mins      ██████████░░░░░░░░░░░░░░░   41.27 % 
-INI                      8 hrs 25 mins       ████░░░░░░░░░░░░░░░░░░░░░   16.08 % 
-rasi                     5 hrs 22 mins       ███░░░░░░░░░░░░░░░░░░░░░░   10.24 % 
-Bash                     4 hrs 23 mins       ██░░░░░░░░░░░░░░░░░░░░░░░   08.37 % 
-cfg                      2 hrs 33 mins       █░░░░░░░░░░░░░░░░░░░░░░░░   04.89 % 
+Nix                      21 hrs 20 mins      ██████████░░░░░░░░░░░░░░░   40.54 % 
+INI                      8 hrs 27 mins       ████░░░░░░░░░░░░░░░░░░░░░   16.05 % 
+rasi                     5 hrs 20 mins       ███░░░░░░░░░░░░░░░░░░░░░░   10.16 % 
+Bash                     4 hrs 23 mins       ██░░░░░░░░░░░░░░░░░░░░░░░   08.34 % 
+Lua                      3 hrs 4 mins        █░░░░░░░░░░░░░░░░░░░░░░░░   05.84 % 
 
 🔥 Editors: 
-Neovim                   52 hrs 26 mins      █████████████████████████   100.00 % 
+Neovim                   52 hrs 38 mins      █████████████████████████   100.00 % 
 
 💻 Operating System: 
-Linux                    52 hrs 26 mins      █████████████████████████   100.00 % 
+Linux                    52 hrs 38 mins      █████████████████████████   100.00 % 
 ```
 
 🤖 **AI Coding This Week** 
 
 ```text
-⏱ AI Coding Time: 26 mins (0.84%)
+⏱ AI Coding Time: 10 mins (0.32%)
 
-✍️ 0 lines written by AI, 9,270 lines written by hand (0.0% AI-written)
+✍️ 0 lines written by AI, 9,184 lines written by hand (0.0% AI-written)
 
-🔤 119,941 Input Tokens, 2,576 Output Tokens
+🔤 28,426 Input Tokens, 866 Output Tokens
 
-💵 $0.40 Estimated AI Cost This Week
+💵 $0.10 Estimated AI Cost This Week
 
-🧠 2 AI Sessions, 3 AI Prompts
+🧠 1 AI Sessions, 1 AI Prompts
 
 OpenCode                 0 lines             ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 % 
 
 🔎 AI Coding Insights:
 🧑‍💻 Mostly Hands-On — 0.0% of written lines came from AI
-📝 Concise Prompter — average 238 characters per prompt
-🔁 Iterative Prompter — average 2 prompts per session
+📝 Concise Prompter — average 82 characters per prompt
+🎯 One-Shot Prompter — average 1 prompts per session
 🔍 Hands-On Reviewer — 100.0% of changed lines were hand-edited
 ```
 
@@ -182,7 +182,7 @@ Jupyter Notebook         1 repo              ░░░░░░░░░░░�
 
 
 
- Last Updated on 13/08/2026 00:52:59 UTC
+ Last Updated on 14/08/2026 00:53:14 UTC
 <!--END_SECTION:waka-->
 
 </details>
