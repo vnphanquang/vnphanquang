@@ -101,7 +101,7 @@ glhf!
   <br />
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-6%2C220%20hrs%2014%20mins-blue?style=flat)
+![Code Time](http://img.shields.io/badge/Code%20Time-6%2C228%20hrs%209%20mins-blue?style=flat)
 
 ![AI Code Time](http://img.shields.io/badge/AI%20Code%20Time-5%20hrs%2058%20mins-blue?style=flat)
 
@@ -110,21 +110,21 @@ glhf!
 **I'm an Early 🐤** 
 
 ```text
-🌞 Morning                17032 commits       ███████░░░░░░░░░░░░░░░░░░   28.00 % 
-🌆 Daytime                30026 commits       ████████████░░░░░░░░░░░░░   49.37 % 
-🌃 Evening                13308 commits       █████░░░░░░░░░░░░░░░░░░░░   21.88 % 
-🌙 Night                  453 commits         ░░░░░░░░░░░░░░░░░░░░░░░░░   00.74 % 
+🌞 Morning                17041 commits       ███████░░░░░░░░░░░░░░░░░░   28.00 % 
+🌆 Daytime                30042 commits       ████████████░░░░░░░░░░░░░   49.37 % 
+🌃 Evening                13317 commits       █████░░░░░░░░░░░░░░░░░░░░   21.88 % 
+🌙 Night                  455 commits         ░░░░░░░░░░░░░░░░░░░░░░░░░   00.75 % 
 ```
 📅 **I'm Most Productive on Thursday** 
 
 ```text
-Monday                   7841 commits        ███░░░░░░░░░░░░░░░░░░░░░░   12.89 % 
-Tuesday                  5898 commits        ██░░░░░░░░░░░░░░░░░░░░░░░   09.70 % 
-Wednesday                13180 commits       █████░░░░░░░░░░░░░░░░░░░░   21.67 % 
-Thursday                 14770 commits       ██████░░░░░░░░░░░░░░░░░░░   24.29 % 
-Friday                   8989 commits        ████░░░░░░░░░░░░░░░░░░░░░   14.78 % 
-Saturday                 6946 commits        ███░░░░░░░░░░░░░░░░░░░░░░   11.42 % 
-Sunday                   3195 commits        █░░░░░░░░░░░░░░░░░░░░░░░░   05.25 % 
+Monday                   7843 commits        ███░░░░░░░░░░░░░░░░░░░░░░   12.89 % 
+Tuesday                  5898 commits        ██░░░░░░░░░░░░░░░░░░░░░░░   09.69 % 
+Wednesday                13180 commits       █████░░░░░░░░░░░░░░░░░░░░   21.66 % 
+Thursday                 14771 commits       ██████░░░░░░░░░░░░░░░░░░░   24.27 % 
+Friday                   8989 commits        ████░░░░░░░░░░░░░░░░░░░░░   14.77 % 
+Saturday                 6962 commits        ███░░░░░░░░░░░░░░░░░░░░░░   11.44 % 
+Sunday                   3212 commits        █░░░░░░░░░░░░░░░░░░░░░░░░   05.28 % 
 ```
 
 
@@ -134,25 +134,25 @@ Sunday                   3195 commits        █░░░░░░░░░░�
 🕑︎ Time Zone: Asia/Ho_Chi_Minh
 
 💬 Programming Languages: 
-JavaScript               7 hrs 52 mins       ███████░░░░░░░░░░░░░░░░░░   28.51 % 
-TypeScript               6 hrs 22 mins       ██████░░░░░░░░░░░░░░░░░░░   23.08 % 
-Markdown                 4 hrs 2 mins        ████░░░░░░░░░░░░░░░░░░░░░   14.65 % 
-YAML                     1 hr 47 mins        ██░░░░░░░░░░░░░░░░░░░░░░░   06.49 % 
-Bash                     1 hr 28 mins        █░░░░░░░░░░░░░░░░░░░░░░░░   05.35 % 
+Markdown                 8 hrs 50 mins       ███████░░░░░░░░░░░░░░░░░░   26.86 % 
+JavaScript               7 hrs 29 mins       ██████░░░░░░░░░░░░░░░░░░░   22.74 % 
+TypeScript               6 hrs 53 mins       █████░░░░░░░░░░░░░░░░░░░░   20.94 % 
+Svelte                   1 hr 34 mins        █░░░░░░░░░░░░░░░░░░░░░░░░   04.79 % 
+Bash                     1 hr 28 mins        █░░░░░░░░░░░░░░░░░░░░░░░░   04.49 % 
 
 🔥 Editors: 
-Neovim                   27 hrs 37 mins      █████████████████████████   100.00 % 
+Neovim                   32 hrs 55 mins      █████████████████████████   100.00 % 
 
 💻 Operating System: 
-Linux                    27 hrs 37 mins      █████████████████████████   100.00 % 
+Linux                    32 hrs 55 mins      █████████████████████████   100.00 % 
 ```
 
 🤖 **AI Coding This Week** 
 
 ```text
-⏱ AI Coding Time: 13 mins (0.82%)
+⏱ AI Coding Time: 13 mins (0.69%)
 
-✍️ 0 lines written by AI, 5,936 lines written by hand (0.0% AI-written)
+✍️ 0 lines written by AI, 5,326 lines written by hand (0.0% AI-written)
 
 🔤 102,138 Input Tokens, 11,499 Output Tokens
 
@@ -182,7 +182,7 @@ Jupyter Notebook         1 repo              ░░░░░░░░░░░�
 
 
 
- Last Updated on 06/09/2026 01:00:36 UTC
+ Last Updated on 07/09/2026 01:01:55 UTC
 <!--END_SECTION:waka-->
 
 </details>
