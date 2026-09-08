@@ -1,3 +1,6 @@
+packages:
+  - 'packages/*'
+  - 'sites/*'
 allowBuilds:
   esbuild: true
   unrs-resolver: false

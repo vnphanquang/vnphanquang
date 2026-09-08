@@ -1,0 +1,24 @@
+{
+	"name": "vnphanquang",
+	"private": true,
+	"version": "0.0.1",
+	"type": "module",
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"lint": "run-p lint:*",
+		"lint:es": "svelte-kit sync && eslint .",
+		"lint:svelte": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"lint:style": "stylelint '**/*.{svelte,css}'",
+		"format": "prettier --write --ignore-path=../../.prettierignore --config=../../prettier.config.js ."
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-node": "^5.5.7",
+		"@sveltejs/kit": "^2.63.0",
+		"@sveltejs/vite-plugin-svelte": "^7.1.2",
+		"svelte": "^5.56.1",
+		"svelte-check": "^4.6.0",
+		"svelte-md-template": "^0.1.1"
+	}
+}
