@@ -8,15 +8,30 @@
 		"build": "vite build",
 		"preview": "vite preview",
 		"prepare": "svelte-kit sync || echo ''",
-		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
+		"lint": "run-p lint:*",
+		"lint:es": "svelte-kit sync && eslint .",
+		"lint:svelte": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"lint:style": "stylelint '**/*.{svelte,css}'",
+		"format": "prettier . --check"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^7.0.1",
+		"@sveltejs/adapter-node": "^5.5.7",
 		"@sveltejs/kit": "^2.63.0",
 		"@sveltejs/vite-plugin-svelte": "^7.1.2",
+		"@vnphanquang/eslint-config": "^4.2.1",
+		"eslint": "^10.10.0",
+		"npm-run-all": "^4.1.5",
+		"prettier": "^3.9.6",
+		"prettier-plugin-embed": "^0.5.1",
+		"prettier-plugin-svelte": "^4.1.1",
+		"stylelint": "^17.15.0",
+		"stylelint-config-clean-order": "^10.0.0",
+		"stylelint-config-html": "^2.0.0",
+		"stylelint-config-standard": "^40.0.0",
 		"svelte": "^5.56.1",
 		"svelte-check": "^4.6.0",
+		"svelte-md-template": "^0.1.1",
 		"typescript": "^6.0.3",
 		"vite": "^8.0.16"
 	}
