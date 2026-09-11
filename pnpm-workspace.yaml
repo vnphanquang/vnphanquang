@@ -4,3 +4,5 @@ packages:
 allowBuilds:
   esbuild: true
   unrs-resolver: false
+minimumReleaseAgeExclude:
+  - svelte-md-template

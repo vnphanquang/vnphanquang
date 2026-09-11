@@ -1,2 +1,9 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<script lang="ts">
+	import { markdown } from 'svelte-md-template';
+</script>
+
+{markdown`
+# Welcome to SvelteKit
+
+Visit [svelte.dev/docs/kit](https://svelte.dev/docs/kit) to read the documentation
+`}

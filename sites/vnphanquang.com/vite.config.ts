@@ -1,11 +1,19 @@
+import path from 'node:path';
+
 import adapter from '@sveltejs/adapter-node';
 import { sveltekit } from '@sveltejs/kit/vite';
+import { svelteMdTemplate } from 'svelte-md-template/vite';
 import { defineConfig } from 'vite';
 
 export default defineConfig({
 	plugins: [
 		sveltekit({
 			adapter: adapter(),
+			alias: {
+				$routes: path.join(import.meta.dirname, 'src/routes'),
+				$data: path.join(import.meta.dirname, 'src/data'),
+			},
 		}),
+		svelteMdTemplate(),
 	],
 });

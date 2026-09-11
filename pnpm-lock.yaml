@@ -341,8 +341,8 @@ importers:
         specifier: ^4.6.0
         version: 4.7.6(picomatch@4.0.7)(svelte@5.57.0(@typescript-eslint/types@8.69.0))(typescript@6.0.3)
       svelte-md-template:
-        specifier: ^0.1.1
-        version: 0.1.1(supports-color@10.2.2)(svelte@5.57.0(@typescript-eslint/types@8.69.0))
+        specifier: ^0.1.2
+        version: 0.1.2(supports-color@10.2.2)(svelte@5.57.0(@typescript-eslint/types@8.69.0))
 
 packages:
 
@@ -2768,8 +2768,8 @@ packages:
       svelte:
         optional: true
 
-  svelte-md-template@0.1.1:
-    resolution: {integrity: sha512-PYOwQp2u2KCFy2mzjiMOfGGFlEJX5rYpFi17090r1w3cyffjEnhkeuzPc5pm+ocFmhO1A1euU1VureTTxUES8w==}
+  svelte-md-template@0.1.2:
+    resolution: {integrity: sha512-FAG3Fmrk8EFYpW/h+CNylFvJP5oKhAZ9NyUQNAFAwN6kw51Q6k8qOm6o/5eer22rwcCZHz+7Todl4jabdYDNoA==}
     peerDependencies:
       svelte: '>=5.0.0'
 
@@ -5419,7 +5419,7 @@ snapshots:
     optionalDependencies:
       svelte: 5.57.0(@typescript-eslint/types@8.69.0)
 
-  svelte-md-template@0.1.1(supports-color@10.2.2)(svelte@5.57.0(@typescript-eslint/types@8.69.0)):
+  svelte-md-template@0.1.2(supports-color@10.2.2)(svelte@5.57.0(@typescript-eslint/types@8.69.0)):
     dependencies:
       magic-string: 1.2.3
       rehype-stringify: 10.0.1
