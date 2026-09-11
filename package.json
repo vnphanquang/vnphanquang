@@ -4,21 +4,47 @@
 	"version": "0.0.1",
 	"type": "module",
 	"scripts": {
+		"boot": "pnpm install && run-p boot:*",
+		"boot:lefthook": "lefthook install",
+		"boot:packages": "pnpm --filter=\"./packages/**\" build",
 		"lint": "pnpm -r lint",
 		"format": "prettier --write ."
 	},
 	"devDependencies": {
-		"@vnphanquang/eslint-config": "^4.2.1",
+		"@eslint/js": "^10.0.1",
+		"@types/node": "^26.4.1",
+		"@typescript-eslint/eslint-plugin": "^8.68.0",
+		"@typescript-eslint/parser": "^8.68.0",
+		"@vnphanquang/eslint-config": "workspace:*",
+		"dts-buddy": "^0.8.3",
 		"eslint": "^10.10.0",
+		"eslint-config-prettier": "^10.1.8",
+		"eslint-import-resolver-typescript": "^4.4.5",
+		"eslint-plugin-import-x": "^4.17.1",
+		"globals": "^17.11.0",
 		"npm-run-all": "^4.1.5",
 		"prettier": "^3.9.6",
 		"prettier-plugin-embed": "^0.5.1",
 		"prettier-plugin-svelte": "^4.1.1",
+		"publint": "^0.3.24",
 		"stylelint": "^17.15.0",
 		"stylelint-config-clean-order": "^10.0.0",
 		"stylelint-config-html": "^2.0.0",
 		"stylelint-config-standard": "^40.0.0",
 		"typescript": "^6.0.3",
+		"typescript-eslint": "^8.68.0",
 		"vite": "^8.0.16"
+	},
+	"devEngines": {
+		"runtime": {
+			"name": "node",
+			"version": "24.16.0",
+			"onFail": "download"
+		},
+		"packageManager": {
+			"name": "pnpm",
+			"version": "^11.25.0",
+			"onFail": "download"
+		}
 	}
 }

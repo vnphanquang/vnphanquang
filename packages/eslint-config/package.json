@@ -1,0 +1,73 @@
+{
+	"name": "@vnphanquang/eslint-config",
+	"version": "4.2.1",
+	"description": "personal eslint preferences for vnphanquang",
+	"author": {
+		"email": "oss@vnphanquang.com",
+		"name": "quang",
+		"url": "https://github.com/vnphanquang"
+	},
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/vnphanquang/vnphanquang.git"
+	},
+	"bugs": {
+		"url": "https://github.com/vnphanquang/vnphanquang/issues"
+	},
+	"homepage": "https://github.com/vnphanquang/vnphanquang/tree/main/packages/eslint-config",
+	"keywords": [
+		"eslint",
+		"config",
+		"vnphanquang"
+	],
+	"type": "module",
+	"main": "src/index.js",
+	"types": "types/index.d.ts",
+	"exports": {
+		".": {
+			"types": "./types/index.d.ts",
+			"import": "./src/index.js"
+		}
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"files": [
+		"src",
+		"types",
+		"README.md"
+	],
+	"scripts": {
+		"lint": "eslint .",
+		"format": "prettier --write --ignore-path=../../.prettierignore --config=../../prettier.config.js .",
+		"build": "dts-buddy --write && publint"
+	},
+	"peerDependencies": {
+		"@sveltejs/load-config": ">=0.2.3",
+		"eslint": ">=10.0.0",
+		"eslint-plugin-svelte": ">=3.23.0"
+	},
+	"peerDependenciesMeta": {
+		"eslint-plugin-svelte": {
+			"optional": true
+		},
+		"@sveltejs/load-config": {
+			"optional": true
+		}
+	},
+	"dependencies": {
+		"@eslint/js": "^10.0.1",
+		"@typescript-eslint/eslint-plugin": "^8.68.0",
+		"@typescript-eslint/parser": "^8.68.0",
+		"eslint-config-prettier": "^10.1.8",
+		"eslint-import-resolver-typescript": "^4.4.5",
+		"eslint-plugin-import-x": "^4.17.1",
+		"globals": "^17.11.0",
+		"typescript-eslint": "^8.68.0"
+	},
+	"devDependencies": {
+		"@sveltejs/load-config": "^0.2.3",
+		"eslint-plugin-svelte": "^3.23.0"
+	}
+}

@@ -1,5 +1,8 @@
 node_modules
 
+# Output
+.svelte-kit
+
 # OS
 .DS_Store
 Thumbs.db
