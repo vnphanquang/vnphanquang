@@ -20,7 +20,7 @@ main() {
 		tmux new-window -n "$win_terms" -c "$workdir"
 		tmux send-keys -t "$session:$win_terms.1" "clear" Enter
 
-		tmux split-window -h -t "$session:$win_terms.1" -c "$workdir"
+		tmux split-window -h -t "$session:$win_terms.1" -c "$workdir/sites/vnphanquang.com"
 		tmux send-keys -t "$session:$win_terms.2" "clear" Enter
 
 		tmux select-window -t "$session:$win_code"
