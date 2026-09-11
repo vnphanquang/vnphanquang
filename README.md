@@ -101,7 +101,7 @@ glhf!
   <br />
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-6%2C241%20hrs%2012%20mins-blue?style=flat)
+![Code Time](http://img.shields.io/badge/Code%20Time-6%2C246%20hrs%208%20mins-blue?style=flat)
 
 ![AI Code Time](http://img.shields.io/badge/AI%20Code%20Time-6%20hrs%2010%20mins-blue?style=flat)
 
@@ -110,18 +110,18 @@ glhf!
 **I'm an Early 🐤** 
 
 ```text
-🌞 Morning                17043 commits       ███████░░░░░░░░░░░░░░░░░░   28.00 % 
-🌆 Daytime                30044 commits       ████████████░░░░░░░░░░░░░   49.36 % 
-🌃 Evening                13319 commits       █████░░░░░░░░░░░░░░░░░░░░   21.88 % 
+🌞 Morning                17042 commits       ███████░░░░░░░░░░░░░░░░░░   28.00 % 
+🌆 Daytime                30043 commits       ████████████░░░░░░░░░░░░░   49.36 % 
+🌃 Evening                13318 commits       █████░░░░░░░░░░░░░░░░░░░░   21.88 % 
 🌙 Night                  456 commits         ░░░░░░░░░░░░░░░░░░░░░░░░░   00.75 % 
 ```
 📅 **I'm Most Productive on Thursday** 
 
 ```text
-Monday                   7847 commits        ███░░░░░░░░░░░░░░░░░░░░░░   12.89 % 
+Monday                   7845 commits        ███░░░░░░░░░░░░░░░░░░░░░░   12.89 % 
 Tuesday                  5898 commits        ██░░░░░░░░░░░░░░░░░░░░░░░   09.69 % 
 Wednesday                13180 commits       █████░░░░░░░░░░░░░░░░░░░░   21.66 % 
-Thursday                 14773 commits       ██████░░░░░░░░░░░░░░░░░░░   24.27 % 
+Thursday                 14772 commits       ██████░░░░░░░░░░░░░░░░░░░   24.27 % 
 Friday                   8989 commits        ████░░░░░░░░░░░░░░░░░░░░░   14.77 % 
 Saturday                 6963 commits        ███░░░░░░░░░░░░░░░░░░░░░░   11.44 % 
 Sunday                   3212 commits        █░░░░░░░░░░░░░░░░░░░░░░░░   05.28 % 
@@ -134,38 +134,37 @@ Sunday                   3212 commits        █░░░░░░░░░░�
 🕑︎ Time Zone: Asia/Ho_Chi_Minh
 
 💬 Programming Languages: 
-JavaScript               11 hrs 15 mins      ███████░░░░░░░░░░░░░░░░░░   28.86 % 
-Markdown                 8 hrs 35 mins       ██████░░░░░░░░░░░░░░░░░░░   22.02 % 
-TypeScript               7 hrs 3 mins        █████░░░░░░░░░░░░░░░░░░░░   18.08 % 
-JSON                     1 hr 58 mins        █░░░░░░░░░░░░░░░░░░░░░░░░   05.05 % 
-Svelte                   1 hr 57 mins        █░░░░░░░░░░░░░░░░░░░░░░░░   05.02 % 
+JavaScript               10 hrs 59 mins      ████████░░░░░░░░░░░░░░░░░   32.85 % 
+Markdown                 8 hrs 24 mins       ██████░░░░░░░░░░░░░░░░░░░   25.13 % 
+TypeScript               6 hrs 35 mins       █████░░░░░░░░░░░░░░░░░░░░   19.67 % 
+JSON                     1 hr 51 mins        █░░░░░░░░░░░░░░░░░░░░░░░░   05.53 % 
+Svelte                   1 hr 24 mins        █░░░░░░░░░░░░░░░░░░░░░░░░   04.21 % 
 
 🔥 Editors: 
-Neovim                   39 hrs 2 mins       █████████████████████████   100.00 % 
+Neovim                   33 hrs 28 mins      █████████████████████████   100.00 % 
 
 💻 Operating System: 
-Linux                    39 hrs 2 mins       █████████████████████████   100.00 % 
+Linux                    33 hrs 28 mins      █████████████████████████   100.00 % 
 ```
 
 🤖 **AI Coding This Week** 
 
 ```text
-⏱ AI Coding Time: 16 mins (0.7%)
+⏱ AI Coding Time: 11 mins (0.58%)
 
-✍️ 0 lines written by AI, 7,445 lines written by hand (0.0% AI-written)
+✍️ 0 lines written by AI, 6,926 lines written by hand (0.0% AI-written)
 
-🔤 67,331 Input Tokens, 12,860 Output Tokens
+🔤 39,877 Input Tokens, 6,644 Output Tokens
 
-💵 $0.60 Estimated AI Cost This Week
+💵 $0.22 Estimated AI Cost This Week
 
-🧠 7 AI Sessions, 9 AI Prompts
+🧠 5 AI Sessions, 7 AI Prompts
 
-Opencode-Cli             0 lines             ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 % 
 OpenCode                 0 lines             ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 % 
 
 🔎 AI Coding Insights:
 🧑‍💻 Mostly Hands-On — 0.0% of written lines came from AI
-📄 Detailed Prompter — average 858 characters per prompt
+📄 Detailed Prompter — average 982 characters per prompt
 🎯 One-Shot Prompter — average 1 prompts per session
 🔍 Hands-On Reviewer — 100.0% of changed lines were hand-edited
 ```
@@ -183,7 +182,7 @@ Jupyter Notebook         1 repo              ░░░░░░░░░░░�
 
 
 
- Last Updated on 10/09/2026 00:54:44 UTC
+ Last Updated on 11/09/2026 01:00:47 UTC
 <!--END_SECTION:waka-->
 
 </details>
