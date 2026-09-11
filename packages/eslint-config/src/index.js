@@ -6,6 +6,7 @@ import js from '@eslint/js';
 import { defineConfig as defineEslintConfig, includeIgnoreFile } from 'eslint/config';
 import prettier from 'eslint-config-prettier';
 import { importX } from 'eslint-plugin-import-x';
+import { jsdoc } from 'eslint-plugin-jsdoc';
 import globals from 'globals';
 import * as tseslint from 'typescript-eslint';
 
@@ -93,6 +94,7 @@ export function findConfigRoot() {
 /**
  * @typedef Options
  * @property {boolean} [svelte]
+ * @property {boolean} [jsdoc]
  * @property {string[]} [ignores]
  */
 
@@ -208,6 +210,37 @@ export async function defineConfig(options = {}, ...additionals) {
 						},
 					},
 				])
+			: []),
+		...(options.jsdoc
+			? [
+					jsdoc({
+						files: ['src/**/*.js'],
+						config: 'flat/recommended-typescript-flavor',
+						rules: {
+							'jsdoc/require-returns-description': 'off',
+							'jsdoc/require-param-description': 'off',
+							'jsdoc/require-property-description': 'off',
+							'jsdoc/require-jsdoc': [
+								'warn',
+								{
+									publicOnly: {
+										ancestorsOnly: true,
+									},
+								},
+							],
+							'jsdoc/tag-lines': 'off',
+							'import-x/extensions': [
+								'error',
+								'always',
+								{
+									js: 'always',
+									ignorePackages: true,
+									fix: true,
+								},
+							],
+						},
+					}),
+				]
 			: []),
 		...additionals,
 	);
