@@ -1,3 +1,4 @@
+import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -112,7 +113,7 @@ export async function defineConfig(options = {}, ...additionals) {
 
 		// automatically add .gitignore at root, if not already
 		const gitignore = path.join(root, '.gitignore');
-		if (!absIgnores.includes(gitignore)) absIgnores.push(gitignore);
+		if (fs.existsSync(gitignore) && !absIgnores.includes(gitignore)) absIgnores.push(gitignore);
 	}
 
 	/** @type {undefined | { root: string; plugin: import('eslint-plugin-svelte'); config?: any }}  */
