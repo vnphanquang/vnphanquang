@@ -6,7 +6,8 @@
 
 	// svelte-ignore state_referenced_locally
 	if (!codeless) {
-		import('remark-enhance-codeblock/styles/all.css');
+		// @ts-expect-error 2307
+		await import('./style.css');
 	}
 
 	onMount(() => {
@@ -15,4 +16,3 @@
 </script>
 
 {@render children?.()}
-

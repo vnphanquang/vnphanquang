@@ -1,0 +1,111 @@
+/* inherit styles from remark-enhance-codeblock */
+.shiki {
+	counter-reset: line 0;
+	margin-inline: calc(var(--c-padding-inline, var(--cd-padding-inline)) * -1);
+	background-color: var(--c-content-bg, var(--cd-content-bg)) !important;
+
+	/* https://shiki.style/packages/transformers#transformerrenderindentguides */
+	& .indent {
+		position: relative;
+		left: var(--indent-offset);
+		display: inline-block;
+
+		&::before {
+			content: '';
+
+			position: absolute;
+
+			width: 1px;
+			height: 100%;
+
+			opacity: 0.15;
+			background-color: currentcolor;
+		}
+
+		&:empty {
+			height: 1lh;
+			vertical-align: bottom;
+		}
+	}
+
+	/* https://shiki.style/packages/transformers#transformermetawordhighlight */
+	& .highlighted-word {
+		background-color: light-dark(
+			hsl(from currentcolor h s calc(l + 20) / 20%),
+			hsl(from currentcolor h s calc(l - 20) / 40%)
+		);
+	}
+
+	& .line {
+		--color-bg-info: light-dark(hsl(199.4deg 100% 93.3%), hsl(215deg 39% 18%));
+		--color-bg-warning: light-dark(hsl(52.8deg 100% 88.6%), hsl(43deg 100% 50% / 15%));
+		--color-bg-success: light-dark(hsl(134.4deg 100% 95.1%), hsl(123.04deg 36.07% 42.94% / 15%));
+		--color-bg-error: light-dark(hsl(5.5deg 100% 95.7%), hsl(3.12deg 74.76% 59.61% / 10%));
+		--inline-start: 2ch;
+		--inline-end: 3ch;
+
+		display: inline-block;
+		width: calc(100% - var(--inline-start) - var(--inline-end));
+		padding-inline: var(--inline-start) var(--inline-end);
+
+		&::before {
+			content: '';
+
+			display: inline-block;
+
+			width: max(2ch, calc((round(down, var(--max-line) / 10) + 1) * 1ch));
+			padding-inline-end: 2ch;
+
+			font-size: 1em;
+			font-variant-numeric: tabular-nums;
+			text-align: end;
+
+			opacity: 0.4;
+		}
+
+		&:not(.diff.remove) {
+			counter-increment: line 1;
+
+			&::before {
+				content: counter(line);
+			}
+		}
+
+		&.diff {
+			position: relative;
+
+			&::after {
+				position: absolute;
+				inset-inline-start: 1ch;
+				font-size: 1em;
+				text-align: center;
+			}
+
+			&.add {
+				background-color: var(--color-bg-success);
+
+				&::after {
+					content: '+';
+					color: green;
+				}
+			}
+
+			&.remove {
+				background-color: var(--color-bg-error);
+
+				&::after {
+					content: '-';
+					color: red;
+				}
+			}
+		}
+	}
+
+	&:not(.has-diff) .line {
+		--inline-start: 1ch;
+
+		&::after {
+			display: none;
+		}
+	}
+}

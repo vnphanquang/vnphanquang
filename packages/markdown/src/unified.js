@@ -10,6 +10,8 @@ import remarkRehype from 'remark-rehype';
 // import remarkTransformBlockquote from 'remark-transform-blockquote';
 import { definePlugin } from 'svelte-md-template/unified';
 
+import { createShikiRemarkPlugin } from './shiki/index.js';
+
 /** @type {Record<string, import('remark-enhance-codeblock').RemarkEnhanceCodeblockIntlSpecs>} */
 const codeblock_i18n = {
 	vi: {
@@ -45,7 +47,6 @@ export function createPreset(options = {}) {
 			}),
 			definePlugin(remarkEnhanceCodeblock, {
 				intl: (input) => {
-					console.log(input);
 					const locale = input.locale ?? input.filename?.split('.').at(-2) ?? 'en';
 					return codeblock_i18n[locale] ?? defaultEnhanceCodeblockOptions.intl;
 				},
@@ -54,6 +55,7 @@ export function createPreset(options = {}) {
 			definePlugin(remarkRehype, {
 				allowDangerousHtml: options.allowDangerousHtml,
 			}),
+			createShikiRemarkPlugin(),
 			definePlugin(rehypeStringify, {
 				allowDangerousHtml: options.allowDangerousHtml,
 			}),
