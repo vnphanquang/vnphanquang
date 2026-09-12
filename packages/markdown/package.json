@@ -1,0 +1,88 @@
+{
+	"name": "@vnphanquang/markdown",
+	"version": "0.0.0",
+	"description": "shared configuration for authoring in markdown",
+	"author": {
+		"email": "oss@vnphanquang.com",
+		"name": "quang",
+		"url": "https://github.com/vnphanquang"
+	},
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/vnphanquang/vnphanquang.git"
+	},
+	"bugs": {
+		"url": "https://github.com/vnphanquang/vnphanquang/issues"
+	},
+	"homepage": "https://github.com/vnphanquang/vnphanquang/tree/main/packages/remark-writing-preset",
+	"keywords": [
+		"remark",
+		"preset",
+		"markdown",
+		"blog",
+		"documentation",
+		"docs"
+	],
+	"type": "module",
+	"main": "src/index.js",
+	"types": "types/index.d.ts",
+	"exports": {
+		".": {
+			"types": "./types/index.d.ts",
+			"import": "./src/index.js"
+		},
+		"./svelte": {
+			"types": "./types/index.d.ts",
+			"svelte": "./src/svelte/index.js",
+			"default": "./src/svelte/index.js"
+		},
+		"./svelte/vite": {
+			"types": "./types/index.d.ts",
+			"import": "./src/svelte/vite.js"
+		},
+		"./unified": {
+			"types": "./types/index.d.ts",
+			"import": "./src/unified.js"
+		}
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"files": [
+		"src",
+		"types",
+		"README.md"
+	],
+	"scripts": {
+		"lint": "eslint .",
+		"format": "prettier --write --ignore-path=../../.prettierignore --config=../../prettier.config.js .",
+		"build": "dts-buddy --write && publint"
+	},
+	"peerDependencies": {
+		"svelte": ">=5.0.0"
+	},
+	"peerDependenciesMeta": {
+		"svelte": {
+			"optional": true
+		}
+	},
+	"dependencies": {
+		"@shikijs/rehype": "^4.4.3",
+		"@shikijs/transformers": "^4.4.3",
+		"rehype-stringify": "^10.0.1",
+		"remark-codeblock-source": "^1.0.4",
+		"remark-enhance-codeblock": "^1.2.0",
+		"remark-gfm": "^4.0.1",
+		"remark-parse": "^11.0.0",
+		"remark-rehype": "^11.1.2",
+		"remark-transform-blockquote": "^1.2.3",
+		"shiki": "^4.4.3",
+		"svelte-md-template": "^0.1.6"
+	},
+	"devDependencies": {
+		"@shikijs/types": "^4.4.3",
+		"svelte": "^5.56.1",
+		"unified": "^11.0.5"
+	}
+}
