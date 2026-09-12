@@ -93,7 +93,7 @@ export function findConfigRoot() {
 
 /**
  * @typedef Options
- * @property {boolean | 'configless'} [svelte]
+ * @property {boolean | 'configless' | import('@sveltejs/kit').Config} [svelte]
  * @property {boolean} [jsdoc]
  * @property {string[]} [ignores]
  */
@@ -127,7 +127,7 @@ export async function defineConfig(options = {}, ...additionals) {
 			),
 			root,
 		};
-		if (options.svelte !== 'configless') {
+		if (typeof options.svelte === 'boolean') {
 			const loaded = await (
 				await import('@sveltejs/load-config')
 			).loadConfig(root, {
@@ -140,6 +140,8 @@ export async function defineConfig(options = {}, ...additionals) {
 				throw new Error('Failed to load Svelte Config for eslint');
 			}
 			svelte.config = loaded.config;
+		} else if (options.svelte !== 'configless') {
+			svelte.config = svelte;
 		}
 	}
 

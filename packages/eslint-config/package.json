@@ -68,6 +68,7 @@
 		"typescript-eslint": "^8.68.0"
 	},
 	"devDependencies": {
+		"@sveltejs/kit": "^2.70.3",
 		"@sveltejs/load-config": "^0.2.3",
 		"eslint-plugin-svelte": "^3.23.0"
 	}
