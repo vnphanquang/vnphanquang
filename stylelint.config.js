@@ -5,6 +5,19 @@ export default {
 		'stylelint-config-html/svelte',
 		'stylelint-config-clean-order',
 	],
-	rules: {},
+	overrides: [
+		{
+			files: ['**/app.css'],
+			rules: {
+				'at-rule-no-unknown': [
+					true,
+					{
+						ignoreAtRules: ['plugin'],
+					},
+				],
+				'import-notation': null,
+			},
+		},
+	],
 	ignoreFiles: ['**/app.html'],
 };

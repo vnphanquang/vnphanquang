@@ -4,8 +4,9 @@
 	import '../app.css';
 </script>
 
-<Markdown>
-	{markdown`
+<main>
+	<Markdown>
+		{markdown`
 # Welcome to SvelteKit
 
 Visit [svelte.dev/docs/kit](https://svelte.dev/docs/kit) to read the documentation
@@ -47,5 +48,6 @@ export function hello() {
 > ~~~json #title="package.json" src="fs:../../package.json"
 >
 > ~~~
-	`}
-</Markdown>
+		`}
+	</Markdown>
+</main>
