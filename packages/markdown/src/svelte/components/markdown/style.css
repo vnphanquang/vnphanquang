@@ -1,2 +1,2 @@
-@import url('remark-enhance-codeblock/styles/all.css');
-@import url('../../../shiki/style.css') layer(markdown);
+@import url('remark-enhance-codeblock/styles/all.css') layer(markdown);
+@import url('../../../shiki/style.css') layer(markdown.shiki);

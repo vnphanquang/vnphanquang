@@ -12,7 +12,7 @@ export default {
 				'at-rule-no-unknown': [
 					true,
 					{
-						ignoreAtRules: ['plugin'],
+						ignoreAtRules: ['plugin', 'theme'],
 					},
 				],
 				'import-notation': null,

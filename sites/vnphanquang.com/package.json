@@ -21,6 +21,7 @@
 		"@tailwindcss/vite": "^4.3.3",
 		"@vnphanquang/markdown": "workspace:*",
 		"eslint-plugin-svelte": "^3.23.0",
+		"fontless": "^0.4.3",
 		"svelte": "^5.56.1",
 		"svelte-check": "^4.6.0",
 		"tailwindcss": "^4.3.3"

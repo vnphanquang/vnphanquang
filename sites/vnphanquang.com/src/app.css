@@ -1,5 +1,34 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
-:root {
-	color-scheme: light dark;
+@theme {
+	--font-inter: 'Inter', var(--default-font-family);
+	--font-lora: 'Lora', var(--default-font-family);
+	--font-fira: 'Fira Code', var(--default-mono-font-family);
+}
+
+@layer base {
+	:root {
+		font-family: var(--font-inter);
+		color-scheme: light dark;
+	}
+}
+
+@layer markdown.enhance-code-block.base {
+	:root {
+		--c-font-family: var(--font-fira);
+		--c-header-font-family: var(--font-inter);
+	}
+
+	/* FIXME: remove when this is fixed upstream at remark-enhance-codeblock */
+	.codeblock-root {
+		font-family: var(--c-font-family, var(--cd-font-family));
+
+		& .codeblock-header {
+			font-family: var(--c-header-font-family, var(--cd-header-font-family));
+		}
+
+		& :is(pre, code) {
+			font-family: inherit;
+		}
+	}
 }
