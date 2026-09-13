@@ -62,13 +62,13 @@
 		background-color: var(--bg);
 
 		&::before {
-			--width: max(2ch, calc((round(down, var(--max-line) / 10) + 1) * 1ch));
+			--width: max(2ch, calc((round(up, log(var(--max-line), 10)) + 2) * 1ch));
 
 			content: '';
 
 			position: sticky;
 			z-index: 2;
-			inset-inline-start: calc(var(--width) * -1);
+			inset-inline-start: calc(var(--inline-start) * -1);
 
 			display: inline-block;
 
