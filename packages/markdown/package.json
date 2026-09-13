@@ -15,7 +15,7 @@
 	"bugs": {
 		"url": "https://github.com/vnphanquang/vnphanquang/issues"
 	},
-	"homepage": "https://github.com/vnphanquang/vnphanquang/tree/main/packages/remark-writing-preset",
+	"homepage": "https://github.com/vnphanquang/vnphanquang/tree/main/packages/markdown",
 	"keywords": [
 		"remark",
 		"preset",
