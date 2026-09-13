@@ -1,4 +1,6 @@
 <script lang="ts">
+	import '@vnphanquang/gach/styles';
+
 	import favicon from '$lib/assets/favicon.svg';
 
 	let { children } = $props();

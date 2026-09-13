@@ -7,7 +7,7 @@ export default {
 	],
 	overrides: [
 		{
-			files: ['**/app.css'],
+			files: ['packages/gach/src/styles/**/*.css'],
 			rules: {
 				'at-rule-no-unknown': [
 					true,

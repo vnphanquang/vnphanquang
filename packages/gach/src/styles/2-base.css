@@ -1,0 +1,7 @@
+@layer base {
+	:root {
+		font-family: var(--font-inter);
+		color-scheme: light dark;
+	}
+}
+

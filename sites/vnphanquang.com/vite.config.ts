@@ -2,15 +2,12 @@ import path from 'node:path';
 
 import adapter from '@sveltejs/adapter-node';
 import { sveltekit } from '@sveltejs/kit/vite';
-import tailwindcss from '@tailwindcss/vite';
-import { markdownInSvelte } from '@vnphanquang/markdown/svelte/vite';
-import { fontless } from 'fontless';
+import { gach } from '@vnphanquang/gach/vite';
 import { defineConfig } from 'vite';
 
 export default defineConfig({
 	plugins: [
-		fontless(),
-		tailwindcss(),
+		gach({ markdown: true }),
 		sveltekit({
 			adapter: adapter(),
 			alias: {
@@ -24,6 +21,5 @@ export default defineConfig({
 				},
 			},
 		}),
-		markdownInSvelte(),
 	],
 });

@@ -74,7 +74,7 @@
 		"@shikijs/transformers": "^4.4.3",
 		"rehype-stringify": "^10.0.1",
 		"remark-codeblock-source": "^1.0.4",
-		"remark-enhance-codeblock": "^1.2.1",
+		"remark-enhance-codeblock": "^1.2.2",
 		"remark-gfm": "^4.0.1",
 		"remark-parse": "^11.0.0",
 		"remark-rehype": "^11.1.2",

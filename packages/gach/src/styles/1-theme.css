@@ -1,0 +1,6 @@
+@theme {
+	--font-inter: 'Inter', var(--default-font-family);
+	--font-lora: 'Lora', var(--default-font-family);
+	--font-fira: 'Fira Code', var(--default-mono-font-family);
+}
+

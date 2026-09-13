@@ -1,7 +1,5 @@
 <script lang="ts">
 	import { Markdown, markdown } from '@vnphanquang/markdown/svelte';
-
-	import '../app.css';
 </script>
 
 <main>

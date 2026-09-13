@@ -16,12 +16,8 @@
 	"devDependencies": {
 		"@sveltejs/adapter-node": "^5.5.7",
 		"@sveltejs/kit": "^2.63.0",
-		"@sveltejs/load-config": "^0.2.3",
 		"@sveltejs/vite-plugin-svelte": "^7.1.2",
-		"@tailwindcss/vite": "^4.3.3",
-		"@vnphanquang/markdown": "workspace:*",
-		"eslint-plugin-svelte": "^3.23.0",
-		"fontless": "^0.4.3",
-		"tailwindcss": "^4.3.3"
+		"@vnphanquang/gach": "workspace:*",
+		"@vnphanquang/markdown": "workspace:*"
 	}
 }

@@ -19,7 +19,8 @@
 	"keywords": [
 		"css",
 		"design system",
-		"component"
+		"component",
+		"tailwind"
 	],
 	"type": "module",
 	"main": "src/index.js",
@@ -28,7 +29,12 @@
 		".": {
 			"types": "./types/index.d.ts",
 			"import": "./src/index.js"
-		}
+		},
+		"./vite": {
+			"types": "./types/index.d.ts",
+			"import": "./src/vite/index.js"
+		},
+		"./styles": "./src/styles/index.css"
 	},
 	"publishConfig": {
 		"access": "public"
@@ -54,7 +60,11 @@
 		}
 	},
 	"dependencies": {
+		"@iconify-json/ph": "^1.2.2",
+		"@iconify-json/simple-icons": "^1.2.95",
+		"@iconify/tailwind4": "^1.2.3",
 		"@tailwindcss/vite": "^4.3.3",
+		"@vnphanquang/markdown": "workspace:*",
 		"fontless": "^0.4.3",
 		"tailwindcss": "^4.3.3"
 	},

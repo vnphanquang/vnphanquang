@@ -1,18 +1,3 @@
-@import 'tailwindcss';
-
-@theme {
-	--font-inter: 'Inter', var(--default-font-family);
-	--font-lora: 'Lora', var(--default-font-family);
-	--font-fira: 'Fira Code', var(--default-mono-font-family);
-}
-
-@layer base {
-	:root {
-		font-family: var(--font-inter);
-		color-scheme: light dark;
-	}
-}
-
 @layer markdown.enhance-code-block.base {
 	:root {
 		--c-font-family: var(--font-fira);
