@@ -1,0 +1,24 @@
+{
+	"$schema": "https://json.schemastore.org/tsconfig",
+	"compilerOptions": {
+		"allowJs": true,
+		"checkJs": true,
+		"noEmit": true,
+		"strict": true,
+		"target": "esnext",
+		"module": "esnext",
+		"verbatimModuleSyntax": true,
+		"moduleResolution": "bundler",
+		"allowSyntheticDefaultImports": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"types": ["node"]
+	},
+	"include": [
+		"src/**/*.js",
+		"src/**/*.svelte",
+		"src/**/*.ts",
+		"src/shiki/transformers/indent/types.public.js"
+	],
+	"exclude": ["node_modules"]
+}

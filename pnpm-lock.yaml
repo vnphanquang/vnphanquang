@@ -270,6 +270,12 @@ importers:
       stylelint-config-standard:
         specifier: ^40.0.0
         version: 40.0.0(stylelint@17.15.0(supports-color@10.2.2)(typescript@6.0.3))
+      svelte:
+        specifier: ^5.56.1
+        version: 5.57.0(@typescript-eslint/types@8.69.0)
+      svelte-check:
+        specifier: ^4.6.0
+        version: 4.7.6(picomatch@4.0.7)(svelte@5.57.0(@typescript-eslint/types@8.69.0))(typescript@6.0.3)
       typescript:
         specifier: ^6.0.3
         version: 6.0.3
@@ -322,6 +328,22 @@ importers:
       eslint-plugin-svelte:
         specifier: ^3.23.0
         version: 3.23.0(eslint@10.10.0(jiti@2.7.0)(supports-color@10.2.2))(svelte@5.57.0(@typescript-eslint/types@8.69.0))
+
+  packages/gach:
+    dependencies:
+      '@tailwindcss/vite':
+        specifier: ^4.3.3
+        version: 4.3.3(vite@8.2.2(@types/node@26.4.1)(jiti@2.7.0))
+      fontless:
+        specifier: ^0.4.3
+        version: 0.4.3(postcss@8.5.28)(rolldown@1.2.7)(rollup@4.63.1)(vite@8.2.2(@types/node@26.4.1)(jiti@2.7.0))
+      tailwindcss:
+        specifier: ^4.3.3
+        version: 4.3.3
+    devDependencies:
+      svelte:
+        specifier: ^5.56.1
+        version: 5.57.0(@typescript-eslint/types@8.69.0)
 
   packages/markdown:
     dependencies:
@@ -395,12 +417,6 @@ importers:
       fontless:
         specifier: ^0.4.3
         version: 0.4.3(postcss@8.5.28)(rolldown@1.2.7)(rollup@4.63.1)(vite@8.2.2(@types/node@26.4.1)(jiti@2.7.0))
-      svelte:
-        specifier: ^5.56.1
-        version: 5.57.0(@typescript-eslint/types@8.69.0)
-      svelte-check:
-        specifier: ^4.6.0
-        version: 4.7.6(picomatch@4.0.7)(svelte@5.57.0(@typescript-eslint/types@8.69.0))(typescript@6.0.3)
       tailwindcss:
         specifier: ^4.3.3
         version: 4.3.3

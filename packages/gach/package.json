@@ -1,0 +1,64 @@
+{
+	"name": "@vnphanquang/gach",
+	"version": "0.0.0",
+	"description": "gạch - building blocks for weaving webs",
+	"author": {
+		"email": "oss@vnphanquang.com",
+		"name": "quang",
+		"url": "https://github.com/vnphanquang"
+	},
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/vnphanquang/vnphanquang.git"
+	},
+	"bugs": {
+		"url": "https://github.com/vnphanquang/vnphanquang/issues"
+	},
+	"homepage": "https://github.com/vnphanquang/vnphanquang/tree/main/packages/gach",
+	"keywords": [
+		"css",
+		"design system",
+		"component"
+	],
+	"type": "module",
+	"main": "src/index.js",
+	"types": "types/index.d.ts",
+	"exports": {
+		".": {
+			"types": "./types/index.d.ts",
+			"import": "./src/index.js"
+		}
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"files": [
+		"src",
+		"types",
+		"README.md"
+	],
+	"scripts": {
+		"lint": "run-p lint:*",
+		"lint:es": "eslint .",
+		"lint:style": "stylelint '**/*.{svelte,css}'",
+		"format": "prettier --write --ignore-path=../../.prettierignore --config=../../prettier.config.js .",
+		"build": "dts-buddy --write && publint"
+	},
+	"peerDependencies": {
+		"svelte": ">=5.0.0"
+	},
+	"peerDependenciesMeta": {
+		"svelte": {
+			"optional": true
+		}
+	},
+	"dependencies": {
+		"@tailwindcss/vite": "^4.3.3",
+		"fontless": "^0.4.3",
+		"tailwindcss": "^4.3.3"
+	},
+	"devDependencies": {
+		"svelte": "^5.56.1"
+	}
+}
