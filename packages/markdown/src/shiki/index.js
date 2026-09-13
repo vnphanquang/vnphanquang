@@ -3,7 +3,6 @@ import {
 	transformerNotationDiff,
 	transformerNotationErrorLevel,
 	transformerNotationFocus,
-	transformerNotationHighlight,
 	transformerNotationWordHighlight,
 	transformerRenderIndentGuides,
 } from '@shikijs/transformers';
@@ -56,9 +55,15 @@ export function createShikiRemarkPlugin() {
 			}),
 			transformerNotationWordHighlight(),
 			transformerNotationDiff(),
-			transformerNotationErrorLevel(),
+			transformerNotationErrorLevel({
+				classMap: {
+					success: ['highlighted', 'success'],
+					info: ['highlighted', 'info'],
+					warning: ['highlighted', 'warning'],
+					error: ['highlighted', 'error'],
+				},
+			}),
 			transformerNotationFocus(),
-			transformerNotationHighlight(),
 			transformerRenderIndentGuides({ indent: 4 }),
 			transformerRecordMaxLine(),
 		],

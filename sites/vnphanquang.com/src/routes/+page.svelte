@@ -12,34 +12,28 @@ Visit [svelte.dev/docs/kit](https://svelte.dev/docs/kit) to read the documentati
 
 ~~~javascript
 export function hello() {
-	console.log('hello world!');
+	console.log('hello world!'); // [!code info]
 }
 ~~~
 
 > [!CODEGROUP]
 >
-> ~~~typescript #title="vite.config.ts" /svelte/
-> import path from 'node:path';
+> ~~~typescript #title="kitchen sink"
+> console.log('success'); // [!code success]
+> console.log('info'); // [!code info]
+> console.log('warning'); // [!code warning]
+> console.log('error'); // [!code error]
 >
-> import adapter from '@sveltejs/adapter-node';
-> import { sveltekit } from '@sveltejs/kit/vite';
-> import { markdownInSvelte } from '@vnphanquang/markdown/svelte/vite';
-> import { defineConfig } from 'vite';
+> // [!code focus:2]
+> console.log('diff removed'); // [!code --]
+> console.log('diff added'); // [!code ++]
 >
-> export default defineConfig({
-> 	plugins: [
-> 		sveltekit({
-> 			adapter: adapter(),
-> 			alias: {}, // [!code --]
-> 			// [!code highlight:3] [!code ++:3]
-> 			alias: {
-> 				$routes: path.join(import.meta.dirname, 'src/routes'),
-> 				$data: path.join(import.meta.dirname, 'src/data'),
-> 			},
-> 		}),
-> 		markdownInSvelte(),
-> 	],
-> });
+> // word highlight [!code word:the]
+> // Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library in London, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets. It has survived not only many decades, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised thanks to these sheets and more recently with desktop publishing software like Aldus PageMaker and Microsoft Word including versions of Lorem Ipsum.
+> ~~~
+>
+> ~~~typescript #title="vite.config.ts" src="fs:../../vite.config.ts"
+>
 > ~~~
 >
 > ~~~javascript #title="eslint.config.js" src="fs:../../eslint.config.js"

@@ -1,7 +1,15 @@
+.codeblock-content {
+	container-type: inline-size;
+}
+
 /* inherit styles from remark-enhance-codeblock */
 .shiki {
 	counter-reset: line 0;
+
+	width: max-content;
+	min-width: calc(100cqi + var(--c-padding-inline, var(--cd-padding-inline)) * 2);
 	margin-inline: calc(var(--c-padding-inline, var(--cd-padding-inline)) * -1);
+
 	background-color: var(--c-content-bg, var(--cd-content-bg)) !important;
 
 	/* https://shiki.style/packages/transformers#transformerrenderindentguides */
@@ -37,30 +45,42 @@
 	}
 
 	& .line {
-		--color-bg-info: light-dark(hsl(199.4deg 100% 93.3%), hsl(215deg 39% 18%));
-		--color-bg-warning: light-dark(hsl(52.8deg 100% 88.6%), hsl(43deg 100% 50% / 15%));
-		--color-bg-success: light-dark(hsl(134.4deg 100% 95.1%), hsl(123.04deg 36.07% 42.94% / 15%));
-		--color-bg-error: light-dark(hsl(5.5deg 100% 95.7%), hsl(3.12deg 74.76% 59.61% / 10%));
+		--color-bg-info: light-dark(hsl(199.4deg 100% 93.3%), hsl(215deg 39% 20%));
+		--color-bg-warning: light-dark(hsl(52.8deg 100% 88.6%), hsl(43deg 100% 12%));
+		--color-bg-success: light-dark(hsl(134.4deg 100% 95.1%), hsl(123.04deg 36.07% 12%));
+		--color-bg-error: light-dark(hsl(5.5deg 100% 95.7%), hsl(3.12deg 74.76% 12%));
 		--inline-start: 2ch;
 		--inline-end: 3ch;
+		--bg: var(--c-content-bg, var(--cd-content-bg));
 
 		display: inline-block;
-		width: calc(100% - var(--inline-start) - var(--inline-end));
+
+		box-sizing: border-box;
+		width: 100%;
 		padding-inline: var(--inline-start) var(--inline-end);
 
+		background-color: var(--bg);
+
 		&::before {
+			--width: max(2ch, calc((round(down, var(--max-line) / 10) + 1) * 1ch));
+
 			content: '';
+
+			position: sticky;
+			z-index: 2;
+			inset-inline-start: calc(var(--width) * -1);
 
 			display: inline-block;
 
-			width: max(2ch, calc((round(down, var(--max-line) / 10) + 1) * 1ch));
+			width: var(--width);
 			padding-inline-end: 2ch;
 
 			font-size: 1em;
 			font-variant-numeric: tabular-nums;
+			color: hsl(from currentcolor h s l / 40%);
 			text-align: end;
 
-			opacity: 0.4;
+			background-color: var(--bg);
 		}
 
 		&:not(.diff.remove) {
@@ -69,6 +89,22 @@
 			&::before {
 				content: counter(line);
 			}
+		}
+
+		&.highlighted.info {
+			--bg: var(--color-bg-info);
+		}
+
+		&.highlighted.success {
+			--bg: var(--color-bg-success);
+		}
+
+		&.highlighted.warning {
+			--bg: var(--color-bg-warning);
+		}
+
+		&.highlighted.error {
+			--bg: var(--color-bg-error);
 		}
 
 		&.diff {
@@ -82,7 +118,7 @@
 			}
 
 			&.add {
-				background-color: var(--color-bg-success);
+				--bg: var(--color-bg-success);
 
 				&::after {
 					content: '+';
@@ -91,7 +127,7 @@
 			}
 
 			&.remove {
-				background-color: var(--color-bg-error);
+				--bg: var(--color-bg-error);
 
 				&::after {
 					content: '-';
@@ -106,6 +142,23 @@
 
 		&::after {
 			display: none;
+		}
+	}
+
+	&.has-focused {
+		& .line:not(.focused) {
+			opacity: 0.5;
+			filter: blur(0.05rem);
+
+			transition-timing-function: ease-in;
+			transition-duration: 200ms;
+			transition-property: opacity, filter;
+		}
+
+		.codeblock-root:is(:focus-within, :hover) & .line:not(.focused) {
+			opacity: 1;
+			filter: blur(0);
+			transition-timing-function: ease-out;
 		}
 	}
 }
