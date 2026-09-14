@@ -11,21 +11,23 @@
 	}
 
 	onMount(() => {
-		enhanceCodeblock({
-			copy: {
-				fn({ pre }) {
-					const codeNode = pre.getElementsByTagName('code')[0];
-					if (!codeNode) return '';
-					let text = '';
-					for (const lineNode of codeNode.children) {
-						// assuming ../../../shiki setup
-						if ((lineNode as HTMLElement).classList.contains('remove')) continue;
-						text += (lineNode.textContent || '') + '\n';
-					}
-					return text;
+		if (!codeless) {
+			enhanceCodeblock({
+				copy: {
+					fn({ pre }) {
+						const codeNode = pre.getElementsByTagName('code')[0];
+						if (!codeNode) return '';
+						let text = '';
+						for (const lineNode of codeNode.children) {
+							// assuming ../../../shiki setup
+							if ((lineNode as HTMLElement).classList.contains('remove')) continue;
+							text += (lineNode.textContent || '') + '\n';
+						}
+						return text;
+					},
 				},
-			},
-		});
+			});
+		}
 	});
 </script>
 
