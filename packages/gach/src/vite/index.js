@@ -1,3 +1,5 @@
+import path from 'node:path';
+
 import tailwindcss from '@tailwindcss/vite';
 import { fontless } from 'fontless';
 
@@ -21,5 +23,27 @@ export function gach(options) {
 					),
 				]
 			: []),
+		{
+			name: 'gach:allow-assets',
+			config() {
+				const dirname = import.meta.dirname;
+				return {
+					server: {
+						fs: {
+							allow: [
+								path.resolve(
+									dirname,
+									'../styles/3-utilities/icons/animated/ia-3dots/animated-three-dots.svg',
+								),
+								path.resolve(
+									dirname,
+									'../styles/3-utilities/icons/animated/ia-spinner/animated-spinner.svg',
+								),
+							],
+						},
+					},
+				};
+			},
+		},
 	];
 }

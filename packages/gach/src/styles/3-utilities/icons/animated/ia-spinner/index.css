@@ -1,0 +1,5 @@
+@utility ia-spinner {
+	@layer icons {
+		--svg: url('./animated-spinner.svg?no-inline');
+	}
+}

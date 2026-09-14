@@ -18,6 +18,7 @@
 		"@sveltejs/kit": "^2.63.0",
 		"@sveltejs/vite-plugin-svelte": "^7.1.2",
 		"@vnphanquang/gach": "workspace:*",
-		"@vnphanquang/markdown": "workspace:*"
+		"@vnphanquang/markdown": "workspace:*",
+		"tailwindcss": "^4.3.3"
 	}
 }

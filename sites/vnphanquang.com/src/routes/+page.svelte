@@ -3,6 +3,12 @@
 </script>
 
 <main>
+	<p class="text-blue-500">
+		Testing
+		<i class="i i-[ph--arrow-square-out]"></i>
+		<i class="i ia-3dots"></i>
+		<i class="i ia-spinner"></i>
+	</p>
 	<Markdown>
 		{markdown`
 # Welcome to SvelteKit

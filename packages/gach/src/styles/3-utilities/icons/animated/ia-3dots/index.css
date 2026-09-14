@@ -1,0 +1,6 @@
+@utility ia-3dots {
+	@layer icons {
+		--svg: url('./animated-three-dots.svg?no-inline');
+	}
+}
+

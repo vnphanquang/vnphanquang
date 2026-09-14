@@ -1,0 +1,7 @@
+@layer markdown.enhance-code-block.base {
+	:root {
+		--c-font-family: var(--font-fira);
+		--c-header-font-family: var(--font-inter);
+	}
+}
+

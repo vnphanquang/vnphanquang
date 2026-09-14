@@ -5,6 +5,9 @@ export default {
 		'stylelint-config-html/svelte',
 		'stylelint-config-clean-order',
 	],
+	rules: {
+		'import-notation': null,
+	},
 	overrides: [
 		{
 			files: ['packages/gach/src/styles/**/*.css'],
@@ -12,10 +15,10 @@ export default {
 				'at-rule-no-unknown': [
 					true,
 					{
-						ignoreAtRules: ['plugin', 'theme'],
+						ignoreAtRules: ['plugin', 'theme', 'utility', 'source'],
 					},
 				],
-				'import-notation': null,
+				'no-invalid-position-declaration': null,
 			},
 		},
 	],

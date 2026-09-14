@@ -378,8 +378,8 @@ importers:
         specifier: ^1.0.4
         version: 1.0.4
       remark-enhance-codeblock:
-        specifier: ^1.2.2
-        version: 1.2.2
+        specifier: ^1.2.3
+        version: 1.2.3
       remark-gfm:
         specifier: ^4.0.1
         version: 4.0.1(supports-color@10.2.2)
@@ -426,6 +426,9 @@ importers:
       '@vnphanquang/markdown':
         specifier: workspace:*
         version: link:../../packages/markdown
+      tailwindcss:
+        specifier: ^4.3.3
+        version: 4.3.3
 
 packages:
 
@@ -3073,8 +3076,8 @@ packages:
   remark-codeblock-source@1.0.4:
     resolution: {integrity: sha512-iDzq3qFyP9R0Mhr6EzttoVzPx02wl8ySCFql5Cx+O9j1xZsygNZ4WUCYNz6E5OtgOxBzribYhQheQzaiYonTVA==}
 
-  remark-enhance-codeblock@1.2.2:
-    resolution: {integrity: sha512-S9KxDWuvNP2dimawxwidK2jlcP9CZJMMbuKjNu9B+XatoNpBZxsxfHNfl4oS+C3BEvQUybEMWQ3RY/NEmc9LHg==}
+  remark-enhance-codeblock@1.2.3:
+    resolution: {integrity: sha512-VOs2RYZKHTL//NWs2PrwdBBPxlpkiH5aBK1BCDn8nWV2pOrOwVMiiZRlJg7Bv5Nukotoy8wYmujDih12/DX54w==}
 
   remark-gfm@4.0.1:
     resolution: {integrity: sha512-1quofZ2RQ9EWdeN34S79+KExV1764+wCUGop5CPL1WGdD0ocPpu91lzPGbwWMECpEpd42kJGQwzRfyov9j4yNg==}
@@ -6402,7 +6405,7 @@ snapshots:
     dependencies:
       unist-util-visit: 5.1.0
 
-  remark-enhance-codeblock@1.2.2:
+  remark-enhance-codeblock@1.2.3:
     dependencies:
       remark-transform-blockquote: 1.2.3
       unist-builder: 4.0.0

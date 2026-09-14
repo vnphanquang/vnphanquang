@@ -1,0 +1,28 @@
+@import './animated/ia-3dots/index.css';
+@import './animated/ia-spinner/index.css';
+@import './flags/i-flag-gb/index.css';
+@import './flags/i-flag-vn/index.css';
+
+@plugin '@iconify/tailwind4' {
+	prefix: i;
+	/* stylelint-disable-next-line property-no-unknown, order/properties-order  */
+	override-only: true;
+}
+
+@utility i {
+	@layer components {
+		display: inline-block;
+
+		width: 1em;
+		height: 1em;
+
+		color: inherit;
+		vertical-align: text-bottom;
+
+		background-color: currentcolor;
+
+		mask-image: var(--svg);
+		mask-repeat: no-repeat;
+		mask-size: 100% 100%;
+	}
+}
