@@ -1,6 +1,16 @@
+/* layer declaration for deterministic cascade */
 @import './layers.css';
+
+/* ad-hoc custom media and selectors */
+@import './0-custom/medias.css';
+@import './0-custom/selectors.css';
+
+/* tailwind customisation */
 @import 'tailwindcss';
+
 @import './1-theme/index.css';
 @import './2-base/index.css';
 @import './3-utilities/index.css';
 @import './4-markdown/index.css';
+
+@source inline('c-callout c-callout--info c-callout--success c-callout--warning c-callout--error');

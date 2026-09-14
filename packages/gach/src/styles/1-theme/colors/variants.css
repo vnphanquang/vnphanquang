@@ -1,0 +1,11 @@
+@custom-variant light {
+	@media light {
+		@slot;
+	}
+}
+
+@custom-variant dark {
+	@media dark {
+		@slot;
+	}
+}

@@ -7,7 +7,7 @@ import remarkEnhanceCodeblock, {
 import remarkGfm from 'remark-gfm';
 import remarkParse from 'remark-parse';
 import remarkRehype from 'remark-rehype';
-// import remarkTransformBlockquote from 'remark-transform-blockquote';
+import remarkTransformBlockquote from 'remark-transform-blockquote';
 import { definePlugin } from 'svelte-md-template/unified';
 
 import { createShikiRemarkPlugin } from './shiki/index.js';
@@ -51,7 +51,39 @@ export function createPreset(options = {}) {
 					return codeblock_i18n[locale] ?? defaultEnhanceCodeblockOptions.intl;
 				},
 			}),
-			// definePlugin(remarkTransformBlockquote, { preset: 'github' }), // TODO: setup personal callout
+			definePlugin(remarkTransformBlockquote, {
+				meta: true,
+				mappings: [
+					{
+						marker: '!INFO',
+						tag: 'aside',
+						attributes: {
+							class: 'c-callout c-callout--info',
+						},
+					},
+					{
+						marker: '!SUCCESS',
+						tag: 'aside',
+						attributes: {
+							class: 'c-callout c-callout--success',
+						},
+					},
+					{
+						marker: '!WARNING',
+						tag: 'aside',
+						attributes: {
+							class: 'c-callout c-callout--warning',
+						},
+					},
+					{
+						marker: '!ERROR',
+						tag: 'aside',
+						attributes: {
+							class: 'c-callout c-callout--error',
+						},
+					},
+				],
+			}),
 			definePlugin(remarkRehype, {
 				allowDangerousHtml: options.allowDangerousHtml,
 			}),

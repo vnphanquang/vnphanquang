@@ -1,0 +1,16 @@
+@import './variants.css';
+@import './primitives.css';
+@import './semantics.css';
+
+:root {
+	--color-scheme-sign: 1;
+
+	color-scheme: light;
+
+	@media dark {
+		--color-scheme-sign: -1;
+
+		color-scheme: dark;
+	}
+}
+

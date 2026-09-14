@@ -1,6 +1,51 @@
+@import './breakpoints.css';
+@import './colors/index.css';
+@import './reactive-spacing.css';
+
+/* fonts */
 @theme {
 	--font-inter: 'Inter', var(--default-font-family);
 	--font-lora: 'Lora', var(--default-font-family);
 	--font-fira: 'Fira Code', var(--default-mono-font-family);
+	--text-2xs: 0.625rem; /* 10px */
+	--text-xs: 0.75rem; /* 12px */
 }
 
+/* spacing */
+@theme {
+	--spacing-readable-tight: 60ch;
+	--spacing-readable: 72ch;
+	--spacing-readable-relaxed: 86ch;
+}
+
+/* z-index */
+@theme {
+	--z-index-px: 1;
+	--z-index-header: 50;
+	--z-index-dialog: 80;
+	--z-index-popup: 120;
+	--z-index-overlay: 150;
+	--z-index-notification: 300;
+}
+
+/* border */
+@theme {
+	--border-width-onehalf: 1.5px;
+	--radius-inherit: inherit;
+	--radius-full: calc(infinity * 1px);
+}
+
+/* shadows */
+@theme {
+	--shadow-brutal-sm: 2px 2px var(--tw-shadow-color, currentcolor);
+	--shadow-brutal: 4px 4px var(--tw-shadow-color, currentcolor);
+	--shadow-brutal-lg: 8px 8px var(--tw-shadow-color, currentcolor);
+	--drop-shadow-brutal-sm: 2px 2px var(--tw-shadow-color, currentcolor);
+	--drop-shadow-brutal: 4px 4px var(--tw-shadow-color, currentcolor);
+	--drop-shadow-brutal-lg: 8px 8px var(--tw-shadow-color, currentcolor);
+}
+
+/* miscellaneous */
+@theme {
+	--leading-unset: unset;
+}

@@ -1,1 +1,10 @@
+@import './components/index.css';
 @import './icons/index.css';
+
+@utility grid-cols-auto-* {
+	grid-template-columns: repeat(--value(integer), auto);
+}
+
+@utility grid-rows-auto-* {
+	grid-template-rows: repeat(--value(integer), auto);
+}

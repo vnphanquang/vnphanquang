@@ -2,18 +2,35 @@
 	import { Markdown, markdown } from '@vnphanquang/markdown/svelte';
 </script>
 
-<main>
+<main class="p-10">
 	<p class="text-blue-500">
 		Testing
 		<i class="i i-[ph--arrow-square-out]"></i>
 		<i class="i ia-3dots"></i>
 		<i class="i ia-spinner"></i>
 	</p>
-	<Markdown>
-		{markdown`
+	<div class="space-y-10">
+		<Markdown>
+			{markdown`
 # Welcome to SvelteKit
 
 Visit [svelte.dev/docs/kit](https://svelte.dev/docs/kit) to read the documentation
+
+> [!INFO]
+> This is a sample “callout” that enhances a text block with some contextual meaning
+> and helps draw user's attention
+
+> [!SUCCESS]
+> This is a sample “callout” that enhances a text block with some contextual meaning
+> and helps draw user's attention
+
+> [!WARNING]
+> This is a sample “callout” that enhances a text block with some contextual meaning
+> and helps draw user's attention
+
+> [!ERROR]
+> This is a sample “callout” that enhances a text block with some contextual meaning
+> and helps draw user's attention
 
 ~~~javascript
 export function hello() {
@@ -52,6 +69,7 @@ export function hello() {
 > ~~~json #title="package.json" src="fs:../../package.json"
 >
 > ~~~
-		`}
-	</Markdown>
+			`}
+		</Markdown>
+	</div>
 </main>

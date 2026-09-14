@@ -1,0 +1,89 @@
+@utility c-callout {
+	@layer components {
+		@apply i-[ph--info];
+
+		--call-d-pad-inline: calc(var(--spacing) * 6);
+		--call-d-pad-block: calc(var(--spacing) * 5);
+		--call-d-icon-size: calc(var(--spacing) * 8);
+		--call-d-color-text: var(--color-stroke-50);
+		--call-d-color-icon: var(--color-stroke-50);
+		--call-d-color-bg: var(--color-fill-100);
+		--call-d-color-border: var(--color-stroke-100);
+		--call-d-border-inline-start-width: var(--spacing);
+		--call-d-clip-path: path('M 0,26 A 26 26 0 0 0 26,0 H 2000 V 2000 H 0 Z');
+
+		isolation: isolate;
+		position: relative;
+
+		overflow: visible;
+
+		padding-block: var(--call-pad-block, var(--call-d-pad-block));
+		padding-inline: calc(
+				var(--call-pad-inline, var(--call-d-pad-inline)) +
+					var(--call-border-inline-start-width, var(--call-d-border-inline-start-width))
+			)
+			var(--call-pad-inline, var(--call-d-pad-inline));
+
+		color: var(--call-color-text, var(--call-d-color-text));
+
+		&::before {
+			content: '';
+
+			position: absolute;
+			z-index: -1;
+			inset: 0;
+
+			border-inline-start: var(
+					--call-border-inline-start-width,
+					var(--call-d-border-inline-start-width)
+				)
+				solid var(--call-color-border, var(--call-d-color-border));
+
+			background-color: var(--call-color-bg, var(--call-d-color-bg));
+			clip-path: var(--call-clip-path, var(--call-d-clip-path));
+		}
+
+		&::after {
+			content: '';
+
+			position: absolute;
+			inset-block-start: calc(
+				-0.5 * var(--call-icon-size, var(--call-d-icon-size)) +
+					var(--call-border-inline-start-width, var(--call-d-border-inline-start-width)) / 2
+			);
+			inset-inline-start: calc(
+				-0.5 * var(--call-icon-size, var(--call-d-icon-size)) +
+					var(--call-border-inline-start-width, var(--call-d-border-inline-start-width)) / 2
+			);
+
+			width: var(--call-icon-size, var(--call-d-icon-size));
+			height: var(--call-icon-size, var(--call-d-icon-size));
+
+			background-color: var(--call-color-icon, var(--call-d-color-icon));
+
+			mask-image: var(--svg);
+			mask-repeat: no-repeat;
+			mask-position: center;
+			mask-size: var(--call-icon-size, var(--call-d-icon-size));
+		}
+	}
+}
+
+/* interop with the markdown content */
+@layer markdown {
+	.markdown .c-callout:not([class~='not-prose'], [class~='not-prose'] *) {
+		margin-block: 2rem;
+
+		& ::marker {
+			color: inherit;
+		}
+
+		& p:first-of-type {
+			margin-top: 0;
+		}
+
+		& p:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+}

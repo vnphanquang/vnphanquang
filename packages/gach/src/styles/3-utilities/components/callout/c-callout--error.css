@@ -1,0 +1,11 @@
+@utility c-callout--error {
+	@layer components {
+		@apply i-[ph--warning-octagon];
+
+		--call-color-text: var(--color-error-stroke-50);
+		--call-color-icon: var(--color-error-stroke-50);
+		--call-color-bg: var(--color-error-fill-50);
+		--call-color-border: var(--color-error-stroke-100);
+		--call-clip-path: path('M 0,26 H 13 L 26,13 V0 H 2000 V 2000 H 0 Z');
+	}
+}

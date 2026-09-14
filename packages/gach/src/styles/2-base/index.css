@@ -1,7 +1,74 @@
 @layer base {
-	:root {
+	html {
+		border-color: var(--color-stroke-50);
 		font-family: var(--font-inter);
-		color-scheme: light dark;
+		color: var(--color-stroke-50);
+		background-color: var(--color-fill-50);
+	}
+
+	body {
+		position: relative;
+
+		display: flex;
+		flex-direction: column;
+
+		min-height: 100vh;
+		min-height: 100dvh;
+	}
+
+	* {
+		border-color: inherit;
+	}
+
+	mark {
+		color: var(--color-info-stroke-50);
+		background-color: var(--color-fill-50);
+	}
+
+	button,
+	input {
+		padding-block: 0;
+		padding-inline: 0;
+		border-color: transparent;
+		border-radius: 0;
+
+		color: inherit;
+
+		background-color: transparent;
+	}
+
+	button:focus-visible:not(:disabled),
+	label:has(input:focus-visible):not(:disabled) {
+		outline: 1.5px solid var(--color-focus);
+		outline-offset: 1px;
+	}
+
+	*[id] {
+		scroll-margin: calc(1.5 * var(--spacing-header));
+	}
+
+	img {
+		object-fit: cover;
+	}
+
+	kbd {
+		padding: 0.1875rem 0.25rem;
+		border: 1px solid var(--color-stroke-50);
+		border-bottom-width: 2px;
+
+		text-decoration: none;
+
+		background-color: var(--color-fill-100);
+	}
+
+	/* prevent white-on-white option on chrome (as of 2025.06.11) */
+	option {
+		background-color: var(--color-fill-50);
+	}
+
+	:target:is(h1, h2, h3, h4, h5, h6) {
+		color: var(--color-info-stroke-50);
+		background-color: var(--color-fill-50);
 	}
 }
 

@@ -2,6 +2,11 @@
 	:root {
 		--c-font-family: var(--font-fira);
 		--c-header-font-family: var(--font-inter);
+		--c-header-bg: var(--color-fill-100);
+		--c-border-color: var(--color-stroke-50);
+		--c-hover-color: var(--color-fill-50);
+		--c-hover-bg: var(--color-stroke-50);
+		--c-content-bg: var(--color-fill-100);
 	}
 }
 

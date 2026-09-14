@@ -15,10 +15,12 @@ export default {
 				'at-rule-no-unknown': [
 					true,
 					{
-						ignoreAtRules: ['plugin', 'theme', 'utility', 'source'],
+						ignoreAtRules: ['plugin', 'theme', 'utility', 'source', 'custom-variant'],
 					},
 				],
 				'no-invalid-position-declaration': null,
+				'at-rule-prelude-no-invalid': [true, { ignoreAtRules: ['apply', 'custom-selector'] }],
+				'nesting-selector-no-missing-scoping-root': null,
 			},
 		},
 	],

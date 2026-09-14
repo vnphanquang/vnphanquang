@@ -1,0 +1,17 @@
+@theme static {
+	/* base color */
+	--color-base-50: oklch(98.83% 0.005 275deg);
+	--color-base-100: oklch(96.48% 0.018 275deg);
+	--color-base-200: oklch(91.8% 0.024 275deg);
+	--color-base-300: oklch(85.35% 0.024 275deg);
+	--color-base-400: oklch(78.91% 0.024 275deg);
+	--color-base-500: oklch(72.66% 0.024 275deg);
+	--color-base-600: oklch(61.33% 0.024 275deg);
+	--color-base-700: oklch(52.34% 0.024 275deg);
+	--color-base-800: oklch(41.21% 0.024 275deg);
+	--color-base-900: oklch(30.27% 0.024 275deg);
+	--color-base-950: oklch(19.34% 0.024 275deg);
+
+	/* domain-specific colors */
+	--color-svelte: #ef4623;
+}

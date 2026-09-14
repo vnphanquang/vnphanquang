@@ -2,6 +2,9 @@ import path from 'node:path';
 
 import tailwindcss from '@tailwindcss/vite';
 import { fontless } from 'fontless';
+import postcssColorScheme from 'postcss-color-scheme';
+import postcssCustomMedia from 'postcss-custom-media';
+import postcssCustomSelectors from 'postcss-custom-selectors';
 
 /**
  * @typedef GachOptions
@@ -28,6 +31,16 @@ export function gach(options) {
 			config() {
 				const dirname = import.meta.dirname;
 				return {
+					css: {
+						transformer: 'postcss',
+						postcss: {
+							plugins: [
+								postcssCustomMedia(),
+								postcssCustomSelectors(),
+								postcssColorScheme({ name: 'media' }),
+							],
+						},
+					},
 					server: {
 						fs: {
 							allow: [

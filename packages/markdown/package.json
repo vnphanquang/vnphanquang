@@ -80,7 +80,8 @@
 		"remark-rehype": "^11.1.2",
 		"remark-transform-blockquote": "^1.2.3",
 		"shiki": "^4.4.3",
-		"svelte-md-template": "^0.1.6"
+		"svelte-md-template": "^0.1.6",
+		"unist-builder": "^4.0.0"
 	},
 	"devDependencies": {
 		"@shikijs/types": "^4.4.3",

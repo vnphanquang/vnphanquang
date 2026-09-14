@@ -1,0 +1,14 @@
+@import '../0-custom/medias.css';
+
+@theme {
+	--breakpoint-tablet: 48rem; /* 768px */
+	--breakpoint-desktop: 64rem; /* 1024px */
+	--breakpoint-widescreen: 80rem; /* 1280px */
+}
+
+@custom-variant mobile {
+	@media (--mobile) {
+		@slot;
+	}
+}
+
