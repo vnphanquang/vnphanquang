@@ -1,12 +1,17 @@
 @layer markdown.enhance-code-block.base {
-	:root {
+	.codeblock-root {
 		--c-font-family: var(--font-fira);
 		--c-header-font-family: var(--font-inter);
-		--c-header-bg: var(--color-fill-100);
+		--c-header-bg: light-dark(
+			oklch(from var(--color-base-50) calc(l - 0.03) c h),
+			oklch(from var(--color-base-950) calc(l + 0.05) c h)
+		);
 		--c-border-color: var(--color-stroke-50);
 		--c-hover-color: var(--color-fill-50);
 		--c-hover-bg: var(--color-stroke-50);
-		--c-content-bg: var(--color-fill-100);
+		--c-content-bg: light-dark(
+			oklch(from var(--color-base-50) calc(l - 0.015) c h),
+			oklch(from var(--color-base-950) calc(l + 0.025) c h)
+		);
 	}
 }
-
