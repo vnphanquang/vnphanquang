@@ -64,7 +64,7 @@
 		&::before {
 			--width: max(2ch, calc((round(up, log(var(--max-line), 10)) + 2) * 1ch));
 
-			content: '';
+			content: ' ';
 
 			position: sticky;
 			z-index: 2;
