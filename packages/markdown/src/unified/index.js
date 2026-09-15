@@ -12,6 +12,7 @@ import { definePlugin } from 'svelte-md-template/unified';
 
 import { createShikiRemarkPlugin } from '../shiki/index.js';
 
+import { remarkEnhanceImg } from './plugins/remark-enhance-img.js';
 import { remarkNodeClassMap } from './plugins/remark-node-class-map.js';
 
 /** @type {Record<string, import('remark-enhance-codeblock').RemarkEnhanceCodeblockIntlSpecs>} */
@@ -44,7 +45,6 @@ export function createPreset(options = {}) {
 		plugins: [
 			remarkParse,
 			remarkGfm,
-			definePlugin(remarkNodeClassMap, { link: 'c-link' }),
 			definePlugin(remarkCodeblockSource, {
 				resolvers: { fs: fs({ cache: true }), github: github({ cache: true }) },
 			}),
@@ -87,6 +87,8 @@ export function createPreset(options = {}) {
 					},
 				],
 			}),
+			definePlugin(remarkNodeClassMap, { link: 'c-link' }),
+			definePlugin(remarkEnhanceImg, { svelteEnhancedImg: true }),
 			definePlugin(remarkRehype, {
 				allowDangerousHtml: options.allowDangerousHtml,
 			}),
