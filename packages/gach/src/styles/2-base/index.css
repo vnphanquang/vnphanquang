@@ -52,13 +52,16 @@
 	}
 
 	kbd {
-		padding: 0.1875rem 0.25rem;
+		padding: 0.15em 0.3em;
 		border: 1px solid var(--color-stroke-50);
 		border-bottom-width: 2px;
 
+		font-size: 0.95em;
 		text-decoration: none;
 
-		background-color: var(--color-fill-100);
+		background-color: oklch(
+			from var(--color-fill-50) calc(l - 0.02 * var(--color-scheme-sign)) c h
+		);
 	}
 
 	/* prevent white-on-white option on chrome (as of 2025.06.11) */
@@ -71,4 +74,3 @@
 		background-color: var(--color-fill-50);
 	}
 }
-
