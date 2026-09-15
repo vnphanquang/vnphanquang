@@ -2,6 +2,7 @@
 	"name": "@vnphanquang/eslint-config",
 	"version": "4.2.1",
 	"description": "personal eslint preferences for vnphanquang",
+	"private": true,
 	"author": {
 		"email": "oss@vnphanquang.com",
 		"name": "quang",
