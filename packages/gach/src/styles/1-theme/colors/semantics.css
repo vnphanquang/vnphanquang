@@ -2,10 +2,12 @@
 	/* default fill  */
 	--color-fill-50: light-dark(var(--color-base-50), var(--color-base-950));
 	--color-fill-100: light-dark(var(--color-base-100), var(--color-base-900));
+	--color-fill-200: light-dark(var(--color-base-200), var(--color-base-800));
 
 	/* default stroke  */
 	--color-stroke-50: light-dark(var(--color-base-950), var(--color-base-50));
 	--color-stroke-100: light-dark(var(--color-base-900), var(--color-base-100));
+	--color-stroke-200: light-dark(var(--color-base-800), var(--color-base-200));
 
 	/* elements */
 	--color-focus: #58ACF2;
@@ -39,6 +41,7 @@
 	--color-info-fill-100: light-dark(var(--color-blue-100), var(--color-blue-900));
 	--color-info-stroke-50: light-dark(var(--color-blue-950), var(--color-blue-50));
 	--color-info-stroke-100: light-dark(var(--color-blue-900), var(--color-blue-100));
+	--color-info-stroke-200: light-dark(var(--color-blue-800), var(--color-blue-200));
 
 	/* status: success */
 	--color-success-standalone: light-dark(var(--color-emerald-500), var(--color-emerald-500));
@@ -46,6 +49,7 @@
 	--color-success-fill-100: light-dark(var(--color-emerald-100), var(--color-emerald-900));
 	--color-success-stroke-50: light-dark(var(--color-emerald-950), var(--color-emerald-50));
 	--color-success-stroke-100: light-dark(var(--color-emerald-900), var(--color-emerald-100));
+	--color-success-stroke-200: light-dark(var(--color-emerald-800), var(--color-emerald-200));
 
 	/* status: warning */
 	--color-warning-standalone: light-dark(var(--color-yellow-500), var(--color-yellow-500));
@@ -53,6 +57,7 @@
 	--color-warning-fill-100: light-dark(var(--color-yellow-100), var(--color-yellow-900));
 	--color-warning-stroke-50: light-dark(var(--color-yellow-950), var(--color-yellow-50));
 	--color-warning-stroke-100: light-dark(var(--color-yellow-900), var(--color-yellow-100));
+	--color-warning-stroke-200: light-dark(var(--color-yellow-800), var(--color-yellow-200));
 
 	/* status: error */
 	--color-error-standalone: light-dark(var(--color-red-500), var(--color-red-500));
@@ -60,4 +65,5 @@
 	--color-error-fill-100: light-dark(var(--color-red-100), var(--color-red-900));
 	--color-error-stroke-50: light-dark(var(--color-red-950), var(--color-red-50));
 	--color-error-stroke-100: light-dark(var(--color-red-900), var(--color-red-100));
+	--color-error-stroke-200: light-dark(var(--color-red-800), var(--color-red-200));
 }

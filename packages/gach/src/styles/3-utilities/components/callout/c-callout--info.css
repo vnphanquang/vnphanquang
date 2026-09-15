@@ -3,7 +3,7 @@
 		--call-color-text: var(--color-info-stroke-50);
 		--call-color-icon: var(--color-info-stroke-50);
 		--call-color-bg: var(--color-info-fill-50);
-		--call-color-border: var(--color-info-stroke-100);
+		--call-color-border: var(--color-info-stroke-200);
 	}
 }
 

@@ -5,7 +5,7 @@
 		--call-color-text: var(--color-warning-stroke-50);
 		--call-color-icon: var(--color-warning-stroke-50);
 		--call-color-bg: var(--color-warning-fill-50);
-		--call-color-border: var(--color-warning-stroke-100);
+		--call-color-border: var(--color-warning-stroke-200);
 		--call-clip-path: path('M 0,24 H 16 Q 28,24 26,10 Q 25,6 20,0 H 2000 V 2000 H 0 Z');
 	}
 }

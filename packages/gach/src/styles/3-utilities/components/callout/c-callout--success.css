@@ -5,7 +5,7 @@
 		--call-color-text: var(--color-success-stroke-50);
 		--call-color-icon: var(--color-success-stroke-50);
 		--call-color-bg: var(--color-success-fill-50);
-		--call-color-border: var(--color-success-stroke-100);
+		--call-color-border: var(--color-success-stroke-200);
 		--call-clip-path: path('M 0,26 A 26 26 0 0 0 26,0 H 2000 V 2000 H 0 Z');
 	}
 }
