@@ -3,6 +3,7 @@ packages:
   - 'sites/*'
 allowBuilds:
   esbuild: true
+  sharp: true
   unrs-resolver: false
 minimumReleaseAgeExclude:
   - svelte-md-template
