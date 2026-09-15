@@ -12,9 +12,10 @@
   };
   packages = with pkgs; [ lefthook ];
 
-  scripts.intro.exec = "lefthook install ";
-
   enterShell = ''
-    intro
+    echo -e "\033[0;32mRun 'pnpm boot' if this is your first time!\033[0m"
+    if [ -n "$DEVENV_CD" ]; then
+      cd "$DEVENV_CD"
+    fi
   '';
 }
