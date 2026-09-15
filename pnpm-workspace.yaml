@@ -8,3 +8,4 @@ allowBuilds:
 minimumReleaseAgeExclude:
   - svelte-md-template
   - remark-enhance-codeblock
+  - remark-transform-blockquote

@@ -79,7 +79,7 @@
 		"remark-gfm": "^4.0.1",
 		"remark-parse": "^11.0.0",
 		"remark-rehype": "^11.1.2",
-		"remark-transform-blockquote": "^1.2.3",
+		"remark-transform-blockquote": "^1.2.4",
 		"shiki": "^4.4.3",
 		"svelte-md-template": "^0.1.6",
 		"unist-builder": "^4.0.0"

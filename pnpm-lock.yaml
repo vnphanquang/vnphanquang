@@ -399,8 +399,8 @@ importers:
         specifier: ^11.1.2
         version: 11.1.2
       remark-transform-blockquote:
-        specifier: ^1.2.3
-        version: 1.2.3
+        specifier: ^1.2.4
+        version: 1.2.4
       shiki:
         specifier: ^4.4.3
         version: 4.4.3
@@ -3294,8 +3294,8 @@ packages:
   remark-stringify@11.0.0:
     resolution: {integrity: sha512-1OSmLd3awB/t8qdoEOMazZkNsfVTeY4fTsgzcQFdXNq8ToTN4ZGwrMnlda4K6smTFKD+GRV6O48i6Z4iKgPPpw==}
 
-  remark-transform-blockquote@1.2.3:
-    resolution: {integrity: sha512-sIkY/U8b4DpBEgWrXzLflFUNcOslnBWaGEdHhiSmRidr18ToaLDzajJRV/6GWHM//Y8Q5dbvK7luTvKOQdmu9Q==}
+  remark-transform-blockquote@1.2.4:
+    resolution: {integrity: sha512-rBF5An8TkcuyH9Xfv8y/doqkSi4mK0+t56TzcY7uG6QdjDFZZVJUagChUHbuNDqhnfrXqQSduIAvYSGivcIGSA==}
 
   require-from-string@2.0.2:
     resolution: {integrity: sha512-Xf0nWe6RseziFMu+Ap9biiUbmplq6S9/p+7w7YXP/JBHhrUDDUhwa+vANyubuqfZWTveU//DYVGsDG7RKL/vEw==}
@@ -6759,7 +6759,7 @@ snapshots:
 
   remark-enhance-codeblock@1.2.3:
     dependencies:
-      remark-transform-blockquote: 1.2.3
+      remark-transform-blockquote: 1.2.4
       unist-builder: 4.0.0
       unist-util-visit: 5.1.0
 
@@ -6797,7 +6797,7 @@ snapshots:
       mdast-util-to-markdown: 2.1.2
       unified: 11.0.5
 
-  remark-transform-blockquote@1.2.3:
+  remark-transform-blockquote@1.2.4:
     dependencies:
       unist-builder: 4.0.0
       unist-util-visit: 5.1.0
