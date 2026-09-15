@@ -101,29 +101,29 @@ glhf!
   <br />
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-6%2C260%20hrs%208%20mins-blue?style=flat)
+![Code Time](http://img.shields.io/badge/Code%20Time-6%2C265%20hrs%2046%20mins-blue?style=flat)
 
 ![AI Code Time](http://img.shields.io/badge/AI%20Code%20Time-6%20hrs%2010%20mins-blue?style=flat)
 
-![Profile Views](http://img.shields.io/badge/Profile%20Views-6-blue?style=flat)
+![Profile Views](http://img.shields.io/badge/Profile%20Views-5-blue?style=flat)
 
 **I'm an Early 🐤** 
 
 ```text
-🌞 Morning                17066 commits       ███████░░░░░░░░░░░░░░░░░░   28.02 % 
-🌆 Daytime                30057 commits       ████████████░░░░░░░░░░░░░   49.35 % 
-🌃 Evening                13321 commits       █████░░░░░░░░░░░░░░░░░░░░   21.87 % 
-🌙 Night                  456 commits         ░░░░░░░░░░░░░░░░░░░░░░░░░   00.75 % 
+🌞 Morning                17065 commits       ███████░░░░░░░░░░░░░░░░░░   28.02 % 
+🌆 Daytime                30064 commits       ████████████░░░░░░░░░░░░░   49.36 % 
+🌃 Evening                13320 commits       █████░░░░░░░░░░░░░░░░░░░░   21.87 % 
+🌙 Night                  453 commits         ░░░░░░░░░░░░░░░░░░░░░░░░░   00.74 % 
 ```
 📅 **I'm Most Productive on Thursday** 
 
 ```text
-Monday                   7849 commits        ███░░░░░░░░░░░░░░░░░░░░░░   12.89 % 
+Monday                   7855 commits        ███░░░░░░░░░░░░░░░░░░░░░░   12.90 % 
 Tuesday                  5898 commits        ██░░░░░░░░░░░░░░░░░░░░░░░   09.68 % 
 Wednesday                13180 commits       █████░░░░░░░░░░░░░░░░░░░░   21.64 % 
-Thursday                 14774 commits       ██████░░░░░░░░░░░░░░░░░░░   24.26 % 
+Thursday                 14773 commits       ██████░░░░░░░░░░░░░░░░░░░   24.26 % 
 Friday                   8995 commits        ████░░░░░░░░░░░░░░░░░░░░░   14.77 % 
-Saturday                 6977 commits        ███░░░░░░░░░░░░░░░░░░░░░░   11.46 % 
+Saturday                 6974 commits        ███░░░░░░░░░░░░░░░░░░░░░░   11.45 % 
 Sunday                   3227 commits        █░░░░░░░░░░░░░░░░░░░░░░░░   05.30 % 
 ```
 
@@ -134,39 +134,23 @@ Sunday                   3227 commits        █░░░░░░░░░░�
 🕑︎ Time Zone: Asia/Ho_Chi_Minh
 
 💬 Programming Languages: 
-JavaScript               11 hrs 32 mins      █████████░░░░░░░░░░░░░░░░   37.87 % 
-CSS                      3 hrs 59 mins       ███░░░░░░░░░░░░░░░░░░░░░░   13.07 % 
-TypeScript               3 hrs 7 mins        ███░░░░░░░░░░░░░░░░░░░░░░   10.27 % 
-Markdown                 2 hrs 45 mins       ██░░░░░░░░░░░░░░░░░░░░░░░   09.06 % 
-Svelte                   2 hrs 39 mins       ██░░░░░░░░░░░░░░░░░░░░░░░   08.72 % 
+JavaScript               12 hrs 13 mins      █████████░░░░░░░░░░░░░░░░   35.57 % 
+CSS                      7 hrs 39 mins       ██████░░░░░░░░░░░░░░░░░░░   22.28 % 
+TypeScript               3 hrs 26 mins       ███░░░░░░░░░░░░░░░░░░░░░░   10.02 % 
+Svelte                   3 hrs 5 mins        ██░░░░░░░░░░░░░░░░░░░░░░░   08.98 % 
+JSON                     2 hrs 31 mins       ██░░░░░░░░░░░░░░░░░░░░░░░   07.33 % 
 
 🔥 Editors: 
-Neovim                   30 hrs 29 mins      █████████████████████████   100.00 % 
+Neovim                   34 hrs 22 mins      █████████████████████████   100.00 % 
 
 💻 Operating System: 
-Linux                    30 hrs 29 mins      █████████████████████████   100.00 % 
+Linux                    34 hrs 22 mins      █████████████████████████   100.00 % 
 ```
 
 🤖 **AI Coding This Week** 
 
 ```text
-⏱ AI Coding Time: 11 mins (0.63%)
-
-✍️ 0 lines written by AI, 5,719 lines written by hand (0.0% AI-written)
-
-🔤 39,877 Input Tokens, 6,644 Output Tokens
-
-💵 $0.22 Estimated AI Cost This Week
-
-🧠 5 AI Sessions, 7 AI Prompts
-
-OpenCode                 0 lines             ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 % 
-
-🔎 AI Coding Insights:
-🧑‍💻 Mostly Hands-On — 0.0% of written lines came from AI
-📄 Detailed Prompter — average 982 characters per prompt
-🎯 One-Shot Prompter — average 1 prompts per session
-🔍 Hands-On Reviewer — 100.0% of changed lines were hand-edited
+No AI Coding Activity Tracked This Week
 ```
 
 **I Mostly Code in TypeScript** 
@@ -182,7 +166,7 @@ Jupyter Notebook         1 repo              ░░░░░░░░░░░�
 
 
 
- Last Updated on 14/09/2026 00:59:35 UTC
+ Last Updated on 15/09/2026 00:57:30 UTC
 <!--END_SECTION:waka-->
 
 </details>
