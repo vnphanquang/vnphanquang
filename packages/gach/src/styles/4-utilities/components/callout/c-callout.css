@@ -66,6 +66,10 @@
 			mask-position: center;
 			mask-size: var(--call-icon-size, var(--call-d-icon-size));
 		}
+
+		&:is([class*='i-[ph--'], [class*='i-[simple-icons--'])::before {
+			clip-path: var(--call-d-clip-path);
+		}
 	}
 }
 
