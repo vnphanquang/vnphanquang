@@ -1,7 +1,7 @@
 import { svelteMdTemplate } from 'svelte-md-template/vite';
 import { unified } from 'unified';
 
-import { createPreset } from '../unified.js';
+import { createPreset } from '../unified/index.js';
 
 /**
  * @returns {import('vite').PluginOption}

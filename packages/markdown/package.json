@@ -44,7 +44,7 @@
 		},
 		"./unified": {
 			"types": "./types/index.d.ts",
-			"import": "./src/unified.js"
+			"import": "./src/unified/index.js"
 		}
 	},
 	"publishConfig": {
