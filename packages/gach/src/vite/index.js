@@ -17,7 +17,32 @@ import postcssCustomSelectors from 'postcss-custom-selectors';
  */
 export function gach(options) {
 	return [
-		fontless(),
+		fontless({
+			families: [
+				// Configure a specific font
+				{
+					name: 'Inter',
+					provider: 'google',
+					weights: [400, 500, 600],
+					styles: ['normal', 'italic'],
+					display: 'swap',
+					providerOptions: {
+						google: {
+							experimental: {
+								variableAxis: {
+									// important to get keep a consistent font as previously loaded from Google Fonts
+									opsz: [['14', '32']],
+								},
+							},
+						},
+					},
+					fallbacks: ['sans-serif'],
+				},
+			],
+			experimental: {
+				disableLocalFallbacks: true,
+			},
+		}),
 		tailwindcss(),
 		...(options?.markdown
 			? [
