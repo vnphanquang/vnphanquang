@@ -1,0 +1,180 @@
+@layer markdown {
+	.md {
+		font-size: 1rem;
+		line-height: 1.75;
+	}
+
+	.md :where(*):not(:where([class~='not-md'], [class~='not-md'] *)) {
+		&:first-child {
+			margin-block-start: 0;
+		}
+
+		&:last-child {
+			margin-block-end: 0;
+		}
+
+		&:where(p) {
+			margin-block: 1.2em;
+
+			&:where(:is(li) *) {
+				margin-block: 0.8em;
+
+				&:first-child {
+					margin-block-start: 1.2em;
+				}
+
+				&:last-child {
+					margin-block-end: 1.2em;
+				}
+			}
+		}
+
+		&:where(a) {
+			@apply c-link;
+		}
+
+		&:where(strong) {
+			font-weight: 600;
+		}
+
+		&:where(:is(ul, ol)) {
+			margin-block: 1.2em;
+			padding-inline-start: 1.6em;
+
+			&:where(:is(ul, ol) *) {
+				margin-block: 0.8em;
+			}
+		}
+
+		&:where(ol) {
+			list-style-type: decimal;
+		}
+
+		&:where(ul) {
+			list-style-type: disc;
+		}
+
+		&:where(li) {
+			margin-block: 0.6em;
+			padding-inline-start: 0.4em;
+
+			&::marker {
+				font-weight: 400;
+				color: oklch(from currentcolor calc(l + 0.2 * var(--color-scheme-sign)) c h);
+			}
+		}
+
+		&:where(hr) {
+			margin-block: 2em;
+			border-color: oklch(from currentcolor calc(l + 0.6 * var(--color-scheme-sign)) c h);
+		}
+
+		&:where([class~='lead']) {
+			margin-block-end: 1em;
+			font-size: 1.2em;
+			line-height: 1.5;
+
+			&:not(:first-child) {
+				margin-block-start: 1em;
+			}
+
+			&:not(:last-child) {
+				margin-block-start: 1em;
+			}
+		}
+
+		&:where(h1) {
+			margin-block: 0 1em;
+			font-size: 2.25em;
+			font-weight: 700;
+			line-height: 1;
+		}
+
+		&:where(h1 strong) {
+			font-weight: 900;
+		}
+
+		&:where(h2) {
+			margin-block: 1.2em 1em;
+			font-size: 1.8em;
+			font-weight: 700;
+			line-height: 1.25;
+		}
+
+		&:where(h2 strong) {
+			font-weight: 800;
+		}
+
+		&:where(h3) {
+			margin-block: 1.5em 0.7em;
+			font-size: 1.5em;
+			font-weight: 600;
+			line-height: 1.5;
+		}
+
+		&:where(h3 strong) {
+			font-weight: 700;
+		}
+
+		&:where(h4) {
+			margin-block: 1.5em 0.5em;
+			font-weight: 600;
+			line-height: 1.5;
+		}
+
+		&:where(h4 strong) {
+			font-weight: 700;
+		}
+
+		&:where(:is(hr, h2, h3, h4) + *) {
+			margin-block-start: 0;
+		}
+
+		&:where(code:not(:is(pre, a) *)) {
+			padding: 0.15em 0.3em;
+			border: 1px solid;
+			border-color: oklch(from currentcolor calc(l + 0.5 * var(--color-scheme-sign)) c h);
+
+			font-weight: 400;
+			word-break: break-all;
+
+			background-color: oklch(
+				from var(--color-fill-50) calc(l - 0.02 * var(--color-scheme-sign)) c h
+			);
+		}
+
+		&:where(dl) {
+			margin-block: 1.2em;
+		}
+
+		&:where(dt) {
+			margin-block-start: 1.2em;
+			font-weight: 600;
+		}
+
+		&:where(dd) {
+			margin-block-start: 0.6em;
+			padding-inline-start: 1.6em;
+		}
+
+		&:where(blockquote) {
+			quotes: '“' '”' '‘' '’';
+
+			margin-block: 1.6em;
+			padding-inline-start: 1em;
+			border-inline-start-color: var(--color-fill-200);
+			border-inline-start-width: 0.25rem;
+
+			font-weight: 500;
+			font-style: italic;
+		}
+
+		&:where(blockquote p:first-of-type)::before {
+			content: open-quote;
+		}
+
+		&:where(blockquote p:last-of-type)::after {
+			content: close-quote;
+		}
+	}
+}

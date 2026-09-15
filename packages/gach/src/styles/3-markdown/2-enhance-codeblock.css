@@ -1,4 +1,4 @@
-@layer markdown.enhance-code-block.base {
+@layer markdown.enhance-code-block {
 	.codeblock-root {
 		--c-font-family: var(--font-fira);
 		--c-header-font-family: var(--font-inter);
@@ -13,5 +13,6 @@
 			oklch(from var(--color-base-50) calc(l - 0.015) c h),
 			oklch(from var(--color-base-950) calc(l + 0.025) c h)
 		);
+		--c-margin-block: 2em;
 	}
 }

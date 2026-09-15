@@ -71,8 +71,8 @@
 
 /* interop with the markdown content */
 @layer markdown {
-	.markdown .c-callout:not([class~='not-prose'], [class~='not-prose'] *) {
-		margin-block: 2rem;
+	.md .c-callout:not([class~='not-md'], [class~='not-md'] *) {
+		margin-block: 2em;
 
 		& ::marker {
 			color: inherit;

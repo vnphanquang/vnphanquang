@@ -10,7 +10,7 @@
 
 @import './1-theme/index.css';
 @import './2-base/index.css';
-@import './3-utilities/index.css';
-@import './4-markdown/index.css';
+@import './3-markdown/index.css';
+@import './4-utilities/index.css';
 
 @source inline('c-callout c-callout--info c-callout--success c-callout--warning c-callout--error');

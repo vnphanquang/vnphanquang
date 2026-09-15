@@ -2,6 +2,7 @@
 	"name": "@vnphanquang/gach",
 	"version": "0.0.0",
 	"description": "gạch - building blocks for weaving webs",
+	"private": true,
 	"author": {
 		"email": "oss@vnphanquang.com",
 		"name": "quang",

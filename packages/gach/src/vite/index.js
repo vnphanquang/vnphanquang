@@ -71,11 +71,11 @@ export function gach(options) {
 							allow: [
 								path.resolve(
 									dirname,
-									'../styles/3-utilities/icons/animated/ia-3dots/animated-three-dots.svg',
+									'../styles/4-utilities/icons/animated/ia-3dots/animated-three-dots.svg',
 								),
 								path.resolve(
 									dirname,
-									'../styles/3-utilities/icons/animated/ia-spinner/animated-spinner.svg',
+									'../styles/4-utilities/icons/animated/ia-spinner/animated-spinner.svg',
 								),
 							],
 						},

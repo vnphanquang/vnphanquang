@@ -15,7 +15,7 @@ export default {
 				'at-rule-no-unknown': [
 					true,
 					{
-						ignoreAtRules: ['plugin', 'theme', 'utility', 'source', 'custom-variant'],
+						ignoreAtRules: ['plugin', 'theme', 'utility', 'source', 'custom-variant', 'variant'],
 					},
 				],
 				'no-invalid-position-declaration': null,

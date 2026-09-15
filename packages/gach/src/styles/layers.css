@@ -1,2 +1,2 @@
-@layer theme, base, components, utilities, icons, markdown;
+@layer theme, base, components, markdown, utilities, icons;
 @layer utilities.components, utilities.icons;
