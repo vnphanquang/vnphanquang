@@ -194,11 +194,9 @@
 		}
 
 		&:where(figure:has(blockquote)) {
-			padding-block: 0.8em;
-			padding-inline-start: 1em;
+			padding: 1em;
 			border-inline-start-color: var(--color-fill-200);
 			border-inline-start-width: 0.25rem;
-
 			background-color: oklch(
 				from var(--color-fill-50) calc(l - 0.02 * var(--color-scheme-sign)) c h
 			);
@@ -207,6 +205,32 @@
 		&:where(:is(img, video)) {
 			margin-block: 2em;
 			margin-inline: auto;
+		}
+
+		&:where(table) {
+			table-layout: auto;
+			border-collapse: collapse;
+
+			width: 100%;
+			margin-block: 2em;
+
+			font-size: 0.95em;
+			line-height: 1.5;
+		}
+
+		&:where(thead) {
+			background-color: oklch(
+				from var(--color-fill-50) calc(l - 0.02 * var(--color-scheme-sign)) c h
+			);
+		}
+
+		&:where(:is(th, td)) {
+			padding: 0.5em 1em;
+			border: 1px solid oklch(from currentcolor calc(l + 0.6 * var(--color-scheme-sign)) c h);
+		}
+
+		&:where(th) {
+			font-weight: 600;
 		}
 	}
 }
