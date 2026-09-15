@@ -30,7 +30,7 @@ export function gach(options) {
 						google: {
 							experimental: {
 								variableAxis: {
-									// important to get keep a consistent font as previously loaded from Google Fonts
+									// important to get keep a consistent font as loaded from Google Fonts
 									opsz: [['14', '32']],
 								},
 							},

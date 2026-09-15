@@ -1,6 +1,7 @@
 import path from 'node:path';
 
 import adapter from '@sveltejs/adapter-node';
+import { enhancedImages } from '@sveltejs/enhanced-img';
 import { sveltekit } from '@sveltejs/kit/vite';
 import { gach } from '@vnphanquang/gach/vite';
 import { defineConfig } from 'vite';
@@ -8,6 +9,7 @@ import { defineConfig } from 'vite';
 export default defineConfig({
 	plugins: [
 		gach({ markdown: true }),
+		enhancedImages(),
 		sveltekit({
 			adapter: adapter(),
 			alias: {

@@ -157,16 +157,32 @@
 			padding-inline-start: 1.6em;
 		}
 
+		&:where(figure) {
+			margin-block: 2em;
+		}
+
+		&:where(figcaption) {
+			margin-block-start: 0.8em;
+			font-size: 0.9em;
+			line-height: 1.5;
+			color: oklch(from currentcolor calc(l + 0.1 * var(--color-scheme-sign)) c h);
+
+			&:where(figure:has(:is(img, video)) *) {
+				text-align: center;
+			}
+		}
+
 		&:where(blockquote) {
 			quotes: '“' '”' '‘' '’';
-
-			margin-block: 1.6em;
-			padding-inline-start: 1em;
-			border-inline-start-color: var(--color-fill-200);
-			border-inline-start-width: 0.25rem;
-
 			font-weight: 500;
 			font-style: italic;
+
+			&:where(:not(figure *)) {
+				margin-block: 1.6em;
+				padding-inline-start: 1em;
+				border-inline-start-color: var(--color-fill-200);
+				border-inline-start-width: 0.25rem;
+			}
 		}
 
 		&:where(blockquote p:first-of-type)::before {
@@ -175,6 +191,22 @@
 
 		&:where(blockquote p:last-of-type)::after {
 			content: close-quote;
+		}
+
+		&:where(figure:has(blockquote)) {
+			padding-block: 0.8em;
+			padding-inline-start: 1em;
+			border-inline-start-color: var(--color-fill-200);
+			border-inline-start-width: 0.25rem;
+
+			background-color: oklch(
+				from var(--color-fill-50) calc(l - 0.02 * var(--color-scheme-sign)) c h
+			);
+		}
+
+		&:where(:is(img, video)) {
+			margin-block: 2em;
+			margin-inline: auto;
 		}
 	}
 }
