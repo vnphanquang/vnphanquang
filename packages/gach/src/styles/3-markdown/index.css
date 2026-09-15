@@ -1,2 +1,4 @@
 @import './1-default.css';
 @import './2-enhance-codeblock.css';
+
+@source inline('c-link c-callout c-callout--info c-callout--success c-callout--warning c-callout--error');

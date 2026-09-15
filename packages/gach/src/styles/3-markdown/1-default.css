@@ -29,10 +29,6 @@
 			}
 		}
 
-		&:where(a) {
-			@apply c-link;
-		}
-
 		&:where(strong) {
 			font-weight: 600;
 		}

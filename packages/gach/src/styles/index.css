@@ -13,4 +13,3 @@
 @import './3-markdown/index.css';
 @import './4-utilities/index.css';
 
-@source inline('c-callout c-callout--info c-callout--success c-callout--warning c-callout--error');

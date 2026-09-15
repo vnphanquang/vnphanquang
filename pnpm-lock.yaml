@@ -414,12 +414,18 @@ importers:
       '@shikijs/types':
         specifier: ^4.4.3
         version: 4.4.3
+      '@types/mdast':
+        specifier: ^4.0.4
+        version: 4.0.4
       svelte:
         specifier: ^5.56.1
         version: 5.57.0(@typescript-eslint/types@8.69.0)
       unified:
         specifier: ^11.0.5
         version: 11.0.5
+      unist-util-visit:
+        specifier: ^5.1.0
+        version: 5.1.0
 
   sites/vnphanquang.com:
     devDependencies:
