@@ -188,6 +188,10 @@ export async function defineConfig(options = {}, ...additionals) {
 				'import-x/order': ['error', IMPORT_ORDER_DEFAULTS],
 			},
 		},
+		{
+			files: ['**/types.public.js'],
+			extends: [tseslint.configs.disableTypeChecked],
+		},
 		...(svelte
 			? /** @satisfies {ConfigWithExtendsArray} */ ([
 					{

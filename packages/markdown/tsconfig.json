@@ -14,11 +14,6 @@
 		"noUnusedParameters": true,
 		"types": ["node"]
 	},
-	"include": [
-		"src/**/*.js",
-		"src/**/*.svelte",
-		"src/**/*.ts",
-		"src/shiki/transformers/indent/types.public.js"
-	],
+	"include": ["src/**/*.js", "src/**/*.svelte", "src/**/*.ts"],
 	"exclude": ["node_modules"]
 }
