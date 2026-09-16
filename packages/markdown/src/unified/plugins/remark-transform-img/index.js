@@ -4,14 +4,9 @@ import { u } from 'unist-builder';
 import { SKIP, visit } from 'unist-util-visit';
 
 /**
- * @typedef RemarkEnhanceImgOptions
- * @property {boolean} [svelteEnhancedImg]
+ * @type {import('unified').Plugin<[import('./types.public').RemarkTransformImgOptions?], import('mdast').Root>}
  */
-
-/**
- * @type {import('unified').Plugin<[RemarkEnhanceImgOptions?], import('mdast').Root>}
- */
-export function remarkEnhanceImg(options = {}) {
+export function remarkTransformImg(options = {}) {
 	const o = {
 		svelteEnhancedImg: false,
 		...options,
@@ -25,9 +20,17 @@ export function remarkEnhanceImg(options = {}) {
 			// can safely replace alt without a11y issue
 			node.alt = '';
 
-			if (o.svelteEnhancedImg && !['https', 'http'].some((protocol) => url.startsWith(protocol))) {
-				node.data ??= {};
-				node.data.hName = 'enhanced:img';
+			if (o.svelteEnhancedImg) {
+				let ignorePrefixes = ['http://', 'https://', 'data:'];
+				if (typeof o.svelteEnhancedImg !== 'boolean') {
+					if (o.svelteEnhancedImg.ignorePrefixes) {
+						ignorePrefixes = o.svelteEnhancedImg.ignorePrefixes;
+					}
+				}
+				if (!ignorePrefixes.some((protocol) => url.startsWith(protocol))) {
+					node.data ??= {};
+					node.data.hName = 'enhanced:img';
+				}
 			}
 
 			/** @type {any} */

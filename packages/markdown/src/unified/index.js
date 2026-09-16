@@ -13,8 +13,8 @@ import { definePlugin } from 'svelte-md-template/unified';
 import { createShikiRemarkPlugin } from '../shiki/index.js';
 
 import { remarkBlockquoteFigure } from './plugins/remark-blockquote-figure.js';
-import { remarkEnhanceImg } from './plugins/remark-enhance-img.js';
 import { remarkNodeClassMap } from './plugins/remark-node-class-map.js';
+import { remarkEnhanceImg } from './plugins/remark-transform-img/index.js';
 
 /** @type {Record<string, import('remark-enhance-codeblock').RemarkEnhanceCodeblockIntlSpecs>} */
 const codeblock_i18n = {
