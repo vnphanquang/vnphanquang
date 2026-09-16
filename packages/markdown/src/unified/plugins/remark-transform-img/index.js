@@ -1,7 +1,7 @@
 /* eslint-disable jsdoc/reject-any-type */
 
 import { u } from 'unist-builder';
-import { SKIP, visit } from 'unist-util-visit';
+import { SKIP, visitParents } from 'unist-util-visit-parents';
 
 /**
  * @type {import('unified').Plugin<[import('./types.public').RemarkTransformImgOptions?], import('mdast').Root>}
@@ -13,8 +13,12 @@ export function remarkTransformImg(options = {}) {
 		...options,
 	};
 	return function (tree) {
-		visit(tree, 'image', (node, index, parent) => {
-			if (index === undefined || !parent) return;
+		visitParents(tree, 'image', (node, ancessors) => {
+			const parent = ancessors.at(-1);
+			const grandparent = ancessors.at(-2);
+			if (!grandparent || !parent || parent.type !== 'paragraph' || parent.children.length > 1)
+				return;
+
 			const { alt, url } = node;
 
 			if (o.svelteEnhancedImg) {
@@ -53,7 +57,8 @@ export function remarkTransformImg(options = {}) {
 						),
 					],
 				);
-				parent.children.splice(index, 1, figure);
+				const parentIndex = grandparent.children.findIndex((node) => node === parent);
+				grandparent.children.splice(parentIndex, 1, figure);
 			}
 
 			return SKIP;
