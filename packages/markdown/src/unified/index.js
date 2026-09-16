@@ -51,7 +51,7 @@ export function createPreset(options = {}) {
 			}),
 			definePlugin(remarkEnhanceCodeblock, {
 				intl: (input) => {
-					const locale = input.locale ?? input.filename?.split('.').at(-2) ?? 'en';
+					const locale = input.locale ?? input.filename?.split('/').at(-3) ?? 'en';
 					return codeblock_i18n[locale] ?? defaultEnhanceCodeblockOptions.intl;
 				},
 			}),

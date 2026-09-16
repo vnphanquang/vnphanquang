@@ -15,12 +15,16 @@ export default defineConfig({
 			alias: {
 				$routes: path.join(import.meta.dirname, 'src/routes'),
 				$data: path.join(import.meta.dirname, 'src/data'),
+				$params: path.join(import.meta.dirname, 'src/params'),
 			},
 			compilerOptions: {
 				modernAst: true,
 				experimental: {
 					async: true,
 				},
+			},
+			experimental: {
+				remoteFunctions: true,
 			},
 		}),
 	],
