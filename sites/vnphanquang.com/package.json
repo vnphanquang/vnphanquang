@@ -20,6 +20,8 @@
 		"@sveltejs/vite-plugin-svelte": "^7.1.2",
 		"@vnphanquang/gach": "workspace:*",
 		"@vnphanquang/markdown": "workspace:*",
+		"node-addon-api": "^8.9.2",
+		"node-gyp": "^13.0.2",
 		"tailwindcss": "^4.3.3"
 	}
 }
