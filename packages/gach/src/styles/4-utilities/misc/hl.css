@@ -1,0 +1,20 @@
+@utility hl-info {
+	color: var(--color-info-stroke);
+	background-color: var(--color-info-fill);
+}
+
+@utility hl-success {
+	color: var(--color-success-stroke);
+	background-color: var(--color-success-fill);
+}
+
+@utility hl-warning {
+	color: var(--color-warning-stroke);
+	background-color: var(--color-warning-fill);
+}
+
+@utility hl-error {
+	color: var(--color-error-stroke);
+	background-color: var(--color-error-fill);
+}
+

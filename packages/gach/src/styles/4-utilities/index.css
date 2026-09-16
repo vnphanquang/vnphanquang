@@ -1,5 +1,6 @@
 @import './components/index.css';
 @import './icons/index.css';
+@import './misc/index.css';
 
 @utility grid-cols-auto-* {
 	grid-template-columns: repeat(--value(integer), auto);
