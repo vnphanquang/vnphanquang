@@ -1,0 +1,36 @@
+/*
+	Links that inherit color from parent and on hover change to "colors.link",
+	also have no underline effect. Often seen in breadcrumbs and footer links. For example:
+
+	```html
+	<a {href} class="c-link-lazy">Home</a>
+	```
+*/
+@utility c-link-lazy {
+	@layer components {
+		--duration: 300ms;
+		--easing: var(--ease-in);
+		--active-color: var(--color-link);
+
+		cursor: pointer;
+		transition-timing-function: var(--easing);
+		transition-duration: var(--duration);
+		transition-property: color, border-color;
+
+		&:hover,
+		&:is([aria-current]:not([aria-current='false']), [data-current]:not([data-current='false'])) {
+			--duration: 120ms;
+			--easing: var(--ease-out);
+
+			color: var(--active-color);
+		}
+
+		@variant not-disabled {
+			@variant focus-visible {
+				outline: 1.5px solid var(--color-focus);
+				outline-offset: 1px;
+			}
+		}
+	}
+}
+

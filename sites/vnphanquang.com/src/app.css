@@ -1,1 +1,19 @@
 @import '@vnphanquang/gach/styles';
+@import './lib/assets/fonts/quang/quang.css';
+
+/* stylelint-disable at-rule-no-unknown */
+@theme {
+	--font-quang: quang, serif;
+}
+
+@layer base {
+	:root {
+		--header-height: 4.5rem;
+	}
+}
+
+@utility ascii {
+	font-family: var(--font-mono);
+	line-height: 1;
+	letter-spacing: 0;
+}

@@ -1,0 +1,43 @@
+/*
+	Links that are just icon and no text. For example:
+
+	```html
+	<a href={SOCIAL_LINKS.GITHUB} class="c-link-icon" external>
+		<i class="i i-[simple-icons--github]"></i>
+	</a>
+	```
+*/
+@utility c-link-icon {
+	@layer components {
+		--duration: 300ms;
+		--easing: var(--ease-in);
+		--active-color: var(--color-link);
+
+		cursor: pointer;
+		transition-timing-function: var(--easing);
+		transition-duration: var(--duration);
+		transition-property: color, border-color, background-color;
+
+		@variant hover {
+			--duration: 120ms;
+			--easing: var(--ease-out);
+
+			color: var(--active-color);
+		}
+
+		@variant current {
+			--duration: 120ms;
+			--easing: var(--ease-out);
+
+			color: var(--active-color);
+		}
+
+		@variant not-disabled {
+			@variant focus-visible {
+				outline: 1.5px solid var(--color-focus);
+				outline-offset: 1px;
+			}
+		}
+	}
+}
+

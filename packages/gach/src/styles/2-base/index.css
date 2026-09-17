@@ -1,9 +1,13 @@
 @layer base {
 	html {
 		border-color: var(--color-stroke-50);
+
 		font-family: var(--font-inter);
 		color: var(--color-stroke-50);
+
 		background-color: var(--color-fill-50);
+
+		transition-behavior: allow-discrete;
 	}
 
 	body {

@@ -23,7 +23,7 @@
 			}
 
 			@variant focus-visible {
-				outline: 1.5px solid var(--color-outline-focus);
+				outline: 1.5px solid var(--color-focus);
 				outline-offset: 1px;
 			}
 		}

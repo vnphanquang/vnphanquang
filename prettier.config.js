@@ -5,7 +5,7 @@ export default {
 	singleQuote: true,
 	trailingComma: 'all',
 	printWidth: 100,
-	plugins: ['prettier-plugin-embed', 'prettier-plugin-svelte'],
+	plugins: ['prettier-plugin-embed', 'prettier-plugin-svelte', 'prettier-plugin-tailwindcss'],
 	overrides: [
 		{ files: '**/*.yaml', options: { proseWrap: 'always' } },
 		{

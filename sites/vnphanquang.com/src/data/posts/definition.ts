@@ -1,7 +1,14 @@
 import type { Component } from 'svelte';
 
+import type { Language } from '$lib/constants';
+
 export interface BlogPostMetadata {
 	title: string;
+	/**
+	 * the language of this post ('vi' or 'en'),
+	 * should be detected from path
+	 */
+	language: Language;
 	/**
 	 * publication date of the post,
 	 * once live, this should not be changed
@@ -27,6 +34,8 @@ export interface BlogPost {
 	metadata: BlogPostMetadata;
 }
 
-export function defineBlogPostMetadata(metadata: BlogPostMetadata): BlogPostMetadata {
+export function defineBlogPostMetadata(
+	metadata: Omit<BlogPostMetadata, 'language'>,
+): Omit<BlogPostMetadata, 'language'> {
 	return metadata;
 }

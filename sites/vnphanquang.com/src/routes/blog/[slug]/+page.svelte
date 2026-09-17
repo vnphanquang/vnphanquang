@@ -19,6 +19,7 @@
 <main class="max-w-pad py-20">
 	<section class="md">
 		<h1>{post.metadata.title}</h1>
+		<p>{post.metadata.language}</p>
 		<Markdown codeless={post.metadata.codeless}>
 			<post.content />
 		</Markdown>

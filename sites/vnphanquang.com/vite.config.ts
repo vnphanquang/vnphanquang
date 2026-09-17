@@ -8,6 +8,7 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
 	plugins: [
+		// FIXME: add inline-svg, external-link, etc.
 		gach({ markdown: true }),
 		enhancedImages(),
 		sveltekit({

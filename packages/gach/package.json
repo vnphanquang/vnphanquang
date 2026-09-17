@@ -35,7 +35,9 @@
 			"types": "./types/index.d.ts",
 			"import": "./src/vite/index.js"
 		},
-		"./styles": "./src/styles/index.css"
+		"./styles": "./src/styles/index.css",
+		"./styles/custom-medias": "./src/styles/0-custom/medias.css",
+		"./styles/custom-selectors": "./src/styles/0-custom/selectors.css"
 	},
 	"publishConfig": {
 		"access": "public"
