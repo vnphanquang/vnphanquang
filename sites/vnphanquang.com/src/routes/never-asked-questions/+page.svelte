@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { Breadcrumbs } from '$lib/components/breadcrumbs';
 	import asciiNightWindow from '$lib/assets/ascii/night-window.txt?raw';
 	import asciiQuang from '$lib/assets/ascii/quang.txt?raw';
 </script>
@@ -81,6 +82,10 @@
 				</dd>
 			</div>
 		</dl>
+		<Breadcrumbs.List class="mbs-10">
+			<Breadcrumbs.Item href="/">quang</Breadcrumbs.Item>
+			<Breadcrumbs.Item>never-asked-questions</Breadcrumbs.Item>
+		</Breadcrumbs.List>
 	</div>
 </main>
 
@@ -91,7 +96,10 @@
 
 	dl > div {
 		padding-block: 1.5rem;
-		border-block-end: 1px solid var(--color-fill-200);
+
+		&:not(:last-child) {
+			border-block-end: 1px solid var(--color-fill-200);
+		}
 	}
 
 	dd {
