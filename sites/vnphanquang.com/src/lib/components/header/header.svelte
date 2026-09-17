@@ -13,7 +13,7 @@
 				<a class="c-link-lazy p-2" href={resolve('/projects')}>Projects</a>
 			</li>
 			<li>
-				<a class="c-link-lazy p-2" href={resolve('/naq')}>NAQ</a>
+				<a class="c-link-lazy p-2" href={resolve('/never-asked-questions')}>NAQ</a>
 			</li>
 		</ul>
 	</navbar>
