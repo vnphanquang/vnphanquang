@@ -1,7 +1,9 @@
 <script lang="ts">
-	import { Breadcrumbs } from '$lib/components/breadcrumbs';
 	import asciiNightWindow from '$lib/assets/ascii/night-window.txt?raw';
 	import asciiQuang from '$lib/assets/ascii/quang.txt?raw';
+	import { Breadcrumbs, defineCrumbs } from '$lib/components/breadcrumbs';
+
+	const crumbs = defineCrumbs([{ path: '/', name: 'quang' }, 'never-asked-questions']);
 </script>
 
 <main class="max-w-pad max-tablet:flex-col-reverse flex flex-1 gap-20 py-10">
@@ -82,10 +84,7 @@
 				</dd>
 			</div>
 		</dl>
-		<Breadcrumbs.List class="mbs-10">
-			<Breadcrumbs.Item href="/">quang</Breadcrumbs.Item>
-			<Breadcrumbs.Item>never-asked-questions</Breadcrumbs.Item>
-		</Breadcrumbs.List>
+		<Breadcrumbs.List class="mbs-10" {crumbs} />
 	</div>
 </main>
 
