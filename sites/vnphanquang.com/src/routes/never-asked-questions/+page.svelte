@@ -1,10 +1,11 @@
 <script lang="ts">
 	import asciiNightWindow from '$lib/assets/ascii/night-window.txt?raw';
+	import asciiQuang from '$lib/assets/ascii/quang.txt?raw';
 </script>
 
 <main class="max-w-pad max-tablet:flex-col-reverse flex flex-1 gap-20 py-10">
 	<pre
-		class="ascii max-tablet:mx-auto desktop:text-[0.6rem] tablet:sticky inset-bs-10 h-fit text-[0.45rem]">{asciiNightWindow}</pre>
+		class="ascii max-tablet:mx-auto desktop:text-[0.4rem] tablet:sticky inset-bs-10 h-fit text-[0.3rem]">{asciiQuang}</pre>
 	<div class="max-w-readable w-full">
 		<h1 class="tablet:text-4xl font-quang border-b text-3xl font-bold">Never Asked Questions</h1>
 		<p class="text-right text-sm leading-relaxed italic">
