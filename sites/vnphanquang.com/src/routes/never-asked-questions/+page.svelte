@@ -72,6 +72,13 @@
 				<dt>What will you do if you have too much money?</dt>
 				<dd>Use it to buy all the other money in this world, and burn them all 🔥.</dd>
 			</div>
+
+			<div>
+				<dt>You okay, comrade?</dt>
+				<dd>
+					<a class="c-link" href="https://youtu.be/Jr-IzeSX0BA?si=gKrXGO7514mu4cEP">Hello world!</a>
+				</dd>
+			</div>
 		</dl>
 	</div>
 </main>
