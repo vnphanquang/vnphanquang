@@ -3,9 +3,13 @@
 
 	import asciiNightWindow from '$lib/assets/ascii/night-window.txt?raw';
 	import asciiWorkingAway from '$lib/assets/ascii/working-away.txt?raw';
+	import { PageMetadata } from '$lib/components/page-metadata';
 </script>
 
-<main class="max-w-pad desktop:py-20 desktop:flex-row flex flex-1 flex-col gap-10 py-10">
+<PageMetadata />
+<main
+	class="max-w-pad desktop:py-20 desktop:flex-row desktop:justify-between flex flex-1 flex-col gap-10 py-10"
+>
 	<div class="max-w-readable">
 		<div class="font-quang space-y-8">
 			<h1 class="text-4xl font-bold">A Personal Digital Laboratory</h1>

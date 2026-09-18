@@ -1,11 +1,32 @@
 <script lang="ts">
+	import { page } from '$app/state';
 	import asciiNightWindow from '$lib/assets/ascii/night-window.txt?raw';
 	import asciiQuang from '$lib/assets/ascii/quang.txt?raw';
 	import { Breadcrumbs, defineCrumbs } from '$lib/components/breadcrumbs';
+	import { PageMetadata } from '$lib/components/page-metadata';
 
-	const crumbs = defineCrumbs([{ path: '/', name: 'quang' }, 'never-asked-questions']);
+	import ogImage from './og.jpg?url';
+
+	const crumbs = defineCrumbs([
+		{ name: 'vnphanquang.com', label: 'quang', path: '/' },
+		{ name: 'Never Asked Questions', label: 'never-asked-questions', path: page.url.pathname },
+	]);
 </script>
 
+<PageMetadata
+	breadcrumbs={crumbs}
+	metadata={{
+		title: 'Never Asked Questions | vnphanquang',
+		description: "me answer questions nobody asks, maybe you'll find some answers too",
+		og: {
+			title: 'Never Asked Questions',
+			image: {
+				src: ogImage,
+				alt: 'just a portrait of quang, in ascii',
+			},
+		},
+	}}
+/>
 <main class="max-w-pad max-tablet:flex-col-reverse flex flex-1 gap-20 py-10">
 	<pre
 		class="ascii max-tablet:mx-auto desktop:text-[0.4rem] tablet:sticky inset-bs-10 h-fit text-[0.3rem]">{asciiQuang}</pre>
