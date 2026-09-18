@@ -55,7 +55,7 @@
 			</div>
 
 			<div>
-				<dt>Will i take LLM's jobs?</dt>
+				<dt>Will you take LLM's jobs?</dt>
 				<dd>Cleaning 💩 is a respectable work. Everyone's got a passion, or a will to live.</dd>
 			</div>
 
