@@ -37,5 +37,5 @@
 >
 	<Header />
 	{@render children()}
-	<Footer />
+	<Footer {version} />
 </PageMetadataDefaults>

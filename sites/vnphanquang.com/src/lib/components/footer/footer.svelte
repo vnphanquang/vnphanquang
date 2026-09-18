@@ -5,59 +5,66 @@
 	const ascii_hovered = ' LLM not welcomed ';
 	const ascii_clicked = 'not all owls hoot!';
 	const ascii_owl = ' ,_,\n(O,O)\n(   )\n-"-"----';
+
+	let { version }: { version: string } = $props();
 </script>
 
-<footer
-	class="from-fill-50 to-primary-fill-100 max-w-pad grid bg-linear-to-b to-120% py-10 text-sm"
->
-	<div class="notes tablet:self-end leading-relaxed">
-		<p>opinions are my own</p>
-		<p>
-			made possible by
-			<a class="c-link-lazy" href="http://vite.dev/">
-				<span class="sr-only">Vite</span>
-				<i class="i i-[simple-icons--vite]"></i>
-			</a>
-			<a class="c-link-lazy" href="https://svelte.dev">
-				<span class="sr-only">Svelte and SvelteKit</span>
-				<i class="i i-[simple-icons--svelte]"></i>
-			</a>
-			<a class="c-link-lazy" href="https://tailwindcss.com">
-				<span class="sr-only">TailwindCSS</span>
-				<i class="i i-[simple-icons--tailwindcss]"></i>
-			</a>
-		</p>
-		<p>MIT 2023-Present © Quang Phan</p>
+<footer class="from-fill-50 to-primary-fill-100 space-y-2 bg-linear-to-b to-120% pbs-14 pbe-10">
+	<div class="main max-w-pad grid text-sm">
+		<div class="notes tablet:self-end leading-relaxed">
+			<p>{version}</p>
+			<p>
+				made possible by
+				<a class="c-link-lazy" href="http://vite.dev/">
+					<span class="sr-only">Vite</span>
+					<i class="i i-[simple-icons--vite]"></i>
+				</a>
+				<a class="c-link-lazy" href="https://svelte.dev">
+					<span class="sr-only">Svelte and SvelteKit</span>
+					<i class="i i-[simple-icons--svelte]"></i>
+				</a>
+				<a class="c-link-lazy" href="https://tailwindcss.com">
+					<span class="sr-only">TailwindCSS</span>
+					<i class="i i-[simple-icons--tailwindcss]"></i>
+				</a>
+			</p>
+			<p>MIT 2023-Present © Quang Phan</p>
+		</div>
+		<ul class="socials flex items-center gap-4 text-xl">
+			<li>
+				<a class="c-link-icon" href="https://github.com/vnphanquang">
+					<span class="sr-only">Github</span>
+					<i class="i i-[simple-icons--github]"></i>
+				</a>
+			</li>
+			<li>
+				<a class="c-link-icon" href="https://bsky.app/profile/vnphanquang.com">
+					<span class="sr-only">Bluesky</span>
+					<i class="i i-[simple-icons--bluesky]"></i>
+				</a>
+			</li>
+		</ul>
+		<label
+			class="owl flex cursor-pointer flex-row-reverse items-start gap-4 justify-self-end font-mono"
+		>
+			<pre class="">{ascii_owl}</pre>
+			<input class="peer" type="checkbox" hidden />
+			<pre>{ascii_bubble_prefix}<span class="hovered">{ascii_hovered}</span><span class="clicked"
+					>{ascii_clicked}</span
+				><span class="default">{ascii_default}</span>{ascii_bubble_suffix}</pre>
+		</label>
 	</div>
-	<ul class="socials flex items-center gap-4 text-xl">
-		<li>
-			<a class="c-link-icon" href="https://github.com/vnphanquang">
-				<span class="sr-only">Github</span>
-				<i class="i i-[simple-icons--github]"></i>
-			</a>
-		</li>
-		<li>
-			<a class="c-link-icon" href="https://bsky.app/profile/vnphanquang.com">
-				<span class="sr-only">Bluesky</span>
-				<i class="i i-[simple-icons--bluesky]"></i>
-			</a>
-		</li>
-	</ul>
-	<label
-		class="owl flex cursor-pointer flex-row-reverse items-start gap-4 justify-self-end font-mono"
-	>
-		<pre class="">{ascii_owl}</pre>
-		<input class="peer" type="checkbox" hidden />
-		<pre>{ascii_bubble_prefix}<span class="hovered">{ascii_hovered}</span><span class="clicked"
-				>{ascii_clicked}</span
-			><span class="default">{ascii_default}</span>{ascii_bubble_suffix}</pre>
-	</label>
+	<div class="opinion text-primary-stroke-100 max-w-pad flex items-center gap-2 text-xs">
+		<div class="flex-1 border-t border-current"></div>
+		<p>opinions are my own</p>
+		<div class="flex-1 border-t border-current"></div>
+	</div>
 </footer>
 
 <style>
 	@import '@vnphanquang/gach/styles/custom-medias';
 
-	footer {
+	.main {
 		grid-template-areas:
 			'owl'
 			'socials'
