@@ -25,6 +25,16 @@
 			color: var(--active-color);
 		}
 
+		/* stylelint-disable-next-line selector-class-pattern  */
+	  & .i-\[ph--arrow-right\] {
+			transition: transform var(--duration) var(--easing);
+		}
+
+		/* stylelint-disable-next-line selector-class-pattern  */
+		&:hover .i-\[ph--arrow-right\] {
+			transform: translateX(0.25rem);
+		}
+
 		@variant not-disabled {
 			@variant focus-visible {
 				outline: 1.5px solid var(--color-focus);
