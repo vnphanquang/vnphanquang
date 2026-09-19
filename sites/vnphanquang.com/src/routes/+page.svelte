@@ -4,6 +4,7 @@
 	import asciiNightWindow from '$lib/assets/ascii/night-window.txt?raw';
 	import asciiWorkingAway from '$lib/assets/ascii/working-away.txt?raw';
 	import { PageMetadata } from '$lib/components/page-metadata';
+	import { Ascii } from '$lib/components/ascii';
 </script>
 
 <PageMetadata />
@@ -53,8 +54,8 @@ Cheers,
 			</Markdown>
 		</div>
 	</div>
-	<div class="ascii desktop:pbs-20 flex flex-col items-end">
-		<pre class="tablet:text-[0.2rem] shrink-0 text-[0.1rem]">{asciiNightWindow}</pre>
-		<pre class="tablet:text-[0.5rem] shrink-0 text-[0.4rem]">{asciiWorkingAway}</pre>
+	<div class="desktop:pbs-20 flex flex-col items-end">
+		<Ascii class="tablet:text-[0.2rem] shrink-0 text-[0.1rem]">{asciiNightWindow}</Ascii>
+		<Ascii class="tablet:text-[0.5rem] shrink-0 text-[0.4rem]">{asciiWorkingAway}</Ascii>
 	</div>
 </main>

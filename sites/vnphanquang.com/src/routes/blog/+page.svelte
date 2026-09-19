@@ -5,6 +5,7 @@
 	import { translations } from '$data/translations';
 	import asciiCogito from '$lib/assets/ascii/cogito.txt?raw';
 	import asciiOcarina from '$lib/assets/ascii/ocarina.txt?raw';
+	import { Ascii } from '$lib/components/ascii';
 	import { Breadcrumbs, defineCrumbs } from '$lib/components/breadcrumbs';
 	import { PageMetadata } from '$lib/components/page-metadata';
 	import { formatDateForBlog } from '$lib/utils/datetime';
@@ -49,7 +50,9 @@
 				{const href = resolve('/blog/[slug]', { slug: post.metadata.slug })}
 				{const t = translations[post.metadata.language]}
 				<li>
-					<article class="group border-fill-200 tablet:p-6 space-y-2 border p-4">
+					<article
+						class="group border-fill-200 tablet:p-6 bg-fill-50 relative space-y-2 border p-4"
+					>
 						{#if post.thumbnail}
 							<a class="@container block p-4" {href}>
 								<post.thumbnail />
@@ -68,6 +71,10 @@
 							{/if}
 						</p>
 						<p>{post.metadata.description}</p>
+						<a class="c-link-lazy absolute inset-e-0 inset-bs-0 border p-2" {href}>
+							Read more
+							<i class="i i-[ph--arrow-right]"></i>
+						</a>
 					</article>
 				</li>
 			{/each}
@@ -76,11 +83,12 @@
 		<div class="flex items-end justify-between">
 			<Breadcrumbs.List class="mbs-10" {crumbs} />
 			<a class="c-link-lazy" href="https://www.youtube.com/watch?v=Heciu9zmiOE">
-				<pre class="ascii text-[0.05rem] opacity-50">{asciiOcarina}</pre>
+				<Ascii class="text-[0.05rem] opacity-50">{asciiOcarina}</Ascii>
 			</a>
 		</div>
 	</div>
 
-	<pre
-		class="ascii max-tablet:mx-auto tablet:sticky max-tablet:text-[0.7rem] inset-bs-10 mbs-10 h-fit">{asciiCogito}</pre>
+	<Ascii class="max-tablet:mx-auto tablet:sticky max-tablet:text-[0.7rem] inset-bs-10 mbs-10 h-fit"
+		>{asciiCogito}</Ascii
+	>
 </main>

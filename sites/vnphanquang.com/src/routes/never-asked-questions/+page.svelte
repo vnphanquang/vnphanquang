@@ -2,6 +2,7 @@
 	import { page } from '$app/state';
 	import asciiLonLonMilk from '$lib/assets/ascii/lon-lon-milk.txt?raw';
 	import asciiQuang from '$lib/assets/ascii/quang.txt?raw';
+	import { Ascii } from '$lib/components/ascii';
 	import { Breadcrumbs, defineCrumbs } from '$lib/components/breadcrumbs';
 	import { PageMetadata } from '$lib/components/page-metadata';
 
@@ -28,8 +29,10 @@
 	}}
 />
 <main class="max-w-pad max-tablet:flex-col-reverse flex flex-1 gap-20 py-10">
-	<pre
-		class="ascii max-tablet:mx-auto desktop:text-[0.4rem] tablet:sticky inset-bs-10 h-fit text-[0.3rem]">{asciiQuang}</pre>
+	<Ascii
+		class="max-tablet:mx-auto desktop:text-[0.4rem] tablet:sticky inset-bs-10 h-fit text-[0.3rem]"
+		>{asciiQuang}</Ascii
+	>
 	<div class="max-w-readable w-full">
 		<h1 class="tablet:text-4xl font-quang border-b text-3xl font-bold">never asked questions</h1>
 		<p class="text-right text-sm leading-relaxed italic">
@@ -55,7 +58,7 @@
 					<dd>Bottle yourself up and give me your rupee 💎, now!</dd>
 				</div>
 				<a class="c-link-lazy" href="https://youtu.be/SFRI3byJgYA?si=ks6_I-N5Hx8Ng-kK">
-					<pre class="ascii text-[0.06rem]">{asciiLonLonMilk}</pre>
+					<Ascii class="text-[0.06rem]">{asciiLonLonMilk}</Ascii>
 				</a>
 			</div>
 

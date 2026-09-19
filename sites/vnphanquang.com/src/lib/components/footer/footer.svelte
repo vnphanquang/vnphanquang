@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { Ascii } from '$lib/components/ascii';
+
 	const ascii_bubble_prefix = ` .------------------.\n( `;
 	const ascii_bubble_suffix = ` )\n '------------------\`\\\n`;
 	const ascii_default = ' built by human ♥︎ ';
@@ -44,14 +46,14 @@
 				</a>
 			</li>
 		</ul>
-		<label
-			class="owl flex cursor-pointer flex-row-reverse items-start gap-4 justify-self-end font-mono"
-		>
-			<pre class="">{ascii_owl}</pre>
+		<label class="owl flex cursor-pointer flex-row-reverse items-start gap-4 justify-self-end">
+			<Ascii class="leading-normal tracking-wider">{ascii_owl}</Ascii>
 			<input class="peer" type="checkbox" hidden />
-			<pre>{ascii_bubble_prefix}<span class="hovered">{ascii_hovered}</span><span class="clicked"
+			<Ascii class="leading-normal"
+				>{ascii_bubble_prefix}<span class="hovered">{ascii_hovered}</span><span class="clicked"
 					>{ascii_clicked}</span
-				><span class="default">{ascii_default}</span>{ascii_bubble_suffix}</pre>
+				><span class="default">{ascii_default}</span>{ascii_bubble_suffix}</Ascii
+			>
 		</label>
 	</div>
 </footer>
