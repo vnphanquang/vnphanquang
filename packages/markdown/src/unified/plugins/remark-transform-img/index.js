@@ -21,6 +21,55 @@ export function remarkTransformImg(options = {}) {
 
 			const { alt, url } = node;
 
+			if (o.embeddedYoutube && url.startsWith('https://youtube.com/embed')) {
+				const iframe = u('transform-img', {
+					data: {
+						hName: 'iframe',
+						hProperties: {
+							width: '560',
+							height: '315',
+							title: '',
+							src: url,
+							frameborder: '0',
+							allow:
+								'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share',
+							allowfullscreen: true,
+						},
+					},
+				});
+
+				if (o.figure) {
+					const figure = u(
+						'transform-img',
+						{
+							data: {
+								hName: 'figure',
+							},
+						},
+						[
+							iframe,
+							u(
+								'transform-img',
+								{
+									data: {
+										hName: 'figcaption',
+									},
+								},
+								[u('text', alt ?? '')],
+							),
+						],
+					);
+					const parentIndex = grandparent.children.findIndex((node) => node === parent);
+					grandparent.children.splice(parentIndex, 1, /** @type {any} */ (figure));
+				} else {
+					iframe.data.hProperties.title = alt;
+					const parentIndex = grandparent.children.findIndex((node) => node === parent);
+					grandparent.children.splice(parentIndex, 1, /** @type {any} */ (iframe));
+				}
+
+				return;
+			}
+
 			if (o.svelteEnhancedImg) {
 				let ignorePrefixes = ['http://', 'https://', 'data:'];
 				if (typeof o.svelteEnhancedImg !== 'boolean') {
@@ -38,7 +87,7 @@ export function remarkTransformImg(options = {}) {
 				node.alt = '';
 				/** @type {any} */
 				const figure = u(
-					'enhance-img',
+					'transform-img',
 					{
 						data: {
 							hName: 'figure',
@@ -47,7 +96,7 @@ export function remarkTransformImg(options = {}) {
 					[
 						node,
 						u(
-							'enhance-img',
+							'transform-img',
 							{
 								data: {
 									hName: 'figcaption',
@@ -58,7 +107,7 @@ export function remarkTransformImg(options = {}) {
 					],
 				);
 				const parentIndex = grandparent.children.findIndex((node) => node === parent);
-				grandparent.children.splice(parentIndex, 1, figure);
+				grandparent.children.splice(parentIndex, 1, /** @type {any} */ (figure));
 			}
 
 			return SKIP;

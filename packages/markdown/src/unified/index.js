@@ -89,7 +89,7 @@ export function createPreset(options = {}) {
 				],
 			}),
 			definePlugin(remarkNodeClassMap, { link: 'c-link' }),
-			definePlugin(remarkTransformImg, { svelteEnhancedImg: true }),
+			definePlugin(remarkTransformImg, { svelteEnhancedImg: true, embeddedYoutube: true }),
 			definePlugin(remarkBlockquoteFigure),
 			definePlugin(remarkRehype, {
 				allowDangerousHtml: options.allowDangerousHtml,
