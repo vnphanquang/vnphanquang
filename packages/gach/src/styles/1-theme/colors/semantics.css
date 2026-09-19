@@ -15,28 +15,28 @@
 	--color-placeholder: light-dark(var(--color-base-500), var(--color-base-500));
 
 	/* primary */
-	--color-primary-standalone: light-dark(var(--color-sky-500), var(--color-sky-500));
+	--color-primary: light-dark(var(--color-sky-500), var(--color-sky-500));
 	--color-primary-fill-50: light-dark(var(--color-sky-50), var(--color-sky-950));
 	--color-primary-fill-100: light-dark(var(--color-sky-100), var(--color-sky-900));
 	--color-primary-stroke-50: light-dark(var(--color-sky-950), var(--color-sky-50));
 	--color-primary-stroke-100: light-dark(var(--color-sky-900), var(--color-sky-100));
 
 	/* secondary */
-	--color-secondary-standalone: light-dark(var(--color-indigo-500), var(--color-indigo-500));
+	--color-secondary: light-dark(var(--color-indigo-500), var(--color-indigo-500));
 	--color-secondary-fill-50: light-dark(var(--color-indigo-50), var(--color-indigo-950));
 	--color-secondary-fill-100: light-dark(var(--color-indigo-100), var(--color-indigo-900));
 	--color-secondary-stroke-50: light-dark(var(--color-indigo-950), var(--color-indigo-50));
 	--color-secondary-stroke-100: light-dark(var(--color-indigo-900), var(--color-indigo-100));
 
 	/* tertiary */
-	--color-tertiary-standalone: light-dark(var(--color-teal-500), var(--color-teal-500));
+	--color-tertiary: light-dark(var(--color-teal-500), var(--color-teal-500));
 	--color-tertiary-fill-50: light-dark(var(--color-teal-50), var(--color-teal-950));
 	--color-tertiary-fill-100: light-dark(var(--color-teal-100), var(--color-teal-900));
 	--color-tertiary-stroke-50: light-dark(var(--color-teal-950), var(--color-teal-50));
 	--color-tertiary-stroke-100: light-dark(var(--color-teal-900), var(--color-teal-100));
 
 	/* status: info */
-	--color-info-standalone: light-dark(var(--color-blue-500), var(--color-blue-500));
+	--color-info: light-dark(var(--color-blue-500), var(--color-blue-500));
 	--color-info-fill-50: light-dark(var(--color-blue-50), var(--color-blue-950));
 	--color-info-fill-100: light-dark(var(--color-blue-100), var(--color-blue-900));
 	--color-info-stroke-50: light-dark(var(--color-blue-950), var(--color-blue-50));
@@ -44,7 +44,7 @@
 	--color-info-stroke-200: light-dark(var(--color-blue-800), var(--color-blue-200));
 
 	/* status: success */
-	--color-success-standalone: light-dark(var(--color-emerald-500), var(--color-emerald-500));
+	--color-success: light-dark(var(--color-emerald-500), var(--color-emerald-500));
 	--color-success-fill-50: light-dark(var(--color-emerald-50), var(--color-emerald-950));
 	--color-success-fill-100: light-dark(var(--color-emerald-100), var(--color-emerald-900));
 	--color-success-stroke-50: light-dark(var(--color-emerald-950), var(--color-emerald-50));
@@ -52,7 +52,7 @@
 	--color-success-stroke-200: light-dark(var(--color-emerald-800), var(--color-emerald-200));
 
 	/* status: warning */
-	--color-warning-standalone: light-dark(var(--color-yellow-500), var(--color-yellow-500));
+	--color-warning: light-dark(var(--color-yellow-500), var(--color-yellow-500));
 	--color-warning-fill-50: light-dark(var(--color-yellow-50), var(--color-yellow-950));
 	--color-warning-fill-100: light-dark(var(--color-yellow-100), var(--color-yellow-900));
 	--color-warning-stroke-50: light-dark(var(--color-yellow-950), var(--color-yellow-50));
@@ -60,7 +60,7 @@
 	--color-warning-stroke-200: light-dark(var(--color-yellow-800), var(--color-yellow-200));
 
 	/* status: error */
-	--color-error-standalone: light-dark(var(--color-red-500), var(--color-red-500));
+	--color-error: light-dark(var(--color-red-500), var(--color-red-500));
 	--color-error-fill-50: light-dark(var(--color-red-50), var(--color-red-950));
 	--color-error-fill-100: light-dark(var(--color-red-100), var(--color-red-900));
 	--color-error-stroke-50: light-dark(var(--color-red-950), var(--color-red-50));
