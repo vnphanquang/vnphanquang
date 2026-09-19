@@ -55,7 +55,7 @@
 						lang={post.metadata.language}
 					>
 						{#if post.thumbnail}
-							<a class="@container block p-4" {href}>
+							<a class="@container block p-4" {href} aria-hidden={true}>
 								<post.thumbnail />
 							</a>
 						{/if}
@@ -85,6 +85,7 @@
 			<Breadcrumbs.List class="mbs-10" {crumbs} />
 			<a class="c-link-lazy" href="https://www.youtube.com/watch?v=Heciu9zmiOE">
 				<Ascii class="text-[0.05rem] opacity-50">{asciiOcarina}</Ascii>
+				<span class="sr-only">an ocarina</span>
 			</a>
 		</div>
 	</div>

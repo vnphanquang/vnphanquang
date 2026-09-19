@@ -59,6 +59,7 @@
 				</div>
 				<a class="c-link-lazy" href="https://youtu.be/SFRI3byJgYA?si=ks6_I-N5Hx8Ng-kK">
 					<Ascii class="text-[0.06rem]">{asciiLonLonMilk}</Ascii>
+					<span class="sr-only">Lon-Lon Milk Bottle</span>
 				</a>
 			</div>
 
