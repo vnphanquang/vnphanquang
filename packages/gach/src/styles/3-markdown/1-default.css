@@ -163,7 +163,7 @@
 			line-height: 1.5;
 			color: oklch(from currentcolor calc(l + 0.1 * var(--color-scheme-sign)) c h);
 
-			&:where(figure:has(:is(img, video)) *) {
+			&:where(figure:has(:is(img, video, iframe)) *) {
 				text-align: center;
 			}
 		}
@@ -198,9 +198,12 @@
 			);
 		}
 
-		&:where(:is(img, video)) {
-			margin-block: 2em;
+		&:where(:is(img, video, iframe)) {
 			margin-inline: auto;
+
+			&:not(figure *) {
+				margin-block: 2em;
+			}
 		}
 
 		&:where(table) {
