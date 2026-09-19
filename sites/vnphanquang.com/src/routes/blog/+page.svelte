@@ -52,6 +52,7 @@
 				<li>
 					<article
 						class="group border-fill-200 tablet:p-6 bg-fill-50 relative space-y-2 border p-4"
+						lang={post.metadata.language}
 					>
 						{#if post.thumbnail}
 							<a class="@container block p-4" {href}>

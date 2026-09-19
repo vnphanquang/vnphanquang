@@ -63,7 +63,7 @@
 		},
 	}}
 />
-<main class="max-w-pad @container space-y-10 py-10">
+<main class="max-w-pad @container space-y-10 py-10" lang={post.metadata.language}>
 	<Breadcrumbs.List {crumbs} />
 	<div class="md">
 		<h1>{post.metadata.title}</h1>
