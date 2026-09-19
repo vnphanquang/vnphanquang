@@ -35,6 +35,12 @@ export default defineConfig({
 			experimental: {
 				remoteFunctions: true,
 			},
+			inspector: {
+				toggleKeyCombo: 'alt-shift',
+				holdMode: true,
+				showToggleButton: 'always',
+				toggleButtonPos: 'bottom-left',
+			},
 		}),
 	],
 });
