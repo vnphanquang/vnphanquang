@@ -28,9 +28,8 @@
 		},
 	}}
 />
-<main class="max-w-pad max-tablet:flex-col-reverse flex flex-1 gap-20 py-10">
-	<Ascii
-		class="max-tablet:mx-auto desktop:text-[0.4rem] tablet:sticky inset-bs-10 h-fit text-[0.3rem]"
+<main class="max-w-pad mobile:flex-col-reverse flex flex-1 gap-20 py-10">
+	<Ascii class="mobile:mx-auto desktop:text-[0.4rem] tablet:sticky inset-bs-10 h-fit text-[0.3rem]"
 		>{asciiQuang}</Ascii
 	>
 	<div class="max-w-readable w-full">

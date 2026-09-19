@@ -74,7 +74,7 @@
 		<post.thumbnail />
 	{/if}
 
-	<div class="border-fill-200 max-tablet:flex-col-reverse flex justify-between border-t pbs-2">
+	<div class="border-fill-200 mobile:flex-col-reverse flex justify-between border-t pbs-2">
 		<p>
 			{#if post.metadata.numWords}
 				~ {post.metadata.numWords} {t.words}
@@ -100,7 +100,7 @@
 
 		<!-- table of contents -->
 		<section
-			class="toc tablet:sticky top-header mobile-border-onehalf mobile-border-dashed mobile:border-tertiary mobile:-mx-3 mobile:p-3 h-fit space-y-6"
+			class="toc tablet:sticky top-header mobile:border-onehalf mobile:border-dashed mobile:border-secondary mobile:-mx-3 mobile:p-3 h-fit space-y-6"
 		>
 			<h2 class="border-outline border-b-fill-200 border-b text-2xl leading-relaxed font-bold">
 				{t.toc}
@@ -115,8 +115,8 @@
 
 	.read {
 		grid-template-areas:
-			'content'
-			'toc';
+			'toc'
+			'content';
 
 		@media (--tablet) {
 			grid-template-areas: 'content toc';

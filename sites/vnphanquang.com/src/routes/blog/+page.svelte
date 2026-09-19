@@ -34,7 +34,7 @@
 		},
 	}}
 />
-<main class="max-w-pad max-tablet:flex-col flex flex-1 gap-20 py-10">
+<main class="max-w-pad mobile:flex-col flex flex-1 gap-20 py-10">
 	<div class="max-w-readable w-full space-y-10">
 		<div>
 			<h1 class="tablet:text-4xl font-quang border-b text-3xl font-bold">Latest thoughts</h1>
@@ -72,7 +72,10 @@
 							{/if}
 						</p>
 						<p>{post.metadata.description}</p>
-						<a class="c-link-lazy absolute inset-e-0 inset-bs-0 border p-2" {href}>
+						<a
+							class="c-link-lazy bg-fill-50/80 absolute inset-e-0 inset-bs-0 border-s border-be p-2"
+							{href}
+						>
 							Read more
 							<i class="i i-[ph--arrow-right]"></i>
 						</a>
@@ -90,7 +93,7 @@
 		</div>
 	</div>
 
-	<Ascii class="max-tablet:mx-auto tablet:sticky max-tablet:text-[0.7rem] inset-bs-10 mbs-10 h-fit"
+	<Ascii class="mobile:mx-auto tablet:sticky mobile:text-[0.7rem] inset-bs-10 mbs-10 h-fit"
 		>{asciiCogito}</Ascii
 	>
 </main>
