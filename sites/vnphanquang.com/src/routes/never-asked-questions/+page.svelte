@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/state';
-	import asciiNightWindow from '$lib/assets/ascii/night-window.txt?raw';
+	import asciiLonLonMilk from '$lib/assets/ascii/lon-lon-milk.txt?raw';
 	import asciiQuang from '$lib/assets/ascii/quang.txt?raw';
 	import { Breadcrumbs, defineCrumbs } from '$lib/components/breadcrumbs';
 	import { PageMetadata } from '$lib/components/page-metadata';
@@ -31,9 +31,9 @@
 	<pre
 		class="ascii max-tablet:mx-auto desktop:text-[0.4rem] tablet:sticky inset-bs-10 h-fit text-[0.3rem]">{asciiQuang}</pre>
 	<div class="max-w-readable w-full">
-		<h1 class="tablet:text-4xl font-quang border-b text-3xl font-bold">Never Asked Questions</h1>
+		<h1 class="tablet:text-4xl font-quang border-b text-3xl font-bold">never asked questions</h1>
 		<p class="text-right text-sm leading-relaxed italic">
-			You might even stumble upon some answers...
+			you might even stumble upon some answers...
 		</p>
 		<dl class="">
 			<div>
@@ -49,14 +49,22 @@
 				</dd>
 			</div>
 
-			<div>
-				<dt>Why did you attack my cuccos 🐔?</dt>
-				<dd>Bottle yourself up and give me your rupee 💎, now!</dd>
+			<div class="flex items-start justify-between">
+				<div>
+					<dt>Why did you attack my cuccos 🐔?</dt>
+					<dd>Bottle yourself up and give me your rupee 💎, now!</dd>
+				</div>
+				<a class="c-link-lazy" href="https://youtu.be/SFRI3byJgYA?si=ks6_I-N5Hx8Ng-kK">
+					<pre class="ascii text-[0.06rem]">{asciiLonLonMilk}</pre>
+				</a>
 			</div>
 
 			<div>
 				<dt>Will you take LLM's jobs?</dt>
-				<dd>Cleaning 💩 is a respectable work. Everyone's got a passion, or a will to live.</dd>
+				<dd>
+					Cleaning 💩 is a respectable work. Everyone's got a passion, or, sometimes, an obligation
+					to survive.
+				</dd>
 			</div>
 
 			<div>

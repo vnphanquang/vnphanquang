@@ -1,39 +1,45 @@
-import type { Component } from 'svelte';
-
-import { LANGUAGES } from '$lib/constants';
-
+import { SLUG_TO_POST } from './collect';
 import type { BlogPost, BlogPostMetadata } from './definition';
-
-export const entries = import.meta.glob<{
-	default: Component;
-	metadata: Omit<BlogPostMetadata, 'language'>;
-}>('./entries/*/*/post.svelte');
 
 export interface LoadBlogPostInput {
 	slug: string;
 }
-
 export async function loadBlogPost(input: LoadBlogPostInput): Promise<BlogPost | null> {
 	const { slug } = input;
-	for (const lang of LANGUAGES) {
-		const path = `./entries/${lang}/${slug}/post.svelte`;
-		const loader = entries[path];
-		if (!loader) continue;
-		const module = await loader();
-		return {
-			content: module.default,
-			metadata: {
-				...module.metadata,
-				language: lang,
-			},
-		};
-	}
-	return null;
+	if (!SLUG_TO_POST[slug]) return null;
+	const post = SLUG_TO_POST[slug];
+	const [content, metadata, thumbnail] = await Promise.all([
+		post.content(),
+		post.metadata(),
+		post.thumbnail?.(),
+	]);
+	return {
+		content,
+		metadata: {
+			...metadata,
+			language: post.language,
+			slug: post.slug,
+		},
+		thumbnail,
+	};
+}
+
+export async function listBlogPosts(): Promise<Omit<BlogPost, 'content'>[]> {
+	return await Promise.all(
+		Object.values(SLUG_TO_POST).map(async (post) => {
+			const [metadata, thumbnail] = await Promise.all([post.metadata(), post.thumbnail?.()]);
+			return {
+				metadata: {
+					...metadata,
+					language: post.language,
+					slug: post.slug,
+				},
+				thumbnail,
+			};
+		}),
+	);
 }
 
 export function generateKitEntries(): { slug: string }[] {
-	return Object.keys(entries).map((path) => {
-		const segments = path.split('/');
-		return { slug: segments.at(-2)! };
-	});
+	return Object.keys(SLUG_TO_POST).map((slug) => ({ slug }));
 }
