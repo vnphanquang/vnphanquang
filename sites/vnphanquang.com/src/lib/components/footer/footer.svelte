@@ -54,11 +54,6 @@
 				><span class="default">{ascii_default}</span>{ascii_bubble_suffix}</pre>
 		</label>
 	</div>
-	<div class="opinion text-primary-stroke-100 max-w-pad flex items-center gap-2 text-xs">
-		<div class="flex-1 border-t border-current"></div>
-		<p>opinions are my own</p>
-		<div class="flex-1 border-t border-current"></div>
-	</div>
 </footer>
 
 <style>
