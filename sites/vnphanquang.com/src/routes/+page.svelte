@@ -55,7 +55,11 @@ Cheers,
 		</div>
 	</div>
 	<div class="desktop:pbs-20 flex flex-col items-end">
-		<Ascii class="tablet:text-[0.2rem] shrink-0 text-[0.1rem]">{asciiNightWindow}</Ascii>
-		<Ascii class="tablet:text-[0.5rem] shrink-0 text-[0.4rem]">{asciiWorkingAway}</Ascii>
+		<Ascii class="tablet:text-[0.2rem] shrink-0 text-[0.1rem] tracking-wide"
+			>{asciiNightWindow}</Ascii
+		>
+		<Ascii class="tablet:text-[0.5rem] shrink-0 text-[0.4rem] tracking-wide"
+			>{asciiWorkingAway}</Ascii
+		>
 	</div>
 </main>

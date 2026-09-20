@@ -36,10 +36,10 @@
 		structured: buildStructuredBlog(),
 	}}
 />
-<main class="max-w-pad mobile:flex-col flex flex-1 gap-20 py-10">
+<main class="max-w-pad max-desktop:flex-col desktop:gap-20 flex flex-1 py-10">
 	<div class="max-w-readable w-full space-y-10">
 		<div>
-			<h1 class="tablet:text-4xl font-quang border-b text-3xl font-bold">Latest thoughts</h1>
+			<h1 class="tablet:text-4xl font-quang border-b text-3xl font-bold">latest thoughts</h1>
 			<p class="text-right text-sm leading-relaxed italic">
 				<a class="c-link-lazy" href="https://youtu.be/9B612wK056c?si=qEE1XFp1Y9aq7v8N">
 					"Hey! Listen!"
@@ -53,32 +53,33 @@
 				{const t = translations[post.metadata.language]}
 				<li>
 					<article
-						class="group border-fill-200 tablet:p-6 bg-fill-50 relative space-y-2 border p-4"
+						class="border-fill-200 tablet:p-6 bg-fill-50 relative border p-4"
 						lang={post.metadata.language}
 					>
-						{#if post.thumbnail}
-							<a class="@container block p-4" {href} aria-hidden={true}>
-								<post.thumbnail />
-							</a>
-						{/if}
-						<h2>
-							<a class="c-link-preserved relative text-xl font-bold" {href}>
-								{post.metadata.title}
-								<i class="not-can-hover:hidden i i-[ph--cursor-click] text-[0.75em]"></i>
-							</a>
-						</h2>
-						<p class="text-stroke-200">
-							{formatDateForBlog(post.metadata.updatedAt ?? post.metadata.publishedAt)}
-							{#if post.metadata.readMinutes}
-								• {post.metadata.readMinutes} {t.min_read}
+						<div class="space-y-2">
+							{#if post.thumbnail}
+								<a class="@container block p-4" {href} aria-hidden={true}>
+									<post.thumbnail />
+								</a>
 							{/if}
-						</p>
-						<p>{post.metadata.description}</p>
+							<h2>
+								<a class="c-link-preserved relative text-xl font-bold" {href}>
+									{post.metadata.title}
+								</a>
+							</h2>
+							<p class="text-stroke-200">
+								{formatDateForBlog(post.metadata.updatedAt ?? post.metadata.publishedAt)}
+								{#if post.metadata.readMinutes}
+									• {post.metadata.readMinutes} {t.min_read}
+								{/if}
+							</p>
+							<p>{post.metadata.description}</p>
+						</div>
 						<a
 							class="c-link-lazy bg-fill-50/80 absolute inset-e-0 inset-bs-0 border-s border-be p-2"
 							{href}
 						>
-							Read more
+							{t.read_more}
 							<i class="i i-[ph--arrow-right]"></i>
 						</a>
 					</article>
@@ -89,13 +90,14 @@
 		<div class="flex items-end justify-between">
 			<Breadcrumbs.List class="mbs-10" {crumbs} />
 			<a class="c-link-lazy" href="https://www.youtube.com/watch?v=Heciu9zmiOE">
-				<Ascii class="text-[0.05rem] opacity-50">{asciiOcarina}</Ascii>
+				<Ascii class="text-[0.05rem] opacity-75">{asciiOcarina}</Ascii>
 				<span class="sr-only">an ocarina</span>
 			</a>
 		</div>
 	</div>
 
-	<Ascii class="mobile:mx-auto tablet:sticky mobile:text-[0.7rem] inset-bs-10 mbs-10 h-fit"
+	<Ascii
+		class="max-desktop:mx-auto tablet:sticky max-widescreen:text-[0.7rem] inset-bs-10 mbs-10 h-fit tracking-wide"
 		>{asciiCogito}</Ascii
 	>
 </main>
