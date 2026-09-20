@@ -85,15 +85,21 @@ Loud voices own knowledge production.
 
 The human collective knowledge is vast and diverse, rich in history and perspectives, only a fraction of which is documented. What small parts of this fraction are fed into GenAI during its training? Who decides so? i can only speculate, that my mother's recipes are not among them. Neither are the proverbs or folk songs my grandmother once sang, nor the traditions and wisdom passed down only by spoken words.
 
-> "Oh, just train your own model from your own dataset?"
+> Oh, just train your own model from your own dataset?
 
 How would i do that? By spending decades of unpaid effort studying and documenting knowledge because the only thing that fed me is curiosity? Or by buying up warehouses of GPUs and hardware because i had generational wealth at my disposal? Or, should i ask some GenAI to do those for me?
 
 The impact of GenAI is **far and deep**. It is already happening today. GenAI is being handed to people without any disclaimer or instruction manual, and overused where it should not be used.
 
+There are machines that can "solve" chess. Yet we hold tournaments every year for humans to
+compete. There are robots that play balls. Yet stadiums are filled, tickets are sold out. i don't
+think we need GenAI in every corner of our lives.
+
+![Professor Felienne Hermans on the historical epistemological context of today computer science and how GenAI, specifically LLM, fits into it](https://youtube.com/embed/0-6-f94n_9M)
+
 ## "We Will Catch Up!"
 
-> "Oh, technology always develops so fast like that. It's hard to avoid some left-behinds."
+> Oh, technology always develops so fast like that. It's hard to avoid some left-behinds.
 
 Does it have to be? If technology is truly fast, it must surely be driven by some drunk moron.
 
@@ -109,7 +115,7 @@ Am i comparing oranges and apples? Or is it not really about technology? It cert
 
 Perhaps, GenAI is rushed because these tech companies deem it to be. A new market, a hype-based lucratively stupid one.
 
-> "On don't worry about it, we will catch up."
+> On don't worry about it, we will catch up.
 
 Oh i know: we always do. The same way we manage to imprison war criminals only decades after their crimes were committed. The same way we still picking up pieces of landmines and digging up unexploded bombs today.
 
@@ -125,4 +131,46 @@ In this reduction of knowledge by the expansionists. i have yet to see an end. D
 2. Maybe let's return GenAI to labs until there are clear legal and ethical frameworks? A defective product recall is an apt analogy?
 3. Maybe let's try our best to figure out a sustainable way to train these models for specific use cases, instead of making massive know-all models? Some minimal models that can run locally on your and my machines without the centralised cloud?
 4. There are enough jobs for everyone. Maybe let's chill out on this hype train and AI arms race? Let's live and eat and love instead of trying to trade one's livelihood for another's greed in this never-ending zero-sum game?
+
+---
+
+The following sections move beyond the scope of GenAI (if the previous ones have not already done
+so) into the broader context of my specific living experience, some involving the tech industry as a
+whole. Please feel free to skip them if you have had enough of my ranting.
+
+---
+
+## Echo in the Void
+
+Living in the Global South, i feel sad to see GenAI sympathisers among my colleagues and
+friends. "GenAI will be here no matter what, might as well use it" - some said. "Why should I care",
+another would add. "Such is progress", they agreed in unison. It saddens me becuse no matter if these
+arguments are factually correct or not (let alone how problematic i think they may be), i have to
+accept the fact they have every right to not care.
+
+It saddens me because, while we choose to not look, power plants are being built to support the demand from the West.
+Lands are being taken away for a more profitable industry. This is, however, not breaking news: the same thing has
+been going on for decades, centuries even. We bow down to the strong man, the money man, the white man.
+
+Is it not caring, or choosing to care in a verfy specific way?
+
+It is sad to feel the echo of the past, hearing friends repeating talking points from colonisers and
+imperialists whose aim is to extract, to condense, to reduce. To hear such echo in the void that is
+named "progress" - one designed to suck away everything including the voices that powered it.
+
+It is sad to think about the struggle our ancestors have went through to protect what was left of
+our identity, our tradition, our humanity, and what is left of those today.
+
+Above all, it is sad to fear. To feel hopeless.
+
+## Message for Future Me
+
+Yet, i have hope. It may not be in this industry, or in myself. But i do see glimpses of it all around.
+In people who look at trash on the sidewalk and think about the relationship between the thrower
+and the throwed-away. In those who study elephants in the deep forests. Those who look at a microscope
+at day, or telescope at night. Those who hold up flags and stand in solidarity. Those who sail for peace.
+
+I have hope in curiosity, in perseverance.
+
+In humanity.
 `}
