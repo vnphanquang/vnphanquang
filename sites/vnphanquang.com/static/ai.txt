@@ -1,0 +1,8 @@
+---
+updated: 2026-09-20
+scope: /
+---
+
+I do not consent for any content in this website to be used for training commercial AI.
+If you use my website for research or open-source purposes, please reach out at oss@vnphanquang.com.
+Thank you!
