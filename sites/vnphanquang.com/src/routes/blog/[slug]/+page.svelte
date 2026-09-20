@@ -17,16 +17,19 @@
 
 	const post = $derived(await loadBlogPost(params));
 
+	// svelte-ignore state_referenced_locally
 	if (!post) error(400, 'No post with such name!'); // for SSR
 	$effect(() => {
 		if (!post) error(400, 'No post with such name!'); // for CSR
 	});
 
-	const crumbs = defineCrumbs([
-		{ name: 'vnphanquang.com', label: 'quang', path: '/' },
-		{ name: 'Blog', label: 'blog', path: '/blog' },
-		{ name: post.metadata.title, label: post.metadata.slug, path: page.url.pathname },
-	]);
+	const crumbs = $derived(
+		defineCrumbs([
+			{ name: 'vnphanquang.com', label: 'quang', path: '/' },
+			{ name: 'Blog', label: 'blog', path: '/blog' },
+			{ name: post.metadata.title, label: post.metadata.slug, path: page.url.pathname },
+		]),
+	);
 
 	let cappedTitle = $derived.by(() => {
 		const title = post.metadata.title;
@@ -54,9 +57,9 @@
 		description: post.metadata.description,
 		og: {
 			title: post.metadata.title,
-			...(post.metadata.ogImage && {
+			...(post.ogImage && {
 				image: {
-					src: post.metadata.ogImage,
+					src: post.ogImage,
 					alt: '',
 				},
 			}),

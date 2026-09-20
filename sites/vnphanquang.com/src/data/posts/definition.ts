@@ -44,8 +44,6 @@ export interface BlogPostMetadata {
 	 * @default false
 	 */
 	outdate?: boolean | number | Date;
-	/** URL to OG image, if any */
-	ogImage?: string;
 	/** approximated number of words in post content */
 	numWords?: number;
 	/** approximated number of minutes required to read this post */
@@ -69,6 +67,7 @@ export interface BlogPost {
 	content: Component;
 	metadata: BlogPostMetadata;
 	thumbnail?: Component<BlogPostThumbnailProps>;
+	ogImage?: string;
 }
 
 export type AutoDetectedFields = 'slug' | 'language' | 'ogImage';

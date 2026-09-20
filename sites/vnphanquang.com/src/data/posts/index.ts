@@ -1,5 +1,5 @@
 import { SLUG_TO_POST } from './collect';
-import type { BlogPost, BlogPostMetadata } from './definition';
+import type { BlogPost } from './definition';
 
 export interface LoadBlogPostInput {
 	slug: string;
@@ -8,10 +8,11 @@ export async function loadBlogPost(input: LoadBlogPostInput): Promise<BlogPost |
 	const { slug } = input;
 	if (!SLUG_TO_POST[slug]) return null;
 	const post = SLUG_TO_POST[slug];
-	const [content, metadata, thumbnail] = await Promise.all([
+	const [content, metadata, thumbnail, ogImage] = await Promise.all([
 		post.content(),
 		post.metadata(),
 		post.thumbnail?.(),
+		post.og?.(),
 	]);
 	return {
 		content,
@@ -21,6 +22,7 @@ export async function loadBlogPost(input: LoadBlogPostInput): Promise<BlogPost |
 			slug: post.slug,
 		},
 		thumbnail,
+		ogImage,
 	};
 }
 

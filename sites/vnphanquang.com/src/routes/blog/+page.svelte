@@ -10,7 +10,7 @@
 	import { PageMetadata } from '$lib/components/page-metadata';
 	import { formatDateForBlog } from '$lib/utils/datetime';
 
-	// import ogImage from './og.jpg?url';
+	import ogImage from './og.jpg?url';
 
 	const crumbs = defineCrumbs([
 		{ name: 'vnphanquang.com', label: 'quang', path: '/' },
@@ -28,7 +28,7 @@
 		og: {
 			title: 'Latest Thoughts in Writing',
 			image: {
-				// src: ogImage,
+				src: ogImage,
 				alt: '',
 			},
 		},

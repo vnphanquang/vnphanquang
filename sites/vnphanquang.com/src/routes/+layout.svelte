@@ -19,7 +19,8 @@
 	{version}
 	metadata={{
 		title: 'vnphanquang',
-		description: 'personal digital laboratory of vnphanquang',
+		description:
+			'a personal digital laboratory for nonsensical experiments and whatever else i want',
 		keywords: 'vnphanquang, lab, playground, portfolio, personal',
 		canonical: page.url.origin + page.url.pathname,
 		og: {
