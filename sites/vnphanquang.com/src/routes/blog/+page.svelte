@@ -2,6 +2,7 @@
 	import { resolve } from '$app/paths';
 	import { page } from '$app/state';
 	import { listBlogPosts } from '$data/posts';
+	import { buildStructuredBlog } from '$data/posts/structured';
 	import { translations } from '$data/translations';
 	import asciiCogito from '$lib/assets/ascii/cogito.txt?raw';
 	import asciiOcarina from '$lib/assets/ascii/ocarina.txt?raw';
@@ -32,6 +33,7 @@
 				alt: '',
 			},
 		},
+		structured: buildStructuredBlog(),
 	}}
 />
 <main class="max-w-pad mobile:flex-col flex flex-1 gap-20 py-10">

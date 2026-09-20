@@ -12,6 +12,7 @@
 	import { formatDateForBlog } from '$lib/utils/datetime';
 
 	import type { PageProps } from './$types';
+	import { buildStructuredBlogPost } from '$data/posts/structured';
 
 	const { params }: PageProps = $props();
 
@@ -64,6 +65,7 @@
 				},
 			}),
 		},
+		structured: buildStructuredBlogPost(page.url.origin, post),
 	}}
 />
 <main class="max-w-pad @container space-y-10 py-10" lang={post.metadata.language}>
