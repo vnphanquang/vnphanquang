@@ -34,7 +34,7 @@
 			"import": "./src/index.js"
 		},
 		"./svelte": {
-			"types": "./types/index.d.ts",
+			"types": "./src/svelte/index.js",
 			"svelte": "./src/svelte/index.js",
 			"default": "./src/svelte/index.js"
 		},

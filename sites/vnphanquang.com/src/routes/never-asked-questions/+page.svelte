@@ -1,9 +1,10 @@
 <script lang="ts">
+	import { PageMetadata } from '@vnphanquang/gach/metadata';
+
 	import asciiLonLonMilk from '#lib/assets/ascii/lon-lon-milk.txt?raw';
 	import asciiQuang from '#lib/assets/ascii/quang.txt?raw';
 	import { Ascii } from '#lib/components/ascii';
 	import { Breadcrumbs, defineCrumbs } from '#lib/components/breadcrumbs';
-	import { PageMetadata } from '#lib/components/page-metadata';
 	import { page } from '$app/state';
 
 	import ogImage from './og.jpg?url';

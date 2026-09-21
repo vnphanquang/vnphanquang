@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { PageMetadata } from '@vnphanquang/gach/metadata';
+
 	import { Toc } from '@svelte-put/toc';
 	import { error } from '@sveltejs/kit';
 	import { Markdown } from '@vnphanquang/markdown/svelte';
@@ -7,7 +9,6 @@
 	import { buildStructuredBlogPost } from '#data/posts/structured';
 	import { translations } from '#data/translations';
 	import { Breadcrumbs, defineCrumbs } from '#lib/components/breadcrumbs';
-	import { PageMetadata } from '#lib/components/page-metadata';
 	import { TableOfContents } from '#lib/components/table-of-contents';
 	import { formatDateForBlog } from '#lib/utils/datetime';
 	import { page } from '$app/state';

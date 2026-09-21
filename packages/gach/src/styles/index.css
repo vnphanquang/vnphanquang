@@ -14,3 +14,5 @@
 @import './3-markdown/index.css';
 @import './4-utilities/index.css';
 
+@source '../components/**/*.{svelte,js}';
+@source '../layouts/**/*.{svelte,js}';

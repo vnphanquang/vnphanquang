@@ -31,13 +31,29 @@
 			"types": "./types/index.d.ts",
 			"import": "./src/index.js"
 		},
+		"./components": {
+			"types": "./types/index.d.ts",
+			"import": "./src/components/index.js"
+		},
 		"./constants": {
 			"types": "./types/index.d.ts",
 			"import": "./src/constants.js"
 		},
+		"./contexts": {
+			"types": "./types/index.d.ts",
+			"import": "./src/contexts/index.js"
+		},
 		"./hooks": {
 			"types": "./types/index.d.ts",
 			"import": "./src/hooks.js"
+		},
+		"./layouts": {
+			"types": "./types/index.d.ts",
+			"import": "./src/layouts/index.js"
+		},
+		"./metadata": {
+			"types": "./types/index.d.ts",
+			"import": "./src/metadata/index.js"
 		},
 		"./vite": {
 			"types": "./types/index.d.ts",
@@ -67,9 +83,6 @@
 		"svelte": ">=5.0.0"
 	},
 	"peerDependenciesMeta": {
-		"svelte": {
-			"optional": true
-		},
 		"@sveltejs/kit": {
 			"optional": true
 		}
@@ -88,6 +101,7 @@
 	},
 	"devDependencies": {
 		"@sveltejs/kit": "3.0.0-next.27",
+		"schema-dts": "^2.0.0",
 		"svelte": "^5.57.1"
 	}
 }

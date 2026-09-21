@@ -1,11 +1,13 @@
 /// <reference types="vite/client" />
 
-// See https://svelte.dev/docs/kit/types#app.d.ts
-// for information about these interfaces
+import type { ColorScheme } from '@vnphanquang/gach/constants';
+
 declare global {
 	namespace App {
 		// interface Error {}
-		// interface Locals {}
+		interface Locals {
+			colorScheme: ColorScheme;
+		}
 		// interface PageData {}
 		// interface PageState {}
 		// interface Platform {}

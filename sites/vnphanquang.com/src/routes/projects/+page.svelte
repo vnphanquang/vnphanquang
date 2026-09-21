@@ -1,10 +1,11 @@
 <script lang="ts">
+	import { PageMetadata } from '@vnphanquang/gach/metadata';
+
 	import { type Project, groupProjectsByTags, projects } from '#data/projects';
 	import asciiExperiment from '#lib/assets/ascii/experiment.txt?raw';
 	import asciiScarecrow from '#lib/assets/ascii/scarecrow.txt?raw';
 	import { Ascii } from '#lib/components/ascii';
 	import { Breadcrumbs, defineCrumbs } from '#lib/components/breadcrumbs';
-	import { PageMetadata } from '#lib/components/page-metadata';
 	import { page } from '$app/state';
 
 	import ogImage from './og.jpg?url';

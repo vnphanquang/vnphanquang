@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { PageMetadata } from '@vnphanquang/gach/metadata';
+
 	import { listBlogPosts } from '#data/posts';
 	import { buildStructuredBlog } from '#data/posts/structured';
 	import { translations } from '#data/translations';
@@ -6,7 +8,6 @@
 	import asciiOcarina from '#lib/assets/ascii/ocarina.txt?raw';
 	import { Ascii } from '#lib/components/ascii';
 	import { Breadcrumbs, defineCrumbs } from '#lib/components/breadcrumbs';
-	import { PageMetadata } from '#lib/components/page-metadata';
 	import { formatDateForBlog } from '#lib/utils/datetime';
 	import { resolve } from '$app/paths';
 	import { page } from '$app/state';

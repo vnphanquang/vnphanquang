@@ -2,6 +2,7 @@
  * wraps a schema.org Thing with the context.
  * @template {import('schema-dts').Thing} T
  * @param {T} data
+ * @returns {T & { '@context': 'https://schema.org' }}
  */
 export function withContext(data) {
 	return {
@@ -14,7 +15,7 @@ export function withContext(data) {
  * Converts a schema.org Thing or an array of Things to a JSON string with context.
  * @template {import('schema-dts').Thing} T
  * @param {T | T[]} data - The schema.org Thing or array of Things to convert.
- * @return {string}
+ * @returns {string}
  */
 export function toStringWithContext(data) {
 	if (Array.isArray(data)) {

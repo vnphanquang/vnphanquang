@@ -9,7 +9,7 @@ import { PUBLIC_COOKIE_CONFIG } from './constants.js';
 
 /**
  * @param {ColorSchemeServerHookOptions} options
- * @returns {import('@sveltejs/kit').Handle}
+ * @returns {import('@sveltejs/kit/hooks').Handle}
  */
 export const createColorSchemeServerHook = function (options) {
 	return async function ({ event, resolve }) {

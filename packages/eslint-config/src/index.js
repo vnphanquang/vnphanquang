@@ -175,6 +175,7 @@ export async function defineConfig(options = {}, ...additionals) {
 			],
 			rules: {
 				'import-x/order': ['error', IMPORT_ORDER_DEFAULTS],
+				'import-x/no-duplicates': 'off',
 				'import-x/no-unresolved': [
 					'error',
 					{
