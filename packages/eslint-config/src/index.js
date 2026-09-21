@@ -154,11 +154,32 @@ export async function defineConfig(options = {}, ...additionals) {
 					...globals.node,
 				},
 			},
+			rules: {
+				// see: https://typescript-eslint.io/troubleshooting/faqs/eslint/#i-get-errors-from-the-no-undef-rule-about-global-variables-not-being-defined-even-though-there-are-no-typescript-errors
+				'no-undef': 'off',
+			},
+		},
+		{
+			extends: [
+				js.configs.recommended,
+				importX.flatConfigs.recommended,
+				importX.flatConfigs.typescript,
+			],
+			rules: {
+				'import-x/order': ['error', IMPORT_ORDER_DEFAULTS],
+				...(svelte && {
+					'import-x/no-unresolved': [
+						'error',
+						{
+							ignore: ['^\\$app/'],
+						},
+					],
+				}),
+			},
 		},
 		{
 			files: ['**/*.{js,mjs,cjs,jsx,mjsx,ts,tsx,mtsx}'],
 			extends: [
-				js.configs.recommended,
 				tseslint.configs.recommended,
 				importX.flatConfigs.recommended,
 				importX.flatConfigs.typescript,
@@ -184,9 +205,6 @@ export async function defineConfig(options = {}, ...additionals) {
 					},
 				},
 			}),
-			rules: {
-				'import-x/order': ['error', IMPORT_ORDER_DEFAULTS],
-			},
 		},
 		{
 			files: ['**/types.public.js'],
@@ -197,25 +215,22 @@ export async function defineConfig(options = {}, ...additionals) {
 					{
 						files: ['**/*.svelte', '**/*.svelte.ts', '**/*.svelte.js'],
 						extends: [
-							js.configs.recommended,
 							tseslint.configs.recommended,
-							importX.flatConfigs.recommended,
-							importX.flatConfigs.typescript,
 							svelte.plugin.configs.recommended,
 							prettier,
 							svelte.plugin.configs.prettier,
 						],
 						languageOptions: /** @satisfies {TSESLintLanguageOptions} */ ({
+							ecmaVersion: 'latest',
+							sourceType: 'module',
 							parserOptions: {
 								tsconfigRootDir: svelte.root,
+								projectService: true,
 								extraFileExtensions: ['.svelte'],
 								parser: tseslint.parser,
 								svelteConfig: svelte.config,
 							},
 						}),
-						rules: {
-							'import-x/order': ['error', IMPORT_ORDER_DEFAULTS],
-						},
 					},
 				])
 			: []),
