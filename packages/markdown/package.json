@@ -88,7 +88,7 @@
 	"devDependencies": {
 		"@shikijs/types": "^4.4.3",
 		"@types/mdast": "^4.0.4",
-		"svelte": "^5.56.1",
+		"svelte": "^5.57.1",
 		"unified": "^11.0.5",
 		"unist-util-visit": "^5.1.0"
 	}

@@ -55,26 +55,31 @@
 		"build": "dts-buddy --write && publint"
 	},
 	"peerDependencies": {
+		"@sveltejs/kit": ">=2.0.0",
 		"svelte": ">=5.0.0"
 	},
 	"peerDependenciesMeta": {
 		"svelte": {
 			"optional": true
+		},
+		"@sveltejs/kit": {
+			"optional": true
 		}
 	},
 	"dependencies": {
 		"@iconify-json/ph": "^1.2.2",
-		"@iconify-json/simple-icons": "^1.2.95",
+		"@iconify-json/simple-icons": "^1.2.96",
 		"@iconify/tailwind4": "^1.2.3",
 		"@tailwindcss/vite": "^4.3.3",
 		"@vnphanquang/markdown": "workspace:*",
-		"fontless": "^0.4.3",
+		"fontless": "^0.4.5",
 		"postcss-color-scheme": "^2.1.0",
 		"postcss-custom-media": "^12.0.1",
 		"postcss-custom-selectors": "^9.0.1",
 		"tailwindcss": "^4.3.3"
 	},
 	"devDependencies": {
-		"svelte": "^5.56.1"
+		"@sveltejs/kit": "^2.70.3",
+		"svelte": "^5.57.1"
 	}
 }
