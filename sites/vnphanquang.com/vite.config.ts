@@ -7,6 +7,7 @@ import { gach } from '@vnphanquang/gach/vite';
 import { defineConfig } from 'vite';
 
 import pkg from './package.json' with { type: 'json' };
+import { autoSlug } from './src/svelte-put/preprocess-auto-slug/index.js';
 
 const commitHash = child_process.execSync('git rev-parse --short HEAD').toString().trim();
 
@@ -15,6 +16,18 @@ export default defineConfig({
 		// FIXME: add inline-svg, external-link, etc.
 		gach({ markdown: true }),
 		enhancedImages(),
+		autoSlug((defaultOptions) => ({
+			include: /data\/posts\/.*\.svelte$/,
+			tags: ['h2', 'h3', 'h4', 'h5', 'h6'],
+			anchor: {
+				content: '#',
+				position: 'prepend',
+				properties: {
+					...defaultOptions.anchor?.properties,
+					class: 'heading-anchor',
+				},
+			},
+		})),
 		sveltekit({
 			adapter: adapter(),
 			version: {

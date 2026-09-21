@@ -1,3 +1,5 @@
+@import '../0-custom/medias.css';
+
 @layer markdown {
 	.md {
 		font-size: 1rem;
@@ -139,6 +141,35 @@
 			);
 		}
 
+		&:where(.heading-anchor) {
+			position: absolute;
+			inset-block: 0;
+			inset-inline: 0;
+			opacity: 0;
+
+			@media (--tablet) {
+				inset-inline-start: unset;
+				inset-inline-end: 100%;
+
+				margin-inline-end: 8px;
+
+				font-weight: inherit;
+				text-decoration: none;
+
+				opacity: 0;
+
+				transition: opacity 200ms var(--default-transition-timing-function);
+
+				:is(h2, h3, h4, h5, h6):has(&) {
+					position: relative;
+				}
+
+				:is(h2, h3, h4, h5, h6):hover & {
+					opacity: 1;
+				}
+			}
+		}
+
 		&:where(dl) {
 			margin-block: 1.2em;
 		}
@@ -207,7 +238,7 @@
 			}
 		}
 
-		iframe[src*="youtube.com/embed"] {
+		iframe[src*='youtube.com/embed'] {
 			aspect-ratio: 16 / 9;
 			height: auto;
 		}
