@@ -31,6 +31,14 @@
 			"types": "./types/index.d.ts",
 			"import": "./src/index.js"
 		},
+		"./constants": {
+			"types": "./types/index.d.ts",
+			"import": "./src/constants.js"
+		},
+		"./hooks": {
+			"types": "./types/index.d.ts",
+			"import": "./src/hooks.js"
+		},
 		"./vite": {
 			"types": "./types/index.d.ts",
 			"import": "./src/vite/index.js"
