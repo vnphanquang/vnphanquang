@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Ascii } from '$lib/components/ascii';
+	import { Ascii } from '#lib/components/ascii';
 
 	const ascii_bubble_prefix = ` .------------------.\n( `;
 	const ascii_bubble_suffix = ` )\n '------------------\`\\\n`;

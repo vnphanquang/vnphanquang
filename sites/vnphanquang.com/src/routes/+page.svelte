@@ -1,10 +1,10 @@
 <script lang="ts">
 	import { Markdown, markdown } from '@vnphanquang/markdown/svelte';
 
-	import asciiNightWindow from '$lib/assets/ascii/night-window.txt?raw';
-	import asciiWorkingAway from '$lib/assets/ascii/working-away.txt?raw';
-	import { PageMetadata } from '$lib/components/page-metadata';
-	import { Ascii } from '$lib/components/ascii';
+	import asciiNightWindow from '#lib/assets/ascii/night-window.txt?raw';
+	import asciiWorkingAway from '#lib/assets/ascii/working-away.txt?raw';
+	import { Ascii } from '#lib/components/ascii';
+	import { PageMetadata } from '#lib/components/page-metadata';
 </script>
 
 <PageMetadata />
@@ -38,7 +38,7 @@ See you out there!
 
 Cheers,
 				`}
-				<!-- FIXME: inline from $lib/assets once inline-svg is updated -->
+				<!-- FIXME: inline from #lib/assets once inline-svg is updated -->
 				<svg
 					class="h-20 w-auto"
 					xmlns="http://www.w3.org/2000/svg"

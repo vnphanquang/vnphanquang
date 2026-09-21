@@ -3,16 +3,16 @@
 	import { error } from '@sveltejs/kit';
 	import { Markdown } from '@vnphanquang/markdown/svelte';
 
+	import { loadBlogPost } from '#data/posts';
+	import { buildStructuredBlogPost } from '#data/posts/structured';
+	import { translations } from '#data/translations';
+	import { Breadcrumbs, defineCrumbs } from '#lib/components/breadcrumbs';
+	import { PageMetadata } from '#lib/components/page-metadata';
+	import { TableOfContents } from '#lib/components/table-of-contents';
+	import { formatDateForBlog } from '#lib/utils/datetime';
 	import { page } from '$app/state';
-	import { loadBlogPost } from '$data/posts';
-	import { translations } from '$data/translations';
-	import { Breadcrumbs, defineCrumbs } from '$lib/components/breadcrumbs';
-	import { PageMetadata } from '$lib/components/page-metadata';
-	import { TableOfContents } from '$lib/components/table-of-contents';
-	import { formatDateForBlog } from '$lib/utils/datetime';
 
 	import type { PageProps } from './$types';
-	import { buildStructuredBlogPost } from '$data/posts/structured';
 
 	const { params }: PageProps = $props();
 

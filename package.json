@@ -7,6 +7,7 @@
 		"boot": "pnpm install && run-p boot:*",
 		"boot:lefthook": "lefthook install",
 		"boot:packages": "pnpm --filter=\"./packages/**\" build",
+		"boot:env": "pnpm --filter=\"./sites/**\" boot:env",
 		"lint": "pnpm -r lint",
 		"format": "prettier --write ."
 	},
@@ -30,6 +31,7 @@
 		"prettier-plugin-svelte": "^4.1.1",
 		"prettier-plugin-tailwindcss": "^0.8.1",
 		"publint": "^0.3.24",
+		"shx": "^0.4.0",
 		"stylelint": "^17.15.0",
 		"stylelint-config-clean-order": "^10.0.0",
 		"stylelint-config-html": "^2.0.0",

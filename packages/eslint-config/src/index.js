@@ -14,11 +14,19 @@ export const IMPORT_ORDER_DEFAULTS = {
 	groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index', 'object', 'unknown'],
 	pathGroups: [
 		{
+			pattern: '$*',
+			group: 'internal',
+		},
+		{
 			pattern: '$*/**',
 			group: 'internal',
 		},
 		{
-			pattern: '$*',
+			pattern: '#*',
+			group: 'internal',
+		},
+		{
+			pattern: '#*/**',
 			group: 'internal',
 		},
 	],
@@ -167,14 +175,14 @@ export async function defineConfig(options = {}, ...additionals) {
 			],
 			rules: {
 				'import-x/order': ['error', IMPORT_ORDER_DEFAULTS],
-				...(svelte && {
-					'import-x/no-unresolved': [
-						'error',
-						{
-							ignore: ['^\\$app/'],
-						},
-					],
-				}),
+				'import-x/no-unresolved': [
+					'error',
+					{
+						ignore: [
+							'^\\$app/', // for Svelte projects
+						],
+					},
+				],
 			},
 		},
 		{
@@ -190,19 +198,7 @@ export async function defineConfig(options = {}, ...additionals) {
 				sourceType: 'module',
 				parserOptions: {
 					tsconfigRootDir: root,
-					projectService: {
-						allowDefaultProject: svelte
-							? [
-									'eslint.config.{js,ts}',
-									'prettier.config.{js,ts}',
-									'vitest.config.{js,ts}',
-									'playwright.config.{js,ts}',
-									'postcss.config.{js,ts}',
-									'stylelint.config.{js,ts}',
-									'tailwindcss.config.{js,ts}',
-								]
-							: ['*.config.{ts,js}'],
-					},
+					projectService: true,
 				},
 			}),
 		},

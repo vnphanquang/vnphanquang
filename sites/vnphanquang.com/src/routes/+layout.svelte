@@ -1,10 +1,10 @@
 <script lang="ts">
-	import { version } from '$app/environment';
+	import ogImage from '#lib/assets/images/og.jpg?url';
+	import { Footer } from '#lib/components/footer';
+	import { Header } from '#lib/components/header';
+	import { PageMetadataDefaults } from '#lib/components/page-metadata';
+	import { version } from '$app/env';
 	import { page } from '$app/state';
-	import ogImage from '$lib/assets/images/og.jpg?url';
-	import { Footer } from '$lib/components/footer';
-	import { Header } from '$lib/components/header';
-	import { PageMetadataDefaults } from '$lib/components/page-metadata';
 
 	import '../app.css';
 

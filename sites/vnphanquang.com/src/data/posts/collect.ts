@@ -1,6 +1,5 @@
+import type { Language } from '@vnphanquang/gach/constants';
 import type { Component } from 'svelte';
-
-import type { Language } from '$lib/constants';
 
 import type { BlogPostThumbnailProps, PerDefinedPostMetadata } from './definition';
 

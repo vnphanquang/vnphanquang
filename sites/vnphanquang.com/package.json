@@ -3,7 +3,24 @@
 	"version": "v3",
 	"private": true,
 	"type": "module",
+	"imports": {
+		"#lib/*": [
+			"./src/lib/*",
+			"./src/lib/*.js",
+			"./src/lib/*/index.js",
+			"./src/lib/*.ts",
+			"./src/lib/*/index.ts"
+		],
+		"#data/*": [
+			"./src/data/*",
+			"./src/data/*.js",
+			"./src/data/*/index.js",
+			"./src/data/*.ts",
+			"./src/data/*/index.ts"
+		]
+	},
 	"scripts": {
+		"boot:env": "shx cp .env.example .env",
 		"dev": "vite dev",
 		"build": "vite build",
 		"preview": "vite preview",
@@ -15,15 +32,16 @@
 	},
 	"devDependencies": {
 		"@svelte-put/toc": "^6.0.2",
-		"@sveltejs/adapter-node": "^5.5.7",
+		"@sveltejs/adapter-node": "6.0.0-next.12",
 		"@sveltejs/enhanced-img": "^0.11.0",
-		"@sveltejs/kit": "^2.70.3",
+		"@sveltejs/kit": "3.0.0-next.27",
 		"@sveltejs/vite-plugin-svelte": "^7.3.0",
 		"@vnphanquang/gach": "workspace:*",
 		"@vnphanquang/markdown": "workspace:*",
 		"node-addon-api": "^8.9.2",
 		"node-gyp": "^13.0.2",
 		"schema-dts": "^2.0.0",
-		"tailwindcss": "^4.3.3"
+		"tailwindcss": "^4.3.3",
+		"valibot": "^1.5.0"
 	}
 }

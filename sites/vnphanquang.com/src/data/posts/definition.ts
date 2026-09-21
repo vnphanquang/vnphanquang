@@ -1,6 +1,5 @@
+import type { Language } from '@vnphanquang/gach/constants';
 import type { Component } from 'svelte';
-
-import type { Language } from '$lib/constants';
 
 export interface BlogPostMetadata {
 	/** h1 on the page and title in SEO */

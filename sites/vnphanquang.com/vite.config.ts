@@ -1,5 +1,4 @@
 import child_process from 'node:child_process';
-import path from 'node:path';
 
 import adapter from '@sveltejs/adapter-node';
 import { enhancedImages } from '@sveltejs/enhanced-img';
@@ -18,11 +17,6 @@ export default defineConfig({
 		enhancedImages(),
 		sveltekit({
 			adapter: adapter(),
-			alias: {
-				$routes: path.join(import.meta.dirname, 'src/routes'),
-				$data: path.join(import.meta.dirname, 'src/data'),
-				$params: path.join(import.meta.dirname, 'src/params'),
-			},
 			version: {
 				name: `${pkg.version} (#${commitHash})@${Date.now()}`,
 			},
@@ -34,6 +28,7 @@ export default defineConfig({
 			},
 			experimental: {
 				remoteFunctions: true,
+				explicitEnvironmentVariables: true,
 			},
 			inspector: {
 				toggleKeyCombo: 'alt-shift',

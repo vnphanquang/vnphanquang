@@ -1,12 +1,11 @@
 <script lang="ts">
-	import { resolve } from '$app/paths';
+	import { type Project, groupProjectsByTags, projects } from '#data/projects';
+	import asciiExperiment from '#lib/assets/ascii/experiment.txt?raw';
+	import asciiScarecrow from '#lib/assets/ascii/scarecrow.txt?raw';
+	import { Ascii } from '#lib/components/ascii';
+	import { Breadcrumbs, defineCrumbs } from '#lib/components/breadcrumbs';
+	import { PageMetadata } from '#lib/components/page-metadata';
 	import { page } from '$app/state';
-	import { groupProjectsByTags, projects } from '$data/projects';
-	import asciiScarecrow from '$lib/assets/ascii/scarecrow.txt?raw';
-	import asciiExperiment from '$lib/assets/ascii/experiment.txt?raw';
-	import { Ascii } from '$lib/components/ascii';
-	import { Breadcrumbs, defineCrumbs } from '$lib/components/breadcrumbs';
-	import { PageMetadata } from '$lib/components/page-metadata';
 
 	import ogImage from './og.jpg?url';
 

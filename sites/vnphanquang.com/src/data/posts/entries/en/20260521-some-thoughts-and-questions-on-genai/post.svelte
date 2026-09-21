@@ -1,5 +1,5 @@
 <script lang="ts" module>
-	import { defineBlogPostMetadata } from '$data/posts/definition';
+	import { defineBlogPostMetadata } from '#data/posts/definition';
 
 	export const metadata = defineBlogPostMetadata({
 		title: 'Some Thoughts and Questions on GenAI',

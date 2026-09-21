@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Ascii } from '$lib/components/ascii';
+	import { Ascii } from '#lib/components/ascii';
 
 	import flat from './includes/ascii/robot-flat.txt?raw';
 	import frawn from './includes/ascii/robot-frawn.txt?raw';

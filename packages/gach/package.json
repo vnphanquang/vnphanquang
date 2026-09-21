@@ -79,7 +79,7 @@
 		"tailwindcss": "^4.3.3"
 	},
 	"devDependencies": {
-		"@sveltejs/kit": "^2.70.3",
+		"@sveltejs/kit": "3.0.0-next.27",
 		"svelte": "^5.57.1"
 	}
 }

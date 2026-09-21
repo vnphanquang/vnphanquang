@@ -1,6 +1,6 @@
 <script lang="ts">
-	import svelte from '$lib/assets/ascii/svelte.txt?raw';
-	import { Ascii } from '$lib/components/ascii';
+	import svelte from '#lib/assets/ascii/svelte.txt?raw';
+	import { Ascii } from '#lib/components/ascii';
 
 	import arrowCircle from './includes/ascii/arrow-circle.txt?raw';
 	import markdown from './includes/ascii/markdown.txt?raw';
