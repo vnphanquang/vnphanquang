@@ -9,7 +9,7 @@
 <style>
 	@layer components {
 		pre {
-			font-family: var(--font-mono);
+			font-family: monospace;
 			line-height: 1;
 			letter-spacing: 0;
 		}
