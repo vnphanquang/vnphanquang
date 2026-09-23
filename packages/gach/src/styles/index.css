@@ -1,6 +1,3 @@
-/* layer declaration for deterministic cascade */
-@import './layers.css';
-
 /* ad-hoc custom media and selectors */
 @import './0-custom/medias.css';
 @import './0-custom/selectors.css';

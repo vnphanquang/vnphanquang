@@ -10,6 +10,11 @@
 		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 		<meta name="apple-mobile-web-app-title" content="quang" />
 		<link rel="manifest" href="/site.webmanifest" />
+		<style>
+			/* FIXME: is there no way to abstract in the package */
+			@layer theme, base, components, markdown, utilities, icons;
+			@layer utilities.components, utilities.icons;
+		</style>
 		%sveltekit.head%
 	</head>
 	<body data-sveltekit-preload-data="hover">
