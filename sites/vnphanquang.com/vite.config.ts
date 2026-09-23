@@ -8,6 +8,7 @@ import { defineConfig } from 'vite';
 
 import pkg from './package.json' with { type: 'json' };
 import { autoSlug } from './src/svelte-put/preprocess-auto-slug/index.js';
+import { externalLink } from './src/svelte-put/preprocess-external-link/index.js';
 
 const commitHash = child_process.execSync('git rev-parse --short HEAD').toString().trim();
 
@@ -28,6 +29,7 @@ export default defineConfig({
 				},
 			},
 		})),
+		externalLink(['vnphanquang.com']),
 		sveltekit({
 			adapter: adapter(),
 			version: {
