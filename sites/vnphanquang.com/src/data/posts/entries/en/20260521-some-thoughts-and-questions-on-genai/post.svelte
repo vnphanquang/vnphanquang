@@ -33,7 +33,7 @@ i am no expert in machine learning. This text is my opinion, formed based on my 
 
 ## Good Job, Machine!
 
-GenAI can do some fascinating things, let's give it that. Among its best application are pattern recognition and processing natural language and structured text: context-aware autocomplete, translation, summarisation, raster image upscaling or restoration, to name a few.
+GenAI can do some fascinating things, let's give it that. Among its best application are pattern recognition and processing natural language or structured text: context-aware autocomplete, translation, summarisation, raster image upscaling or restoration, to name a few.
 
 ## Not "Just a Tool"
 
@@ -43,11 +43,9 @@ i am not particularly against the technology and its mathematics. i despise, how
 >
 > -- [a sentiment heard too often](https://www.frank.computer/blog/2025/05/just-a-tool.html)
 
-GenAI is a tool, yes - as much as a gun is a tool. i refuse to use a gun, and i can too with GenAI. GenAI can be convenient, but so would a gun be, if eliminating someone i don't like were legal and ethical. If a tool is built by someone that promotes inequity and is complicit in genocides, i feel obliged to reject it, and will do so if i am in a position that affords such option. GenAI is no difference. No tool exists without political, economic, environmental, and social context. What person am i if i were to shoot someone?
+GenAI is a tool, yes - as much as a gun is a tool. Noone has given me a gun and told me the above. For all that matter, i refuse to use a gun, and i can too with GenAI. GenAI can be convenient, but so would a gun be, if eliminating someone i don't like were legal and ethical. If a tool is built by someone that promotes inequity and is complicit in genocides, i feel obliged to reject it, and will do so if i am in a position that affords such option. GenAI is no difference. No tool exists without political, economic, environmental, and social context. What person am i if i were to shoot someone?
 
 We use tools, and they too shape us.
-
-When someone says GenAI is "just a tool" to me, they are shutting down the conversation we are having, and basically saying that they are no longer interested in anybody else's perspective on the matter.
 
 ## Beyond Automation Is Lost Craft
 
@@ -91,9 +89,7 @@ How would i do that? By spending decades of unpaid effort studying and documenti
 
 The impact of GenAI is **far and deep**. It is already happening today. GenAI is being handed to people without any disclaimer or instruction manual, and overused where it should not be used.
 
-There are machines that can "solve" chess. Yet we hold tournaments every year for humans to
-compete. There are robots that play balls. Yet stadiums are filled, tickets are sold out. i don't
-think we need GenAI in every corner of our lives.
+There are machines that can "solve" chess. Yet we hold tournaments every year for humans to compete (wher bots are banned). There are robots that play balls. Yet stadiums are filled, tickets are sold out. i don't think we need GenAI in every corner of our lives.
 
 ![Professor Felienne Hermans on the historical epistemological context of today computer science and how GenAI, specifically LLM, fits into it](https://youtube.com/embed/0-6-f94n_9M)
 
@@ -165,10 +161,11 @@ Above all, it is sad to fear. To feel hopeless.
 
 ## Message for Future Me
 
-Yet, i have hope. It may not be in this industry, or in myself. But i do see glimpses of it all around.
-In people who look at trash on the sidewalk and think about the relationship between the thrower
-and the throwed-away. In those who study elephants in the deep forests. Those who look at a microscope
-at day, or telescope at night. Those who hold up flags and stand in solidarity. Those who sail for peace.
+Yet, i have hope. It may not be in this industry, or in myself. But i do see glimpses of it all
+around. In people who look at trash on the sidewalk and think about the relationship between the
+thrower and the throwed-away, between the picked-up and the picker. In those who study elephants in
+deep forests. Those who look at a microscope at day, or telescope at night. Those who hold up
+flags and stand in solidarity. Those who sail for peace.
 
 I have hope in curiosity, in perseverance.
 
