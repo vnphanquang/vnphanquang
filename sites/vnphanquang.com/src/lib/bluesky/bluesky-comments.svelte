@@ -72,7 +72,7 @@
 					class={[
 						'group grid grid-cols-[auto_1fr] items-center',
 						'gap-4 p-4 @sm:gap-x-6 @sm:p-6 @md:gap-x-10 @md:p-8',
-						'border-onehalf bg-surface shadow-brutal border-current',
+						'border-onehalf bg-fill-50 shadow-brutal border-current',
 						'interactive',
 					]}
 				>

@@ -22,7 +22,7 @@
 >
 	<nav
 		class={[
-			'bg-stroke-50 text-fill-50 tablet:border-surface tablet:border-onehalf mobile:justify-evenly flex items-center px-2',
+			'bg-stroke-50 text-fill-50 tablet:border-fill-50 tablet:border-onehalf mobile:justify-evenly flex items-center px-2',
 			visible ? 'translate-y-0' : 'translate-y-16',
 		]}
 		lang="en"
@@ -47,7 +47,7 @@
 					href="#content"
 				>
 					<span
-						class="bg-stroke-50 -z-px absolute -inset-s-1 -inset-e-1 inset-bs-1/2 inset-be-0 h-[calc(50%+0.25rem)] rounded-b-full"
+						class="bg-fill-50 -z-px absolute -inset-s-1 -inset-e-1 inset-bs-1/2 inset-be-0 h-[calc(50%+0.25rem)] rounded-b-full"
 					></span>
 					<i class="i i-[ph--caret-up] h-6 w-6"></i>
 					<span class="sr-only"> Scroll to start of blog post </span>
