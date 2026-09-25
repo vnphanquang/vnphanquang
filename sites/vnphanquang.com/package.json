@@ -31,10 +31,11 @@
 		"format": "prettier --write --ignore-path=../../.prettierignore --config=../../prettier.config.js ."
 	},
 	"devDependencies": {
+		"@svelte-put/copy": "^4.0.0",
 		"@svelte-put/toc": "^6.0.2",
 		"@sveltejs/adapter-node": "6.0.0-next.12",
 		"@sveltejs/enhanced-img": "^0.11.0",
-		"@sveltejs/kit": "3.0.0-next.27",
+		"@sveltejs/kit": "3.0.0-next.28",
 		"@sveltejs/vite-plugin-svelte": "^7.3.0",
 		"@vnphanquang/gach": "workspace:*",
 		"@vnphanquang/markdown": "workspace:*",

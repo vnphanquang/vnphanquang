@@ -9,3 +9,5 @@ minimumReleaseAgeExclude:
   - svelte-md-template
   - remark-enhance-codeblock
   - remark-transform-blockquote
+  - '@sveltejs/kit'
+  - '@sveltejs/adapter-node'
