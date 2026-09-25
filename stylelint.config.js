@@ -7,6 +7,12 @@ export default {
 	],
 	rules: {
 		'import-notation': null,
+		'declaration-block-no-redundant-longhand-properties': [
+			true,
+			{
+				ignoreShorthands: ['grid-template'],
+			},
+		],
 	},
 	overrides: [
 		{
