@@ -154,17 +154,19 @@
 				/>
 			</section>
 
-			<section class="read-more space-y-6">
-				<h2
-					class="border-outline border-b-fill-200 border-b text-2xl leading-relaxed font-bold capitalize"
-					id="read-more"
-				>
-					{t.read_more}
-				</h2>
-				{let next = $derived(await getNextRelevantBlogPost(params))}
-				{let nextHref = $derived(resolve('/blog/[slug]', { slug: next.metadata.slug }))}
-				<BlogPostItem post={next} href={nextHref} />
-			</section>
+			{let next = $derived(await getNextRelevantBlogPost(params))}
+			{#if next}
+				<section class="read-more space-y-6">
+					<h2
+						class="border-outline border-b-fill-200 border-b text-2xl leading-relaxed font-bold capitalize"
+						id="read-more"
+					>
+						{t.read_more}
+					</h2>
+					{let nextHref = $derived(resolve('/blog/[slug]', { slug: next.metadata.slug }))}
+					<BlogPostItem post={next} href={nextHref} />
+				</section>
+			{/if}
 		</div>
 	</section>
 

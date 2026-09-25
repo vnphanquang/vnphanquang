@@ -45,13 +45,16 @@ export async function listBlogPosts(): Promise<Omit<BlogPost, 'content'>[]> {
 	);
 }
 
-export async function getNextRelevantBlogPost(input: LoadBlogPostInput) {
+export async function getNextRelevantBlogPost(
+	input: LoadBlogPostInput,
+): Promise<Omit<BlogPost, 'content'> | null> {
 	const { slug } = input;
 	const posts = Object.values(SLUG_TO_POST);
 	const index = posts.findIndex((p) => p.slug === slug);
 	if (index === -1) {
 		throw new Error(`Blog post with slug "${slug}" is not found`);
 	}
+	if (posts.length < 2) return null;
 
 	const tags = (await posts[index].metadata()).tags;
 	let found: BlogPostResolver;
