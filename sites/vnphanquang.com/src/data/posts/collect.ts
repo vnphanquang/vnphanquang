@@ -17,17 +17,16 @@ const OG_MODULES = import.meta.glob<string>('./entries/*/*/og.jpg', {
 	import: 'default',
 });
 
-const SLUG_TO_POST: Record<
-	string,
-	{
-		slug: string;
-		language: Language;
-		metadata: () => Promise<PerDefinedPostMetadata>;
-		content: () => Promise<Component>;
-		thumbnail?: () => Promise<Component<BlogPostThumbnailProps>>;
-		og?: () => Promise<string>;
-	}
-> = {};
+export interface BlogPostResolver {
+	slug: string;
+	language: Language;
+	metadata: () => Promise<PerDefinedPostMetadata>;
+	content: () => Promise<Component>;
+	thumbnail?: () => Promise<Component<BlogPostThumbnailProps>>;
+	og?: () => Promise<string>;
+}
+
+const SLUG_TO_POST: Record<string, BlogPostResolver> = {};
 for (const path of Object.keys(CONTENT_MODULES).toSorted().toReversed()) {
 	const segments = path.split('/');
 	const postRoot = segments.slice(0, -1).join('/');

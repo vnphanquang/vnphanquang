@@ -54,7 +54,7 @@
 				</a>
 			</li>
 			<li class="pl-8">
-				{@render inlink('#read-next', 'Read next', 'i-[ph--newspaper-clipping]')}
+				{@render inlink('#read-more', 'Read more', 'i-[ph--newspaper-clipping]')}
 			</li>
 			<li>
 				{@render inlink('#comments', 'Comments', 'i-[ph--chat-dots]')}

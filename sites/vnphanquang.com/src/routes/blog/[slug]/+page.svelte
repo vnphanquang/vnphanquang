@@ -4,9 +4,10 @@
 	import { PageMetadata } from '@vnphanquang/gach/metadata';
 	import { Markdown } from '@vnphanquang/markdown/svelte';
 
-	import { loadBlogPost } from '#data/posts';
+	import { getNextRelevantBlogPost, loadBlogPost } from '#data/posts';
 	import { buildStructuredBlogPost } from '#data/posts/structured';
 	import { translations } from '#data/translations';
+	import { BlogPostItem } from '#lib/components/blog-post-item';
 	import { BlogPostQuickNav } from '#lib/components/blog-post-quick-nav';
 	import { Breadcrumbs, defineCrumbs } from '#lib/components/breadcrumbs';
 	import { SocialShare } from '#lib/components/social-share';
@@ -141,6 +142,18 @@
 				title={post.metadata.title}
 			/>
 		</section>
+
+		<section class="read-more space-y-6">
+			<h2
+				class="border-outline border-b-fill-200 border-b text-2xl leading-relaxed font-bold capitalize"
+				id="read-more"
+			>
+				{t.read_more}
+			</h2>
+			{let next = $derived(await getNextRelevantBlogPost(params))}
+			{let nextHref = $derived(resolve('/blog/[slug]', { slug: next.metadata.slug }))}
+			<BlogPostItem post={next} href={nextHref} />
+		</section>
 	</div>
 </main>
 <BlogPostQuickNav visible={showQuickNav} />
@@ -155,14 +168,16 @@
 		grid-template-areas:
 			'toc'
 			'content'
-			'share';
+			'share'
+			'read-more';
 
 		@media (--tablet) {
 			grid-template-areas:
 				'content share'
-				'content toc';
+				'content toc'
+				'content read-more';
 			grid-template-columns: 1fr 16rem;
-			grid-template-rows: auto 1fr;
+			grid-template-rows: auto 1fr auto;
 		}
 
 		@media (--widescreen) {
