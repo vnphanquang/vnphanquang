@@ -199,7 +199,11 @@ export async function defineConfig(options = {}, ...additionals) {
 				sourceType: 'module',
 				parserOptions: {
 					tsconfigRootDir: root,
-					projectService: true,
+					projectService: svelte
+						? true
+						: {
+								allowDefaultProject: ['*.config.{ts,js}'],
+							},
 				},
 			}),
 		},
