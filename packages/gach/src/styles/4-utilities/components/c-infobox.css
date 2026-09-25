@@ -14,7 +14,7 @@
      element other than its direct parent
 
 	```html
-	<div class="c-infobox-anchor"> \3c !-- anchored here -->
+	<div class="c-infobox-anchor"> !-- anchored here -->
 		<button>
 			<i class="...icon-classes.."></i>
 			<span class="c-infobox">Edit</span>

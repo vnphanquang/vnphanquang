@@ -7,6 +7,7 @@
 	import { loadBlogPost } from '#data/posts';
 	import { buildStructuredBlogPost } from '#data/posts/structured';
 	import { translations } from '#data/translations';
+	import { BlogPostQuickNav } from '#lib/components/blog-post-quick-nav';
 	import { Breadcrumbs, defineCrumbs } from '#lib/components/breadcrumbs';
 	import { SocialShare } from '#lib/components/social-share';
 	import { TableOfContents } from '#lib/components/table-of-contents';
@@ -51,7 +52,16 @@
 			},
 		},
 	});
+
+	let contentEl: HTMLElement | undefined = $state(undefined);
+	let showQuickNav = $state(false);
+	function onScroll() {
+		if (!contentEl) return;
+		showQuickNav = window.scrollY > contentEl.offsetTop;
+	}
 </script>
+
+<svelte:window onscroll={onScroll} />
 
 <PageMetadata
 	breadcrumbs={crumbs}
@@ -99,7 +109,7 @@
 
 	<div class="read grid gap-10">
 		<!-- post content -->
-		<section class="content md" use:toc.actions.root>
+		<section class="content md" use:toc.actions.root id="content" bind:this={contentEl}>
 			<Markdown codeless={post.metadata.codeless}>
 				<post.content />
 			</Markdown>
@@ -109,7 +119,10 @@
 		<section
 			class="toc tablet:sticky top-header mobile:border-onehalf mobile:border-dashed mobile:border-secondary mobile:-mx-3 mobile:p-3 h-fit space-y-6"
 		>
-			<h2 class="border-outline border-b-fill-200 border-b text-2xl leading-relaxed font-bold">
+			<h2
+				class="border-outline border-b-fill-200 border-b text-2xl leading-relaxed font-bold"
+				id="toc"
+			>
 				{t.toc}
 			</h2>
 			<TableOfContents {toc} />
@@ -119,6 +132,7 @@
 		<section class="share space-y-6">
 			<h2
 				class="border-outline border-b-fill-200 border-b text-2xl leading-relaxed font-bold capitalize"
+				id="share"
 			>
 				{t.share}
 			</h2>
@@ -129,9 +143,9 @@
 		</section>
 	</div>
 </main>
+<BlogPostQuickNav visible={showQuickNav} />
 
 <!-- TODO: -->
-<!-- - Add scroll-to-content-top & quickaccess bar -->
 <!-- - Add comments from bluesky linked post -->
 
 <style>
