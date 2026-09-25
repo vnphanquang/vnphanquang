@@ -31,6 +31,7 @@
 		"format": "prettier --write --ignore-path=../../.prettierignore --config=../../prettier.config.js ."
 	},
 	"devDependencies": {
+		"@svelte-put/avatar": "^4.0.0",
 		"@svelte-put/copy": "^4.0.0",
 		"@svelte-put/toc": "^6.0.2",
 		"@sveltejs/adapter-node": "6.0.0-next.12",
@@ -46,6 +47,7 @@
 		"valibot": "^1.5.0"
 	},
 	"dependencies": {
+		"@atproto/api": "^0.20.44",
 		"@types/estree": "^1.0.9",
 		"github-slugger": "^2.0.0",
 		"magic-string": "^1.4.1",

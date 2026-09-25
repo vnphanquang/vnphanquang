@@ -18,6 +18,7 @@ const OG_MODULES = import.meta.glob<string>('./entries/*/*/og.jpg', {
 });
 
 export interface BlogPostResolver {
+	id: string;
 	slug: string;
 	language: Language;
 	metadata: () => Promise<PerDefinedPostMetadata>;
@@ -35,6 +36,7 @@ for (const path of Object.keys(CONTENT_MODULES).toSorted().toReversed()) {
 	const slug = segments.at(-2)!.replace(/^\d+-/, '');
 	const language = segments.at(-3)! as Language;
 	SLUG_TO_POST[slug] = {
+		id: segments.at(-2)!,
 		slug,
 		language,
 		metadata: METADATA_MODULES[path],

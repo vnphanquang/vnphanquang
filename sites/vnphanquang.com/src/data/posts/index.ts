@@ -4,7 +4,9 @@ import type { BlogPost } from './definition';
 export interface LoadBlogPostInput {
 	slug: string;
 }
-export async function loadBlogPost(input: LoadBlogPostInput): Promise<BlogPost | null> {
+export async function loadBlogPost(
+	input: LoadBlogPostInput,
+): Promise<(BlogPost & { contentEditUrl: string }) | null> {
 	const { slug } = input;
 	if (!SLUG_TO_POST[slug]) return null;
 	const post = SLUG_TO_POST[slug];
@@ -16,6 +18,7 @@ export async function loadBlogPost(input: LoadBlogPostInput): Promise<BlogPost |
 	]);
 	return {
 		content,
+		contentEditUrl: `https://github.com/vnphanquang/vnphanquang/blob/main/sites/vnphanquang.com/src/data/posts/entries/${post.language}/${post.id}/post.svelte`,
 		metadata: {
 			...metadata,
 			language: post.language,

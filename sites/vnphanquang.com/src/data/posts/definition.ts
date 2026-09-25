@@ -52,6 +52,13 @@ export interface BlogPostMetadata {
 	 * and there are real need to filter / group / search
 	 */
 	tags?: string[];
+	blueskyPost?: BlueskyPostLinkage;
+}
+
+export interface BlueskyPostLinkage {
+	/** did:plc:... */
+	accountId: string;
+	postId: string;
 }
 
 export interface BlogPostThumbnailProps {
