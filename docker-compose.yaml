@@ -1,0 +1,11 @@
+name: vnphanquang
+services:
+  vnphanquang.com:
+    image: vnphanquang.com
+    pull_policy: build
+    build:
+      context: .
+      dockerfile: dockerfile
+    ports:
+      - 3500:3000
+    restart: unless-stopped
