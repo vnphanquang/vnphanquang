@@ -1,0 +1,36 @@
+# docker
+**/dockerfile
+**/.dockerignore
+**/docker-compose*.yaml
+
+# dependencies & development artifact
+**/node_modules
+**/build
+**/.svelte-kit
+**/.env*
+
+# editor config files
+**/.gitignore
+**/.editorconfig
+**/.prettierignore
+**/prettier.config.js
+**/stylelint.config.js
+**/eslint.config.js
+**/lefthook.yaml
+
+# devenv
+**/devenv.yaml
+**/devenv.nix
+**/devenv.lock
+.devenv/
+
+# documentation
+**/*.md
+
+# miscellaneous
+**/.npmrc
+**/.nvmrc
+**/.github
+**/.vscode
+**/.template.tmux
+**/LICENSE
