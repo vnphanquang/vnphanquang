@@ -7,10 +7,10 @@
 			'A personal ongoing human-brain train-of-thought - making sense of GenAI and the mess around it',
 		keywords: 'humanity, craftmanship, contextual, history',
 		publishedAt: new Date('2026-05-21'),
-		updatedAt: new Date('2026-09-18'),
+		updatedAt: new Date('2026-09-24'),
 		codeless: true,
-		numWords: 1300,
-		readMinutes: 8,
+		numWords: 1800,
+		readMinutes: 10,
 		tags: ['genai'],
 	});
 </script>
