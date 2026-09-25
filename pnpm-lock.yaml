@@ -447,19 +447,6 @@ importers:
       '@atproto/api':
         specifier: ^0.20.44
         version: 0.20.44
-      '@types/estree':
-        specifier: ^1.0.9
-        version: 1.0.9
-      github-slugger:
-        specifier: ^2.0.0
-        version: 2.0.0
-      magic-string:
-        specifier: ^1.4.1
-        version: 1.4.1
-      zimmerframe:
-        specifier: ^1.1.5
-        version: 1.1.5
-    devDependencies:
       '@svelte-put/avatar':
         specifier: ^4.0.0
         version: 4.0.0(svelte@5.57.1(@typescript-eslint/types@8.70.0))
@@ -469,6 +456,28 @@ importers:
       '@svelte-put/toc':
         specifier: ^6.0.2
         version: 6.0.2(svelte@5.57.1(@typescript-eslint/types@8.70.0))
+      '@types/estree':
+        specifier: ^1.0.9
+        version: 1.0.9
+      '@vnphanquang/gach':
+        specifier: workspace:*
+        version: link:../../packages/gach
+      '@vnphanquang/markdown':
+        specifier: workspace:*
+        version: link:../../packages/markdown
+      github-slugger:
+        specifier: ^2.0.0
+        version: 2.0.0
+      magic-string:
+        specifier: ^1.4.1
+        version: 1.4.1
+      valibot:
+        specifier: ^1.5.0
+        version: 1.5.0(typescript@6.0.3)
+      zimmerframe:
+        specifier: ^1.1.5
+        version: 1.1.5
+    devDependencies:
       '@sveltejs/adapter-node':
         specifier: 6.0.0-next.12
         version: 6.0.0-next.12(@sveltejs/kit@3.0.0-next.28(@sveltejs/vite-plugin-svelte@7.3.0(svelte@5.57.1(@typescript-eslint/types@8.70.0))(vite@8.3.0(@types/node@26.6.2)(jiti@2.7.0)))(svelte@5.57.1(@typescript-eslint/types@8.70.0))(typescript@6.0.3)(vite@8.3.0(@types/node@26.6.2)(jiti@2.7.0)))
@@ -481,12 +490,6 @@ importers:
       '@sveltejs/vite-plugin-svelte':
         specifier: ^7.3.0
         version: 7.3.0(svelte@5.57.1(@typescript-eslint/types@8.70.0))(vite@8.3.0(@types/node@26.6.2)(jiti@2.7.0))
-      '@vnphanquang/gach':
-        specifier: workspace:*
-        version: link:../../packages/gach
-      '@vnphanquang/markdown':
-        specifier: workspace:*
-        version: link:../../packages/markdown
       node-addon-api:
         specifier: ^8.9.2
         version: 8.9.2
@@ -499,9 +502,6 @@ importers:
       tailwindcss:
         specifier: ^4.3.3
         version: 4.3.3
-      valibot:
-        specifier: ^1.5.0
-        version: 1.5.0(typescript@6.0.3)
 
 packages:
 

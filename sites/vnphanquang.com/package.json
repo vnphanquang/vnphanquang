@@ -31,26 +31,26 @@
 		"format": "prettier --write --ignore-path=../../.prettierignore --config=../../prettier.config.js ."
 	},
 	"devDependencies": {
-		"@svelte-put/avatar": "^4.0.0",
-		"@svelte-put/copy": "^4.0.0",
-		"@svelte-put/toc": "^6.0.2",
 		"@sveltejs/adapter-node": "6.0.0-next.12",
 		"@sveltejs/enhanced-img": "^0.11.0",
 		"@sveltejs/kit": "3.0.0-next.28",
 		"@sveltejs/vite-plugin-svelte": "^7.3.0",
-		"@vnphanquang/gach": "workspace:*",
-		"@vnphanquang/markdown": "workspace:*",
 		"node-addon-api": "^8.9.2",
 		"node-gyp": "^13.0.2",
 		"schema-dts": "^2.0.0",
-		"tailwindcss": "^4.3.3",
-		"valibot": "^1.5.0"
+		"tailwindcss": "^4.3.3"
 	},
 	"dependencies": {
+		"@svelte-put/avatar": "^4.0.0",
+		"@svelte-put/copy": "^4.0.0",
+		"@svelte-put/toc": "^6.0.2",
+		"@vnphanquang/gach": "workspace:*",
+		"@vnphanquang/markdown": "workspace:*",
 		"@atproto/api": "^0.20.44",
 		"@types/estree": "^1.0.9",
 		"github-slugger": "^2.0.0",
 		"magic-string": "^1.4.1",
-		"zimmerframe": "^1.1.5"
+		"zimmerframe": "^1.1.5",
+		"valibot": "^1.5.0"
 	}
 }
