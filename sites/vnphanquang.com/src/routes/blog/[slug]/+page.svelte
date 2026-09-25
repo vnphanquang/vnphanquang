@@ -113,15 +113,17 @@
 
 		<div class="read grid gap-10">
 			<!-- post content -->
-			<section class="content md" use:toc.actions.root id="content" bind:this={contentEl}>
-				<Markdown codeless={post.metadata.codeless}>
-					<post.content />
-				</Markdown>
-				<p class="border-t-fill-200 border-t pt-2 text-sm">
-					Found a typo or need to correct something?
-					<a class="c-link" href={post.contentEditUrl}>Suggest an edit on Github</a>.
-				</p>
-			</section>
+			{#key post.metadata.slug}
+				<section class="content md" use:toc.actions.root id="content" bind:this={contentEl}>
+					<Markdown codeless={post.metadata.codeless}>
+						<post.content />
+					</Markdown>
+					<p class="border-t-fill-200 border-t pt-2 text-sm">
+						Found a typo or need to correct something?
+						<a class="c-link" href={post.contentEditUrl}>Suggest an edit on Github</a>.
+					</p>
+				</section>
+			{/key}
 
 			<!-- table of contents -->
 			<div class="toc">
