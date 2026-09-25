@@ -4,8 +4,8 @@
 	1. Just add `.c-infobox` to an element, it will render as tooltip on hover upon its direct parent
 
 	```html
-	<button class="btn">
-		<i class="fa-solid fa-pen"></i>
+	<button>
+		<i class="...icon-classes.."></i>
 		<span class="c-infobox">Edit</span>
 	</button>
 	```
@@ -15,8 +15,8 @@
 
 	```html
 	<div class="c-infobox-anchor"> \3c !-- anchored here -->
-		<button class="btn">
-			<i class="fa-solid fa-pen"></i>
+		<button>
+			<i class="...icon-classes.."></i>
 			<span class="c-infobox">Edit</span>
 		</button>
 	</div>
@@ -26,8 +26,8 @@
      when the target anchor is already an anchor for something else (e.g. a popover).
 
 	```svelte
-	<button class="btn" popovertarget="more-actions">
-		<i class="fa-solid fa-ellipsis-vertical"></i>
+	<button popovertarget="more-actions">
+		<i class="...icon-classes.."></i>
 		<span class="c-infobox" style:--anchor="--trigger">More actions</span>
 	</button>
 	```
@@ -36,8 +36,8 @@
      instead of its direct parent.
 
 	```svelte
-	<button class="btn c-infobox-anchor">
-		<i class="fa-solid fa-ellipsis-vertical"></i>
+	<button class="c-infobox-anchor">
+		<i class="...icon-classes.."></i>
 	</button>
 	<span class="c-infobox">More actions</span>
 	```
@@ -48,7 +48,7 @@
 	@layer components {
 		*:not(:hover, :active, :focus-visible, :has(> .c-infobox-anchor)) > &,
 		.c-infobox-anchor:not(:hover, :active, :focus-visible) ~ & {
-			@apply sr-only
+			@apply sr-only;
 		}
 
 		*:has(> &):not(.c-infobox-anchor *) {
@@ -71,13 +71,12 @@
 
 			margin-block-end: 0.25rem;
 			padding: 0.25rem 0.5rem;
-			border: 1px solid var(--bs-light);
-			border-radius: var(--bs-border-radius);
+			border: 1px solid var(--color-fill-50);
 
 			font-size: 0.875rem;
-			color: var(--bs-light);
+			color: var(--color-fill-50);
 
-			background-color: hsl(from var(--bs-dark) h s l / 90%);
+			background-color: hsl(from var(--color-stroke-50) h s l / 90%);
 		}
 	}
 }
