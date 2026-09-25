@@ -160,14 +160,14 @@
 
 				transition: opacity 200ms var(--default-transition-timing-function);
 
-				:is(h2, h3, h4, h5, h6):has(&) {
-					position: relative;
-				}
-
 				:is(h2, h3, h4, h5, h6):hover & {
 					opacity: 1;
 				}
 			}
+		}
+
+		&:is(h2, h3, h4, h5, h6):has(.heading-anchor) {
+			position: relative;
 		}
 
 		&:where(dl) {
