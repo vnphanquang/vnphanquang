@@ -1,8 +1,7 @@
 <script lang="ts" module>
+	import type { StructuredCrumb } from '@vnphanquang/gach/metadata';
 	import { onMount } from 'svelte';
 	import type { HTMLAttributes } from 'svelte/elements';
-
-	import type { StructuredCrumb } from '../page-metadata/structured-data';
 
 	import Item from './breadcrumbs.item.svelte';
 

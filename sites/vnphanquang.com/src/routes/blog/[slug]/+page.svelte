@@ -1,16 +1,17 @@
 <script lang="ts">
-	import { PageMetadata } from '@vnphanquang/gach/metadata';
-
 	import { Toc } from '@svelte-put/toc';
 	import { error } from '@sveltejs/kit';
+	import { PageMetadata } from '@vnphanquang/gach/metadata';
 	import { Markdown } from '@vnphanquang/markdown/svelte';
 
 	import { loadBlogPost } from '#data/posts';
 	import { buildStructuredBlogPost } from '#data/posts/structured';
 	import { translations } from '#data/translations';
 	import { Breadcrumbs, defineCrumbs } from '#lib/components/breadcrumbs';
+	import { SocialShare } from '#lib/components/social-share';
 	import { TableOfContents } from '#lib/components/table-of-contents';
 	import { formatDateForBlog } from '#lib/utils/datetime';
+	import { resolve } from '$app/paths';
 	import { page } from '$app/state';
 
 	import type { PageProps } from './$types';
@@ -113,8 +114,25 @@
 			</h2>
 			<TableOfContents {toc} />
 		</section>
+
+		<!-- share -->
+		<section class="share space-y-6">
+			<h2
+				class="border-outline border-b-fill-200 border-b text-2xl leading-relaxed font-bold capitalize"
+			>
+				{t.share}
+			</h2>
+			<SocialShare
+				url={page.url.origin + resolve('/blog/[slug]', { slug: post.metadata.slug })}
+				title={post.metadata.title}
+			/>
+		</section>
 	</div>
 </main>
+
+<!-- TODO: -->
+<!-- - Add scroll-to-content-top & quickaccess bar -->
+<!-- - Add comments from bluesky linked post -->
 
 <style>
 	@import '@vnphanquang/gach/styles/custom-medias';
@@ -122,11 +140,15 @@
 	.read {
 		grid-template-areas:
 			'toc'
-			'content';
+			'content'
+			'share';
 
 		@media (--tablet) {
-			grid-template-areas: 'content toc';
+			grid-template-areas:
+				'content share'
+				'content toc';
 			grid-template-columns: 1fr 16rem;
+			grid-template-rows: auto 1fr;
 		}
 
 		@media (--widescreen) {
@@ -144,5 +166,9 @@
 
 	.toc {
 		grid-area: toc;
+	}
+
+	.share {
+		grid-area: share;
 	}
 </style>
