@@ -130,9 +130,10 @@ In this reduction of knowledge by the expansionists. i have yet to see an end. D
 
 ---
 
-The following sections move beyond the scope of GenAI (if the previous ones have not already done
-so) into the broader context of my specific living experience, some involving the tech industry as a
-whole. Please feel free to skip them if you have had enough of my ranting.
+> [!WARNING]
+> The following sections move beyond the scope of GenAI (if the previous ones have not already done
+> so) into the broader context of my specific living experience, some involving the tech industry as a
+> whole. Please feel free to skip them if you have had enough of my ranting.
 
 ---
 

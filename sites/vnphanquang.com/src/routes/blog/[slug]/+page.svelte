@@ -172,9 +172,6 @@
 </main>
 <BlogPostQuickNav visible={showQuickNav} />
 
-<!-- TODO: -->
-<!-- - Add comments from bluesky linked post -->
-
 <style>
 	@import '@vnphanquang/gach/styles/custom-medias';
 
