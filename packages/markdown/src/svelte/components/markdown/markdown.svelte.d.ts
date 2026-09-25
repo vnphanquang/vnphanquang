@@ -6,5 +6,5 @@ export interface MarkdownProps {
 	codeless?: boolean;
 }
 
-declare const Component: Component<MarkdownProps>;
-export default Component;
+declare const Markdown: Component<MarkdownProps>;
+export default Markdown;

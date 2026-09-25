@@ -1,2 +1,4 @@
-export { default as PageMetadataDefaults } from './page-metadata-defaults.svelte';
-export * from './page-metadata-defaults.svelte';
+export {
+	default as PageMetadataDefaults,
+	getPageMetadataDefaults,
+} from './page-metadata-defaults.svelte';
