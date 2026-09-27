@@ -82,6 +82,11 @@
 		structured: buildStructuredBlogPost(page.url.origin, post),
 	}}
 />
+<svelte:head>
+	{#if post.metadata.standardSite}
+		<link rel="site.standard.document" href={post.metadata.standardSite} />
+	{/if}
+</svelte:head>
 
 <main class="flex-1 space-y-20 py-10">
 	<section class="max-w-pad @container space-y-10" lang={post.metadata.language}>

@@ -8,6 +8,7 @@
 		keywords: 'svelte, markdown, buildtime, static, preprocess, vite plugin',
 		publishedAt: new Date('2026-09-27'),
 		tags: ['svelte', 'markdown', 'vite'],
+		standardSite: 'at://did:plc:vdzlwjjqp5kpce2kxqyoa467/site.standard.document/3mwiivp7d7ceh',
 	});
 </script>
 

@@ -53,6 +53,11 @@ export interface BlogPostMetadata {
 	 */
 	tags?: string[];
 	blueskyPost?: BlueskyPostLinkage;
+	/**
+	 * at://did:plc:<record_key>/site.standard.document/<record_key>
+	 * See https://standard.site
+	 */
+	standardSite?: string;
 }
 
 export interface BlueskyPostLinkage {

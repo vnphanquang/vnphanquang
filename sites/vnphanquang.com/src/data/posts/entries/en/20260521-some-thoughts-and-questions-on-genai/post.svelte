@@ -12,6 +12,7 @@
 		numWords: 1800,
 		readMinutes: 10,
 		tags: ['genai'],
+		standardSite: 'at://did:plc:vdzlwjjqp5kpce2kxqyoa467/site.standard.document/3mwihjyhjq23i',
 	});
 </script>
 
