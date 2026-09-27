@@ -61,7 +61,7 @@
 
 		background-color: var(--bg);
 
-		&::before {
+		&:not(.no-line-number *)::before {
 			--width: max(2ch, calc((round(up, log(var(--max-line), 10)) + 2) * 1ch));
 
 			content: ' ';
@@ -83,7 +83,7 @@
 			background-color: var(--bg);
 		}
 
-		&:not(.diff.remove) {
+		&:not(.no-line-number *, .diff.remove) {
 			counter-increment: line 1;
 
 			&::before {
@@ -143,6 +143,10 @@
 		&::after {
 			display: none;
 		}
+	}
+
+	.no-line-number & .line {
+		--inline-start: 3ch;
 	}
 
 	&.has-focused {
