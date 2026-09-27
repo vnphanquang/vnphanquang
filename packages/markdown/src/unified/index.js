@@ -47,9 +47,11 @@ export function createPreset(options = {}) {
 			remarkParse,
 			remarkGfm,
 			definePlugin(remarkCodeblockSource, {
-				resolvers: { fs: fs({ cache: true }), github: github({ cache: true }) },
+				resolvers: { fs: fs(), github: github({ cache: true }) },
 			}),
 			definePlugin(remarkEnhanceCodeblock, {
+				// FIXME: still giving error
+				silenceSvelteA11yWarnings: true,
 				intl: (input) => {
 					const locale = input.locale ?? input.filename?.split('/').at(-3) ?? 'en';
 					return codeblock_i18n[locale] ?? defaultEnhanceCodeblockOptions.intl;
