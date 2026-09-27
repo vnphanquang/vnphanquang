@@ -5,6 +5,7 @@ import { enhancedImages } from '@sveltejs/enhanced-img';
 import { sveltekit } from '@sveltejs/kit/vite';
 import { gach } from '@vnphanquang/gach/vite';
 import { defineConfig } from 'vite';
+import { qrcode } from 'vite-plugin-qrcode';
 
 import pkg from './package.json' with { type: 'json' };
 import { autoSlug } from './src/svelte-put/preprocess-auto-slug/index.js';
@@ -14,6 +15,7 @@ const commitHash = child_process.execSync('git rev-parse --short HEAD').toString
 
 export default defineConfig({
 	plugins: [
+		qrcode(),
 		// FIXME: add inline-svg, external-link, etc.
 		gach({ markdown: true }),
 		enhancedImages(),
