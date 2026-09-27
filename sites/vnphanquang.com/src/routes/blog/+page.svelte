@@ -59,7 +59,7 @@
 		<div class="flex items-end justify-between">
 			<Breadcrumbs.List class="mbs-10" {crumbs} />
 			<a class="c-link-lazy" href="https://www.youtube.com/watch?v=Heciu9zmiOE">
-				<Ascii class="text-[0.05rem] opacity-75">{asciiOcarina}</Ascii>
+				<Ascii class="text-[0.05rem]">{asciiOcarina}</Ascii>
 				<span class="sr-only">an ocarina</span>
 			</a>
 		</div>

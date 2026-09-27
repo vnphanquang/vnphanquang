@@ -140,7 +140,7 @@
 		<div class="flex items-end justify-between">
 			<Breadcrumbs.List class="mbs-10" {crumbs} />
 			<a class="c-link-lazy" href="https://youtu.be/Y5EQTkwMByg?si=CZI0QrumQEGLNLUW">
-				<Ascii class="text-[0.05rem] opacity-75">{asciiExperiment}</Ascii>
+				<Ascii class="text-[0.05rem]">{asciiExperiment}</Ascii>
 				<span class="sr-only">The iodine clock reaction</span>
 			</a>
 		</div>
