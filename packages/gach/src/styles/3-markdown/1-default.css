@@ -133,6 +133,7 @@
 			border: 1px solid;
 			border-color: oklch(from currentcolor calc(l + 0.5 * var(--color-scheme-sign)) c h);
 
+			font-size: 0.9em;
 			font-weight: 400;
 			word-break: break-all;
 
