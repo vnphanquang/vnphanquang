@@ -109,6 +109,28 @@ ignorant to the implications this approach has in practice. So far, however, it 
 See [Docs > Transformer](https://github.com/vnphanquang/svelte-md-template#transformer) on how to
 customise or supply your own Markdown parser.
 
+### Slapping on Markdown
+
+One convenient use case i've found after using this for a while is that i can just slap on some
+markdown in any pages / Svelte components as needed. In MDsveX, on the contrary, one would expect
+only a collection of files (usually with a dedicated extension) to host all markdown content,
+otherwise letting MDsveX process regular files will potentially cause syntax issues.
+
+### What about Frontmatter?
+
+i hear you. But, in Svelte, the module script is already a great way to provide metadata. This also
+has better typesafety. Consider this pattern:
+
+> [!CODEGROUP]
+>
+> ~~~svelte #title="content.svelte" src="fs:./includes/examples/frontmatter-usage.svelte"
+>
+> ~~~
+>
+> ~~~typescript #title="definition.ts" src="fs:./includes/examples/frontmatter-definition.ts"
+>
+> ~~~
+
 ## Not Perfect
 
 Of course, no solution is without tradeoffs. If you use [svelte-md-template] in a typical Svelte
@@ -166,6 +188,6 @@ Let me know if you have any thoughts. And thank you for reading.
 [markdown-exit]: https://github.com/serkodev/markdown-exit
 [markdown-it]: https://github.com/markdown-it/markdown-it
 [@pngwn]: https://github.com/pngwn
-[svelte-md-template]: github.com/vnphanquang/svelte-md-template
+[svelte-md-template]: https://github.com/vnphanquang/svelte-md-template
 [svelte-put]: https://svelte-put.vnphanquang.com/
 `}
