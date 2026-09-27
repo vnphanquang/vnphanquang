@@ -36,6 +36,13 @@
 		structured: buildStructuredBlog(),
 	}}
 />
+<svelte:head>
+	<link
+		rel="site.standard.publication"
+		href="at://did:plc:vdzlwjjqp5kpce2kxqyoa467/site.standard.publication/3mwhx5kottq2y"
+	/>
+</svelte:head>
+
 <main class="max-w-pad max-desktop:flex-col desktop:gap-20 flex flex-1 py-10">
 	<div class="max-w-readable w-full space-y-10">
 		<div>
