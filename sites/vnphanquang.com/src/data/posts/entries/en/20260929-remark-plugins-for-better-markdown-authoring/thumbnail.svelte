@@ -1,13 +1,11 @@
 <script lang="ts">
 	import markdown from '#lib/assets/ascii/markdown.txt?raw';
-	import svelte from '#lib/assets/ascii/svelte.txt?raw';
 	import { Ascii } from '#lib/components/ascii';
 
-	import arrowCircle from './includes/ascii/arrow-circle.txt?raw';
+	import paperPencil from './includes/ascii/paper-pencil.txt?raw';
 </script>
 
 <div class="flex items-center justify-center gap-4 text-[0.5cqi] @3xl:gap-10" aria-hidden={true}>
+	<Ascii>{paperPencil}</Ascii>
 	<Ascii>{markdown}</Ascii>
-	<Ascii class="ml-4">{arrowCircle}</Ascii>
-	<Ascii>{svelte}</Ascii>
 </div>
