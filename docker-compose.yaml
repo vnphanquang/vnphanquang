@@ -6,6 +6,10 @@ services:
     build:
       context: .
       dockerfile: dockerfile
+      target: vnphanquang.com
+    environment:
+      - UMAMI_SCRIPT_URL=""
+      - UMAMI_WEBSITE_ID=""
     ports:
       - 3500:3000
     restart: unless-stopped
