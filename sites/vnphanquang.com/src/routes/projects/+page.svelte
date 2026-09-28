@@ -4,6 +4,7 @@
 	import { type Project, groupProjectsByTags, projects } from '#data/projects';
 	import asciiExperiment from '#lib/assets/ascii/experiment.txt?raw';
 	import asciiScarecrow from '#lib/assets/ascii/scarecrow.txt?raw';
+	import { umamiEasterEgg } from '#lib/attachments/umami-easter-egg';
 	import { Ascii } from '#lib/components/ascii';
 	import { Breadcrumbs, defineCrumbs } from '#lib/components/breadcrumbs';
 	import { page } from '$app/state';
@@ -139,7 +140,11 @@
 
 		<div class="flex items-end justify-between">
 			<Breadcrumbs.List class="mbs-10" {crumbs} />
-			<a class="c-link-lazy" href="https://youtu.be/Y5EQTkwMByg?si=CZI0QrumQEGLNLUW">
+			<a
+				class="c-link-lazy"
+				href="https://youtu.be/Y5EQTkwMByg?si=CZI0QrumQEGLNLUW"
+				{...umamiEasterEgg({ id: 'iodine' })}
+			>
 				<Ascii class="text-[0.05rem]">{asciiExperiment}</Ascii>
 				<span class="sr-only">The iodine clock reaction</span>
 			</a>

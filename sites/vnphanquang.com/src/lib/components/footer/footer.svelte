@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { umamiEasterEgg } from '#lib/attachments/umami-easter-egg';
 	import { Ascii } from '#lib/components/ascii';
 
 	const ascii_bubble_prefix = ` .------------------.\n( `;
@@ -46,7 +47,10 @@
 				</a>
 			</li>
 		</ul>
-		<label class="owl flex cursor-pointer flex-row-reverse items-start gap-4 justify-self-end">
+		<label
+			class="owl flex cursor-pointer flex-row-reverse items-start gap-4 justify-self-end"
+			{...umamiEasterEgg({ type: 'listener', id: 'baykuş' })}
+		>
 			<Ascii class="leading-normal tracking-wider">{ascii_owl}</Ascii>
 			<input class="peer" type="checkbox" hidden />
 			<Ascii class="leading-normal"

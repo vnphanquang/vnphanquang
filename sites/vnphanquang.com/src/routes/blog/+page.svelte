@@ -5,6 +5,7 @@
 	import { buildStructuredBlog } from '#data/posts/structured';
 	import asciiCogito from '#lib/assets/ascii/cogito.txt?raw';
 	import asciiOcarina from '#lib/assets/ascii/ocarina.txt?raw';
+	import { umamiEasterEgg } from '#lib/attachments/umami-easter-egg';
 	import { Ascii } from '#lib/components/ascii';
 	import { BlogPostItem } from '#lib/components/blog-post-item';
 	import { Breadcrumbs, defineCrumbs } from '#lib/components/breadcrumbs';
@@ -42,7 +43,11 @@
 		<div>
 			<h1 class="tablet:text-4xl font-quang border-b text-3xl font-bold">latest thoughts</h1>
 			<p class="text-right text-sm leading-relaxed italic">
-				<a class="c-link-lazy" href="https://youtu.be/9B612wK056c?si=qEE1XFp1Y9aq7v8N">
+				<a
+					class="c-link-lazy"
+					href="https://youtu.be/9B612wK056c?si=qEE1XFp1Y9aq7v8N"
+					{...umamiEasterEgg({ id: 'navi' })}
+				>
 					"Hey! Listen!"
 				</a>
 			</p>
@@ -59,7 +64,11 @@
 
 		<div class="flex items-end justify-between">
 			<Breadcrumbs.List class="mbs-10" {crumbs} />
-			<a class="c-link-lazy" href="https://www.youtube.com/watch?v=Heciu9zmiOE">
+			<a
+				class="c-link-lazy"
+				href="https://www.youtube.com/watch?v=Heciu9zmiOE"
+				{...umamiEasterEgg({ id: 'ocarina' })}
+			>
 				<Ascii class="text-[0.05rem]">{asciiOcarina}</Ascii>
 				<span class="sr-only">an ocarina</span>
 			</a>

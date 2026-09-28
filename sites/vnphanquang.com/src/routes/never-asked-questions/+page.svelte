@@ -3,6 +3,7 @@
 
 	import asciiLonLonMilk from '#lib/assets/ascii/lon-lon-milk.txt?raw';
 	import asciiQuang from '#lib/assets/ascii/quang.txt?raw';
+	import { umamiEasterEgg } from '#lib/attachments/umami-easter-egg';
 	import { Ascii } from '#lib/components/ascii';
 	import { Breadcrumbs, defineCrumbs } from '#lib/components/breadcrumbs';
 	import { page } from '$app/state';
@@ -57,7 +58,11 @@
 					<dt>Why did you attack my cuccos 🐔?</dt>
 					<dd>Bottle yourself up and give me your rupee 💎, now!</dd>
 				</div>
-				<a class="c-link-lazy" href="https://youtu.be/SFRI3byJgYA?si=ks6_I-N5Hx8Ng-kK">
+				<a
+					class="c-link-lazy"
+					href="https://youtu.be/SFRI3byJgYA?si=ks6_I-N5Hx8Ng-kK"
+					{...umamiEasterEgg({ id: 'lon-lon-milk' })}
+				>
 					<Ascii class="text-[0.06rem]">{asciiLonLonMilk}</Ascii>
 					<span class="sr-only">Lon-Lon Milk Bottle</span>
 				</a>
