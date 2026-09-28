@@ -62,7 +62,7 @@ export function remarkTransformImg(options = {}) {
 					const parentIndex = grandparent.children.findIndex((node) => node === parent);
 					grandparent.children.splice(parentIndex, 1, /** @type {any} */ (figure));
 				} else {
-					iframe.data.hProperties.title = alt;
+					iframe.data.hProperties.title = alt ?? '';
 					const parentIndex = grandparent.children.findIndex((node) => node === parent);
 					grandparent.children.splice(parentIndex, 1, /** @type {any} */ (iframe));
 				}

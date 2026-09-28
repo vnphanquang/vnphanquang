@@ -22,7 +22,7 @@ export interface RemarkTransformImgOptions {
 	 */
 	figure?: boolean;
 	/**
-	 * whether to transform a image whose source points to toutube to an iframe
+	 * whether to transform an image to an iframe when its source points to youtube
 	 *
 	 * Note: link must starts with `https://youtube.com/embed`
 	 *
