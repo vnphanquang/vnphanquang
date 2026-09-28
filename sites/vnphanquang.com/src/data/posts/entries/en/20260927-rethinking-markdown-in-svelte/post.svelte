@@ -27,7 +27,7 @@
 i have been authoring content using Markdown in Svelte land for a while now, sometimes for documentation (e.g.
 [svelte-put], a personal collection of Svelte utilities), sometimes for blog posts (e.g. the [Svelte
 Vietnam Blog](https://www.sveltevietnam.dev/en/blog)). Contemporary solutions to preprocess Markdown
-in Svelte components that i have tried all leave sometimes to be desired for my personal taste.
+in Svelte components that i have tried all leave something to be desired for my personal taste.
 
 This post discusses the problem i have with current solutions, and a new alternative.
 

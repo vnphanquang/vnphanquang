@@ -150,7 +150,7 @@ It saddens me because, while we choose to not look, power plants are being built
 Lands are being taken away for a more profitable industry. This is, however, not breaking news: the same thing has
 been going on for decades, centuries even. We bow down to the strong man, the money man, the white man.
 
-Is it not caring, or choosing to care in a verfy specific way?
+Is it not caring, or choosing to care in a very specific way?
 
 It is sad to feel the echo of the past, hearing friends repeating talking points from colonisers and
 imperialists whose aim is to extract, to condense, to reduce. To hear such echo in the void that is
