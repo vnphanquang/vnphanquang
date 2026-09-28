@@ -13,10 +13,10 @@
 		numWords: 900,
 		readMinutes: 5,
 		standardSite: 'at://did:plc:vdzlwjjqp5kpce2kxqyoa467/site.standard.document/3mwlorx4zzsgo',
-		// blueskyPost: {
-		// 	accountId: 'did:plc:vdzlwjjqp5kpce2kxqyoa467',
-		// 	postId: '...',
-		// },
+		blueskyPost: {
+			accountId: 'did:plc:vdzlwjjqp5kpce2kxqyoa467',
+			postId: '3mwlq3qchqs2n',
+		},
 	});
 </script>
 
