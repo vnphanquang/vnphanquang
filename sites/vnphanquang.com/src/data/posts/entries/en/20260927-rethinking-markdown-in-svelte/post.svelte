@@ -10,6 +10,8 @@
 		updatedAt: new Date('2026-09-28'),
 		tags: ['svelte', 'markdown', 'vite'],
 		standardSite: 'at://did:plc:vdzlwjjqp5kpce2kxqyoa467/site.standard.document/3mwiivp7d7ceh',
+		numWords: 1000,
+		readMinutes: 6,
 		blueskyPost: {
 			accountId: 'did:plc:vdzlwjjqp5kpce2kxqyoa467',
 			postId: '3mwiun6f44s24',
