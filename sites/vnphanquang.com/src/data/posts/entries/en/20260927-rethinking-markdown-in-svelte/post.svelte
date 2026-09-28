@@ -1,4 +1,6 @@
 <script lang="ts" module>
+	import { markdown } from '@vnphanquang/markdown/svelte';
+
 	import { defineBlogPostMetadata } from '#data/posts/definition';
 
 	export const metadata = defineBlogPostMetadata({
@@ -17,10 +19,6 @@
 			postId: '3mwiun6f44s24',
 		},
 	});
-</script>
-
-<script lang="ts">
-	import { markdown } from '@vnphanquang/markdown/svelte';
 </script>
 
 {markdown`

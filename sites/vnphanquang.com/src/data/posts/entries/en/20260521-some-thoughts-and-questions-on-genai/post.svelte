@@ -1,4 +1,6 @@
 <script lang="ts" module>
+	import { markdown } from '@vnphanquang/markdown/svelte';
+
 	import { defineBlogPostMetadata } from '#data/posts/definition';
 
 	export const metadata = defineBlogPostMetadata({
@@ -14,10 +16,6 @@
 		tags: ['genai'],
 		standardSite: 'at://did:plc:vdzlwjjqp5kpce2kxqyoa467/site.standard.document/3mwihjyhjq23i',
 	});
-</script>
-
-<script lang="ts">
-	import { markdown } from '@vnphanquang/markdown/svelte';
 </script>
 
 {markdown`
