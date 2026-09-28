@@ -1,7 +1,7 @@
 <script module>
 	import { defineMetadata } from './definition';
 
-	export const metdata = defineMetadata({
+	export const metadata = defineMetadata({
 		title: '...',
 		description: '...',
 	});

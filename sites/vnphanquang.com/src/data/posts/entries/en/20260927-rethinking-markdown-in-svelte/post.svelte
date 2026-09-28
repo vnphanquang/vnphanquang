@@ -7,6 +7,7 @@
 			'Preprocess static markdown at build time via explicit tagged template - a different take on supporting markdown content in Svelte',
 		keywords: 'svelte, markdown, buildtime, static, preprocess, vite plugin',
 		publishedAt: new Date('2026-09-27'),
+		updatedAt: new Date('2026-09-28'),
 		tags: ['svelte', 'markdown', 'vite'],
 		standardSite: 'at://did:plc:vdzlwjjqp5kpce2kxqyoa467/site.standard.document/3mwiivp7d7ceh',
 		blueskyPost: {
@@ -114,12 +115,24 @@ customise or supply your own Markdown parser.
 One convenient use case i've found after using this for a while is that i can just slap on some
 markdown in any pages / Svelte components as needed. In MDsveX, on the contrary, one would expect
 only a collection of files (usually with a dedicated extension) to host all markdown content,
-otherwise letting MDsveX process regular files will potentially cause syntax issues.
+otherwise letting MDsveX process regular Svelte files will potentially cause unintended side effects.
+
+This works great in static/personal sites or when building demo / presentation.
+
+~~~svelte #title="about/+page.svelte"
+...sveltey stuff...
+
+{markdown\`
+some adhoc markdown
+\`}
+
+...other sveltey stuff...
+~~~
 
 ### What about Frontmatter?
 
-i hear you. But, in Svelte, the module script is already a great way to provide metadata. This also
-has better typesafety. Consider this pattern:
+i hear you. But, in Svelte, the [module script](https://svelte.dev/docs/svelte/svelte-files#script-module)
+is already a great way to provide metadata. This also has better typesafety. Consider this pattern:
 
 > [!CODEGROUP]
 >
@@ -133,19 +146,33 @@ has better typesafety. Consider this pattern:
 
 ## Not Perfect
 
-Of course, no solution is without tradeoffs. If you use [svelte-md-template] in a typical Svelte
-project, consider configuring your prettier / formatter tooling to avoid auto indentation, as that
-would be parsed as fenced code block accidentally.
+Of course, no solution is without tradeoffs. Let's discuss some of them.
+
+### Indentation
+
+Indented content will normally be parsed as [indented code block](https://spec.commonmark.org/0.31.2/#indented-code-blocks).
 
 ~~~svelte #title="don't auto-indent"
 {markdown(\`
 Don't indent here
-as it may become
-a fenced code block
+as it will be parsed as
+an indented code block
 \`)}
 ~~~
 
-See [Docs > Recommmended Prettier Config](https://github.com/vnphanquang/svelte-md-template#recommended-prettier-config) for an example.
+The package could strip indentation automatically; in fact, you can turn on the \`dedent\` option to
+do exactly so. See [Docs > Stripping
+Indentation](https://github.com/vnphanquang/svelte-md-template#stripping-indentation) for more
+information. It is not on by default because I've found that language tooling would still pick up
+the markdown content as indented code block. So in the end, it is perhaps better to discourage
+indentation altogether.
+
+If you are not using the \`dedent\` option, consider configuring your prettier / formatter tooling
+to avoid auto indentation. See [Docs > Recommmended Prettier Config](https://github.com/vnphanquang/svelte-md-template#recommended-prettier-config)
+for an example.
+
+### Escaping Special Characters
+
 Another inconvenience is that backticks and curly braces need to be escaped appropriately:
 
 ~~~svelte #title="escapes"
@@ -159,7 +186,9 @@ See [Docs > Tradeoffs &
 Caveats](https://github.com/vnphanquang/svelte-md-template#tradeoffs--caveats) for some more
 explanation.
 
-Lastly, there may be some issue with HMR working in SvelteKit at the moment. Behaviorally, changing
+### Hot Module Replacement (HMR)
+
+Lastly, there may be some issue with HMR in SvelteKit at the moment. Behaviorally, changing
 markdown content may cause the scroll position to reset. This may or may not happen with your setup.
 In any case, i'm actively looking into it.
 
