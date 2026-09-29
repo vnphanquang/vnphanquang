@@ -2,6 +2,7 @@
 
 @layer markdown {
 	.md {
+		max-width: 100cqi;
 		font-size: 1rem;
 		line-height: 1.75;
 	}
