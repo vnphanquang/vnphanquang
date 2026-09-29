@@ -215,6 +215,19 @@ You can see its [source code](https://github.com/vnphanquang/vnphanquang/blob/ma
 
 ~~~
 
+## Remark or Rehype
+
+Should some of the "remark" plugins introduced here be [rehype] plugins instead? Probably yes! A lot
+of them turns some markdown into a special corresponding HTML, and the processing logic task can be
+done on hast instead of mdast.
+
+Some of them, however, are tighly coupled to the fact that the source content _should_ always comes
+from markdown, or depends on some special markdown semantics. In other words, they are not likely to
+be used without remark. In these cases, i'd argue the boundary between remark-rehype gets pretty
+blurry.
+
+As such, i'd rather them being some remark-plugin, or at the very least, a hybrid remark-rehype-plugin.
+
 ## Closing
 
 Let me know how you are writing markdown, what problems you are facing, or if any of the plugins i
