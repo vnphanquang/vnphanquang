@@ -91,7 +91,7 @@
 			<section class="space-y-4">
 				<div class="text-stroke-200 flex items-center gap-4">
 					<h2 class="tablet:text-5xl text-3xl font-bold tracking-wider uppercase">
-						<a class="text-svelte" href="https://svelte.dev">Svelte</a>
+						<a class="c-link-preserved text-svelte" href="https://svelte.dev"> Svelte </a>
 						Ecosystem
 					</h2>
 				</div>
@@ -109,7 +109,8 @@
 			<section class="space-y-4">
 				<div class="text-stroke-200 flex items-center gap-4">
 					<h2 class="tablet:text-4xl desktop:text-5xl text-3xl font-bold tracking-wider uppercase">
-						<a class="text-[#3aa4ff]" href="https://unifiedjs.com/">Unified</a> Ecosystem
+						<a class="c-link-preserved text-[#3aa4ff]" href="https://unifiedjs.com/">Unified</a>
+						Ecosystem
 					</h2>
 				</div>
 				{@render listing(projectGroups.unified)}
