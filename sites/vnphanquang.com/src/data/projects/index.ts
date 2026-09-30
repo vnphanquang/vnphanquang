@@ -32,18 +32,27 @@ export const projects: Project[] = [
 		name: 'remark-enhance-codeblock',
 		description: 'enhance experience for sharing code when authoring markdown content',
 		url: 'https://github.com/vnphanquang/remark-enhance-codeblock',
+		blog:
+			resolve('/blog/[slug]', { slug: 'remark-plugins-for-better-markdown-authoring' }) +
+			'#a-friendly-and-useful-code-block',
 		tags: ['oss', 'markdown', 'unified'],
 	},
 	{
 		name: 'remark-transform-blockquote',
 		description: 'utilise blockquote semantics to render more complex HTML',
 		url: 'https://github.com/vnphanquang/remark-transform-blockquote',
+		blog:
+			resolve('/blog/[slug]', { slug: 'remark-plugins-for-better-markdown-authoring' }) +
+			'#adding-callouts--alerts',
 		tags: ['oss', 'markdown', 'unified'],
 	},
 	{
 		name: 'remark-codeblock-source',
 		description: 'load codeblock content from external source (e.g. filesytem, GitHub, etc.)',
 		url: 'https://github.com/vnphanquang/remark-codeblock-source',
+		blog:
+			resolve('/blog/[slug]', { slug: 'remark-plugins-for-better-markdown-authoring' }) +
+			'#loading-code-example-from-an-external-source',
 		tags: ['oss', 'markdown', 'unified'],
 	},
 	{
