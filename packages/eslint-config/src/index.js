@@ -104,6 +104,7 @@ export function findConfigRoot() {
  * @property {boolean | 'configless' | import('@sveltejs/kit').Config} [svelte]
  * @property {boolean} [jsdoc]
  * @property {string[]} [ignores]
+ * @property {string[]} [allowDefaultProject]
  */
 
 /**
@@ -202,7 +203,7 @@ export async function defineConfig(options = {}, ...additionals) {
 					projectService: svelte
 						? true
 						: {
-								allowDefaultProject: ['*.config.{ts,js}'],
+								allowDefaultProject: ['*.config.{ts,js}', ...(options.allowDefaultProject ?? [])],
 							},
 				},
 			}),
