@@ -11,9 +11,12 @@ export function transformerRecordMaxLine() {
 			this.options.meta.maxLine++;
 		},
 		pre(pre) {
-			if (!this.options.meta?.maxLine) return;
-			pre.properties.style = `--max-line: ${this.options.meta.maxLine};` + pre.properties.style;
-			// TODO: add signifier if only one line
+			const maxLine = /** @type {number | undefined} */ (this.options.meta?.maxLine);
+			if (!maxLine) return;
+			pre.properties.style = `--max-line: ${maxLine};` + pre.properties.style;
+			if (maxLine === 1) {
+				this.addClassToHast(pre, 'oneliner');
+			}
 		},
 	};
 }
