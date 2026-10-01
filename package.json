@@ -13,7 +13,7 @@
 	},
 	"devDependencies": {
 		"@sveltejs/load-config": "^0.2.3",
-		"@types/node": "^26.6.2",
+		"@types/node": "24.19.0",
 		"@vnphanquang/eslint-config": "workspace:*",
 		"dts-buddy": "^0.8.3",
 		"eslint": "^10.11.0",
@@ -37,12 +37,12 @@
 	"devEngines": {
 		"runtime": {
 			"name": "node",
-			"version": "24.16.0",
+			"version": "24.19.0",
 			"onFail": "download"
 		},
 		"packageManager": {
 			"name": "pnpm",
-			"version": "12.6.0",
+			"version": "12.8.1",
 			"onFail": "download"
 		}
 	}
