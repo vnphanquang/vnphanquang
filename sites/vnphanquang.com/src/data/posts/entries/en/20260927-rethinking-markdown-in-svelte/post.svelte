@@ -89,7 +89,7 @@ to surface:
 utilising standard constructs as much as possible. It requires writing Markdown in an explicit
 tagged template:
 
-~~~svelte $class="no-line-number"
+~~~svelte
 {markdown(\`write your markdown here\`)}
 ~~~
 
