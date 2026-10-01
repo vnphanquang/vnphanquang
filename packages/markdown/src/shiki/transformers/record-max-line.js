@@ -13,6 +13,7 @@ export function transformerRecordMaxLine() {
 		pre(pre) {
 			if (!this.options.meta?.maxLine) return;
 			pre.properties.style = `--max-line: ${this.options.meta.maxLine};` + pre.properties.style;
+			// TODO: add signifier if only one line
 		},
 	};
 }

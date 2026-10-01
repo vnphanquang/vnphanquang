@@ -146,7 +146,8 @@
 	}
 
 	.no-line-number & .line {
-		--inline-start: 3ch;
+		--inline-start: var(--c-padding-inline, var(--cd-padding-inline));
+		--inline-end: var(--c-padding-inline, var(--cd-padding-inline));
 	}
 
 	&.has-focused {
