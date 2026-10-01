@@ -14,6 +14,9 @@ import { externalLink } from './src/svelte-put/preprocess-external-link/index.js
 const commitHash = child_process.execSync('git rev-parse --short HEAD').toString().trim();
 
 export default defineConfig({
+	server: {
+		port: 5300,
+	},
 	plugins: [
 		qrcode(),
 		// FIXME: add inline-svg, external-link, etc.
