@@ -202,7 +202,7 @@ export async function defineConfig(options = {}, ...additionals) {
 					projectService: svelte
 						? true
 						: {
-								allowDefaultProject: ['./*.config.{ts,js}'],
+								allowDefaultProject: ['*.config.{ts,js}'],
 							},
 				},
 			}),
