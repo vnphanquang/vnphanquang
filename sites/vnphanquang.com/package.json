@@ -33,7 +33,7 @@
 		"docker:run": "docker run --rm --name=vnphanquang.com --publish 3000:3000 vnphanquang.com:latest"
 	},
 	"devDependencies": {
-		"@atproto/api": "^0.20.44",
+		"@atproto/api": "^0.22.0",
 		"@svelte-put/avatar": "^4.0.0",
 		"@svelte-put/copy": "^4.0.0",
 		"@svelte-put/toc": "^6.0.2",
@@ -46,7 +46,7 @@
 		"@vnphanquang/gach": "workspace:*",
 		"@vnphanquang/markdown": "workspace:*",
 		"github-slugger": "^2.0.0",
-		"magic-string": "^1.4.1",
+		"magic-string": "^1.4.2",
 		"node-addon-api": "^8.9.2",
 		"node-gyp": "^13.0.2",
 		"schema-dts": "^2.0.0",

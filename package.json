@@ -12,14 +12,14 @@
 		"format": "prettier --write ."
 	},
 	"devDependencies": {
-		"@types/node": "^26.6.2",
 		"@sveltejs/load-config": "^0.2.3",
+		"@types/node": "^26.6.2",
 		"@vnphanquang/eslint-config": "workspace:*",
 		"dts-buddy": "^0.8.3",
 		"eslint": "^10.11.0",
 		"eslint-plugin-svelte": "^3.23.0",
 		"npm-run-all": "^4.1.5",
-		"prettier": "^3.9.8",
+		"prettier": "^3.9.9",
 		"prettier-plugin-embed": "^0.5.1",
 		"prettier-plugin-svelte": "^4.1.1",
 		"prettier-plugin-tailwindcss": "^0.8.1",
