@@ -88,6 +88,13 @@ export function createPreset(options = {}) {
 							class: 'c-callout c-callout--error',
 						},
 					},
+					{
+						marker: '!STEPLIST',
+						tag: 'div',
+						attributes: {
+							class: 'steplist',
+						},
+					},
 				],
 			}),
 			definePlugin(remarkNodeClassMap, { link: 'c-link', linkReference: 'c-link' }),

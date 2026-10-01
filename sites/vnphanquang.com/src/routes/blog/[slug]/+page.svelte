@@ -23,6 +23,7 @@
 
 	const post = $derived(await loadBlogPost(params));
 
+	// FIXME: custom 404 page
 	// svelte-ignore state_referenced_locally
 	if (!post) error(400, 'No post with such name!'); // for SSR
 	$effect(() => {

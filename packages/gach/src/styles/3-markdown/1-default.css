@@ -37,8 +37,10 @@
 		}
 
 		&:where(:is(ul, ol)) {
+			--list-pis: 1.6em;
+
 			margin-block: 1.2em;
-			padding-inline-start: 1.6em;
+			padding-inline-start: var(--list-pis);
 
 			&:where(:is(ul, ol) *) {
 				margin-block: 0.8em;

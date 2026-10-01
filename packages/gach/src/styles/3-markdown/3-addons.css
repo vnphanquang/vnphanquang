@@ -1,0 +1,63 @@
+@layer markdown {
+	.steplist {
+		--font-size: 0.8rem;
+		--step-size: 1.75rem;
+		--step-pis: 0.5rem;
+		--line-width: 3px;
+
+		& ol {
+			counter-reset: step 0;
+			position: relative;
+			margin-inline-start: var(--list-pis);
+			list-style-type: none;
+
+			&::after {
+				content: '';
+
+				position: absolute;
+				z-index: 0;
+				inset-block: 0;
+				inset-inline-start: calc(var(--list-pis) - var(--step-size) / 2 - var(--line-width) / 2);
+
+				width: var(--line-width);
+
+				background-color: var(--color-primary-fill-50);
+			}
+		}
+
+		& li {
+			counter-increment: step 1;
+			position: relative;
+			padding-inline-start: var(--step-pis);
+
+			&::before {
+				content: counter(step);
+
+				position: absolute;
+				z-index: 1;
+				inset-block-start: 0;
+				inset-inline-end: 100%;
+
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+
+				width: var(--step-size);
+				height: var(--step-size);
+				border-radius: 50%;
+
+				font-size: var(--font-size);
+				font-weight: 700;
+				font-variant-numeric: tabular-nums;
+				line-height: 1;
+				color: var(--color-primary-stroke-50);
+
+				background-color: var(--color-primary-fill-50);
+			}
+
+			&:not(:first-of-type) {
+				margin-block-start: 1.2rem;
+			}
+		}
+	}
+}
