@@ -70,7 +70,28 @@ export function remarkTransformImg(options = {}) {
 				return;
 			}
 
-			if (o.svelteEnhancedImg) {
+			let parsed_alt = alt ?? '';
+			const meta = parsed_alt.match(/^@[^@]*@/)?.[0];
+			if (meta) {
+				parsed_alt = parsed_alt.slice(meta.length).trimStart();
+			}
+
+			if (!meta?.includes('nolazy')) {
+				node.data ??= {};
+				node.data.hProperties ??= {};
+				node.data.hProperties.loading = 'lazy';
+				node.data.hProperties.decoding = 'async';
+			}
+
+			const cls = meta?.match(/class="([^"]*)"/)?.[1];
+			if (cls) {
+				node.data ??= {};
+				node.data.hProperties ??= {};
+				node.data.hProperties.className ??= [];
+				node.data.hProperties.className.push(cls);
+			}
+
+			if (o.svelteEnhancedImg && !meta?.includes('noenhance')) {
 				let ignorePrefixes = ['http://', 'https://', 'data:'];
 				if (typeof o.svelteEnhancedImg !== 'boolean') {
 					if (o.svelteEnhancedImg.ignorePrefixes) {
@@ -83,7 +104,7 @@ export function remarkTransformImg(options = {}) {
 				}
 			}
 
-			if (o.figure) {
+			if (o.figure && !meta?.includes('nofigure')) {
 				node.alt = '';
 				/** @type {any} */
 				const figure = u(
@@ -102,7 +123,7 @@ export function remarkTransformImg(options = {}) {
 									hName: 'figcaption',
 								},
 							},
-							[u('text', alt ?? '')],
+							[u('text', parsed_alt ?? '')],
 						),
 					],
 				);
