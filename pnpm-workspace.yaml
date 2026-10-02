@@ -11,3 +11,4 @@ minimumReleaseAgeExclude:
   - remark-transform-blockquote
   - '@sveltejs/kit'
   - '@sveltejs/adapter-node'
+  - '@sveltejs/enhanced-img'
