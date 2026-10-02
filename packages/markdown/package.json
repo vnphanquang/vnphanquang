@@ -47,6 +47,19 @@
 			"import": "./src/unified/index.js"
 		}
 	},
+	"typesVersions": {
+		"*": {
+			"svelte": [
+				"./types/index.d.ts"
+			],
+			"svelte/vite": [
+				"./types/index.d.ts"
+			],
+			"unified": [
+				"./types/index.d.ts"
+			]
+		}
+	},
 	"publishConfig": {
 		"access": "public"
 	},
