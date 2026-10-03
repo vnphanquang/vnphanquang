@@ -82,7 +82,7 @@ export function createShikiRemarkPlugin() {
 						return twoslasherDefault(code, lang, options);
 					}
 				),
-				langs: ['typescript', 'javascript', 'svelte'],
+				langs: ['typescript', 'javascript', 'svelte', 'ts', 'js'],
 			}),
 		],
 	});
