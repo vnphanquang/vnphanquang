@@ -1,3 +1,5 @@
+@import '@shikijs/twoslash/style-rich.css';
+
 .codeblock-content {
 	container-type: inline-size;
 }
@@ -167,3 +169,33 @@
 		}
 	}
 }
+
+.twoslash {
+	--twoslash-border-color: var(--c-border-color, var(--cd-border-color));
+	--twoslash-popup-bg: var(--c-header-bg, var(--cd-header-bg));
+	--twoslash-popup-shadow: light-dark(rgb(0 0 0 / 8%)) 0px 1px 4px;
+	--twoslash-docs-color: light-dark(black, white);
+	--twoslash-docs-font: sans-serif;
+	--twoslash-code-font: inherit;
+	--twoslash-unmatched-color: light-dark(black, white);
+
+	& .twoslash-popup-container {
+		overflow: auto;
+		max-width: 50dvw;
+		max-height: 50dvh;
+		border-radius: 0;
+	}
+
+	& :is(.twoslash-popup-docs, .twoslash-popup-error, .twoslash-completion-list) {
+		font-size: 0.9em;
+	}
+
+	.codeblock-root:has(&) {
+		--c-max-height: none;
+
+		& .codeblock-content {
+			overflow: visible;
+		}
+	}
+}
+

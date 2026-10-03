@@ -12,3 +12,6 @@ minimumReleaseAgeExclude:
   - '@sveltejs/kit'
   - '@sveltejs/adapter-node'
   - '@sveltejs/enhanced-img'
+  - '@sveltejs/vite-plugin-svelte'
+  - 'svelte'
+  - 'vite'

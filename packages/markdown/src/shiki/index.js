@@ -9,6 +9,7 @@ import {
 import { createHighlighterCore } from 'shiki/core';
 import { createOnigurumaEngine } from 'shiki/engine/oniguruma';
 import { definePlugin } from 'svelte-md-template/unified';
+import { transformerTwoslash } from '@shikijs/twoslash';
 
 import { transformerIndent } from './transformers/indent.js';
 import { transformerRecordMaxLine } from './transformers/record-max-line.js';
@@ -66,6 +67,7 @@ export function createShikiRemarkPlugin() {
 			transformerNotationFocus(),
 			transformerRenderIndentGuides({ indent: 4 }),
 			transformerRecordMaxLine(),
+			transformerTwoslash({ explicitTrigger: /#typehint/ }),
 		],
 	});
 }
