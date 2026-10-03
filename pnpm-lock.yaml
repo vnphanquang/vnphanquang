@@ -357,6 +357,12 @@ importers:
       svelte-md-template:
         specifier: ^0.1.7
         version: 0.1.7(supports-color@10.2.2)(svelte@5.57.1(@typescript-eslint/types@8.70.0))
+      twoslash:
+        specifier: ^0.3.9
+        version: 0.3.9(supports-color@10.2.2)(typescript@6.0.3)
+      twoslash-svelte:
+        specifier: ^0.3.9
+        version: 0.3.9(supports-color@10.2.2)(svelte@5.57.1(@typescript-eslint/types@8.70.0))(typescript@6.0.3)
       unist-builder:
         specifier: ^4.0.0
         version: 4.0.0
@@ -1724,6 +1730,12 @@ packages:
     cpu: [x64]
     os: [win32]
 
+  '@volar/language-core@2.4.28':
+    resolution: {integrity: sha512-w4qhIJ8ZSitgLAkVay6AbcnC7gP3glYM3fYwKV3srj8m494E3xtrCv6E+bWviiK/8hs6e6t1ij1s2Endql7vzQ==}
+
+  '@volar/source-map@2.4.28':
+    resolution: {integrity: sha512-yX2BDBqJkRXfKw8my8VarTyjv48QwxdJtvRgUpNE5erCsgEUdI2DsLbpa+rOQVAJYshY99szEcRDmyHbF10ggQ==}
+
   abbrev@5.0.0:
     resolution: {integrity: sha512-/XrFJgzQQQHpti1raDJC6m4ws6aNktmjBlhk8Fdlk7LwCEuDoieEJJY9OFHjfiFJFFRM2tK+Ky/IsfbbmlMu1w==}
     engines: {node: ^22.22.2 || ^24.15.0 || >=26.0.0}
@@ -1982,6 +1994,9 @@ packages:
   decode-named-character-reference@1.3.0:
     resolution: {integrity: sha512-GtpQYB283KrPp6nRw50q3U9/VfOutZOe103qlN7BPP6Ad27xYnOIWv4lPzo8HCAL+mMZofJ9KEy30fq6MfaK6Q==}
 
+  dedent-js@1.0.1:
+    resolution: {integrity: sha512-OUepMozQULMLUmhxS95Vudo0jb0UchLimi3+pQ2plj61Fcy8axbP9hbiD4Sz6DPqn6XG3kfmziVfQ1rSys5AJQ==}
+
   dedent@1.7.2:
     resolution: {integrity: sha512-WzMx3mW98SN+zn3hgemf4OzdmyNhhhKz5Ay0pUfQiMQ3e1g+xmTJWp/pKdwKVXhdSkAEGIIzqeuWrL3mV/AXbA==}
     peerDependencies:
@@ -2230,6 +2245,9 @@ packages:
 
   estree-walker@2.0.2:
     resolution: {integrity: sha512-Rfkk/Mp/DL7JVje3u18FxFujQlTNR2q6QfMSMB7AvCBx91NGj/ba3kCfza0f6dVDbw7YlRf/nDrn7pQrCCyQ/w==}
+
+  estree-walker@3.0.3:
+    resolution: {integrity: sha512-7RUKfXgSMMkzt6ZuXmqapOurLGPPfgj6l9uRZ7lRGolvk0y2yocc35LdcxKC5PQZdn2DMqioAQ2NoWcrTKmm6g==}
 
   esutils@2.0.3:
     resolution: {integrity: sha512-kVscqXk4OCp68SZ0dkgEKVi6/8ij300KBWTJq32P/dYeWTSwK41WyTxalN1eRmA5Z9UU/LX9D7FWSmV9SAYx6g==}
@@ -3680,6 +3698,9 @@ packages:
   schema-dts@2.0.0:
     resolution: {integrity: sha512-t7NoCy3Rn5GHGx6p7s1qIYK/AeIb8ZxJNR9WUNFkwMv2CiiGZBmqqYWc2FlZVm5ZbiHMY4OvBWhj7QtyrFO2Jw==}
 
+  scule@1.3.0:
+    resolution: {integrity: sha512-6FtHJEvt+pVMIB9IBY+IcCJ6Z5f1iQnytgyfKMhDKgmzYG+TeH/wx1y3l27rshSbLiSanrR9ffZDrEsmjlQF2g==}
+
   semver@5.7.2:
     resolution: {integrity: sha512-cBznnQ9KjJqU67B52RMC65CMarK2600WFnbkcaiwWq3xy/5haFJlshgnpjovMVJ+Hff49d8GEn0b87C5pDQ10g==}
     hasBin: true
@@ -3929,6 +3950,12 @@ packages:
     peerDependencies:
       svelte: '>=5.0.0'
 
+  svelte2tsx@0.7.61:
+    resolution: {integrity: sha512-EpQ/+UHITBULeUojx/LLD3uTYasZXcX1BrqlrzfLUnT9vdUhaOWK59a3ryWcFU8L0sY1SP+gRhJ2Beiis98+qw==}
+    peerDependencies:
+      svelte: ^3.55 || ^4.0.0-next.0 || ^4.0 || ^5.0.0-next.0
+      typescript: ^4.9.4 || ^5.0.0 || ^6.0.0
+
   svelte@5.57.1:
     resolution: {integrity: sha512-Uqj49lWKB+iSSnneuwiYYJ7MZgkB+eXr0LXBhv4uDuAkXqnWmq65Sxflfvp0Lc6MdKjMUxGaeOKWJqz5SNiVIA==}
     engines: {node: '>=18'}
@@ -4013,6 +4040,12 @@ packages:
 
   twoslash-protocol@0.3.9:
     resolution: {integrity: sha512-9/iwp+CXOnjFMPQuPL5PkuRbZnDoNpBvtJCLs9t8kDYkL3YHujbvnHfZA1i5fApDftVEdBw+T/4F+dH5kIzpYQ==}
+
+  twoslash-svelte@0.3.9:
+    resolution: {integrity: sha512-usDCzb3PPTG5g+9ef3kvu5ACK/jwpdUYsaMGvhQ84xS0v8F5w5Z2X01W88xfbLnLT5RnmUBdJM69ACbhEC3B5g==}
+    peerDependencies:
+      svelte: '>=5'
+      typescript: '*'
 
   twoslash@0.3.9:
     resolution: {integrity: sha512-rDclk+OtzuTX+tnea7DYLCkqGQ3eP0IyfD+kzUJ7t46X/NzlaxwrhecmEBNuSCuEn3V+n1PhcjUUQQ7gUJzX5Q==}
@@ -5359,6 +5392,12 @@ snapshots:
   '@unrs/resolver-binding-win32-x64-msvc@1.12.2':
     optional: true
 
+  '@volar/language-core@2.4.28':
+    dependencies:
+      '@volar/source-map': 2.4.28
+
+  '@volar/source-map@2.4.28': {}
+
   abbrev@5.0.0: {}
 
   acorn-jsx@5.3.2(acorn@8.18.0):
@@ -5604,6 +5643,8 @@ snapshots:
   decode-named-character-reference@1.3.0:
     dependencies:
       character-entities: 2.0.2
+
+  dedent-js@1.0.1: {}
 
   dedent@1.7.2: {}
 
@@ -5954,6 +5995,10 @@ snapshots:
   estraverse@5.3.0: {}
 
   estree-walker@2.0.2: {}
+
+  estree-walker@3.0.3:
+    dependencies:
+      '@types/estree': 1.0.9
 
   esutils@2.0.3: {}
 
@@ -7455,6 +7500,8 @@ snapshots:
     transitivePeerDependencies:
       - typescript
 
+  scule@1.3.0: {}
+
   semver@5.7.2: {}
 
   semver@7.8.5: {}
@@ -7807,6 +7854,13 @@ snapshots:
       - babel-plugin-macros
       - supports-color
 
+  svelte2tsx@0.7.61(svelte@5.57.1(@typescript-eslint/types@8.70.0))(typescript@6.0.3):
+    dependencies:
+      dedent-js: 1.0.1
+      scule: 1.3.0
+      svelte: 5.57.1(@typescript-eslint/types@8.70.0)
+      typescript: 6.0.3
+
   svelte@5.57.1(@typescript-eslint/types@8.70.0):
     dependencies:
       '@jridgewell/remapping': 2.3.5
@@ -7900,6 +7954,19 @@ snapshots:
   tslib@2.8.1: {}
 
   twoslash-protocol@0.3.9: {}
+
+  twoslash-svelte@0.3.9(supports-color@10.2.2)(svelte@5.57.1(@typescript-eslint/types@8.70.0))(typescript@6.0.3):
+    dependencies:
+      '@jridgewell/sourcemap-codec': 1.6.0
+      '@volar/language-core': 2.4.28
+      estree-walker: 3.0.3
+      svelte: 5.57.1(@typescript-eslint/types@8.70.0)
+      svelte2tsx: 0.7.61(svelte@5.57.1(@typescript-eslint/types@8.70.0))(typescript@6.0.3)
+      twoslash: 0.3.9(supports-color@10.2.2)(typescript@6.0.3)
+      twoslash-protocol: 0.3.9
+      typescript: 6.0.3
+    transitivePeerDependencies:
+      - supports-color
 
   twoslash@0.3.9(supports-color@10.2.2)(typescript@6.0.3):
     dependencies:

@@ -6,10 +6,12 @@ import {
 	transformerNotationWordHighlight,
 	transformerRenderIndentGuides,
 } from '@shikijs/transformers';
+import { transformerTwoslash } from '@shikijs/twoslash';
 import { createHighlighterCore } from 'shiki/core';
 import { createOnigurumaEngine } from 'shiki/engine/oniguruma';
 import { definePlugin } from 'svelte-md-template/unified';
-import { transformerTwoslash } from '@shikijs/twoslash';
+import { createTwoslasher } from 'twoslash';
+import { createTwoslasher as createTwoslasherSvelte } from 'twoslash-svelte';
 
 import { transformerIndent } from './transformers/indent.js';
 import { transformerRecordMaxLine } from './transformers/record-max-line.js';
@@ -33,6 +35,9 @@ export const highlighter = await createHighlighterCore({
 	],
 	engine: createOnigurumaEngine(import('shiki/wasm')),
 });
+
+const twoslasherDefault = createTwoslasher();
+const twoslasherSvelte = createTwoslasherSvelte();
 
 /**
  * @returns {import('unified').Pluggable}
@@ -67,7 +72,18 @@ export function createShikiRemarkPlugin() {
 			transformerNotationFocus(),
 			transformerRenderIndentGuides({ indent: 4 }),
 			transformerRecordMaxLine(),
-			transformerTwoslash({ explicitTrigger: /#typehint/ }),
+			transformerTwoslash({
+				explicitTrigger: /#typehint/,
+				twoslasher: /** @type {import('@shikijs/twoslash').TwoslashShikiFunction} */ (
+					(code, lang, options) => {
+						if (lang === 'svelte') {
+							return twoslasherSvelte(code, lang, options);
+						}
+						return twoslasherDefault(code, lang, options);
+					}
+				),
+				langs: ['typescript', 'javascript', 'svelte'],
+			}),
 		],
 	});
 }
