@@ -155,7 +155,7 @@
 	&.has-focused {
 		& .line:not(.focused) {
 			opacity: 0.5;
-			filter: blur(0.05rem);
+			filter: blur(0.1rem);
 
 			transition-timing-function: ease-in;
 			transition-duration: 200ms;
