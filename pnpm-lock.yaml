@@ -337,8 +337,8 @@ importers:
         specifier: ^1.0.4
         version: 1.0.4
       remark-enhance-codeblock:
-        specifier: ^1.2.4
-        version: 1.2.4
+        specifier: ^1.2.5
+        version: 1.2.5
       remark-gfm:
         specifier: ^4.0.1
         version: 4.0.1(supports-color@10.2.2)
@@ -3591,8 +3591,8 @@ packages:
   remark-codeblock-source@1.0.4:
     resolution: {integrity: sha512-iDzq3qFyP9R0Mhr6EzttoVzPx02wl8ySCFql5Cx+O9j1xZsygNZ4WUCYNz6E5OtgOxBzribYhQheQzaiYonTVA==}
 
-  remark-enhance-codeblock@1.2.4:
-    resolution: {integrity: sha512-mQKv5SWGg870YHdmfmTsUlD2pr4a1I8nKyL2zzqu6bzKDxbwFjl41VAeScMMhkLu6cFFug/yfnNAAvMRg59EdQ==}
+  remark-enhance-codeblock@1.2.5:
+    resolution: {integrity: sha512-9X4C29x6x0A34emSavXIO9qlrekMqxiVjmOXYNsS7cNRhFMsZ33hyYgD3/MUKS4SWMZSg7YTmJetXsYibG5m6A==}
 
   remark-gfm@4.0.1:
     resolution: {integrity: sha512-1quofZ2RQ9EWdeN34S79+KExV1764+wCUGop5CPL1WGdD0ocPpu91lzPGbwWMECpEpd42kJGQwzRfyov9j4yNg==}
@@ -7278,7 +7278,7 @@ snapshots:
     dependencies:
       unist-util-visit: 5.1.0
 
-  remark-enhance-codeblock@1.2.4:
+  remark-enhance-codeblock@1.2.5:
     dependencies:
       remark-transform-blockquote: 1.2.5
       unist-builder: 4.0.0
