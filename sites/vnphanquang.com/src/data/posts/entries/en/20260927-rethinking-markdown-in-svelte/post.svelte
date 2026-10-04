@@ -117,7 +117,7 @@ markdown in any pages / Svelte components as needed. In MDsveX, on the contrary,
 only a collection of files (usually with a dedicated extension) to host all markdown content,
 otherwise letting MDsveX process regular Svelte files will potentially cause unintended side effects.
 
-This works great in static/personal sites or when building demo / presentation.
+This works great in static / personal sites or when building demo / presentation.
 
 ~~~svelte #title="about/+page.svelte"
 ...sveltey stuff...
@@ -209,7 +209,7 @@ keeping an eye on.
 ## Closing
 
 Will \`svelte-md-template\` prove to be a viable option in Svelte land? Perhaps only time can tell.
-Let me know if you have any thoughts. And thank you for reading.
+Let me know your thoughts. And thank you for reading.
 
 [mdsvex]: https://github.com/pngwn/mdsvex
 [unified]: https://github.com/unifiedjs/unified
