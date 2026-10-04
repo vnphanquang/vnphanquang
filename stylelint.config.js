@@ -26,6 +26,8 @@ export default {
 				],
 				'no-invalid-position-declaration': null,
 				'at-rule-prelude-no-invalid': [true, { ignoreAtRules: ['apply', 'custom-selector'] }],
+				'selector-class-pattern': null,
+				'no-descending-specificity': null,
 				'nesting-selector-no-missing-scoping-root': null,
 			},
 		},

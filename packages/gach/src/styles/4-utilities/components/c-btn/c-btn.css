@@ -1,0 +1,133 @@
+/*
+	Default button component
+
+	```html
+	<button class="c-btn">
+		<span>Click me</span>
+	</button>
+	```
+*/
+@utility c-btn {
+	@layer components {
+		--duration: 200ms;
+		--easing: var(--ease-in);
+
+		cursor: pointer;
+
+		position: relative;
+
+		padding: calc(var(--spacing) * 2) calc(var(--spacing) * 3);
+		border: 1.5px solid currentcolor;
+
+		transition-timing-function: var(--easing);
+		transition-duration: var(--duration);
+		transition-property: transform, opacity, background-color, color, border-color;
+
+		&:is(:disabled, [disabled]:not([disabled='false'])),
+		&:has(input:disabled) {
+			cursor: not-allowed;
+			opacity: 0.5;
+		}
+
+		@variant hover {
+			--duration: 120ms;
+			--easing: var(--ease-out);
+		}
+
+		@variant active {
+			--duration: 40ms;
+		}
+
+		@variant not-disabled {
+			&:focus-visible,
+			&:is(label):has(input:focus-visible) {
+				border-color: var(--color-focus);
+				outline: 1.5px solid var(--color-focus);
+				outline-offset: 1px;
+			}
+		}
+
+		&:is([data-delayed]:not([data-delayed='false'])),
+		&:is([data-timeout]:not([data-timeout='false'])) {
+			cursor: wait;
+
+			&::after {
+				content: '';
+
+				position: absolute;
+				z-index: 2;
+				inset-block-start: 50%;
+				inset-inline-start: 50%;
+				transform: translate(-50%, -50%);
+
+				aspect-ratio: 1/1;
+				width: 1.5rem;
+				height: auto;
+
+				background-color: currentcolor;
+
+				mask-image: var(--svg);
+				mask-repeat: no-repeat;
+				mask-position: center;
+				mask-size: 100%;
+			}
+
+			& > * {
+				opacity: 0.1;
+			}
+		}
+
+		&:is([data-delayed]:not([data-delayed='false'])) {
+			--svg: url('../../icons/animated/ia-spinner/animated-spinner.svg?no-inline');
+		}
+
+		&:is([data-timeout]:not([data-timeout='false'])) {
+			--svg: url('../../icons/animated/ia-3dots/animated-three-dots.svg?no-inline');
+		}
+
+		/*
+		```html
+		<button class="c-btn">
+			<i class="i i-[ph--info] h-6 w-6"></i>
+			<span>Click me</span>
+		</button>
+		```
+	*/
+		&:not(.c-btn--icon):has(:is(img, svg, .i)) {
+			display: grid;
+			grid-template-columns: auto auto;
+			column-gap: calc(var(--spacing) * 3);
+			align-items: center;
+			justify-content: space-between;
+
+			padding-inline: calc(var(--spacing) * 2.5) calc(var(--spacing) * 3);
+
+			&:has(> :last-child:nth-child(3)) {
+				grid-template-columns: auto 1fr auto;
+			}
+		}
+
+		&:not(:has(:is(img, svg, .i))) {
+			text-align: center;
+		}
+
+		&:not(.c-btn--pop, .c-btn--outlined, .c-btn--icon) {
+			border-color: var(--color-stroke-50);
+			color: var(--color-surface);
+			background-color: var(--color-stroke-50);
+
+			&:not(:is(:disabled, [disabled]:not([disabled='false'])), :has(input:disabled)) {
+				@variant hover {
+					/* FIXME: make sure this work in both light/dark mode */
+					background-color: oklch(from var(--color-stroke-50) calc(l - 0.08) c h);
+				}
+
+				@variant active {
+					/* FIXME: make sure this work in both light/dark mode */
+					background-color: oklch(from var(--color-stroke-50) calc(l - 0.04) c h);
+				}
+			}
+		}
+	}
+}
+

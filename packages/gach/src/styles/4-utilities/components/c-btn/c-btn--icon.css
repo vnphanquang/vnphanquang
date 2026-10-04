@@ -1,0 +1,23 @@
+@utility c-btn--icon {
+	@layer components {
+		display: flex;
+		padding: var(--spacing) calc(var(--spacing) * 2);
+		border: none;
+		background-color: none;
+
+		&::after {
+			background-color: var(--color-on-surface) !important;
+		}
+
+		&:not(:is(:disabled, [disabled]:not([disabled='false'])), :has(input:disabled)) {
+			@variant hover {
+				color: var(--color-primary);
+			}
+
+			@variant active {
+				color: oklch(from var(--color-primary) calc(l - 0.05) c h);
+			}
+		}
+	}
+}
+
