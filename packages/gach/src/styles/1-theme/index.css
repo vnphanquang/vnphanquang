@@ -19,7 +19,7 @@
 }
 
 /* z-index */
-@theme {
+@theme static {
 	--z-index-px: 1;
 	--z-index-header: 50;
 	--z-index-dialog: 80;

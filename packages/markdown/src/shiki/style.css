@@ -179,23 +179,29 @@
 	--twoslash-code-font: inherit;
 	--twoslash-unmatched-color: light-dark(black, white);
 
-	& .twoslash-popup-container {
-		overflow: auto;
-		max-width: 50dvw;
-		max-height: 50dvh;
-		border-radius: 0;
-	}
-
 	& :is(.twoslash-popup-docs, .twoslash-popup-error, .twoslash-completion-list) {
 		font-size: 0.9em;
 	}
 
-	.codeblock-root:has(&) {
-		--c-max-height: none;
+	& .twoslash-hover {
+		anchor-name: --twoslash;
+		anchor-scope: --twoslash;
+	}
 
-		& .codeblock-content {
-			overflow: visible;
-		}
+	& .twoslash-popup-container {
+		position: fixed;
+		z-index: var(--z-index-popup, 150);
+		transform: translateY(0.2rem);
+		position-anchor: --twoslash;
+		position-area: block-end span-inline-end;
+		position-try-order: most-inline-size;
+		position-try-fallbacks: flip-inline, flip-block;
+
+		overflow: auto;
+
+		max-width: 80dvw;
+		max-height: 60dvh;
+		border-radius: 0;
 	}
 }
 
