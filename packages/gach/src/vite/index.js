@@ -6,6 +6,8 @@ import postcssColorScheme from 'postcss-color-scheme';
 import postcssCustomMedia from 'postcss-custom-media';
 import postcssCustomSelectors from 'postcss-custom-selectors';
 
+import { gitRef } from './plugins/vite-plugin-git-ref.js';
+
 /**
  * @typedef GachOptions
  * @property {boolean} [markdown]
@@ -52,7 +54,7 @@ export function gach(options) {
 				]
 			: []),
 		{
-			name: 'gach:allow-assets',
+			name: 'vite-plugin-gach:allow-assets',
 			config() {
 				const dirname = import.meta.dirname;
 				return {
@@ -83,5 +85,6 @@ export function gach(options) {
 				};
 			},
 		},
+		gitRef(),
 	];
 }

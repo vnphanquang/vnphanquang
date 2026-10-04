@@ -18,7 +18,7 @@ export async function loadBlogPost(
 	]);
 	return {
 		content,
-		contentEditUrl: `https://github.com/vnphanquang/vnphanquang/blob/main/sites/vnphanquang.com/src/data/posts/entries/${post.language}/${post.id}/post.svelte`,
+		contentEditUrl: `https://github.com/vnphanquang/vnphanquang/edit/${import.meta.env.GIT_REF}/sites/vnphanquang.com/src/data/posts/entries/${post.language}/${post.id}/post.svelte`,
 		metadata: {
 			...metadata,
 			language: post.language,
