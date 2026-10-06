@@ -139,17 +139,21 @@
 		}
 	}
 
+	&.has-diff .line {
+		padding-inline-start: calc(var(--inline-start) + 1ch);
+	}
+
 	&:not(.has-diff) .line {
 		--inline-start: 1ch;
 
 		&::after {
 			display: none;
 		}
-	}
 
-	:is(.no-line-number, .oneliner) & .line {
-		--inline-start: var(--c-padding-inline, var(--cd-padding-inline));
-		--inline-end: var(--c-padding-inline, var(--cd-padding-inline));
+		:is(.no-line-number, .oneliner) & {
+			--inline-start: var(--c-padding-inline, var(--cd-padding-inline));
+			--inline-end: var(--c-padding-inline, var(--cd-padding-inline));
+		}
 	}
 
 	&.has-focused {
