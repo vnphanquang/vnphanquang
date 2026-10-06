@@ -47,10 +47,6 @@
 		outline-offset: 1px;
 	}
 
-	*[id] {
-		scroll-margin: calc(1.5 * var(--spacing-header));
-	}
-
 	img {
 		object-fit: cover;
 	}
@@ -73,8 +69,12 @@
 		background-color: var(--color-fill-50);
 	}
 
-	:target:is(h1, h2, h3, h4, h5, h6) {
-		color: var(--color-info-stroke-50);
-		background-color: var(--color-info-fill-50);
+	:target {
+		scroll-margin: calc(1.5 * var(--spacing-header));
+
+		&:is(h1, h2, h3, h4, h5, h6) {
+			color: var(--color-info-stroke-50);
+			background-color: var(--color-info-fill-50);
+		}
 	}
 }
