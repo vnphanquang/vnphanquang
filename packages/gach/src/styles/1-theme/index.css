@@ -48,4 +48,5 @@
 /* miscellaneous */
 @theme {
 	--leading-unset: unset;
+	--leading-double: 2;
 }
