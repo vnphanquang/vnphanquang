@@ -221,7 +221,7 @@ Should some of the "remark" plugins introduced here be [rehype] plugins instead?
 of them turns some markdown into a special corresponding HTML, and the processing logic task can be
 done on hast instead of mdast.
 
-Some of them, however, are tighly coupled to the fact that the source content _should_ always comes
+Some of them, however, are tighly coupled to the fact that the source content _should_ always come
 from markdown, or depends on some special markdown semantics. In other words, they are not likely to
 be used without remark. In these cases, i'd argue the boundary between remark-rehype gets pretty
 blurry.
