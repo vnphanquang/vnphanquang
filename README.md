@@ -99,28 +99,28 @@ glhf!
   <br />
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-6%2C352%20hrs%2039%20mins-blue?style=flat)
+![Code Time](http://img.shields.io/badge/Code%20Time-6%2C358%20hrs%2025%20mins-blue?style=flat)
 
 ![AI Code Time](http://img.shields.io/badge/AI%20Code%20Time-6%20hrs%2010%20mins-blue?style=flat)
 
-![Profile Views](http://img.shields.io/badge/Profile%20Views-25-blue?style=flat)
+![Profile Views](http://img.shields.io/badge/Profile%20Views-26-blue?style=flat)
 
 **I'm an Early 🐤** 
 
 ```text
-🌞 Morning                17300 commits       ███████░░░░░░░░░░░░░░░░░░   28.05 % 
-🌆 Daytime                30425 commits       ████████████░░░░░░░░░░░░░   49.34 % 
-🌃 Evening                13477 commits       █████░░░░░░░░░░░░░░░░░░░░   21.85 % 
+🌞 Morning                17312 commits       ███████░░░░░░░░░░░░░░░░░░   28.06 % 
+🌆 Daytime                30430 commits       ████████████░░░░░░░░░░░░░   49.33 % 
+🌃 Evening                13480 commits       █████░░░░░░░░░░░░░░░░░░░░   21.85 % 
 🌙 Night                  465 commits         ░░░░░░░░░░░░░░░░░░░░░░░░░   00.75 % 
 ```
 📅 **I'm Most Productive on Thursday** 
 
 ```text
-Monday                   8003 commits        ███░░░░░░░░░░░░░░░░░░░░░░   12.98 % 
-Tuesday                  5977 commits        ██░░░░░░░░░░░░░░░░░░░░░░░   09.69 % 
-Wednesday                13289 commits       █████░░░░░░░░░░░░░░░░░░░░   21.55 % 
-Thursday                 14896 commits       ██████░░░░░░░░░░░░░░░░░░░   24.16 % 
-Friday                   9107 commits        ████░░░░░░░░░░░░░░░░░░░░░   14.77 % 
+Monday                   8016 commits        ███░░░░░░░░░░░░░░░░░░░░░░   12.99 % 
+Tuesday                  5981 commits        ██░░░░░░░░░░░░░░░░░░░░░░░   09.70 % 
+Wednesday                13289 commits       █████░░░░░░░░░░░░░░░░░░░░   21.54 % 
+Thursday                 14899 commits       ██████░░░░░░░░░░░░░░░░░░░   24.15 % 
+Friday                   9107 commits        ████░░░░░░░░░░░░░░░░░░░░░   14.76 % 
 Saturday                 7087 commits        ███░░░░░░░░░░░░░░░░░░░░░░   11.49 % 
 Sunday                   3308 commits        █░░░░░░░░░░░░░░░░░░░░░░░░   05.36 % 
 ```
@@ -132,17 +132,17 @@ Sunday                   3308 commits        █░░░░░░░░░░�
 🕑︎ Time Zone: Asia/Ho_Chi_Minh
 
 💬 Programming Languages: 
-Svelte                   12 hrs 36 mins      ██████████░░░░░░░░░░░░░░░   40.89 % 
-TypeScript               4 hrs 53 mins       ████░░░░░░░░░░░░░░░░░░░░░   15.88 % 
-JavaScript               4 hrs 41 mins       ████░░░░░░░░░░░░░░░░░░░░░   15.22 % 
-CSS                      2 hrs 26 mins       ██░░░░░░░░░░░░░░░░░░░░░░░   07.90 % 
-JSON                     2 hrs 8 mins        ██░░░░░░░░░░░░░░░░░░░░░░░   06.93 % 
+Svelte                   12 hrs 11 mins      █████████░░░░░░░░░░░░░░░░   37.75 % 
+JavaScript               7 hrs 30 mins       ██████░░░░░░░░░░░░░░░░░░░   23.27 % 
+TypeScript               5 hrs 3 mins        ████░░░░░░░░░░░░░░░░░░░░░   15.64 % 
+CSS                      2 hrs 25 mins       ██░░░░░░░░░░░░░░░░░░░░░░░   07.51 % 
+JSON                     2 hrs 11 mins       ██░░░░░░░░░░░░░░░░░░░░░░░   06.77 % 
 
 🔥 Editors: 
-Neovim                   30 hrs 50 mins      █████████████████████████   100.00 % 
+Neovim                   32 hrs 17 mins      █████████████████████████   100.00 % 
 
 💻 Operating System: 
-Linux                    30 hrs 50 mins      █████████████████████████   100.00 % 
+Linux                    32 hrs 17 mins      █████████████████████████   100.00 % 
 ```
 
 🤖 **AI Coding This Week** 
@@ -164,7 +164,7 @@ Jupyter Notebook         1 repo              ░░░░░░░░░░░�
 
 
 
- Last Updated on 05/10/2026 04:57:40 UTC
+ Last Updated on 06/10/2026 05:44:54 UTC
 <!--END_SECTION:waka-->
 
 </details>
