@@ -70,7 +70,7 @@
 	}
 
 	:target {
-		scroll-margin: calc(var(--spacing-header) + 10dvh);
+		scroll-margin: calc(var(--spacing-header) + var(--target-scroll-margin, 10dvh));
 
 		&:is(h1, h2, h3, h4, h5, h6) {
 			color: var(--color-info-stroke-50);
