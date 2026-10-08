@@ -10,11 +10,15 @@
 		keywords: 'humanity, craftmanship, contextual, history',
 		publishedAt: new Date('2026-05-21'),
 		updatedAt: new Date('2026-09-24'),
+		tags: ['genai'],
 		codeless: true,
 		numWords: 1800,
 		readMinutes: 10,
-		tags: ['genai'],
 		standardSite: 'at://did:plc:vdzlwjjqp5kpce2kxqyoa467/site.standard.document/3mwihjyhjq23i',
+		blueskyPost: {
+			accountId: 'did:plc:vdzlwjjqp5kpce2kxqyoa467',
+			postId: '3mxdvdekows2v',
+		},
 	});
 </script>
 
@@ -88,7 +92,7 @@ How would i do that? By spending decades of unpaid effort studying and documenti
 
 The impact of GenAI is **far and deep**. It is already happening today. GenAI is being handed to people without any disclaimer or instruction manual, and overused where it should not be used.
 
-There are machines that can "solve" chess. Yet we hold tournaments every year for humans to compete (wher bots are banned). There are robots that play balls. Yet stadiums are filled, tickets are sold out. i don't think we need GenAI in every corner of our lives.
+There are machines that can "solve" chess. Yet we hold tournaments every year for humans to compete (where bots are banned). There are robots that play balls. Yet stadiums are filled, tickets are sold out. i don't think we need GenAI in every corner of our lives.
 
 ![Professor Felienne Hermans on the historical epistemological context of today computer science and how GenAI, specifically LLM, fits into it](https://youtube.com/embed/0-6-f94n_9M)
 
