@@ -84,8 +84,8 @@
 		}
 	},
 	"dependencies": {
-		"@shikijs/rehype": "^4.4.3",
-		"@shikijs/transformers": "^4.4.3",
+		"@shikijs/rehype": "^4.5.0",
+		"@shikijs/transformers": "^4.5.0",
 		"@shikijs/twoslash": "^4.5.0",
 		"rehype-stringify": "^10.0.1",
 		"remark-codeblock-source": "^1.0.4",
@@ -94,7 +94,7 @@
 		"remark-parse": "^11.0.0",
 		"remark-rehype": "^11.1.2",
 		"remark-transform-blockquote": "^1.2.5",
-		"shiki": "^4.4.3",
+		"shiki": "^4.5.0",
 		"svelte-md-template": "^0.1.7",
 		"twoslash": "^0.3.9",
 		"twoslash-svelte": "^0.3.9",
@@ -102,9 +102,9 @@
 		"unist-util-visit-parents": "^6.0.2"
 	},
 	"devDependencies": {
-		"@shikijs/types": "^4.4.3",
+		"@shikijs/types": "^4.5.0",
 		"@types/mdast": "^4.0.4",
-		"svelte": "^5.57.1",
+		"svelte": "^5.57.2",
 		"unified": "^11.0.5",
 		"unist-util-visit": "^5.1.0"
 	}
