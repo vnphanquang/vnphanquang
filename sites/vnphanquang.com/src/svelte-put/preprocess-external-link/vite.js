@@ -104,7 +104,7 @@ export function externalLink(config = []) {
 
 				return {
 					code: s.toString(),
-					map: s.generateMap({ hires: 'boundary', includeContent: true }),
+					map: s.generateMap({ hires: true, includeContent: true }),
 				};
 			},
 		},
