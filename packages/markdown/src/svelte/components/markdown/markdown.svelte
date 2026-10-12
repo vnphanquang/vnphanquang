@@ -2,13 +2,9 @@
 	import { enhanceCodeblock } from 'remark-enhance-codeblock/client';
 	import { onMount } from 'svelte';
 
-	let { children, codeless }: import('./markdown.svelte').MarkdownProps = $props();
+	import WithCode from './with-code.svelte';
 
-	// svelte-ignore state_referenced_locally
-	if (!codeless) {
-		// @ts-expect-error 2307
-		await import('./code.css');
-	}
+	let { children, codeless }: import('./markdown.svelte').MarkdownProps = $props();
 
 	onMount(() => {
 		if (!codeless) {
@@ -31,4 +27,10 @@
 	});
 </script>
 
-{@render children?.()}
+{#if codeless}
+	<WithCode>
+		{@render children?.()}
+	</WithCode>
+{:else}
+	{@render children?.()}
+{/if}
