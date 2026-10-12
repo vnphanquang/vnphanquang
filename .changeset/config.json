@@ -1,0 +1,12 @@
+{
+	"$schema": "https://raw.githubusercontent.com/changesets/changesets/refs/heads/main/packages/config/schema.json",
+	"baseBranch": "main",
+	"access": "public",
+	"format": false,
+	"changelog": [
+		"@changesets/changelog-github",
+		{
+			"repo": "vnphanquang/vnphanquang"
+		}
+	]
+}
