@@ -8,5 +8,7 @@
 		{
 			"repo": "vnphanquang/vnphanquang"
 		}
-	]
+	],
+	"updateInternalDependencies": "patch",
+	"linked": [["@vnphanquang/gach", "@vnphanquang/markdown"]]
 }
