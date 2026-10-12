@@ -62,6 +62,31 @@
 		"./styles/custom-medias": "./src/styles/0-custom/medias.css",
 		"./styles/custom-selectors": "./src/styles/0-custom/selectors.css"
 	},
+	"typesVersions": {
+		"*": {
+			"components": [
+				"./types/index.d.ts"
+			],
+			"constants": [
+				"./types/index.d.ts"
+			],
+			"contexts": [
+				"./types/index.d.ts"
+			],
+			"hooks": [
+				"./types/index.d.ts"
+			],
+			"layouts": [
+				"./types/index.d.ts"
+			],
+			"metadata": [
+				"./types/index.d.ts"
+			],
+			"vite": [
+				"./types/index.d.ts"
+			]
+		}
+	},
 	"publishConfig": {
 		"access": "public"
 	},
