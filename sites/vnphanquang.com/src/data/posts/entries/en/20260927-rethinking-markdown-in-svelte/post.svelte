@@ -192,7 +192,7 @@ Lastly, there may be some issue with HMR in SvelteKit at the moment. Behaviorall
 markdown content may cause the scroll position to reset. This may or may not happen with your setup.
 In any case, i'm actively looking into it.
 
-## Keeping an Eye on [MDsveX]
+## Keeping an Eye on MDsveX
 
 A big part of why i started to implement a replacement for MDsveX in the first place was that it has
 been trying moving away from the [unified] ecosystem. [@pngwn] - the code owner of MDsveX - laid

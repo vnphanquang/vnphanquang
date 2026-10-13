@@ -1,3 +1,4 @@
+import type { CompileTimeToc } from '@svelte-put/toc';
 import type { Language } from '@vnphanquang/gach/constants';
 import type { Component } from 'svelte';
 
@@ -8,6 +9,9 @@ const METADATA_MODULES = import.meta.glob<PerDefinedPostMetadata>('./entries/*/*
 });
 const CONTENT_MODULES = import.meta.glob<Component>('./entries/*/*/post.svelte', {
 	import: 'default',
+});
+const TOC_MODULES = import.meta.glob<CompileTimeToc>('./entries/*/*/post.svelte', {
+	import: 'toc',
 });
 const THUMBNAIL_MODULES = import.meta.glob<Component>('./entries/*/*/thumbnail.svelte', {
 	import: 'default',
@@ -23,6 +27,7 @@ export interface BlogPostResolver {
 	language: Language;
 	metadata: () => Promise<PerDefinedPostMetadata>;
 	content: () => Promise<Component>;
+	toc: () => Promise<CompileTimeToc>;
 	thumbnail?: () => Promise<Component<BlogPostThumbnailProps>>;
 	og?: () => Promise<string>;
 }
@@ -39,8 +44,9 @@ for (const path of Object.keys(CONTENT_MODULES).toSorted().toReversed()) {
 		id: segments.at(-2)!,
 		slug,
 		language,
-		metadata: METADATA_MODULES[path],
 		content: CONTENT_MODULES[path],
+		metadata: METADATA_MODULES[path],
+		toc: TOC_MODULES[path],
 		thumbnail: THUMBNAIL_MODULES[thumbnailPath],
 		og: OG_MODULES[ogPath],
 	};

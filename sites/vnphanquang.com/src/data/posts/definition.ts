@@ -1,3 +1,4 @@
+import type { CompileTimeToc } from '@svelte-put/toc';
 import type { Language } from '@vnphanquang/gach/constants';
 import type { Component } from 'svelte';
 
@@ -77,6 +78,7 @@ export interface BlogPostThumbnailProps {
 export interface BlogPost {
 	content: Component;
 	metadata: BlogPostMetadata;
+	toc: CompileTimeToc;
 	thumbnail?: Component<BlogPostThumbnailProps>;
 	ogImage?: string;
 }

@@ -18,6 +18,7 @@
 	import { page } from '$app/state';
 
 	import type { PageProps } from './$types';
+	import './style.css';
 
 	const { params }: PageProps = $props();
 
@@ -46,20 +47,12 @@
 
 	let t = $derived(translations[post.metadata.language]);
 
-	const toc = new Toc({
-		selector: ':where(h2, h3, h4, h5, h6)',
-		observe: {
-			enabled: true,
-			link: {
-				activeAttribute: 'data-current',
-			},
-		},
-	});
+	const toc = new Toc({ ...post.toc });
 
 	let contentEl: HTMLElement | undefined = $state(undefined);
 	let showQuickNav = $state(false);
 	function onScroll() {
-		if (!contentEl) return;
+		if (!contentEl || !window) return;
 		showQuickNav = window.scrollY > contentEl.offsetTop;
 	}
 </script>
@@ -89,7 +82,7 @@
 	{/if}
 </svelte:head>
 
-<main class="flex-1 space-y-20 py-10">
+<main class="flex-1 space-y-20 py-10" {...toc.enhance.scope()}>
 	<section class="max-w-pad @container space-y-10" lang={post.metadata.language}>
 		<Breadcrumbs.List {crumbs} />
 		<div class="md">
@@ -120,7 +113,7 @@
 		<div class="read grid gap-10">
 			<!-- post content -->
 			{#key post.metadata.slug}
-				<section class="content md" use:toc.actions.root id="content" bind:this={contentEl}>
+				<section class="content md" id="content" bind:this={contentEl}>
 					<Markdown codeless={post.metadata.codeless}>
 						<post.content />
 					</Markdown>
@@ -133,14 +126,20 @@
 
 			<!-- table of contents -->
 			<div class="toc">
-				<section
-					class="tablet:sticky top-header mobile:border-onehalf mobile:border-dashed mobile:border-secondary mobile:-mx-3 mobile:p-3 space-y-6"
-				>
+				<section class="tablet:sticky top-header mobile:border-onehalf mobile:border-dashed mobile:border-secondary mobile:-mx-3 mobile:p-3 mobile:max-w-screen space-y-6">
 					<h2
 						class="border-outline border-b-fill-200 border-b text-2xl leading-relaxed font-bold"
 						id="toc"
 					>
 						{t.toc}
+						<span class="no-tracking">
+							<i class="i i-[ph--warning] text-warning"></i>
+							<span class="c-infobox max-w-80 normal-case font-normal"
+								style:position-area="block-end span-inline-end">
+								Your browser hasn't supported CSS scroll-driven animation yet, links still work but
+								there's no visibility tracking for now.
+							</span>
+						</span>
 					</h2>
 					<TableOfContents {toc} />
 				</section>
@@ -220,5 +219,11 @@
 
 	.share {
 		grid-area: share;
+	}
+
+	.no-tracking {
+		@supports (view-timeline-name: --supported) {
+			display: none;
+		}
 	}
 </style>

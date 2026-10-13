@@ -1,0 +1,8 @@
+@import url('@svelte-put/toc/styles.css') layer(markdown);
+
+@layer makdown {
+	[data-toc-scope] {
+		--toc-active-color: var(--color-link);
+	}
+}
+

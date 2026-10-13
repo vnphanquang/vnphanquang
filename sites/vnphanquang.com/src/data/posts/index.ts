@@ -1,6 +1,8 @@
 import { type BlogPostResolver, SLUG_TO_POST } from './collect';
 import type { BlogPost } from './definition';
 
+type BlogPostInList = Omit<BlogPost, 'content' | 'toc'>;
+
 export interface LoadBlogPostInput {
 	slug: string;
 }
@@ -10,15 +12,16 @@ export async function loadBlogPost(
 	const { slug } = input;
 	if (!SLUG_TO_POST[slug]) return null;
 	const post = SLUG_TO_POST[slug];
-	const [content, metadata, thumbnail, ogImage] = await Promise.all([
+	const [content, metadata, toc, thumbnail, ogImage] = await Promise.all([
 		post.content(),
 		post.metadata(),
+		post.toc(),
 		post.thumbnail?.(),
 		post.og?.(),
 	]);
 	return {
 		content,
-		contentEditUrl: `https://github.com/vnphanquang/vnphanquang/edit/${import.meta.env.GIT_REF}/sites/vnphanquang.com/src/data/posts/entries/${post.language}/${post.id}/post.svelte`,
+		toc,
 		metadata: {
 			...metadata,
 			language: post.language,
@@ -26,10 +29,11 @@ export async function loadBlogPost(
 		},
 		thumbnail,
 		ogImage,
+		contentEditUrl: `https://github.com/vnphanquang/vnphanquang/edit/${import.meta.env.GIT_REF}/sites/vnphanquang.com/src/data/posts/entries/${post.language}/${post.id}/post.svelte`,
 	};
 }
 
-export async function listBlogPosts(): Promise<Omit<BlogPost, 'content'>[]> {
+export async function listBlogPosts(): Promise<BlogPostInList[]> {
 	return await Promise.all(
 		Object.values(SLUG_TO_POST).map(async (post) => {
 			const [metadata, thumbnail] = await Promise.all([post.metadata(), post.thumbnail?.()]);
@@ -47,7 +51,7 @@ export async function listBlogPosts(): Promise<Omit<BlogPost, 'content'>[]> {
 
 export async function getNextRelevantBlogPost(
 	input: LoadBlogPostInput,
-): Promise<Omit<BlogPost, 'content'> | null> {
+): Promise<BlogPostInList | null> {
 	const { slug } = input;
 	const posts = Object.values(SLUG_TO_POST);
 	const index = posts.findIndex((p) => p.slug === slug);

@@ -9,6 +9,8 @@ minimumReleaseAgeExclude:
   - svelte-md-template
   - remark-enhance-codeblock
   - remark-transform-blockquote
+  - '@svelte-put/toc'
+  - '@svelte-put/preprocess-external-link'
   - '@sveltejs/kit'
   - '@sveltejs/adapter-node'
   - '@sveltejs/enhanced-img'

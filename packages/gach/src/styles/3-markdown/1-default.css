@@ -145,35 +145,6 @@
 			);
 		}
 
-		&:where(.heading-anchor) {
-			position: absolute;
-			inset-block: 0;
-			inset-inline: 0;
-			opacity: 0;
-
-			@media (--tablet) {
-				inset-inline-start: unset;
-				inset-inline-end: 100%;
-
-				margin-inline-end: 8px;
-
-				font-weight: inherit;
-				text-decoration: none;
-
-				opacity: 0;
-
-				transition: opacity 200ms var(--default-transition-timing-function);
-
-				:is(h2, h3, h4, h5, h6):hover & {
-					opacity: 1;
-				}
-			}
-		}
-
-		&:is(h2, h3, h4, h5, h6):has(.heading-anchor) {
-			position: relative;
-		}
-
 		&:where(dl) {
 			margin-block: 1.2em;
 		}
