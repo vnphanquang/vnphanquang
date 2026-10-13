@@ -25,6 +25,11 @@
 	"type": "module",
 	"main": "src/index.js",
 	"types": "types/index.d.ts",
+	"sideEffects": [
+		"./styles",
+		"./styles/custom-medias",
+		"./styles/custom-selectors"
+	],
 	"exports": {
 		".": {
 			"types": "./types/index.d.ts",
@@ -32,7 +37,7 @@
 		},
 		"./components": {
 			"types": "./types/index.d.ts",
-			"import": "./src/components/index.js"
+			"svelte": "./src/components/index.js"
 		},
 		"./constants": {
 			"types": "./types/index.d.ts",
@@ -40,7 +45,7 @@
 		},
 		"./contexts": {
 			"types": "./types/index.d.ts",
-			"import": "./src/contexts/index.js"
+			"svelte": "./src/contexts/index.js"
 		},
 		"./hooks": {
 			"types": "./types/index.d.ts",
@@ -48,11 +53,11 @@
 		},
 		"./layouts": {
 			"types": "./types/index.d.ts",
-			"import": "./src/layouts/index.js"
+			"svelte": "./src/layouts/index.js"
 		},
 		"./metadata": {
 			"types": "./types/index.d.ts",
-			"import": "./src/metadata/index.js"
+			"svelte": "./src/metadata/index.js"
 		},
 		"./vite": {
 			"types": "./types/index.d.ts",

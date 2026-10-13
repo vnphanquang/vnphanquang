@@ -27,6 +27,7 @@
 	"type": "module",
 	"main": "src/index.js",
 	"types": "types/index.d.ts",
+	"sideEffects": false,
 	"exports": {
 		".": {
 			"types": "./types/index.d.ts",
@@ -34,8 +35,7 @@
 		},
 		"./svelte": {
 			"types": "./types/index.d.ts",
-			"svelte": "./src/svelte/index.js",
-			"default": "./src/svelte/index.js"
+			"svelte": "./src/svelte/index.js"
 		},
 		"./svelte/vite": {
 			"types": "./types/index.d.ts",
