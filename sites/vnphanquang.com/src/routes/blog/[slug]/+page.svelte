@@ -126,7 +126,9 @@
 
 			<!-- table of contents -->
 			<div class="toc">
-				<section class="tablet:sticky top-header mobile:border-onehalf mobile:border-dashed mobile:border-secondary mobile:-mx-3 mobile:p-3 mobile:max-w-screen space-y-6">
+				<section
+					class="tablet:sticky top-header mobile:border-onehalf mobile:border-dashed mobile:border-secondary mobile:-mx-3 mobile:p-3 mobile:max-w-screen space-y-6"
+				>
 					<h2
 						class="border-outline border-b-fill-200 border-b text-2xl leading-relaxed font-bold"
 						id="toc"
@@ -134,8 +136,11 @@
 						{t.toc}
 						<span class="no-tracking">
 							<i class="i i-[ph--warning] text-warning"></i>
-							<span class="c-infobox max-w-80 normal-case font-normal"
-								style:position-area="block-end span-inline-end">
+							<span
+								class="c-infobox max-w-80 font-normal normal-case"
+								style:position-area="block-end span-inline-end"
+								lang="en"
+							>
 								Your browser hasn't supported CSS scroll-driven animation yet, links still work but
 								there's no visibility tracking for now.
 							</span>
