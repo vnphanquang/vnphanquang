@@ -19,10 +19,10 @@
 		"@vnphanquang/eslint-config": "workspace:*",
 		"dts-buddy": "^0.8.3",
 		"eslint": "10.12.0",
-		"eslint-plugin-svelte": "^3.23.0",
+		"eslint-plugin-svelte": "^3.23.1",
 		"npm-run-all": "^4.1.5",
-		"prettier": "^3.9.9",
-		"prettier-plugin-embed": "^0.5.1",
+		"prettier": "^3.9.10",
+		"prettier-plugin-embed": "^0.7.1",
 		"prettier-plugin-svelte": "^4.1.1",
 		"prettier-plugin-tailwindcss": "^0.8.1",
 		"publint": "^0.3.25",
@@ -34,7 +34,7 @@
 		"svelte": "^5.57.2",
 		"svelte-check": "^4.7.6",
 		"typescript": "^6.0.3",
-		"vite": "^8.3.3"
+		"vite": "^8.3.4"
 	},
 	"devEngines": {
 		"runtime": {
