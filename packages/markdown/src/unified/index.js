@@ -62,28 +62,28 @@ export function createPreset(options = {}) {
 				mappings: [
 					{
 						marker: '!INFO',
-						tag: 'aside',
+						tag: 'div',
 						attributes: {
 							class: 'c-callout c-callout--info',
 						},
 					},
 					{
 						marker: '!SUCCESS',
-						tag: 'aside',
+						tag: 'div',
 						attributes: {
 							class: 'c-callout c-callout--success',
 						},
 					},
 					{
 						marker: '!WARNING',
-						tag: 'aside',
+						tag: 'div',
 						attributes: {
 							class: 'c-callout c-callout--warning',
 						},
 					},
 					{
 						marker: '!ERROR',
-						tag: 'aside',
+						tag: 'div',
 						attributes: {
 							class: 'c-callout c-callout--error',
 						},
