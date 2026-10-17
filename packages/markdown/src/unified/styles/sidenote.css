@@ -1,0 +1,9 @@
+.sidenote {
+	--color: light-dark(#444, #aaa);
+	--border: currentcolor;
+
+	padding-block: 0.5rem;
+	border-block: 1px var(--border) solid;
+	font-size: 0.9em;
+	color: var(--color);
+}

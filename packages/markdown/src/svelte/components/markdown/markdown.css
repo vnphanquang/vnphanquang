@@ -1,9 +1,15 @@
 @import url('../../../unified/styles/md.css') layer(markdown);
 @import url('../../../unified/styles/steplist.css') layer(markdown);
+@import url('../../../unified/styles/sidenote.css') layer(markdown);
 
 @layer markdown {
 	.steplist {
 		--color: var(--md-fill-50, var(--md-d-fill-50));
 		--bg: var(--md-stroke-50, var(--md-d-stroke-50));
+	}
+
+	.sidenote {
+		--color: var(--md-stroke-100, var(--md-d-stroke-100));
+		--border: var(--md-stroke-200, var(--md-d-stroke-200));
 	}
 }

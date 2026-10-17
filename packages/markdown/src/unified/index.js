@@ -94,6 +94,13 @@ export function createPreset(options = {}) {
 							class: 'steplist',
 						},
 					},
+					{
+						marker: '!SIDENOTE',
+						tag: 'aside',
+						attributes: {
+							class: 'sidenote',
+						},
+					},
 				],
 			}),
 			definePlugin(remarkNodeClassMap, { link: 'c-link', linkReference: 'c-link' }),
