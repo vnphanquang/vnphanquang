@@ -1,5 +1,13 @@
 # @vnphanquang/gach
 
+## 1.1.0
+
+### Patch Changes
+
+- [`3c2e484`](https://github.com/vnphanquang/vnphanquang/commit/3c2e484391ab2045f674bf3bdc605e7fd98ca8f7) Thanks [@vnphanquang](https://github.com/vnphanquang)! - export markdown-specific base styling from markdown package instead
+- Updated dependencies [[`7f06339`](https://github.com/vnphanquang/vnphanquang/commit/7f06339c7697b651188587ffab96008c730a4632), [`3c2e484`](https://github.com/vnphanquang/vnphanquang/commit/3c2e484391ab2045f674bf3bdc605e7fd98ca8f7), [`50a8eab`](https://github.com/vnphanquang/vnphanquang/commit/50a8eab0e348d8627db277c7fecab3f53ba66176)]:
+  - @vnphanquang/markdown@1.1.0
+
 ## 1.0.1
 
 ### Patch Changes
