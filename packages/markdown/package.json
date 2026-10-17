@@ -27,7 +27,11 @@
 	"type": "module",
 	"main": "src/index.js",
 	"types": "types/index.d.ts",
-	"sideEffects": false,
+	"sideEffects": [
+		"./unified/styles/code.css",
+		"./unified/styles/md.css",
+		"./unified/styles/steplist.css"
+	],
 	"exports": {
 		".": {
 			"types": "./types/index.d.ts",
@@ -44,7 +48,8 @@
 		"./unified": {
 			"types": "./types/index.d.ts",
 			"import": "./src/unified/index.js"
-		}
+		},
+		"./unified/styles/*.css": "./src/unified/styles/*.css"
 	},
 	"typesVersions": {
 		"*": {

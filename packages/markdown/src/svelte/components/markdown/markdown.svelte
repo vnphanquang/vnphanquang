@@ -2,6 +2,7 @@
 	import { enhanceCodeblock } from 'remark-enhance-codeblock/client';
 	import { onMount } from 'svelte';
 
+	import './markdown.css';
 	import WithCode from './with-code.svelte';
 
 	let { children, codeless }: import('./markdown.svelte').MarkdownProps = $props();

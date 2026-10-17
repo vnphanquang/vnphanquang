@@ -1,0 +1,9 @@
+@import url('../../../unified/styles/md.css') layer(markdown);
+@import url('../../../unified/styles/steplist.css') layer(markdown);
+
+@layer markdown {
+	.steplist {
+		--color: var(--md-fill-50, var(--md-d-fill-50));
+		--bg: var(--md-stroke-50, var(--md-d-stroke-50));
+	}
+}

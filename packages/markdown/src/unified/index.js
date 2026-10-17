@@ -10,11 +10,10 @@ import remarkRehype from 'remark-rehype';
 import remarkTransformBlockquote from 'remark-transform-blockquote';
 import { definePlugin } from 'svelte-md-template/unified';
 
-import { createShikiRemarkPlugin } from '../shiki/index.js';
-
 import { remarkBlockquoteFigure } from './plugins/remark-blockquote-figure.js';
 import { remarkNodeClassMap } from './plugins/remark-node-class-map.js';
 import { remarkTransformImg } from './plugins/remark-transform-img/index.js';
+import { createShikiRemarkPlugin } from './shiki/index.js';
 
 /** @type {Record<string, import('remark-enhance-codeblock').RemarkEnhanceCodeblockIntlSpecs>} */
 const codeblock_i18n = {

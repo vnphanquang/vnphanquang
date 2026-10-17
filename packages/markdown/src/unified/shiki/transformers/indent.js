@@ -24,7 +24,7 @@ export function transformerIndent(options = {}) {
 				size: options?.size ?? 4,
 			}
 		: undefined;
-	/** @type {Record<string, import('./types.public.js').TransformerIndentPerOptions>} */
+	/** @type {Record<string, TransformerIndentPerOptions>} */
 	const perLang = {};
 	for (const { languages, ...per } of options?.overrides ?? []) {
 		const perOptions = { ...globals, ...per };
