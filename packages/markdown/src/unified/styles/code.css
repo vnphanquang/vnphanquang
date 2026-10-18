@@ -3,6 +3,47 @@
 
 .codeblock-content {
 	container-type: inline-size;
+
+	&:has(.twoslash):not(:has(.oneliner)) {
+		&::after {
+			--f: 0.8em;
+			--r: 0.8em;
+
+			content: 'Typehint' / 'Type hint is available';
+
+			position: absolute;
+			inset-block-end: 1rem;
+			inset-inline-end: calc(-1 * var(--f));
+
+			padding-inline: 0.25em;
+			border-block-start: var(--f) solid #0005;
+			border-inline-start: var(--r) solid #0000;
+
+			font-size: 0.8em;
+			color: white;
+
+			background-color: #2699dc;
+			clip-path: polygon(
+				var(--r) 100%,
+				100% 100%,
+				100% var(--f),
+				calc(100% - var(--f)) 0,
+				calc(100% - var(--f)) var(--f),
+				var(--r) var(--f),
+				0 calc(50% + var(--f) / 2)
+			);
+
+			transition-timing-function: ease-out;
+			transition-duration: 200ms;
+			transition-property: opacity;
+		}
+
+		&:is(:focus-within, :hover)::after {
+			opacity: 0;
+			transition-timing-function: ease-in;
+			transition-duration: 120ms;
+		}
+	}
 }
 
 /* inherit styles from remark-enhance-codeblock */
@@ -209,4 +250,3 @@
 		border-radius: 0;
 	}
 }
-
