@@ -147,7 +147,8 @@
 
 		font-size: 0.9em;
 		font-weight: 400;
-		word-break: break-all;
+		word-break: normal;
+		word-break: auto-phrase;
 
 		background-color: var(--md-fill-100, var(--md-d-fill-100));
 	}
