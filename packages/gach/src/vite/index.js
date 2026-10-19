@@ -54,7 +54,7 @@ export function gach(options) {
 				]
 			: []),
 		{
-			name: 'vite-plugin-gach:allow-assets',
+			name: 'vite-plugin-vnphanquang-gach:config',
 			config() {
 				const dirname = import.meta.dirname;
 				return {
@@ -67,6 +67,9 @@ export function gach(options) {
 								postcssColorScheme({ name: 'media' }),
 							],
 						},
+					},
+					ssr: {
+						noExternal: ['@vnphanquang/gach'],
 					},
 					server: {
 						fs: {

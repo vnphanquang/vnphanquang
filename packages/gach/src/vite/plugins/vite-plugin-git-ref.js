@@ -17,7 +17,7 @@ export function gitRef(options = {}) {
 	const o = { fallback: 'main', ...options };
 
 	return {
-		name: 'vite-plugin-gach:git-ref',
+		name: 'vite-plugin-vnphanquang-gach:git-ref',
 		config() {
 			return {
 				define: {

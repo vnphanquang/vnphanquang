@@ -15,5 +15,15 @@ export function markdownInSvelte() {
 				processor: unified().use(createPreset({ allowDangerousHtml: true })),
 			},
 		}),
+		{
+			name: 'vite-plugin-vnphanquang-markdown:config',
+			config() {
+				return {
+					ssr: {
+						noExternal: ['@vnphanquang/markdown'],
+					},
+				};
+			},
+		},
 	];
 }
