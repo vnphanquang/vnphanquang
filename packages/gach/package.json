@@ -24,6 +24,7 @@
 	],
 	"type": "module",
 	"main": "src/index.js",
+	"svelte": "src/index.js",
 	"types": "types/index.d.ts",
 	"sideEffects": [
 		"./styles",
@@ -33,35 +34,39 @@
 	"exports": {
 		".": {
 			"types": "./types/index.d.ts",
-			"import": "./src/index.js"
+			"default": "./src/index.js"
 		},
 		"./components": {
 			"types": "./types/index.d.ts",
-			"svelte": "./src/components/index.js"
+			"svelte": "./src/components/index.js",
+			"default": "./src/components/index.js"
 		},
 		"./constants": {
 			"types": "./types/index.d.ts",
-			"import": "./src/constants.js"
+			"default": "./src/constants.js"
 		},
 		"./contexts": {
 			"types": "./types/index.d.ts",
-			"svelte": "./src/contexts/index.js"
+			"svelte": "./src/contexts/index.js",
+			"default": "./src/contexts/index.js"
 		},
 		"./hooks": {
 			"types": "./types/index.d.ts",
-			"import": "./src/hooks.js"
+			"default": "./src/hooks.js"
 		},
 		"./layouts": {
 			"types": "./types/index.d.ts",
-			"svelte": "./src/layouts/index.js"
+			"svelte": "./src/layouts/index.js",
+			"default": "./src/layouts/index.js"
 		},
 		"./metadata": {
 			"types": "./types/index.d.ts",
-			"svelte": "./src/metadata/index.js"
+			"svelte": "./src/metadata/index.js",
+			"default": "./src/metadata/index.js"
 		},
 		"./vite": {
 			"types": "./types/index.d.ts",
-			"import": "./src/vite/index.js"
+			"default": "./src/vite/index.js"
 		},
 		"./styles": "./src/styles/index.css",
 		"./styles/custom-medias": "./src/styles/0-custom/medias.css",

@@ -26,28 +26,28 @@
 	],
 	"type": "module",
 	"main": "src/index.js",
+	"svelte": "src/index.js",
 	"types": "types/index.d.ts",
 	"sideEffects": [
-		"./unified/styles/code.css",
-		"./unified/styles/md.css",
-		"./unified/styles/steplist.css"
+		"**/*.css"
 	],
 	"exports": {
 		".": {
 			"types": "./types/index.d.ts",
-			"import": "./src/index.js"
+			"default": "./src/index.js"
 		},
 		"./svelte": {
 			"types": "./types/index.d.ts",
-			"svelte": "./src/svelte/index.js"
+			"svelte": "./src/svelte/index.js",
+			"default": "./src/svelte/index.js"
 		},
 		"./svelte/vite": {
 			"types": "./types/index.d.ts",
-			"import": "./src/svelte/vite.js"
+			"default": "./src/svelte/vite.js"
 		},
 		"./unified": {
 			"types": "./types/index.d.ts",
-			"import": "./src/unified/index.js"
+			"default": "./src/unified/index.js"
 		},
 		"./unified/styles/*.css": "./src/unified/styles/*.css"
 	},
