@@ -1,5 +1,13 @@
 # @vnphanquang/gach
 
+## 1.1.1
+
+### Patch Changes
+
+- [`d94359c`](https://github.com/vnphanquang/vnphanquang/commit/d94359cecba401d7fef0a51e10f194bbd85890b9) Thanks [@vnphanquang](https://github.com/vnphanquang)! - add own package to vite's `ssr.noExternal`
+- Updated dependencies [[`d94359c`](https://github.com/vnphanquang/vnphanquang/commit/d94359cecba401d7fef0a51e10f194bbd85890b9)]:
+  - @vnphanquang/markdown@1.1.1
+
 ## 1.1.0
 
 ### Patch Changes
