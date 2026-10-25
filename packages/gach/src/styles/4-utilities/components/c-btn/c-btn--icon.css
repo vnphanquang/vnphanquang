@@ -6,7 +6,7 @@
 		background-color: none;
 
 		&::after {
-			background-color: var(--color-on-surface) !important;
+			background-color: var(--color-stroke-50) !important;
 		}
 
 		&:not(:is(:disabled, [disabled]:not([disabled='false'])), :has(input:disabled)) {

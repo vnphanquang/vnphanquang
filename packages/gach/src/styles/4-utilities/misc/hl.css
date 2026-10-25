@@ -1,20 +1,20 @@
 @utility hl-info {
-	color: var(--color-info-stroke);
-	background-color: var(--color-info-fill);
+	color: var(--color-info-stroke-50);
+	background-color: var(--color-info-fill-50);
 }
 
 @utility hl-success {
-	color: var(--color-success-stroke);
-	background-color: var(--color-success-fill);
+	color: var(--color-success-stroke-50);
+	background-color: var(--color-success-fill-50);
 }
 
 @utility hl-warning {
-	color: var(--color-warning-stroke);
-	background-color: var(--color-warning-fill);
+	color: var(--color-warning-stroke-50);
+	background-color: var(--color-warning-fill-50);
 }
 
 @utility hl-error {
-	color: var(--color-error-stroke);
-	background-color: var(--color-error-fill);
+	color: var(--color-error-stroke-50);
+	background-color: var(--color-error-fill-50);
 }
 

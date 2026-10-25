@@ -113,7 +113,7 @@
 
 		&:not(.c-btn--pop, .c-btn--outlined, .c-btn--icon) {
 			border-color: var(--color-stroke-50);
-			color: var(--color-surface);
+			color: var(--color-fill-50);
 			background-color: var(--color-stroke-50);
 
 			&:not(:is(:disabled, [disabled]:not([disabled='false'])), :has(input:disabled)) {
