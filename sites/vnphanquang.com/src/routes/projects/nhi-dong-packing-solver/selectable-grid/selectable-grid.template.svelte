@@ -40,9 +40,7 @@
 					if (start === null) return;
 					const { index: end, deselect } = (e as CustomEvent<ToggleBoxEndDetail>).detail;
 					if (start !== end) {
-						console.time();
 						grid.toggleBox(start, end, !deselect);
-						console.timeEnd();
 					}
 					start = null;
 				}
