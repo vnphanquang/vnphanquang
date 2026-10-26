@@ -99,30 +99,30 @@ glhf!
   <br />
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-6%2C434%20hrs%209%20mins-blue?style=flat)
+![Code Time](http://img.shields.io/badge/Code%20Time-6%2C436%20hrs%2019%20mins-blue?style=flat)
 
 ![AI Code Time](http://img.shields.io/badge/AI%20Code%20Time-7%20hrs%2043%20mins-blue?style=flat)
 
-![Profile Views](http://img.shields.io/badge/Profile%20Views-83-blue?style=flat)
+![Profile Views](http://img.shields.io/badge/Profile%20Views-82-blue?style=flat)
 
 **I'm an Early 🐤** 
 
 ```text
-🌞 Morning                17842 commits       ███████░░░░░░░░░░░░░░░░░░   28.05 % 
+🌞 Morning                17846 commits       ███████░░░░░░░░░░░░░░░░░░   28.06 % 
 🌆 Daytime                31362 commits       ████████████░░░░░░░░░░░░░   49.31 % 
 🌃 Evening                13915 commits       █████░░░░░░░░░░░░░░░░░░░░   21.88 % 
-🌙 Night                  480 commits         ░░░░░░░░░░░░░░░░░░░░░░░░░   00.75 % 
+🌙 Night                  482 commits         ░░░░░░░░░░░░░░░░░░░░░░░░░   00.76 % 
 ```
 📅 **I'm Most Productive on Thursday** 
 
 ```text
-Monday                   8329 commits        ███░░░░░░░░░░░░░░░░░░░░░░   13.10 % 
+Monday                   8329 commits        ███░░░░░░░░░░░░░░░░░░░░░░   13.09 % 
 Tuesday                  6363 commits        ██░░░░░░░░░░░░░░░░░░░░░░░   10.00 % 
 Wednesday                13526 commits       █████░░░░░░░░░░░░░░░░░░░░   21.27 % 
 Thursday                 15167 commits       ██████░░░░░░░░░░░░░░░░░░░   23.85 % 
 Friday                   9424 commits        ████░░░░░░░░░░░░░░░░░░░░░   14.82 % 
-Saturday                 7308 commits        ███░░░░░░░░░░░░░░░░░░░░░░   11.49 % 
-Sunday                   3482 commits        █░░░░░░░░░░░░░░░░░░░░░░░░   05.47 % 
+Saturday                 7310 commits        ███░░░░░░░░░░░░░░░░░░░░░░   11.49 % 
+Sunday                   3486 commits        █░░░░░░░░░░░░░░░░░░░░░░░░   05.48 % 
 ```
 
 
@@ -132,39 +132,23 @@ Sunday                   3482 commits        █░░░░░░░░░░�
 🕑︎ Time Zone: Asia/Ho_Chi_Minh
 
 💬 Programming Languages: 
-Svelte                   9 hrs 33 mins       ██████████░░░░░░░░░░░░░░░   38.56 % 
-TypeScript               4 hrs 14 mins       ████░░░░░░░░░░░░░░░░░░░░░   17.11 % 
-Markdown                 3 hrs 44 mins       ████░░░░░░░░░░░░░░░░░░░░░   15.11 % 
-CSS                      3 hrs 21 mins       ███░░░░░░░░░░░░░░░░░░░░░░   13.56 % 
-JavaScript               1 hr 45 mins        ██░░░░░░░░░░░░░░░░░░░░░░░   07.10 % 
+Svelte                   13 hrs 25 mins      █████████████░░░░░░░░░░░░   51.69 % 
+TypeScript               4 hrs 6 mins        ████░░░░░░░░░░░░░░░░░░░░░   15.79 % 
+Markdown                 3 hrs 43 mins       ████░░░░░░░░░░░░░░░░░░░░░   14.32 % 
+CSS                      2 hrs 46 mins       ███░░░░░░░░░░░░░░░░░░░░░░   10.67 % 
+JSON                     1 hr                █░░░░░░░░░░░░░░░░░░░░░░░░   03.87 % 
 
 🔥 Editors: 
-Neovim                   24 hrs 47 mins      █████████████████████████   100.00 % 
+Neovim                   25 hrs 57 mins      █████████████████████████   100.00 % 
 
 💻 Operating System: 
-Linux                    24 hrs 47 mins      █████████████████████████   100.00 % 
+Linux                    25 hrs 57 mins      █████████████████████████   100.00 % 
 ```
 
 🤖 **AI Coding This Week** 
 
 ```text
-⏱ AI Coding Time: 1 hr 32 mins (6.25%)
-
-✍️ 167 lines written by AI, 6,443 lines written by hand (2.53% AI-written)
-
-🔤 349,817 Input Tokens, 55,376 Output Tokens
-
-💵 $19.84 Estimated AI Cost This Week
-
-🧠 5 AI Sessions, 9 AI Prompts
-
-Opencode-Cli             170 lines           █████████████████████████   100.00 % 
-
-🔎 AI Coding Insights:
-🧑‍💻 Mostly Hands-On — 2.53% of written lines came from AI
-📝 Concise Prompter — average 163 characters per prompt
-🔁 Iterative Prompter — average 2 prompts per session
-🔍 Hands-On Reviewer — 98.36% of changed lines were hand-edited
+No AI Coding Activity Tracked This Week
 ```
 
 **I Mostly Code in TypeScript** 
@@ -180,7 +164,7 @@ Jupyter Notebook         1 repo              ░░░░░░░░░░░�
 
 
 
- Last Updated on 24/10/2026 04:02:47 UTC
+ Last Updated on 26/10/2026 04:00:35 UTC
 <!--END_SECTION:waka-->
 
 </details>
