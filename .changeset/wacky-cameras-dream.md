@@ -2,4 +2,4 @@
 '@vnphanquang/gach': minor
 ---
 
-add \`c-btn--ghost\` modifier
+add `c-btn--ghost` modifier

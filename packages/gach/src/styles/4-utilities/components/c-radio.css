@@ -1,0 +1,45 @@
+@utility c-radio {
+	@layer components {
+		--radio-color-fg: var(--color-stroke-50);
+		--radio-hover-color: var(--color-focus);
+		--radio-color-bg: var(--color-fill-50);
+
+		cursor: pointer;
+
+		width: 1.5rem;
+		height: 1.5rem;
+		padding: 0;
+		border-color: var(--radio-color-fg);
+		border-width: 1.5px;
+		border-radius: 50%;
+
+		appearance: none;
+
+		@variant checked {
+			background-color: var(--radio-color-fg);
+			box-shadow: 0 0 0 4px var(--radio-color-bg) inset;
+			animation: radiomark 200ms ease-out;
+		}
+
+		@variant disabled {
+			cursor: not-allowed;
+			background-color: var(--color-fill-200);
+		}
+	}
+}
+
+@keyframes radiomark {
+	0% {
+		box-shadow: 0 0 0 12px var(--radio-color-bg) inset;
+	}
+
+	50% {
+		box-shadow: 0 0 0 3px var(--radio-color-bg) inset;
+	}
+
+	100% {
+		box-shadow: 0 0 0 4px var(--radio-color-bg) inset;
+	}
+}
+
+/* TODO: review/enhance hover/focus/... */

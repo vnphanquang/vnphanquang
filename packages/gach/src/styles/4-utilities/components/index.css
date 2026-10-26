@@ -1,7 +1,10 @@
 @import './c-btn/index.css';
 @import './c-callout/index.css';
+@import './c-checkbox.css';
 @import './c-infobox.css';
 @import './c-link.css';
 @import './c-link-icon.css';
 @import './c-link-lazy.css';
 @import './c-link-preserved.css';
+@import './c-radio.css';
+@import './c-range.css';
