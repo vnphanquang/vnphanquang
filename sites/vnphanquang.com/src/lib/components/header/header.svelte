@@ -1,10 +1,7 @@
 <script lang="ts">
 	import { ColorSchemeSwitch } from '@vnphanquang/gach/components';
-	import { ColorSchemeContext } from '@vnphanquang/gach/contexts';
 
 	import { resolve } from '$app/paths';
-
-	const colorScheme = ColorSchemeContext.get();
 </script>
 
 <header class="max-w-pad flex items-center py-4">
@@ -23,8 +20,5 @@
 			</li>
 		</ul>
 	</navbar>
-	<ColorSchemeSwitch
-		colorScheme={colorScheme.user}
-		onselect={(scheme) => (colorScheme.user = scheme)}
-	/>
+	<ColorSchemeSwitch />
 </header>

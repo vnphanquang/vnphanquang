@@ -1,9 +1,14 @@
 <script lang="ts">
-	import type { ColorScheme } from '../../constants';
+	import { ColorSchemeContext } from '../../contexts/color-scheme.svelte.js';
+
+	const context = ColorSchemeContext.get();
 
 	let {
-		colorScheme = 'system',
-		onselect,
+		colorScheme = context?.user ?? 'default',
+		onselect = (scheme) => {
+			if (!context) return;
+			context.user = scheme;
+		},
 		class: cls,
 		...rest
 	}: import('./color-scheme-switch.svelte').ColorSchemeSwitchProps = $props();
@@ -33,7 +38,10 @@
 		e.preventDefault();
 		if (!onselect) return;
 
-		if (!document.startViewTransition) {
+		const resolvedCurrent = context?.resolved ?? colorScheme;
+		const resolvedNext = context?.resolve(nextColorScheme) ?? nextColorScheme;
+
+		if (!document.startViewTransition || resolvedCurrent === resolvedNext) {
 			onselect(nextColorScheme);
 			return;
 		}
