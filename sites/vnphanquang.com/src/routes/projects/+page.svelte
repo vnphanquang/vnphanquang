@@ -16,7 +16,7 @@
 		{ name: 'Projects', label: 'projects', path: page.url.pathname },
 	]);
 
-	const projectGroups = groupProjectsByTags(projects, ['svelte', 'unified', 'css']);
+	const projectGroups = groupProjectsByTags(projects, ['svelte', 'unified', 'css', 'puzzles']);
 </script>
 
 <PageMetadata
@@ -125,6 +125,17 @@
 					</h2>
 				</div>
 				{@render listing(projectGroups.css)}
+			</section>
+		{/if}
+
+		{#if projectGroups.misc.length}
+			<section class="space-y-4">
+				<div class="text-stroke-200 flex items-center gap-4">
+					<h2 class="tablet:text-4xl desktop:text-5xl text-3xl font-bold tracking-wider uppercase">
+						Puzzles
+					</h2>
+				</div>
+				{@render listing(projectGroups.puzzles)}
 			</section>
 		{/if}
 

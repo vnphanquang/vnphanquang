@@ -73,6 +73,12 @@ export const projects: Project[] = [
 		url: 'https://github.com/vnphanquang/githooks',
 		tags: ['oss', 'deno'],
 	},
+	{
+		name: 'Nhi Dong 2D Packing Solver',
+		description: "A naive solver for Báo Nhi Đồng's 2D packing puzzle",
+		url: '/projects/nhi-dong-packing-solver',
+		tags: ['puzzles'],
+	},
 ];
 
 export function filterProjectsByTag(projects: Project[], tag: string) {
