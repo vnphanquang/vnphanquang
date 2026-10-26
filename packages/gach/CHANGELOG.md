@@ -1,5 +1,19 @@
 # @vnphanquang/gach
 
+## 1.2.0
+
+### Minor Changes
+
+- [`d47d64b`](https://github.com/vnphanquang/vnphanquang/commit/d47d64bb48262dcf27ab534af5e99594f274868a) Thanks [@vnphanquang](https://github.com/vnphanquang)! - add `c-checkbox`, `c-radio`, `c-range`
+
+- [`64de1fa`](https://github.com/vnphanquang/vnphanquang/commit/64de1fa6ef88f1592aadf69b4f19c00380aa068e) Thanks [@vnphanquang](https://github.com/vnphanquang)! - add `c-btn--ghost` modifier
+
+### Patch Changes
+
+- [`57f439a`](https://github.com/vnphanquang/vnphanquang/commit/57f439ab51870cd8f6802863d9e1a6e42256b866) Thanks [@vnphanquang](https://github.com/vnphanquang)! - provide default props for ColorSchemeSwitch, reducing manual setup; skip view transition if switching to the same resolved scheme
+
+- [`034209e`](https://github.com/vnphanquang/vnphanquang/commit/034209edbb20f0c480a9f099463ddf5f59a35237) Thanks [@vnphanquang](https://github.com/vnphanquang)! - correct outdated css color token reference
+
 ## 1.1.1
 
 ### Patch Changes
