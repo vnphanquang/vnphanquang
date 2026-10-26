@@ -233,6 +233,8 @@
 	{/if}
 </div>
 
+<button class="c-btn" onclick={() => grid.trim()}>Trim</button>
+
 <style>
 	table {
 		--cell-size: min(calc(60dvh / var(--cols)), 4rem);

@@ -1,6 +1,13 @@
+/* eslint-disable svelte/prefer-svelte-reactivity */
 import { untrack } from 'svelte';
 
-import { type Dimension, coordinateToIndex, indexToCoordinate, range } from '../grid';
+import {
+	type Dimension,
+	coordinateToIndex,
+	indexToCoordinate,
+	range,
+	type Coordinate,
+} from '../grid';
 
 interface SelectableGridOptions extends Dimension {
 	selected?: number[];
@@ -31,11 +38,12 @@ export class SelectableGrid {
 		this.#updateDimension({ rows });
 	}
 
-	#updateDimension = (dimension: Partial<Dimension>) => {
+	#updateDimension = (dimension: Partial<Dimension>, updateSelected = true) => {
 		const { rows = this.#dimension.rows, cols = this.#dimension.cols } = dimension;
 		const lastDimension = untrack(() => this.#dimension);
 		this.#dimension = { cols, rows };
 
+		if (!updateSelected) return;
 		// update selected
 		const previousSelected = untrack(() => this.selected);
 		this.selected = previousSelected
@@ -57,7 +65,32 @@ export class SelectableGrid {
 		});
 	}
 
-	trim() {}
+	trim() {
+		if (!this.selected.length) return;
+
+		const coordinates = this.selected.map((s) => indexToCoordinate(s, this.cols));
+
+		const uniqueRows = Array.from(new Set(coordinates.map((c) => c.row)));
+		const minRow = Math.min(...uniqueRows);
+		const maxRow = Math.max(...uniqueRows);
+		const newRows = this.rows - (minRow + this.rows - 1 - maxRow);
+
+		const uniqueCols = Array.from(new Set(coordinates.map((c) => c.col)));
+		const minCol = Math.min(...uniqueCols);
+		const maxCol = Math.max(...uniqueCols);
+		const newCols = this.cols - (minCol + this.cols - 1 - maxCol);
+
+		this.selected = coordinates
+			.map(
+				(coor) =>
+					({
+						row: coor.row - minRow,
+						col: coor.col - minCol,
+					}) as Coordinate,
+			)
+			.map((coor) => coordinateToIndex(coor, newCols));
+		this.#updateDimension({ rows: newRows, cols: newCols }, false);
+	}
 
 	isSelected(index: number) {
 		return this.selected.includes(index);
@@ -67,11 +100,9 @@ export class SelectableGrid {
 		const ranged = range(from, to);
 
 		if (selected) {
-			// eslint-disable-next-line svelte/prefer-svelte-reactivity
 			this.selected = Array.from(new Set([...this.selected, ...ranged]));
 			return;
 		}
-		// eslint-disable-next-line svelte/prefer-svelte-reactivity
 		this.selected = Array.from(new Set(this.selected).difference(new Set(ranged)));
 	}
 
@@ -95,11 +126,9 @@ export class SelectableGrid {
 		}
 
 		if (selected) {
-			// eslint-disable-next-line svelte/prefer-svelte-reactivity
 			this.selected = Array.from(new Set([...this.selected, ...boxed]));
 			return;
 		}
-		// eslint-disable-next-line svelte/prefer-svelte-reactivity
 		this.selected = Array.from(new Set(this.selected).difference(new Set(boxed)));
 	}
 }
