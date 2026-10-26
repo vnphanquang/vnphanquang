@@ -93,7 +93,7 @@
 		</button>
 		```
 	*/
-		&:not(.c-btn--icon):has(:is(img, svg, .i)) {
+		&:not(.c-btn--icon):has(:is(img, svg, .i):not(.sr-only, .c-infobox)) {
 			display: grid;
 			grid-template-columns: auto auto;
 			column-gap: calc(var(--spacing) * 3);
@@ -107,11 +107,11 @@
 			}
 		}
 
-		&:not(:has(:is(img, svg, .i))) {
+		&:not(:has(:is(img, svg, .i):not(.sr-only, .c-infobox))) {
 			text-align: center;
 		}
 
-		&:not(.c-btn--pop, .c-btn--outlined, .c-btn--icon) {
+		&:not(.c-btn--pop, .c-btn--outlined, .c-btn--ghost, .c-btn--icon) {
 			border-color: var(--color-stroke-50);
 			color: var(--color-fill-50);
 			background-color: var(--color-stroke-50);
