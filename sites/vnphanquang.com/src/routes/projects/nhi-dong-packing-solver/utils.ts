@@ -1,4 +1,12 @@
-import type { Coordinate } from './grid';
+export interface Dimension {
+	rows: number;
+	cols: number;
+}
+
+export interface Coordinate {
+	row: number;
+	col: number;
+}
 
 export function coordinateToIndex(coordinate: Coordinate, numCols: number): number {
 	return coordinate.row * numCols + coordinate.col;

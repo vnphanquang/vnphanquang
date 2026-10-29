@@ -1,23 +1,37 @@
 <script lang="ts" module>
 	import { createAttachmentKey } from 'svelte/attachments';
-	import type { HTMLAttributes, HTMLTableAttributes } from 'svelte/elements';
+	import type { HTMLAttributes } from 'svelte/elements';
 
-	import { coordinateToIndex } from '../grid';
+	import { coordinateToIndex } from '../utils';
 
-	import type { SelectableGrid } from './selectable-grid.svelte';
+	import type { Grid } from './grid.svelte';
 
-	export interface SelectableGridTemplateProps extends HTMLTableAttributes {
-		grid: SelectableGrid;
+	export interface GridTemplateProps extends HTMLAttributes<HTMLElement> {
+		grid: Grid;
 		configurable?: boolean;
+		actionable?: boolean;
+		highlight?: (cell: { index: number }) => string | undefined;
 	}
 
 	const MAX_SIZE = 20;
 </script>
 
 <script lang="ts">
-	let { grid, configurable, ...rest }: SelectableGridTemplateProps = $props();
+	let {
+		grid,
+		actionable = false,
+		configurable = false,
+		highlight,
+		class: cls,
+		...rest
+	}: GridTemplateProps = $props();
 
 	let showCellNumber = $state(false);
+
+	function revertSettings() {
+		showCellNumber = false;
+		grid.resetDimension();
+	}
 
 	interface ToggleBoxEndDetail {
 		index: number;
@@ -91,24 +105,42 @@
 		'c-btn c-btn--ghost flex justify-center items-center w-full text-fill-100 hover:text-stroke-50';
 </script>
 
-<div style:anchor-scope="--settings">
-	<table {...dragSelect.root()} {...rest} style:--cols={grid.cols}>
+<div
+	class={['border-onehalf shadow-brutal-lg border-current p-6', cls]}
+	style:anchor-scope="--settings"
+	{...rest}
+>
+	<div class="ms-10 flex gap-2">
+		{#if actionable}
+			<button
+				class="c-btn px-3 py-1"
+				popovertarget="actions"
+				popovertargetaction="toggle"
+				style:anchor-name="--actions"
+			>
+				<i class="i i-[ph--function]"></i>
+				<span>Actions</span>
+			</button>
+		{/if}
+		{#if configurable}
+			<button
+				class="c-btn px-3 py-1"
+				popovertarget="settings"
+				popovertargetaction="toggle"
+				style:anchor-name="--settings"
+			>
+				<i class="i i-[ph--gear]"></i>
+				<span>Settings</span>
+			</button>
+		{/if}
+	</div>
+	<table {...dragSelect.root()} style:--cols={grid.cols}>
 		<thead>
 			<tr>
 				{#each { length: grid.cols + 1 }, col (col)}
 					<th scope="col">
 						{#if col > 0}
 							{col}
-						{:else if configurable}
-							<button
-								class="c-btn c-btn--ghost flex"
-								popovertarget="settings"
-								popovertargetaction="toggle"
-								style:anchor-name="--settings"
-							>
-								<i class="i i-[ph--gear] h-6 w-6"></i>
-								<span class="c-infobox">Settings</span>
-							</button>
 						{/if}
 					</th>
 				{/each}
@@ -120,14 +152,19 @@
 				<tr>
 					<th scope="row">{row + 1}</th>
 					{#each { length: grid.cols }, col (col)}
-						{const index = $derived(coordinateToIndex({ row, col }, grid.cols))}
-						{const anchor =
+						{let index = $derived(coordinateToIndex({ row, col }, grid.cols))}
+						{let anchor = $derived(
 							index === 0
 								? '--first'
 								: index === coordinateToIndex({ row: grid.rows - 1, col: grid.cols - 1 }, grid.cols)
 									? '--last'
-									: ''}
-						<td class="cell border border-dashed border-current">
+									: '',
+						)}
+						{let highlighted = $derived(highlight?.({ index }))}
+						<td
+							class="cell border border-dashed border-current"
+							style:--color-highlighted={highlighted}
+						>
 							<label {...dragSelect.cell(index)}>
 								<input
 									class="sr-only"
@@ -190,10 +227,7 @@
 	</table>
 
 	{#if configurable}
-		<aside class="border border-current" popover id="settings">
-			<div class="border-b border-current px-4 py-2">
-				<h2 class="text-lg font-bold">Settings</h2>
-			</div>
+		<aside class="border border-current" popover id="settings" style:--anchor="--settings">
 			<div class="grid grid-cols-[auto_1fr] gap-4 p-4">
 				{const commonLabelClasses = 'col-span-2 flex grid grid-cols-subgrid items-center gap-2'}
 				<label class={commonLabelClasses}>
@@ -228,16 +262,39 @@
 						name="show-cell-number"
 					/>
 				</label>
+				<button class="c-btn c-btn--outlined px-3 py-1" onclick={revertSettings}>
+					<span>Revert to defaults</span>
+				</button>
 			</div>
+		</aside>
+	{/if}
+
+	{#if actionable}
+		<aside class="border border-current" popover id="actions" style:--anchor="--actions">
+			{const commonActionItemClasses = 'c-btn c-btn--ghost px-3 py-1 justify-start w-full'}
+			<ul class="divide-y-current divide-y">
+				<li>
+					<button class={commonActionItemClasses} onclick={grid.clear}>
+						<i class="i i-[ph--eraser]"></i>
+						<span>Clear all selected squares</span>
+					</button>
+				</li>
+				<li>
+					{#if configurable}
+						<button class={commonActionItemClasses} onclick={() => grid.trim({ inplace: true })}>
+							<i class="i i-[ph--scissors]"></i>
+							<span>Trim unselected rows & columns</span>
+						</button>
+					{/if}
+				</li>
+			</ul>
 		</aside>
 	{/if}
 </div>
 
-<button class="c-btn" onclick={() => grid.trim()}>Trim</button>
-
 <style>
 	table {
-		--cell-size: min(calc(60dvh / var(--cols)), 4rem);
+		--cell-size-default: 3rem;
 
 		user-select: none;
 		anchor-scope: --active, --pointered, --first, --last;
@@ -247,11 +304,11 @@
 			font-weight: normal;
 
 			&[scope='row'] {
-				padding-inline: 1rem;
+				width: 2.5rem;
 			}
 
 			&[scope='col'] {
-				padding-block: 0.5rem;
+				height: 2.5rem;
 			}
 		}
 	}
@@ -266,8 +323,10 @@
 		anchor-scope: --cell;
 
 		aspect-ratio: 1 / 1;
-		width: var(--cell-size);
+		width: var(--cell-size, var(--cell-size-default));
 		height: auto;
+
+		background-color: var(--color-highlighted);
 
 		&:has(:checked) {
 			background-color: var(--color-checked);
@@ -324,13 +383,9 @@
 		}
 	}
 
-	#settings {
-		position-anchor: --settings;
-		position-area: x-end y-end;
-
-		&::backdrop {
-			background-color: oklch(from var(--color-fill-100) l c h / 50%);
-			backdrop-filter: blur(1px);
-		}
+	#settings,
+	#actions {
+		inset-block-start: calc(anchor(var(--anchor) end) + 0.25rem);
+		inset-inline-start: anchor(var(--anchor) start);
 	}
 </style>
