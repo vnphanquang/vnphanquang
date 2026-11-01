@@ -110,8 +110,8 @@ glhf!
 ```text
 🌞 Morning                17893 commits       ███████░░░░░░░░░░░░░░░░░░   28.03 % 
 🌆 Daytime                31492 commits       ████████████░░░░░░░░░░░░░   49.33 % 
-🌃 Evening                13971 commits       █████░░░░░░░░░░░░░░░░░░░░   21.89 % 
-🌙 Night                  482 commits         ░░░░░░░░░░░░░░░░░░░░░░░░░   00.76 % 
+🌃 Evening                13971 commits       █████░░░░░░░░░░░░░░░░░░░░   21.88 % 
+🌙 Night                  483 commits         ░░░░░░░░░░░░░░░░░░░░░░░░░   00.76 % 
 ```
 📅 **I'm Most Productive on Thursday** 
 
@@ -121,7 +121,7 @@ Tuesday                  6399 commits        ███░░░░░░░░�
 Wednesday                13539 commits       █████░░░░░░░░░░░░░░░░░░░░   21.21 % 
 Thursday                 15202 commits       ██████░░░░░░░░░░░░░░░░░░░   23.81 % 
 Friday                   9458 commits        ████░░░░░░░░░░░░░░░░░░░░░   14.82 % 
-Saturday                 7341 commits        ███░░░░░░░░░░░░░░░░░░░░░░   11.50 % 
+Saturday                 7342 commits        ███░░░░░░░░░░░░░░░░░░░░░░   11.50 % 
 Sunday                   3523 commits        █░░░░░░░░░░░░░░░░░░░░░░░░   05.52 % 
 ```
 
@@ -132,17 +132,17 @@ Sunday                   3523 commits        █░░░░░░░░░░�
 🕑︎ Time Zone: Asia/Ho_Chi_Minh
 
 💬 Programming Languages: 
-Svelte                   10 hrs 13 mins      ████████████░░░░░░░░░░░░░   49.67 % 
-Markdown                 5 hrs 9 mins        ██████░░░░░░░░░░░░░░░░░░░   25.04 % 
-TypeScript               3 hrs 23 mins       ████░░░░░░░░░░░░░░░░░░░░░   16.46 % 
-CSS                      1 hr 30 mins        ██░░░░░░░░░░░░░░░░░░░░░░░   07.33 % 
-JSON                     11 mins             ░░░░░░░░░░░░░░░░░░░░░░░░░   00.97 % 
+Svelte                   12 hrs 54 mins      ██████████████░░░░░░░░░░░   54.80 % 
+Markdown                 5 hrs 12 mins       ██████░░░░░░░░░░░░░░░░░░░   22.10 % 
+TypeScript               3 hrs 23 mins       ████░░░░░░░░░░░░░░░░░░░░░   14.39 % 
+CSS                      1 hr 30 mins        ██░░░░░░░░░░░░░░░░░░░░░░░   06.41 % 
+Text                     14 mins             ░░░░░░░░░░░░░░░░░░░░░░░░░   01.00 % 
 
 🔥 Editors: 
-Neovim                   20 hrs 34 mins      █████████████████████████   100.00 % 
+Neovim                   23 hrs 32 mins      █████████████████████████   100.00 % 
 
 💻 Operating System: 
-Linux                    20 hrs 34 mins      █████████████████████████   100.00 % 
+Linux                    23 hrs 32 mins      █████████████████████████   100.00 % 
 ```
 
 🤖 **AI Coding This Week** 
@@ -164,7 +164,7 @@ Jupyter Notebook         1 repo              ░░░░░░░░░░░�
 
 
 
- Last Updated on 31/10/2026 04:51:23 UTC
+ Last Updated on 01/11/2026 05:13:56 UTC
 <!--END_SECTION:waka-->
 
 </details>
