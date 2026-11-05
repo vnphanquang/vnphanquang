@@ -14,6 +14,7 @@
 	max-width: 100cqi;
 	font-size: 1rem;
 	line-height: 1.75;
+	text-wrap: pretty;
 }
 
 .md :where(*):not(:where([class~='not-md'], [class~='not-md'] *)) {
