@@ -24,40 +24,44 @@
 
 			background-color: var(--bg);
 		}
-	}
 
-	& li {
-		counter-increment: step 1;
-		position: relative;
-		padding-inline-start: var(--step-pis);
+		& > li {
+			counter-increment: step 1;
+			position: relative;
+			padding-inline-start: var(--step-pis);
 
-		&::before {
-			content: counter(step);
+			&::before {
+				content: counter(step);
 
-			position: absolute;
-			z-index: 1;
-			inset-block-start: 0;
-			inset-inline-end: 100%;
+				position: absolute;
+				z-index: 1;
+				inset-block-start: 0;
+				inset-inline-end: 100%;
 
-			display: inline-flex;
-			align-items: center;
-			justify-content: center;
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
 
-			width: var(--step-size);
-			height: var(--step-size);
-			border-radius: 50%;
+				width: var(--step-size);
+				height: var(--step-size);
+				border-radius: 50%;
 
-			font-size: var(--font-size);
-			font-weight: 700;
-			font-variant-numeric: tabular-nums;
-			line-height: 1;
-			color: var(--color);
+				font-size: var(--font-size);
+				font-weight: 700;
+				font-variant-numeric: tabular-nums;
+				line-height: 1;
+				color: var(--color);
 
-			background-color: var(--bg);
-		}
+				background-color: var(--bg);
+			}
 
-		&:not(:first-of-type) {
-			margin-block-start: 1.2rem;
+			&:not(:first-of-type) {
+				margin-block-start: 1.2rem;
+			}
+
+			& > :is(ol, ul):not(#specific) {
+				margin-block-start: 0.8rem;
+			}
 		}
 	}
 }
