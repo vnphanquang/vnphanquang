@@ -1,5 +1,15 @@
 # @vnphanquang/markdown
 
+## 1.2.0
+
+### Patch Changes
+
+- [`be72510`](https://github.com/vnphanquang/vnphanquang/commit/be72510394bddbc2f9a32e31152bd4334054ffc9) Thanks [@vnphanquang](https://github.com/vnphanquang)! - add file icon for svelte codeblock
+
+- [`b583484`](https://github.com/vnphanquang/vnphanquang/commit/b583484ab393a00cbe6a2e5efec337a7b825d10b) Thanks [@vnphanquang](https://github.com/vnphanquang)! - add `text-wrap: pretty` to md content
+
+- [`fa55d47`](https://github.com/vnphanquang/vnphanquang/commit/fa55d476ab0a4b8eb7b615d62a88e3e4f3eadb7d) Thanks [@vnphanquang](https://github.com/vnphanquang)! - improve .steplist for better nesting
+
 ## 1.1.1
 
 ### Patch Changes
