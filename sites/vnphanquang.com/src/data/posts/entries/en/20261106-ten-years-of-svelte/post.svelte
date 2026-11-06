@@ -209,7 +209,7 @@ software factories, we are not paid to learn. The moment i am hired, i am expect
 software lifecycle outlives me, and i am just a replaceable deteriorating gear in its machinery.
 
 > [!SIDENOTE]
-> The preceding paragraph deserves more context. I am incredibly grateful for the professional expreience
+> The preceding paragraph deserves more context. I am incredibly grateful for the professional experience
 > I have had in previous companies or with my clients. To say that those jobs were mere software factories
 > is not entirely fair. My colleagues and clients were rather tolerent and open-minded. However, I was
 > frankly a hire to deliver the software. The pressure of generating output was always prominent;
