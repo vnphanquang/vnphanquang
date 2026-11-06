@@ -63,16 +63,17 @@ export async function getNextRelevantBlogPost(
 	const tags = (await posts[index].metadata()).tags;
 	let found: BlogPostResolver;
 
-	const newerPosts = posts.slice(index + 1);
+	const newerPosts = posts.slice(0, index);
 	if (newerPosts.length) {
 		found = await getLatestBlogPostWithMostOverlappingTags(newerPosts, tags);
 	} else {
 		// no newer blog posts, search down
-		const olderPosts = posts.slice(0, index);
+		const olderPosts = posts.slice(index + 1);
 		found = await getLatestBlogPostWithMostOverlappingTags(olderPosts, tags);
 	}
 
 	const [metadata, thumbnail] = await Promise.all([found.metadata(), found.thumbnail?.()]);
+
 	return {
 		metadata: {
 			...metadata,
