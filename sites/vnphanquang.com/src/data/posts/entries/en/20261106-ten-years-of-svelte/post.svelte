@@ -208,6 +208,13 @@ human work and the necessity of manual review. But for me and for many others wh
 software factories, we are not paid to learn. The moment i am hired, i am expected to deliver. The
 software lifecycle outlives me, and i am just a replaceable deteriorating gear in its machinery.
 
+> [!SIDENOTE]
+> The preceding paragraph deserves more context. I am incredibly grateful for the professional expreience
+> I have had in previous companies or with my clients. To say that those jobs were mere software factories
+> is not entirely fair. My colleagues and clients were rather tolerent and open-minded. However, I was
+> frankly a hire to deliver the software. The pressure of generating output was always prominent;
+> the economy went on, thus the business must survive, rightfully so. There was no particular person at blame.
+
 So maybe i really should treat my job as a means to survive rather than a learning opportunity, stop
 dreaming about getting better, conform to the system, and leave the _higher-purpose_ job for some
 white dude that eats the same bowl of phở and happens to make 100x per hour than i do.
