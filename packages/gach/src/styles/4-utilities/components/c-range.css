@@ -1,61 +1,85 @@
 @utility c-range {
 	@layer components {
-		--range-thumb-fill: var(--color-stroke-50);
-		--range-thumb: var(--color-fill-50);
-		--range-track: var(--color-fill-200);
-		--range-track-height: 0.5rem;
-		--range-thumb-size: 1rem;
-		--range-thumb-pad: 0.125rem;
+		&:is(input),
+		& input {
+			--range-thumb-fill: var(--color-stroke-50);
+			--range-thumb: var(--color-fill-50);
+			--range-track: var(--color-fill-200);
+			--range-track-height: 0.5rem;
+			--range-thumb-size: 1rem;
+			--range-thumb-pad: 0.125rem;
 
-		cursor: pointer;
+			cursor: pointer;
 
-		container-type: inline-size;
-		overflow: hidden;
+			container-type: inline-size;
+			overflow: hidden;
 
-		height: calc(var(--range-thumb-size) + var(--range-track-height));
-		padding-block: var(--range-thumb-pad);
-		padding-inline: calc(var(--range-thumb-pad) * 2);
-
-		appearance: none;
-
-		&::-moz-range-track {
-			height: var(--range-track-height);
-			border: none;
-			background-color: var(--range-track);
-		}
-
-		&::-webkit-slider-runnable-track {
-			height: var(--range-track-height);
-			border: none;
-			background-color: var(--range-track);
-		}
-
-		&::-moz-range-thumb {
-			position: relative;
-
-			width: var(--range-thumb-size);
-			height: var(--range-thumb-size);
-			border: none;
-			border-radius: 0;
-
-			background-color: var(--range-thumb);
-			box-shadow: calc(-100cqi + var(--range-thumb-pad) * 2) 0 0 100cqi var(--range-thumb-fill);
-		}
-
-		&::-webkit-slider-thumb {
-			--range-thumb-size: 0.9rem;
-
-			position: relative;
-			transform: translateY(-25%);
-
-			width: var(--range-thumb-size);
-			height: var(--range-thumb-size);
-			border: none;
-			border-radius: 0;
+			height: calc(var(--range-thumb-size) + var(--range-track-height));
+			padding-block: var(--range-thumb-pad);
+			padding-inline: calc(var(--range-thumb-pad) * 2);
 
 			appearance: none;
-			background-color: var(--range-thumb);
-			box-shadow: calc(-100cqi + var(--range-thumb-pad) * 2) 0 0 100cqi var(--range-thumb-fill);
+
+			&::-moz-range-track {
+				height: var(--range-track-height);
+				border: none;
+				background-color: var(--range-track);
+			}
+
+			&::-webkit-slider-runnable-track {
+				height: var(--range-track-height);
+				border: none;
+				background-color: var(--range-track);
+			}
+
+			&::-moz-range-thumb {
+				position: relative;
+
+				width: var(--range-thumb-size);
+				height: var(--range-thumb-size);
+				border: none;
+				border-radius: 0;
+
+				background-color: var(--range-thumb);
+				box-shadow: calc(-100cqi + var(--range-thumb-pad) * 2) 0 0 100cqi var(--range-thumb-fill);
+			}
+
+			&::-webkit-slider-thumb {
+				--range-thumb-size: 0.9rem;
+
+				position: relative;
+				transform: translateY(-25%);
+
+				width: var(--range-thumb-size);
+				height: var(--range-thumb-size);
+				border: none;
+				border-radius: 0;
+
+				appearance: none;
+				background-color: var(--range-thumb);
+				box-shadow: calc(-100cqi + var(--range-thumb-pad) * 2) 0 0 100cqi var(--range-thumb-fill);
+			}
+		}
+
+		&:has(input) {
+			display: flex;
+			gap: calc(var(--spacing) * 3);
+			align-items: center;
+
+			padding: calc(var(--spacing) * 2) calc(var(--spacing) * 3);
+			border: 1.5px solid currentcolor;
+
+			&:focus-within,
+			&:has(input:focus-visible) {
+				border-color: var(--color-focus);
+				outline: 1.5px solid var(--color-focus);
+				outline-offset: 1px;
+
+				& input {
+					border: none;
+					outline: none;
+				}
+			}
 		}
 	}
 }

@@ -1,0 +1,58 @@
+@utility c-select {
+	@layer components {
+		position: relative;
+		display: block;
+		padding: calc(var(--spacing) * 2) calc(var(--spacing) * 3);
+		border: 1.5px solid currentcolor;
+
+		&:is(select),
+		& :is(select) {
+			cursor: pointer;
+		}
+
+		&:focus-visible,
+		&:focus-within,
+		&:has(select:focus-visible) {
+			border-color: var(--color-focus);
+			outline: 1.5px solid var(--color-focus);
+			outline-offset: 1px;
+
+			& select {
+				border: none;
+				outline: none;
+			}
+
+			@variant user-invalid {
+				border-color: var(--color-error);
+				outline-color: var(--color-error);
+			}
+		}
+
+		&:has(select) {
+			display: flex;
+			gap: calc(var(--spacing) * 3);
+
+			& select {
+				flex: 1;
+			}
+		}
+
+		@variant user-invalid {
+			border-color: var(--color-error);
+		}
+
+		&:is(:disabled, [disabled]:not([disabled='false'])) {
+			cursor: not-allowed;
+			background-color: var(--color-fill-200);
+
+			& select {
+				cursor: not-allowed;
+			}
+
+			& * {
+				opacity: 0.5;
+			}
+		}
+	}
+}
+

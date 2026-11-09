@@ -1,0 +1,77 @@
+@utility c-color-input {
+	@layer components {
+		position: relative;
+
+		display: flex;
+		gap: calc(var(--spacing) * 3);
+		align-items: center;
+
+		border: 1.5px solid currentcolor;
+
+		line-height: 1.5;
+
+		&:is(input),
+		& :is(input) {
+			width: min(5rem, 100%);
+			height: 2.5rem;
+
+			appearance: none;
+			background: transparent;
+			outline: none;
+
+			&::placeholder {
+				color: var(--color-placeholder);
+			}
+
+			&::-webkit-color-swatch-wrapper {
+				padding: 0;
+			}
+		}
+
+		&:is(label) {
+			padding: calc(var(--spacing) * 2) calc(var(--spacing) * 3);
+		}
+
+		&:has(input) {
+			& :is(input) {
+				border: none;
+			}
+		}
+
+		&:focus-visible,
+		&:focus-within,
+		&:has(:is(input):focus-visible) {
+			border-color: var(--color-focus);
+			outline: 1.5px solid var(--color-focus);
+			outline-offset: 1px;
+
+			@variant user-invalid {
+				border-color: var(--color-error);
+				outline-color: var(--color-error);
+			}
+		}
+
+		@variant user-invalid {
+			border-color: var(--color-error);
+		}
+
+		&:is(:disabled, [disabled]:not([disabled='false'])),
+		&:has(:is(input):disabled) {
+			&:is(input), & :is(input) {
+				cursor: not-allowed;
+
+				&::-moz-color-swatch {
+					background: var(--color-fill-200);
+				}
+
+				&::-webkit-color-swatch {
+					background-color: var(--color-fill-200) !important;
+				}
+			}
+
+			& * {
+				opacity: 0.5;
+			}
+		}
+	}
+}
