@@ -46,8 +46,9 @@
 */
 @utility c-infobox {
 	@layer components {
-		*:not(:hover, :active, :focus-visible, :has(> .c-infobox-anchor)) > &,
-		.c-infobox-anchor:not(:hover, :active, :focus-visible) ~ & {
+		*:not(label, :hover, :active, :focus-visible, :has(> .c-infobox-anchor)) > &,
+		:not(label) > .c-infobox-anchor:not(:hover, :active, :focus-visible) ~ &,
+		label:not(:has(:focus-visible), :has(.c-infobox-anchor:hover)) > & {
 			@apply sr-only;
 		}
 
@@ -61,7 +62,8 @@
 		}
 
 		*:is(:hover, :active, :focus-visible) > &,
-		.c-infobox-anchor:is(:hover, :active, :focus-visible) ~ & {
+		.c-infobox-anchor:is(:hover, :active, :focus-visible) ~ &,
+		label:has(:focus-visible) > & {
 			position: fixed;
 			z-index: var(--z-index-popup);
 			position-anchor: var(--anchor, --infobox);
