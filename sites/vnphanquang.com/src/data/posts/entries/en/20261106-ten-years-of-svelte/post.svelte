@@ -12,6 +12,7 @@
 			'Celebrating ten years of Svelte - looking back at my personal journey with Svelte and contemplating about my place in its community',
 		keywords: 'svelte, web, community, ai, javascript, oss',
 		publishedAt: new Date('2026-11-06'),
+		updatedAt: new Date('2026-11-09'),
 		tags: ['svelte', 'community'],
 		codeless: true,
 		numWords: 2450,
@@ -104,7 +105,7 @@ it may just be that i came across Svelte at the right time and right place, and 
 ever since.
 
 So, call Svelte whatever you like - a framework, a compiler, a language, a
-[banh mi](https://en.wikipedia.org/wiki/B%C3%A1nh_m%C3%AC) of deliciously fresh ideas and balanced
+[bánh mì](https://en.wikipedia.org/wiki/B%C3%A1nh_m%C3%AC) of deliciously fresh ideas and balanced
 flavors - and chances are it would be correct. What matters is, Svelte is an experiment worth doing
 because we all want the web to succeed. And i am glad that this Svelte experiment is still being
 conducted with care and enthusiasm.
@@ -183,8 +184,8 @@ two years, it felt somewhat different; something was lost. Today, to learn is to
 invest time in learning is to forever ~~falling behind~~ neglecting the state-of-the-art where the
 art itself may no longer be created by or for humans.
 
-Meanwhile, despite promises of the singularity, software still breaks while I need it the most.
-Software honestly does not need stress-testing, because I already have stress using it!
+Meanwhile, despite promises of a singularity, software still breaks when i need it the most.
+i feel as if i were stress-testing software, only that i was the one being stressed.
 
 i picked up Svelte not only because of its good vibes, but very importantly because it was also so
 efficient that i forget it was even there. Instead, my focus could be towards building and learning
@@ -200,7 +201,7 @@ testing methodologies, etc. i don't want the _feeling of learning_. i want that 
 and retrying, to struggle and to be grateful.
 `}
 
-<p class="text-center text-lg font-semibold">i do NOT want to sit and talk to a chatbot all day.</p>
+<p class="text-center text-lg font-semibold">i do NOT want to talk to a chatbot all day.</p>
 
 {markdown`
 Maybe it is not the case for some people in specific sectors that are slow enough or still value
@@ -209,15 +210,16 @@ software factories, we are not paid to learn. The moment i am hired, i am expect
 software lifecycle outlives me, and i am just a replaceable deteriorating gear in its machinery.
 
 > [!SIDENOTE]
-> The preceding paragraph deserves more context. I am incredibly grateful for the professional experience
-> I have had in previous companies or with my clients. To say that those jobs were mere software factories
-> is not entirely fair. My colleagues and clients were rather tolerent and open-minded. However, I was
+> The preceding paragraph deserves more context. i am incredibly grateful for the professional experience
+> i have had in previous companies or with my clients. To say that those jobs were mere software factories
+> is not entirely fair. My colleagues and clients were rather tolerent and open-minded. However, i was
 > frankly a hire to deliver the software. The pressure of generating output was always prominent;
 > the economy went on, thus the business must survive, rightfully so. There was no particular person at blame.
 
 So maybe i really should treat my job as a means to survive rather than a learning opportunity, stop
 dreaming about getting better, conform to the system, and leave the _higher-purpose_ job for some
-white dude that eats the same bowl of phở and happens to make 100x per hour than i do.
+white dude that eats the same bowl of [phở](https://vi.wikipedia.org/wiki/Ph%E1%BB%9F) and happens
+to make 100x per hour than i do.
 
 In such a world, Svelte no longer matters.
 
@@ -250,7 +252,7 @@ real working people. All in all, it is a tough position that grows beyond any in
 tell others what to do or to believe in. i just want to share my experience and thoughts in hope
 that they resonate with someone out there.
 
-It is easy to give praise when Svelte's efficiency can help build applications with lesser hardware
+It is easy to applaud when Svelte's efficiency can help build applications with lesser hardware
 or in a network-limited environment. It is a little bit harder to reason about prompting away one Svelte
 app after another as the demand for data and power eats away people and their lands. Or when access to
 an event celebrating ten years of Svelte as an inclusive community costs as much as it feeds a whole
@@ -272,8 +274,8 @@ is no shortage of progress: the framework is still getting better everyday.
 learning materials, or blog posts keep on improving the quality and diversity of the Svelte
 ecosystem.
 
-I hope that the Svelte experiment continues forward. For the Svelte community to persevere
-through this uncertain time, to be more vocal and representative, to be open-minded about the legitimate
+i hope that the Svelte experiment continues forward. For the Svelte community to persevere
+through this uncertain time, to be more vocal and representative, to be excited about the legitimate
 and responsible use of AI but also skeptical about what is being up for auction - whether it is
 worth the environmental cost and human connection at the center of our craft.
 

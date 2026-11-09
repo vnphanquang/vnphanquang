@@ -68,15 +68,11 @@ Beyond being theft, a heavy environmental tax, a mode of capital and power conce
 
 Whether it is a text predictor, a complex probabilistic model, or a [new form of intelligence](https://www.reddit.com/r/Futurology/comments/1j6zey3/ai_isnt_just_a_toolits_a_new_form_of_intelligence/), commercial GenAI - intended or not - feels at times like they are trying their best to be as humanly as possible. It can speak, via text, image, video, audio. But, if it speaks only a few sentences repeatedly and predictably, that would be robotic.
 
-Instead, give it some randomness, some personality, some imperfection, some humanity.
-
-And ask it to do human things.
+Instead, give it some randomness, some personality, some imperfection, some humanity. And ask it to do human things.
 
 Is it not strange, that i would want something done as humanly as possible, but without the human? Are there no longer programmers, designers, painters, musicians, writers, ...?
 
-The machine can speak. Its reward function tells it to.
-
-We can speak too, as human.
+The machine can speak. Its reward function tells it to. We can speak too, as human.
 
 ## Loud Voices and Knowledge Production
 
@@ -118,9 +114,7 @@ Perhaps, GenAI is rushed because these tech companies deem it to be. A new marke
 
 Oh i know: we always do. The same way we manage to imprison war criminals only decades after their crimes were committed. The same way we still picking up pieces of landmines and digging up unexploded bombs today.
 
-We will catch up. But at what cost? What communities are left estranged? What species are eradicated?
-
-By the time we catch up to GenAI, what else will be there for us to catch up to?
+We will catch up. But at what cost? What communities are left estranged? What species are eradicated? By the time we catch up to GenAI, what else will be there for us to catch up to?
 
 In this reduction of knowledge by the expansionists. i have yet to see an end. Do you?
 
