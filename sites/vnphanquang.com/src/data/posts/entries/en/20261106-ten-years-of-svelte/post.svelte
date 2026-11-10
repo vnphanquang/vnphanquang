@@ -12,11 +12,11 @@
 			'Celebrating ten years of Svelte - looking back at my personal journey with Svelte and contemplating about my place in its community',
 		keywords: 'svelte, web, community, ai, javascript, oss',
 		publishedAt: new Date('2026-11-06'),
-		updatedAt: new Date('2026-11-09'),
+		updatedAt: new Date('2026-11-11'),
 		tags: ['svelte', 'community'],
 		codeless: true,
-		numWords: 2450,
-		readMinutes: 10,
+		numWords: 2600,
+		readMinutes: 12,
 		standardSite: 'at://did:plc:vdzlwjjqp5kpce2kxqyoa467/site.standard.document/3mznagy6iksae',
 		blueskyPost: {
 			accountId: 'did:plc:vdzlwjjqp5kpce2kxqyoa467',
@@ -53,17 +53,16 @@ time can perhaps be measured in frameworks and runtimes:
 
 {markdown`
 i have been along for the Svelte ride since late 2020. A lot of things in the ecosystem have changed
-since then. For once, frontend frameworks have converged on a common set of primitives, e.g. using [Vite]
-as the build tool or [signal](https://svelte.dev/blog/runes) as a fine-grained reactivity
-model. The web continues to evolve: more native APIs are hitting baseline across
-browsers, improving consistency and accessibility, sometimes even making an entire library or
-framework feature redundant. Since the advent of Generative AI, some people have also cared less
-about the how - syntax, flavor, design principles, etc. - and more about the end result. All of
-these beg the question: why care about Svelte at all in 2026?
+since then. For once, frontend frameworks have converged on a common set of primitives, e.g. using
+[Vite] as the build tool or [signal][svelte.runes] as a fine-grained reactivity model. The web
+continues to evolve: more native APIs are hitting baseline across browsers, improving consistency
+and accessibility, sometimes even making an entire library or framework feature redundant. Since the
+advent of Generative AI, some people have also cared less about the how - syntax, flavor, design
+principles, etc. - and more about the end result. All of these beg the question: why care about
+Svelte at all in 2026?
 
 For me, the answer has always been this: the web would not be what it is today without Svelte.
-Remember this [bearded dude][rich] introducing [Svelte
-3](https://svelte.dev/blog/svelte-3-rethinking-reactivity)?
+Remember this [bearded dude][rich] introducing [Svelte 3]?
 
 ![The famous talk by Rich Harris titled "Rethinking Reactivity"](https://youtube.com/embed/AdNJ3fydeao?si=6Rqu68Dmt5y_8g7u)
 
@@ -72,43 +71,42 @@ the web.
 
 ## Daring to Be More
 
-i could recall a time when it would quickly turn into a heated debate if someone dared to bring up
-the discussion of whether React was a framework or just a library. i would not observe the same
-particular (and peculiar) level of _passion_ around Svelte. On the contrary really, Svelte does not
-shy away from **being more**:
+i recall a time when people would lose their minds if someone dared to bring up the discussion of
+whether React was a framework or just a library. i would not observe the same particular (and
+peculiar) level of _passion_ around Svelte. On the contrary really, Svelte did not shy away from
+**being more**:
 
 > I want us to dream bigger [...]. Even if it turns out to be unachievable, I find it valuable to
 > ask the question 'what would it take for SvelteKit to be the best framework for any app?'
 >
 > -- Rich Harris, [Tenets]
 
-Svelte has consistently offered me a better alternative to build softwares. For the
-first time ever, i didn't feel like i was fighting my tools to get things done. Svelte compiler
-and its [preprocessor API](https://svelte.dev/docs/svelte/svelte-compiler#preprocess) allow me to
-adapt to my own needs. The builtin accessibility warnings remind me to not be lazy at the cost of
-usability. Runtime abstraction via [actions][svelte.action] or [attachments][svelte.attach] allows
-good encapsulation with familiar Web APIs and resuable patterns for progressive enhancement.
-First-party support for Typescript, fine-grained reactivity, and utilities for motion and state
-management together save so so much time. And, of course, SvelteKit connects the dots and provides
-a solid foundation for building fullstack applications with a unified experience.
+Svelte has consistently offered me a better alternative to build softwares. For the first time ever,
+i didn't feel like i was fighting my tools to get things done. Svelte compiler and its [preprocessor
+API] allow me to adapt to my own needs. The builtin accessibility warnings remind me to not be lazy
+at the cost of usability. Runtime abstraction via [actions][svelte.action] or
+[attachments][svelte.attach] allows good encapsulation with familiar Web APIs and resuable patterns
+for progressive enhancement. First-party support for Typescript, fine-grained reactivity, and
+utilities for motion and state management together save so so much time. And, of course, SvelteKit
+connects the dots and provides a solid foundation for building fullstack applications with a unified
+experience.
 
 Svelte and the community around it have helped the web feel like a more welcoming place for users.
 And who are the first users to any system if not the developers that build it.
 
-Perhaps most importantly, it does not seem like all these Svelte's bells and whistles were implemented
-just to piss off the competition: they are built in collaboration. The same level of flexibility in
-Svelte would not be possible without [Vite], for example. It has been a joy to witness the open
-source community across the framework boundary come together and build towards consensus and
-interopability. Since forever, Svelte maintainers have come from Vite, Vue, Astro, etc. For what
-it's worth, many of the praise i give Svelte here may as well be given to other frameworks nowadays;
-it may just be that i came across Svelte at the right time and right place, and have stuck around
-ever since.
+Perhaps most importantly, it does not seem like all these Svelte's bells and whistles were
+implemented just to piss off the competition: they are built in collaboration. The same level of
+flexibility in Svelte would not be possible without [Vite], for example. It has been a joy to
+witness the open source community across the framework boundary come together and build towards
+consensus and interopability. Since forever, Svelte maintainers have come from Vite, Vue, Astro,
+etc. For what it's worth, many of the praise i give Svelte here may as well be given to other
+frameworks nowadays; it may just be that i came across Svelte at the right time and right place, and
+have stuck around ever since.
 
-So, call Svelte whatever you like - a framework, a compiler, a language, a
-[bánh mì](https://en.wikipedia.org/wiki/B%C3%A1nh_m%C3%AC) of deliciously fresh ideas and balanced
-flavors - and chances are it would be correct. What matters is, Svelte is an experiment worth doing
-because we all want the web to succeed. And i am glad that this Svelte experiment is still being
-conducted with care and enthusiasm.
+So, call Svelte whatever you like - a framework, a compiler, a language, a [bánh mì] of deliciously
+fresh ideas and balanced flavors - and chances are it would be correct. What matters is, Svelte is
+an experiment worth doing because we all want the web to succeed. And i am glad that this Svelte
+experiment is still being conducted with care and enthusiasm.
 `}
 
 <Ascii class="tablet:text-[0.3cqi] mx-auto my-10 w-fit text-[0.5cqi]">{banhMi}</Ascii>
@@ -119,57 +117,79 @@ conducted with care and enthusiasm.
 At first, Svelte was something to dream out of. Noone around me knew about it; nobody was hiring for
 Svelte. Not many jobs are available today either; one of the most popular dedicated job board,
 [SvelteJobs], has closed down due to recent development in the industry that further limited the demand
-for a Svelte-focused role. From experiments to side projects to real professional gigs, however, i
-have been lucky enough to use Svelte in my actual work. It would not be possible had i not stuck
-around for a little while. At times, Svelte was hyped up a lot, mostly in comparison with React. But
-i didn't stay because of the hype. It was because of the community.
+for a Svelte-focused role:
+`}
+
+<figure>
+	<div class="desktop:max-h-120 max-h-80 overflow-auto">
+		<enhanced:img
+			src="./includes/images/sveltejobs.png"
+			loading="lazy"
+			decoding="async"
+			fetchpriority="low"
+		/>
+	</div>
+	<figcaption>
+		Visit <a class="c-link" href="https://sveltejosb.com">sveltejobs.com</a> today and you will see an
+		EOL notice, unless the domain has also been shut down completely.
+	</figcaption>
+</figure>
+
+{markdown`
+From experiments to side projects to professional gigs, however, i have been lucky enough to use
+Svelte in my actual work. It would not be possible had i not stuck around for a little while. At
+times, Svelte was hyped up a lot, mostly in comparison with React. But i didn't stay because of the
+hype. It was because of the community.
 
 "What's this, a UI framework built from the lab of a newsroom?" was probably my first reaction to
 Svelte. It was a breadth of fresh air to encounter a new framework in the form of a practical tool
-and not as an engineering marvel of sophisticated paradigms. Lurking around this relatively new Svelte
-space, i saw people from all sorts of backgrounds; they celebrated Svelte not necessarily because it
-was the best technical achievement but because it allowed building things with an unprecedented level
-of comfort. As someone that didn't come from a computer science background, i felt a sense of belonging.
+and not as an engineering marvel of sophisticated paradigms. Lurking around this relatively new
+Svelte space, i saw people from all sorts of backgrounds; they celebrated Svelte not necessarily
+because it was the best technical achievement but because it allowed building things with an
+unprecedented level of comfort. As someone that didn't originally come from a computer science
+background, i felt a sense of belonging.
 
 Whether intended or not by the core team, community building seemed to be one of the major focuses
 early on. [Svelte Society][svelte.society] has been around for as long as i remember, organising
-[Svelte Summit][svelte.summit] and [Svelte Hackathon][svelte.hackathon]. [Svelte Sirens][svelte.sirens]
-supports voices from women, non-binary people, and allies. The same people behind those groups also
-hosted [Svelte Radio][svelte.radio] and helped maintain the official [Svelte Discord][svelte.discord]
-that branches out to local communities all around the world. Community-built sites such as
-[Made of Svelte] or [Best of Svelte] showcase usage of Svelte and help boost visibility for less
-popular projects.
+[Svelte Summit][svelte.summit] and [Svelte Hackathon][svelte.hackathon]. Supporting voices from
+women, non-binary people, and allies is [Svelte Sirens][svelte.sirens]. The same people behind those
+groups also hosted [Svelte Radio][svelte.radio] and helped maintain the official [Svelte
+Discord][svelte.discord] that branches out to local communities all around the world.
+Community-built sites such as [Made of Svelte] or [Best of Svelte] showcase usage of Svelte and help
+boost visibility for less popular projects. The community on [Bluesky][svelte.bluesky] is alive and
+well, with a dedicated [Starter Pack][svelte.bluesky.starter] by [Scott Spence] and [Custom
+Feed][svelte.bluesky.feed] by [Paolo Ricciuti] helping newcommers get up to speed in no time.
 
 > People of Svelte - a mosaic of diverse voices
 >
-> -- [Thuyet (Tia)](https://bsky.app/profile/tia-nguyen.bsky.social), from the
+> -- [Thuyet (Tia) Nguyen], from the
 > [People of Svelte](https://www.sveltevietnam.dev/en/blog/series/people-of-svelte) community initative
 
 Perhaps thanks to the inherently high tolerance level of the community, and much to the moderation
 efforts by volunteering members, Svelte forums seem much healthier than some other digital spaces.
-It's impossible to avoid trolling and non-constructive bickering, but in general
-people are genuine and happy to be there for the good vibes.
+It's impossible to avoid trolling and non-constructive bickering, but in general people are genuine
+and happy to be there for the good vibes.
 
-Perhaps it is also a matter of popularity and if given enough time, things will turn 💩.
-i do not know; i certainly hope not. My impression was instead one of appreciation, and an
-encouragement to replicate the same community model in what eventually became the [Svelte Vietnam]
-project - my attempt to build an inclusive community that helps bridge the gap between industry,
-community, and universities at the local level.
+Perhaps it is also a matter of popularity and if given enough time, things will turn 💩. i do not
+know; i certainly hope not. My impression was instead one of appreciation, and an encouragement to
+replicate the same community model in what eventually became the [Svelte Vietnam] project - my
+attempt to build an inclusive community that helps bridge the gap between industry, community, and
+universities at the local level.
 
 If anything, my ultimate wish for the future would be for the Svelte community to continue thriving.
 From Svelte as a common ground, we take the conversation into web, software, open source, humanity,
 and beyond. That is heavy, and maybe i shouldn't be placing my trust and hope in a group of people
-surrounding a piece of technology. Perhaps i should just chill out and move on to whatever is popular
-instead of hanging onto nostalgia. Nevertheless, reminded of the friends i made and opportunities
-i have been granted thanks to Svelte, maybe i deserve to feel hopeful.
+surrounding a piece of technology. Perhaps i should just chill out and move on to whatever is
+popular instead of hanging onto nostalgia. Nevertheless, reminded of the friends i made and
+opportunities i have been granted thanks to Svelte, maybe i deserve to feel hopeful.
 
 ## A Machine Takeover
 
 Up until now, i have avoided an elephant in the room - AI. In fact, the perspective discussed so far
 has deliberately either been pre-AI or left out the AI factor. So, let's talk about that. In particular,
 there are two questions: in the world of AI, what will become of my relationship with Svelte? And
-what of its community? Although i very much hate to be that pessimistic person in
-the room, unfortunately, i do have much concern...
+what of its community? Although i dislike to be that pessimistic person in the room, unfortunately,
+i do have much concern...
 
 > [!INFO]
 > When AI is referred to here, i mean specifically Generative AI such as LLM and its _harness_.
@@ -218,7 +238,7 @@ software lifecycle outlives me, and i am just a replaceable deteriorating gear i
 
 So maybe i really should treat my job as a means to survive rather than a learning opportunity, stop
 dreaming about getting better, conform to the system, and leave the _higher-purpose_ job for some
-white dude that eats the same bowl of [phở](https://vi.wikipedia.org/wiki/Ph%E1%BB%9F) and happens
+white dude that eats the same bowl of [phở] and happens
 to make 100x per hour than i do.
 
 In such a world, Svelte no longer matters.
@@ -264,40 +284,68 @@ that, my friend, it has everything to do with politics.
 
 i am glad, however, the Svelte community has stayed open-minded through the event of AI. You can
 see that the team has spent effort making it easier to use Svelte with LLM by introducing
-[first party support for AI tooling](https://svelte.dev/docs/ai/overview). At the same time, there
-is no shortage of progress: the framework is still getting better everyday.
-[SvelteKit 3](https://svelte.dev/blog/sveltekit-3-is-here) was announced in October.
-[Async Svelte](https://svelte.dev/docs/svelte/await-expressions) and
-[Remote Functions](https://svelte.dev/docs/kit/remote-functions) are enroute to stable release.
-[Cusom renderer](https://github.com/sveltejs/svelte/issues/15470) support is a possibility (try out
-[gpuix-svelte](https://github.com/khromov/gpuix-svelte)). Community experimentation, libraries,
-learning materials, or blog posts keep on improving the quality and diversity of the Svelte
-ecosystem.
+[first party support for AI tooling][svelte.ai]. At the same time, there is no shortage of progress:
+the framework is still getting better everyday. [SvelteKit 3] was announced in October. [Async Svelte]
+and [Remote Functions] are enroute to stable release. [Custom renderer] support is a possibility
+(try out [gpuix-svelte] by [Stanislav Khromov]). Community experimentation, libraries, learning
+materials, or blog posts keep on improving the quality and diversity of the Svelte ecosystem.
 
-i hope that the Svelte experiment continues forward. For the Svelte community to persevere
-through this uncertain time, to be more vocal and representative, to be excited about the legitimate
-and responsible use of AI but also skeptical about what is being up for auction - whether it is
-worth the environmental cost and human connection at the center of our craft.
+Going forwards, i hope that the Svelte experiment continues forward. For the Svelte community to
+persevere through this uncertain time, to be more vocal and representative, to be excited about the
+legitimate and responsible use of AI but also skeptical about what is being up for auction - whether
+it is worth the environmental cost and human connection at the center of our craft.
 
 Because technology is ultimately for people. Together, we build. Together, we are heard.
 
 And lastly, a sincere thank you to all the maintainers, contributors, authors, and community stewards
 for ten years of Svelte. Here to another ten!
 
-[Svelte Summit]: https://sveltesummit.com/
+<!-- first party -->
+
+[svelte.ai]: https://svelte.dev/docs/ai/overview
+[svelte.preprocess]: https://svelte.dev/docs/svelte/svelte-compiler#preprocess
+[svelte.runes]: https://svelte.dev/blog/runes
 [svelte.attach]: https://svelte.dev/docs/svelte/@attach
 [svelte.action]: https://svelte.dev/docs/svelte/use
+[SvelteKit 3]: https://svelte.dev/blog/sveltekit-3-is-here
+[Async Svelte]: https://svelte.dev/docs/svelte/await-expressions
+[Remote Functions]: https://svelte.dev/docs/kit/remote-functions
+[Svelte 3]: https://svelte.dev/blog/svelte-3-rethinking-reactivity
+
+<!-- issues, discussion, talks -->
+
+[tenets]: https://github.com/sveltejs/svelte/discussions/10085
+[Custom renderer]: https://github.com/sveltejs/svelte/issues/15470
+
+<!-- community resources -->
+
+[Svelte Summit]: https://sveltesummit.com/
 [svelte.society]: https://sveltesociety.dev
 [svelte.summit]: https://www.sveltesummit.com/
 [svelte.sirens]: https://sveltesirens.dev/
 [svelte.radio]: https://www.svelteradio.com/
 [svelte.discord]: https://discord.com/invite/svelte
 [svelte.hackathon]: https://hack.sveltesociety.dev/
+[svelte.bluesky]: https://bsky.app/profile/svelte.dev
+[svelte.bluesky.feed]: https://bsky.app/profile/paolo.ricciuti.me/feed/svelte-feed
+[svelte.bluesky.starter]: https://bsky.app/starter-pack/did:plc:nlvjelw3dy3pddq7qoglleko/3l6ucetngs423
 [sveltejobs]: https://sveltejobs.com/
 [Made of Svelte]: https://madewithsvelte.com/
 [Best of Svelte]: https://bestofsvelte.com/
 [Svelte Vietnam]: https://www.sveltevietnam.dev
-[vite]: https://vite.dev/
+
+<!-- people -->
+
 [rich]: https://bsky.app/profile/rich-harris.dev
-[tenets]: https://github.com/sveltejs/svelte/discussions/10085
+[Scott Spence]: https://bsky.app/profile/scottspence.dev
+[Paolo Ricciuti]: https://bsky.app/profile/paolo.ricciuti.me
+[Stanislav Khromov]: https://bsky.app/profile/khromov.se
+[Thuyet (Tia) Nguyen]: https://bsky.app/profile/tia-nguyen.bsky.social
+
+<!-- misc -->
+
+[vite]: https://vite.dev/
+[gpuix-svelte]: https://github.com/khromov/gpuix-svelte
+[bánh mì]: https://en.wikipedia.org/wiki/B%C3%A1nh_m%C3%AC
+[phở]: https://vi.wikipedia.org/wiki/Ph%E1%BB%9F
 `}
