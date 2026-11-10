@@ -9,7 +9,7 @@
 			'Preprocess static markdown at build time via explicit tagged template - a different take on supporting markdown content in Svelte',
 		keywords: 'svelte, markdown, buildtime, static, preprocess, vite plugin',
 		publishedAt: new Date('2026-09-27'),
-		updatedAt: new Date('2026-09-28'),
+		updatedAt: new Date('2026-11-10'),
 		tags: ['svelte', 'markdown', 'vite'],
 		standardSite: 'at://did:plc:vdzlwjjqp5kpce2kxqyoa467/site.standard.document/3mwiivp7d7ceh',
 		numWords: 1000,
@@ -122,9 +122,7 @@ This works great in static / personal sites or when building demo / presentation
 ~~~svelte #title="about/+page.svelte"
 ...sveltey stuff...
 
-{markdown\`
-some adhoc markdown
-\`}
+{markdown\` some adhoc markdown \`}
 
 ...other sveltey stuff...
 ~~~
@@ -186,11 +184,39 @@ See [Docs > Tradeoffs &
 Caveats](https://github.com/vnphanquang/svelte-md-template#tradeoffs--caveats) for some more
 explanation.
 
-### Hot Module Replacement (HMR)
+### Variable Injection & Interopability with Syntax Highlighter
 
-Lastly, there may be some issue with HMR in SvelteKit at the moment. Behaviorally, changing
-markdown content may cause the scroll position to reset. This may or may not happen with your setup.
-In any case, i'm actively looking into it.
+The package allows using dynamic expression, for example, the following code snippet...
+
+~~~~svelte
+<script>
+	let foo = 'bar';
+</script>
+
+{markdown\`
+~~~javascript
+console.log(\${foo});
+~~~
+\`}
+~~~~
+
+...will react dynamically to the value of \`foo\`. However, this will not work when used with a syntax
+highligher such as [ShikiJS], because the highligher will likely tokenise the code snippet according
+to the language syntax, breaking the intended expression.
+
+This is a rare advanced use case (let me know otherwise, i may be wrong!). As a workaround, skip
+syntax highlighting; typically this can be done by omitting the language:
+
+~~~~svelte
+{markdown\`
+~~~
+console.log(\${foo})
+~~~
+\`}
+~~~~
+
+A custom [Shiki transformer][shikijs.transformer] may also be a solution, but that is currently
+beyond the scope of this package.
 
 ## Keeping an Eye on MDsveX
 
@@ -219,4 +245,6 @@ Let me know your thoughts. And thank you for reading.
 [@pngwn]: https://github.com/pngwn
 [svelte-md-template]: https://github.com/vnphanquang/svelte-md-template
 [svelte-put]: https://svelte-put.vnphanquang.com/
+[shikijs]: https://shiki.style/
+[shikijs.transformer]: https://shiki.style/guide/transformers
 `}
