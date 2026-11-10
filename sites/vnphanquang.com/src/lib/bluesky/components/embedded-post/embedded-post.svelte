@@ -31,10 +31,7 @@
 </script>
 
 <article
-	class={[
-		'not-md bg-fill-50 shadow-brutal max-w-readable mx-auto space-y-4 border border-current p-4',
-		cls,
-	]}
+	class={['not-md bg-fill-50 max-w-readable mx-auto space-y-4 border border-current p-4', cls]}
 	lang={post.lang}
 	{...rest}
 >
@@ -66,7 +63,14 @@
 		<div class="border-fill-200 border">
 			{#if thumb}
 				<a href={uri} data-external>
-					<img class="border-fill-200 border-be" src={thumb} alt="" />
+					<img
+						class="border-fill-200 border-be"
+						src={thumb}
+						alt=""
+						loading="lazy"
+						decoding="async"
+						fetchpriority="low"
+					/>
 				</a>
 			{/if}
 			<div class="p-4">
@@ -81,7 +85,7 @@
 	{/if}
 	<div class="border-fill-200 flex flex-wrap items-center justify-between gap-2 border-bs pbs-1">
 		<BlueskyPostStats stats={post.stats} href={postUrl} />
-		<a class="c-link-lazy self-start" href={postUrl}>
+		<a class="c-link-lazy self-start" href={postUrl} data-external>
 			<span> See post on <span class="sr-only">Bluesky</span></span>
 			<i class="i i-[simple-icons--bluesky] h-5 w-5"></i>
 		</a>

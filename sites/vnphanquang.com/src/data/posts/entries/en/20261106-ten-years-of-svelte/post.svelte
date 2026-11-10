@@ -296,7 +296,11 @@ tells me "brother, relax, it's just some technology, why bring politics into it"
 that, my friend, it has everything to do with politics.
 `}
 
-<BlueskyEmbeddedPost accountId="did:plc:yym5dkfbnzf6lspvh4hnstjg" postId="3mz73p7pt222e" />
+<BlueskyEmbeddedPost
+	class="my-10"
+	accountId="did:plc:yym5dkfbnzf6lspvh4hnstjg"
+	postId="3mz73p7pt222e"
+/>
 
 {markdown`
 ## Outlook
@@ -309,15 +313,15 @@ and [Remote Functions] are enroute to stable release. [Custom renderer] support 
 (try out [gpuix-svelte] by [Stanislav Khromov]). Community experimentation, libraries, learning
 materials, or blog posts keep on improving the quality and diversity of the Svelte ecosystem.
 
-Going forwards, i hope that the Svelte experiment continues forward. For the Svelte community to
-persevere through this uncertain time, to be more vocal and representative, to be excited about the
-legitimate and responsible use of AI but also skeptical about what is being up for auction - whether
-it is worth the environmental cost and human connection at the center of our craft.
+i hope that the Svelte experiment continues forward. For the Svelte community to persevere through
+this uncertain time, to be more vocal and representative, to be excited about the legitimate and
+responsible use of AI but also skeptical about what is being up for auction - whether it is worth
+the environmental cost and human connection at the center of our craft.
 
 Because technology is ultimately for people. Together, we build. Together, we are heard.
 
-And lastly, a sincere thank you to all the maintainers, contributors, authors, and community stewards
-for ten years of Svelte. Here to another ten!
+And lastly, a sincere thank you to all the maintainers, contributors, authors, and community
+stewards for ten years of Svelte. Here to another ten!
 
 <!-- first party -->
 
