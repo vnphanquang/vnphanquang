@@ -20,22 +20,18 @@
 			icon: 'i-[ph--heart]',
 			aria: 'likes',
 		},
-		save: {
+		bookmark: {
 			icon: 'i-[ph--bookmark-simple]',
-			aria: 'save',
+			aria: 'bookmark',
 		},
 	} as const;
 </script>
 
 <script lang="ts">
-	let { stats, ...rest }: BlueskyPostStats = $props();
+	let { stats, class: cls, ...rest }: BlueskyPostStats = $props();
 </script>
 
-<a
-	class="c-link-lazy flex flex-wrap items-center gap-4 @max-xs:col-span-2 @max-xs:justify-self-center @sm:gap-6"
-	data-external
-	{...rest}
->
+<a class={['c-link-lazy flex flex-wrap items-center gap-4', cls]} data-external {...rest}>
 	<dl class="contents">
 		{#each Object.entries(BLUESKY_STATS_CONFIG) as [key, { icon, aria }] (key)}
 			<div class="flex items-center gap-1">

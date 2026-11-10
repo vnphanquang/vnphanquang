@@ -83,7 +83,11 @@
 						{#snippet pending()}
 							<p>Loading statistics</p>
 						{/snippet}
-						<BlueskyPostStats href={postUrl} stats={thread.stats} />
+						<BlueskyPostStats
+							class="@max-xs:col-span-2 @max-xs:justify-self-center @sm:gap-6"
+							href={postUrl}
+							stats={thread.stats}
+						/>
 						{#if thread.replies.length}
 							<p class="c-text-body-sm border-outline col-span-2 border-t pt-4 leading-relaxed">
 								Note: comments are fetched directly from the
@@ -133,7 +137,11 @@
 							{formatTimeDiff(thread.post.indexedAt)}
 						</p>
 						<p class="pt-1 pb-2">{thread.post.record.text}</p>
-						<BlueskyPostStats href={postUrl} stats={thread.stats} />
+						<BlueskyPostStats
+							class="@max-xs:col-span-2 @max-xs:justify-self-center @sm:gap-6"
+							href={postUrl}
+							stats={thread.stats}
+						/>
 						{#if thread.replies?.length}
 							{@render blueskyReplies(thread, 'mt-6', level + 1)}
 						{/if}
