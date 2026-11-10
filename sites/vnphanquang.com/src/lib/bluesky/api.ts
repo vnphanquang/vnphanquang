@@ -6,6 +6,7 @@ export type AggregatedPost = {
 		like: number;
 		repost: number;
 		reply: number;
+		saves: number;
 	};
 	post: $Typed<AppBskyFeedDefs.ThreadViewPost>['post'];
 	id: string;
@@ -51,6 +52,7 @@ export function aggregatePostThread(
 			like: thread.post.likeCount ?? 0,
 			repost: (thread.post.repostCount ?? 0) + (thread.post.quoteCount ?? 0),
 			reply: thread.post.replyCount ?? 0,
+			saves: thread.post.bookmarkCount ?? 0,
 		},
 		post: thread.post,
 		id: thread.post.uri.split('/')[4],
