@@ -7,7 +7,7 @@
 	import { getNextRelevantBlogPost, loadBlogPost } from '#data/posts';
 	import { buildStructuredBlogPost } from '#data/posts/structured';
 	import { translations } from '#data/translations';
-	import { BlueskyComments } from '#lib/bluesky';
+	import { BlueskyComments } from '#lib/bluesky/components/comments';
 	import { BlogPostItem } from '#lib/components/blog-post-item';
 	import { BlogPostQuickNav } from '#lib/components/blog-post-quick-nav';
 	import { Breadcrumbs, defineCrumbs } from '#lib/components/breadcrumbs';
@@ -94,7 +94,7 @@
 			<post.thumbnail />
 		{/if}
 
-		<div class="border-fill-200 mobile:flex-col-reverse flex justify-between border-t pbs-2">
+		<div class="border-fill-200 mobile:flex-col-reverse flex justify-between border-bs pbs-2">
 			<p>
 				{#if post.metadata.numWords}
 					~ {post.metadata.numWords} {t.words}
@@ -117,7 +117,12 @@
 					<Markdown codeless={post.metadata.codeless}>
 						<post.content />
 					</Markdown>
-					<p class="border-t-fill-200 border-t pt-2 text-sm">
+					{#if post.metadata.updatedAt}
+						<p class="mbe-0 text-right text-sm" lang="en">
+							Last updated on {formatDateForBlog(post.metadata.updatedAt)}
+						</p>
+					{/if}
+					<p class="border-bs-fill-200 mbs-1 border-bs pbs-2 text-sm">
 						Found a typo or need to correct something?
 						<a class="c-link" href={post.contentEditUrl}>Suggest an edit on Github</a>.
 					</p>
@@ -130,7 +135,7 @@
 					class="tablet:sticky top-header mobile:border-onehalf mobile:border-dashed mobile:border-secondary mobile:-mx-3 mobile:p-3 mobile:max-w-screen space-y-6"
 				>
 					<h2
-						class="border-outline border-b-fill-200 border-b text-2xl leading-relaxed font-bold"
+						class="border-outline border-be-fill-200 border-b text-2xl leading-relaxed font-bold"
 						id="toc"
 					>
 						{t.toc}
@@ -153,7 +158,7 @@
 			<!-- share -->
 			<section class="share space-y-6">
 				<h2
-					class="border-outline border-b-fill-200 border-b text-2xl leading-relaxed font-bold capitalize"
+					class="border-outline border-be-fill-200 border-b text-2xl leading-relaxed font-bold capitalize"
 					id="share"
 				>
 					{t.share}
@@ -168,7 +173,7 @@
 			{#if next}
 				<section class="read-more space-y-6">
 					<h2
-						class="border-outline border-b-fill-200 border-b text-2xl leading-relaxed font-bold capitalize"
+						class="border-outline border-be-fill-200 border-b text-2xl leading-relaxed font-bold capitalize"
 						id="read-more"
 					>
 						{t.read_more}
