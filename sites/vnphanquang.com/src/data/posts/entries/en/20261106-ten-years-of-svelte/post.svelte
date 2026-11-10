@@ -3,6 +3,7 @@
 
 	import { defineBlogPostMetadata } from '#data/posts/definition';
 	import { Ascii } from '#lib/components/ascii';
+	import { BlueskyEmbeddedPost } from '#lib/bluesky/components/embedded-post';
 
 	import banhMi from './includes/ascii/banh-mi.txt?raw';
 
@@ -12,7 +13,7 @@
 			'Celebrating ten years of Svelte - looking back at my personal journey with Svelte and contemplating about my place in its community',
 		keywords: 'svelte, web, community, ai, javascript, oss',
 		publishedAt: new Date('2026-11-06'),
-		updatedAt: new Date('2026-11-11'),
+		updatedAt: new Date('2026-11-10'),
 		tags: ['svelte', 'community'],
 		codeless: true,
 		numWords: 2600,
@@ -45,11 +46,22 @@ Ten years of anything is a long time for a human lifespan. It feels even longer 
 time can perhaps be measured in frameworks and runtimes:
 `}
 
-<iframe
-	class="border-onehalf aspect-video h-auto w-full"
-	src="https://dayssincelastframework.js.org/"
-	title="Days Since Last JS Framework"
-></iframe>
+<figure>
+	<a href="https://dayssincelastframework.js.org/">
+		<enhanced:img
+			class="mx-auto max-w-200"
+			src="./includes/images/dayssincelastframework.png"
+			loading="lazy"
+			decoding="async"
+			alt="it's been suprisingly more than half a year since the last Javascript framework"
+		/>
+	</a>
+	<figcaption>
+		Screen capture on 2026.11.10 from
+		<a class="c-link" href="https://dayssincelastframework.js.org/">dayssincelastframework.js.org</a
+		>
+	</figcaption>
+</figure>
 
 {markdown`
 i have been along for the Svelte ride since late 2020. A lot of things in the ecosystem have changed
@@ -122,15 +134,18 @@ for a Svelte-focused role:
 
 <figure>
 	<div class="desktop:max-h-120 max-h-80 overflow-auto">
-		<enhanced:img
-			src="./includes/images/sveltejobs.png"
-			loading="lazy"
-			decoding="async"
-			fetchpriority="low"
-		/>
+		<a href="https://sveltejobs.com">
+			<enhanced:img
+				src="./includes/images/sveltejobs.png"
+				loading="lazy"
+				decoding="async"
+				fetchpriority="low"
+				alt=""
+			/>
+		</a>
 	</div>
 	<figcaption>
-		Visit <a class="c-link" href="https://sveltejosb.com">sveltejobs.com</a> today and you will see an
+		Visit <a class="c-link" href="https://sveltejobs.com">sveltejobs.com</a> today and you will see an
 		EOL notice, unless the domain has also been shut down completely.
 	</figcaption>
 </figure>
@@ -279,7 +294,11 @@ an event celebrating ten years of Svelte as an inclusive community costs as much
 family for a year. To be clear, i do not mean to suggest any guilt or blame. But when someone
 tells me "brother, relax, it's just some technology, why bring politics into it", i can't help but say
 that, my friend, it has everything to do with politics.
+`}
 
+<BlueskyEmbeddedPost accountId="did:plc:yym5dkfbnzf6lspvh4hnstjg" postId="3mz73p7pt222e" />
+
+{markdown`
 ## Outlook
 
 i am glad, however, the Svelte community has stayed open-minded through the event of AI. You can
