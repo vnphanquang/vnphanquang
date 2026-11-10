@@ -49,7 +49,7 @@ time can perhaps be measured in frameworks and runtimes:
 <figure>
 	<a href="https://dayssincelastframework.js.org/">
 		<enhanced:img
-			class="mx-auto max-w-200"
+			class="mx-auto w-140 max-w-full"
 			src="./includes/images/dayssincelastframework.png"
 			loading="lazy"
 			decoding="async"
