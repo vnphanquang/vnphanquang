@@ -1,13 +1,15 @@
 // use @atproto/api for typing to avoid the unnecessary dependencies in final bundle
 import type { $Typed, AppBskyFeedDefs } from '@atproto/api';
 
+export type PostStats = {
+	like: number;
+	repost: number;
+	reply: number;
+	save: number;
+};
+
 export type AggregatedPost = {
-	stats: {
-		like: number;
-		repost: number;
-		reply: number;
-		saves: number;
-	};
+	stats: PostStats;
 	post: $Typed<AppBskyFeedDefs.ThreadViewPost>['post'];
 	id: string;
 	replies: $Typed<AppBskyFeedDefs.ThreadViewPost>[];
@@ -52,7 +54,7 @@ export function aggregatePostThread(
 			like: thread.post.likeCount ?? 0,
 			repost: (thread.post.repostCount ?? 0) + (thread.post.quoteCount ?? 0),
 			reply: thread.post.replyCount ?? 0,
-			saves: thread.post.bookmarkCount ?? 0,
+			save: thread.post.bookmarkCount ?? 0,
 		},
 		post: thread.post,
 		id: thread.post.uri.split('/')[4],

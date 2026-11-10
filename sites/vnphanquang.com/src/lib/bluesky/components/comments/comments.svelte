@@ -5,27 +5,9 @@
 	import { browser } from '$app/env';
 
 	import * as bluesky from '../../api';
+	import { BlueskyPostStats } from '../post-stats';
 
 	let { linkage }: { linkage: BlueskyPostLinkage } = $props();
-
-	const BLUESKY_STATS_CONFIG = {
-		reply: {
-			icon: 'i-[ph--chat]',
-			aria: 'replies',
-		},
-		repost: {
-			icon: 'i-[ph--repeat]',
-			aria: 'reposts',
-		},
-		like: {
-			icon: 'i-[ph--heart]',
-			aria: 'likes',
-		},
-		saves: {
-			icon: 'i-[ph--bookmark-simple]',
-			aria: 'saves',
-		},
-	} as const;
 
 	let postUrl = $derived(bluesky.buildPostUri(linkage.accountId, linkage.postId, 'http'));
 	let threadPromise = $derived(
@@ -101,13 +83,7 @@
 						{#snippet pending()}
 							<p>Loading statistics</p>
 						{/snippet}
-						{@render blueskyStats(
-							thread.stats.like,
-							thread.stats.repost,
-							thread.stats.reply,
-							thread.stats.saves,
-							postUrl,
-						)}
+						<BlueskyPostStats href={postUrl} stats={thread.stats} />
 						{#if thread.replies.length}
 							<p class="c-text-body-sm border-outline col-span-2 border-t pt-4 leading-relaxed">
 								Note: comments are fetched directly from the
@@ -121,29 +97,6 @@
 		</div>
 	</div>
 </section>
-
-{#snippet blueskyStats(like: number, repost: number, reply: number, saves: number, url: string)}
-	{@const stats = { like, repost, reply, saves }}
-	<a
-		class="c-link-lazy flex flex-wrap items-center gap-4 @max-xs:col-span-2 @max-xs:justify-self-center @sm:gap-6"
-		href={url}
-		data-external
-	>
-		<dl class="contents">
-			{#each Object.entries(BLUESKY_STATS_CONFIG) as [key, { icon, aria }] (key)}
-				<div class="flex items-center gap-1">
-					<dt>
-						<i class={['i block h-5 w-5', icon]}></i>
-						<span class="sr-only">
-							{aria}
-						</span>
-					</dt>
-					<dd class="c-text-body-sm">{stats[key as keyof typeof stats]}</dd>
-				</div>
-			{/each}
-		</dl>
-	</a>
-{/snippet}
 
 {#snippet blueskyReplies(aggregated: bluesky.AggregatedPost, cls = '', level = 0)}
 	<ul class={cls}>
@@ -180,13 +133,7 @@
 							{formatTimeDiff(thread.post.indexedAt)}
 						</p>
 						<p class="pt-1 pb-2">{thread.post.record.text}</p>
-						{@render blueskyStats(
-							thread.stats.like,
-							thread.stats.repost,
-							thread.stats.reply,
-							thread.stats.saves,
-							postUrl,
-						)}
+						<BlueskyPostStats href={postUrl} stats={thread.stats} />
 						{#if thread.replies?.length}
 							{@render blueskyReplies(thread, 'mt-6', level + 1)}
 						{/if}
