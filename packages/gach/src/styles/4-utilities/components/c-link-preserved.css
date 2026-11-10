@@ -17,6 +17,8 @@
 
 		display: inline;
 
+		color: var(--color);
+
 		background-image: linear-gradient(to right, var(--underline-color), var(--underline-color));
 		background-repeat: no-repeat;
 		background-position: left bottom;

@@ -14,6 +14,9 @@
 		--active-color: var(--color-link);
 
 		cursor: pointer;
+
+		color: var(--color);
+
 		transition-timing-function: var(--easing);
 		transition-duration: var(--duration);
 		transition-property: color, border-color, background-color;
@@ -40,4 +43,3 @@
 		}
 	}
 }
-

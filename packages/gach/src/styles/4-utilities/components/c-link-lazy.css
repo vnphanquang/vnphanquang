@@ -13,6 +13,9 @@
 		--active-color: var(--color-link);
 
 		cursor: pointer;
+
+		color: var(--color);
+
 		transition-timing-function: var(--easing);
 		transition-duration: var(--duration);
 		transition-property: color, border-color;
@@ -26,7 +29,7 @@
 		}
 
 		/* stylelint-disable-next-line selector-class-pattern  */
-	  & .i-\[ph--arrow-right\] {
+		& .i-\[ph--arrow-right\] {
 			transition: transform var(--duration) var(--easing);
 		}
 
@@ -43,4 +46,3 @@
 		}
 	}
 }
-
