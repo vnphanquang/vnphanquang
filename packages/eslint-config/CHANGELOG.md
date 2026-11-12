@@ -1,5 +1,13 @@
 # @vnphanquang/eslint-config
 
+## 5.0.1
+
+### Patch Changes
+
+- [`3705498`](https://github.com/vnphanquang/vnphanquang/commit/37054984f68bbdb599d15b1cfbfda9767f5b46f1) Thanks [@vnphanquang](https://github.com/vnphanquang)! - bump dependencies
+
+- [`3705498`](https://github.com/vnphanquang/vnphanquang/commit/37054984f68bbdb599d15b1cfbfda9767f5b46f1) Thanks [@vnphanquang](https://github.com/vnphanquang)! - correct "import-x/extensions" rule for jsdoc (require extension for \`.js\` files)
+
 ## 5.0.0
 
 ### Major Changes
