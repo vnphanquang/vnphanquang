@@ -1,5 +1,27 @@
 # @vnphanquang/gach
 
+## 1.2.0
+
+### Minor Changes
+
+- [`3ae6262`](https://github.com/vnphanquang/vnphanquang/commit/3ae62624d926425050d27b03b49a631ca023a63b) Thanks [@vnphanquang](https://github.com/vnphanquang)! - add `c-btn--pop`, `c-color-input`, `c-number-input`, `c-range`, `c-select`, `c-text-input`
+
+- [`d47d64b`](https://github.com/vnphanquang/vnphanquang/commit/d47d64bb48262dcf27ab534af5e99594f274868a) Thanks [@vnphanquang](https://github.com/vnphanquang)! - add `c-checkbox`, `c-radio`, `c-range`
+
+- [`64de1fa`](https://github.com/vnphanquang/vnphanquang/commit/64de1fa6ef88f1592aadf69b4f19c00380aa068e) Thanks [@vnphanquang](https://github.com/vnphanquang)! - add `c-btn--ghost` modifier
+
+### Patch Changes
+
+- [`57f439a`](https://github.com/vnphanquang/vnphanquang/commit/57f439ab51870cd8f6802863d9e1a6e42256b866) Thanks [@vnphanquang](https://github.com/vnphanquang)! - provide default props for ColorSchemeSwitch, reducing manual setup; skip view transition if switching to the same resolved scheme
+
+- [`dc86c8c`](https://github.com/vnphanquang/vnphanquang/commit/dc86c8cb3d1511f13e8f07b2eca7d76790519d00) Thanks [@vnphanquang](https://github.com/vnphanquang)! - make `c-infobox` work automatically inside `label`
+
+- [`034209e`](https://github.com/vnphanquang/vnphanquang/commit/034209edbb20f0c480a9f099463ddf5f59a35237) Thanks [@vnphanquang](https://github.com/vnphanquang)! - correct outdated css color token reference
+
+- [`7213a09`](https://github.com/vnphanquang/vnphanquang/commit/7213a09a319c87d4fad055bb4a0ede689cabcbc9) Thanks [@vnphanquang](https://github.com/vnphanquang)! - allow CSS link components to have a customised default color
+- Updated dependencies [[`be72510`](https://github.com/vnphanquang/vnphanquang/commit/be72510394bddbc2f9a32e31152bd4334054ffc9), [`b583484`](https://github.com/vnphanquang/vnphanquang/commit/b583484ab393a00cbe6a2e5efec337a7b825d10b), [`fa55d47`](https://github.com/vnphanquang/vnphanquang/commit/fa55d476ab0a4b8eb7b615d62a88e3e4f3eadb7d)]:
+  - @vnphanquang/markdown@1.2.0
+
 ## 1.1.1
 
 ### Patch Changes
