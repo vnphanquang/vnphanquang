@@ -2,8 +2,8 @@
 	import { markdown } from '@vnphanquang/markdown/svelte';
 
 	import { defineBlogPostMetadata } from '#data/posts/definition';
-	import { Ascii } from '#lib/components/ascii';
 	import { BlueskyEmbeddedPost } from '#lib/bluesky/components/embedded-post';
+	import { Ascii } from '#lib/components/ascii';
 
 	import banhMi from './includes/ascii/banh-mi.txt?raw';
 
@@ -13,11 +13,11 @@
 			'Celebrating ten years of Svelte - looking back at my personal journey with Svelte and contemplating about my place in its community',
 		keywords: 'svelte, web, community, ai, javascript, oss',
 		publishedAt: new Date('2026-11-06'),
-		updatedAt: new Date('2026-11-10'),
+		updatedAt: new Date('2026-11-12'),
 		tags: ['svelte', 'community'],
 		codeless: true,
-		numWords: 2600,
-		readMinutes: 12,
+		numWords: 2700,
+		readMinutes: 15,
 		standardSite: 'at://did:plc:vdzlwjjqp5kpce2kxqyoa467/site.standard.document/3mznagy6iksae',
 		blueskyPost: {
 			accountId: 'did:plc:vdzlwjjqp5kpce2kxqyoa467',
@@ -95,16 +95,26 @@ peculiar) level of _passion_ around Svelte. On the contrary really, Svelte did n
 
 Svelte has consistently offered me a better alternative to build softwares. For the first time ever,
 i didn't feel like i was fighting my tools to get things done. Svelte compiler and its [preprocessor
-API] allow me to adapt to my own needs. The builtin accessibility warnings remind me to not be lazy
-at the cost of usability. Runtime abstraction via [actions][svelte.action] or
+API][svelte.preprocess] allow me to adapt to my own needs. The builtin accessibility warnings remind
+me to not be lazy at the cost of usability. Runtime abstraction via [actions][svelte.action] or
 [attachments][svelte.attach] allows good encapsulation with familiar Web APIs and resuable patterns
 for progressive enhancement. First-party support for Typescript, fine-grained reactivity, and
 utilities for motion and state management together save so so much time. And, of course, SvelteKit
 connects the dots and provides a solid foundation for building fullstack applications with a unified
-experience.
+experience by providing a wide array of functionalities, customisation options, and platform adapters
+that would be too long to list here.
 
 Svelte and the community around it have helped the web feel like a more welcoming place for users.
-And who are the first users to any system if not the developers that build it.
+And who are the first users to any system if not the developers that build it. Remember [Svelte
+REPL][svelte.playground], known today as Svelte Playground? As a newcommer at the time, i was amazed
+how resourceful the REPL was for a quick feel of what was available, and, later on, for
+experimentation, demos, and for sharing them with others. Together with the [Svelte
+tutorial][svelte.tutorial], the onboarding experience was honestly never seen before. i personally
+believe Svelte set a precedence and was instrumental in raising the bars for developer experience.
+
+!["North Star", another banger talk from Rich Harris at JSNation US 2024, introducing Svelte 5 and
+reviewing the design philosophy of Svelte. "Optimising for vibes" was said to be one of the core
+principle.](https://youtube.com/embed/UegUi2fWBaU?si=ZMVLfuLygRVa6lm9)
 
 Perhaps most importantly, it does not seem like all these Svelte's bells and whistles were
 implemented just to piss off the competition: they are built in collaboration. The same level of
@@ -115,10 +125,10 @@ etc. For what it's worth, many of the praise i give Svelte here may as well be g
 frameworks nowadays; it may just be that i came across Svelte at the right time and right place, and
 have stuck around ever since.
 
-So, call Svelte whatever you like - a framework, a compiler, a language, a [bánh mì] of deliciously
-fresh ideas and balanced flavors - and chances are it would be correct. What matters is, Svelte is
-an experiment worth doing because we all want the web to succeed. And i am glad that this Svelte
-experiment is still being conducted with care and enthusiasm.
+So, call Svelte whatever you like - a framework, a compiler, a language, a playground, a [bánh mì]
+of deliciously fresh ideas and balanced flavors - and chances are it would be correct. What matters
+is, Svelte is an experiment worth doing because we all want the web to succeed. And i am glad that
+this Svelte experiment is still being conducted with care and enthusiasm.
 `}
 
 <Ascii class="tablet:text-[0.3cqi] mx-auto my-10 w-fit text-[0.5cqi]">{banhMi}</Ascii>
@@ -146,7 +156,7 @@ for a Svelte-focused role:
 	</div>
 	<figcaption>
 		Visit <a class="c-link" href="https://sveltejobs.com">sveltejobs.com</a> today and you will see an
-		EOL notice, unless the domain has also been shut down completely.
+		EOL notice, unless the domain has also been shut down.
 	</figcaption>
 </figure>
 
@@ -173,7 +183,7 @@ Discord][svelte.discord] that branches out to local communities all around the w
 Community-built sites such as [Made of Svelte] or [Best of Svelte] showcase usage of Svelte and help
 boost visibility for less popular projects. The community on [Bluesky][svelte.bluesky] is alive and
 well, with a dedicated [Starter Pack][svelte.bluesky.starter] by [Scott Spence] and [Custom
-Feed][svelte.bluesky.feed] by [Paolo Ricciuti] helping newcommers get up to speed in no time.
+Feed][svelte.bluesky.feed] by [Paolo Ricciuti], helping newcommers get up to speed in no time.
 
 > People of Svelte - a mosaic of diverse voices
 >
@@ -185,7 +195,7 @@ efforts by volunteering members, Svelte forums seem much healthier than some oth
 It's impossible to avoid trolling and non-constructive bickering, but in general people are genuine
 and happy to be there for the good vibes.
 
-Perhaps it is also a matter of popularity and if given enough time, things will turn 💩. i do not
+Perhaps it is also a matter of popularity and if given enough time, things will turn to 💩. i do not
 know; i certainly hope not. My impression was instead one of appreciation, and an encouragement to
 replicate the same community model in what eventually became the [Svelte Vietnam] project - my
 attempt to build an inclusive community that helps bridge the gap between industry, community, and
@@ -232,7 +242,7 @@ anything in life, or being born for that matter.
 
 "Learning to use AI or through AI is still learning", i can hear some say. No! i want
 to learn and experiment with accessibility, read more about design principles, deep-dive into software
-testing methodologies, etc. i don't want the _feeling of learning_. i want that friction of failing
+testing methodologies, etc. i don't want only the _feeling of learning_. i want that friction of failing
 and retrying, to struggle and to be grateful.
 `}
 
@@ -330,6 +340,8 @@ stewards for ten years of Svelte. Here to another ten!
 [svelte.runes]: https://svelte.dev/blog/runes
 [svelte.attach]: https://svelte.dev/docs/svelte/@attach
 [svelte.action]: https://svelte.dev/docs/svelte/use
+[svelte.playground]: https://svelte.dev/playground
+[svelte.tutorial]: https://svelte.dev/tutorial/
 [SvelteKit 3]: https://svelte.dev/blog/sveltekit-3-is-here
 [Async Svelte]: https://svelte.dev/docs/svelte/await-expressions
 [Remote Functions]: https://svelte.dev/docs/kit/remote-functions
