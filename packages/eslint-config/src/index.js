@@ -256,9 +256,11 @@ export async function defineConfig(options = {}, ...additionals) {
 								'error',
 								'always',
 								{
-									js: 'always',
 									ignorePackages: true,
 									fix: true,
+									pattern: {
+										js: 'always',
+									},
 								},
 							],
 						},
