@@ -17,3 +17,4 @@ minimumReleaseAgeExclude:
   - '@sveltejs/vite-plugin-svelte'
   - 'svelte'
   - 'vite'
+  - remark-codeblock-source@1.1.0

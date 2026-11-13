@@ -340,8 +340,8 @@ importers:
         specifier: ^10.0.1
         version: 10.0.1
       remark-codeblock-source:
-        specifier: ^1.0.4
-        version: 1.0.4
+        specifier: ^1.1.0
+        version: 1.1.0
       remark-enhance-codeblock:
         specifier: ^1.2.7
         version: 1.2.7
@@ -3592,8 +3592,8 @@ packages:
   rehype-stringify@10.0.1:
     resolution: {integrity: sha512-k9ecfXHmIPuFVI61B9DeLPN0qFHfawM6RsuX48hoqlaKSF61RskNjSm1lI8PhBEM0MRdLxVVm4WmTqJQccH9mA==}
 
-  remark-codeblock-source@1.0.4:
-    resolution: {integrity: sha512-iDzq3qFyP9R0Mhr6EzttoVzPx02wl8ySCFql5Cx+O9j1xZsygNZ4WUCYNz6E5OtgOxBzribYhQheQzaiYonTVA==}
+  remark-codeblock-source@1.1.0:
+    resolution: {integrity: sha512-CXQZ64k4qo+7JADwfLS8lEUyq+f9ItoxpAD0eh9M2A6N+fq5xoRXW2tIckT6yaFuZria08/HUancDuufjTA3Jw==}
 
   remark-enhance-codeblock@1.2.7:
     resolution: {integrity: sha512-r4SxUvNFLT82jgUBJkkZo9+aw2FP3JuCqsM82x7ugpGbOcw7nSX7W6j868fhR+1eSzH2oP1cVH7b2Fi9qQt1Ww==}
@@ -5307,7 +5307,7 @@ snapshots:
       '@typescript-eslint/visitor-keys': 8.71.1
       debug: 4.4.3(supports-color@10.2.2)
       minimatch: 10.2.6
-      semver: 7.8.5
+      semver: 7.8.6
       tinyglobby: 0.2.17
       ts-api-utils: 2.5.0(typescript@6.0.3)
       typescript: 6.0.3
@@ -7394,7 +7394,7 @@ snapshots:
       hast-util-to-html: 9.0.5
       unified: 11.0.5
 
-  remark-codeblock-source@1.0.4:
+  remark-codeblock-source@1.1.0:
     dependencies:
       unist-util-visit: 5.1.0
 
