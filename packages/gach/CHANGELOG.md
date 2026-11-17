@@ -1,5 +1,13 @@
 # @vnphanquang/gach
 
+## 1.2.1
+
+### Patch Changes
+
+- [`2be90f4`](https://github.com/vnphanquang/vnphanquang/commit/2be90f4f63caf010da1cd7746ad5d76e2445abb6) Thanks [@vnphanquang](https://github.com/vnphanquang)! - set cursor to pointer explicitly for link components
+- Updated dependencies [[`78db09d`](https://github.com/vnphanquang/vnphanquang/commit/78db09d7de6cf6b76df59f58540442ef08d954b2)]:
+  - @vnphanquang/markdown@1.2.1
+
 ## 1.2.0
 
 ### Minor Changes
