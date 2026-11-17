@@ -1,5 +1,11 @@
 # @vnphanquang/markdown
 
+## 1.2.1
+
+### Patch Changes
+
+- [`78db09d`](https://github.com/vnphanquang/vnphanquang/commit/78db09d7de6cf6b76df59f58540442ef08d954b2) Thanks [@vnphanquang](https://github.com/vnphanquang)! - bump `remark-codeblock-source`, supporting slicing source content with fs by line number
+
 ## 1.2.0
 
 ### Patch Changes
