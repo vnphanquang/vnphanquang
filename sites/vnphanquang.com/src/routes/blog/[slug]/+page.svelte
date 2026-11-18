@@ -47,7 +47,7 @@
 
 	let t = $derived(translations[post.metadata.language]);
 
-	const toc = new Toc({ ...post.toc });
+	const toc = $derived(new Toc({ ...post.toc }));
 
 	let contentEl: HTMLElement | undefined = $state(undefined);
 	let showQuickNav = $state(false);
