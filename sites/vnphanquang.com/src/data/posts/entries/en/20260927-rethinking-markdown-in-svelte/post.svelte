@@ -244,7 +244,7 @@ Let me know your thoughts. And thank you for reading.
 [markdown-it]: https://github.com/markdown-it/markdown-it
 [@pngwn]: https://github.com/pngwn
 [svelte-md-template]: https://github.com/vnphanquang/svelte-md-template
-[svelte-put]: https://svelte-put.vnphanquang.com/
+[svelte-put]: https://vnphanquang.com/projects/svelte-put
 [shikijs]: https://shiki.style/
 [shikijs.transformer]: https://shiki.style/guide/transformers
 `}

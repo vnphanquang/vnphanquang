@@ -25,7 +25,7 @@ export const projects: Project[] = [
 	{
 		name: 'svelte-put',
 		description: 'collection of Svelte utilities extracted from my real-life projects',
-		url: 'https://svelte-put.vnphanquang.com/',
+		url: 'https://vnphanquang.com/projects/svelte-put',
 		tags: ['oss', 'svelte'],
 	},
 	{
