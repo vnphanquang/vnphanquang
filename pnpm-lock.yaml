@@ -314,6 +314,9 @@ importers:
       tailwindcss:
         specifier: ^4.3.3
         version: 4.3.3
+      vite:
+        specifier: '>=8.0.0'
+        version: 8.3.5(@types/node@24.19.0)(jiti@2.7.0)(yaml@2.9.1)
     devDependencies:
       '@sveltejs/kit':
         specifier: ^3.1.0
@@ -375,6 +378,9 @@ importers:
       unist-util-visit-parents:
         specifier: ^6.0.2
         version: 6.0.2
+      vite:
+        specifier: '>=8.0.0'
+        version: 8.3.5(@types/node@24.19.0)(jiti@2.7.0)(yaml@2.9.1)
     devDependencies:
       '@shikijs/types':
         specifier: ^4.5.0

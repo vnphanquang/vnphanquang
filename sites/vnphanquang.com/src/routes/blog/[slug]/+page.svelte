@@ -22,6 +22,7 @@
 
 	const { params }: PageProps = $props();
 
+	// FIXME: convert loadBlogPost to prerender remote function
 	const post = $derived(await loadBlogPost(params));
 
 	// FIXME: custom 404 page

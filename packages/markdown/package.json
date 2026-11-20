@@ -80,10 +80,14 @@
 		"build": "dts-buddy --write && publint"
 	},
 	"peerDependencies": {
-		"svelte": ">=5.0.0"
+		"svelte": ">=5.0.0",
+		"vite": ">=8.0.0"
 	},
 	"peerDependenciesMeta": {
 		"svelte": {
+			"optional": true
+		},
+		"vite": {
 			"optional": true
 		}
 	},
