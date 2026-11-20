@@ -8,6 +8,8 @@ import postcssCustomSelectors from 'postcss-custom-selectors';
 
 import { gitRef } from './plugins/vite-plugin-git-ref.js';
 
+/** @import { Plugin } from 'vite' */
+
 /**
  * @typedef GachOptions
  * @property {boolean} [markdown]
@@ -15,11 +17,11 @@ import { gitRef } from './plugins/vite-plugin-git-ref.js';
 
 /**
  * @param {GachOptions} [options]
- * @returns {import('vite').PluginOption}
+ * @returns {Promise<Plugin[]>}
  */
-export function gach(options) {
+export async function gach(options) {
 	return [
-		fontless({
+		...fontless({
 			families: [
 				// Configure a specific font
 				{
@@ -45,13 +47,9 @@ export function gach(options) {
 				disableLocalFallbacks: true,
 			},
 		}),
-		tailwindcss(),
+		...tailwindcss(),
 		...(options?.markdown
-			? [
-					import('@vnphanquang/markdown/svelte/vite').then(({ markdownInSvelte }) =>
-						markdownInSvelte(),
-					),
-				]
+			? await (await import('@vnphanquang/markdown/svelte/vite')).markdownInSvelte()
 			: []),
 		{
 			name: 'vite-plugin-vnphanquang-gach:config',

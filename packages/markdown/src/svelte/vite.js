@@ -4,11 +4,11 @@ import { unified } from 'unified';
 import { createPreset } from '../unified/index.js';
 
 /**
- * @returns {import('vite').PluginOption}
+ * @returns {Promise<import('vite').Plugin[]>}
  */
-export function markdownInSvelte() {
+export async function markdownInSvelte() {
 	return [
-		svelteMdTemplate({
+		await svelteMdTemplate({
 			importSource: '@vnphanquang/markdown/svelte',
 			transformer: {
 				type: 'unified',
