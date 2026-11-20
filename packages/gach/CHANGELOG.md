@@ -1,5 +1,19 @@
 # @vnphanquang/gach
 
+## 2.0.0
+
+### Major Changes
+
+- [`dc56a21`](https://github.com/vnphanquang/vnphanquang/commit/dc56a2161eb582ca57ef6f31c7f92a83acfaf5b9) Thanks [@vnphanquang](https://github.com/vnphanquang)! - vite should be a peer-dependency
+
+### Patch Changes
+
+- [`7a00596`](https://github.com/vnphanquang/vnphanquang/commit/7a005969074f22a8bbf595445f0455afde71eb00) Thanks [@vnphanquang](https://github.com/vnphanquang)! - flatten vite plugin return
+
+- [`358cf88`](https://github.com/vnphanquang/vnphanquang/commit/358cf88edc2646eb79e2c67c18cb798fd43aed2b) Thanks [@vnphanquang](https://github.com/vnphanquang)! - correct header-height css var setup
+- Updated dependencies [[`7a00596`](https://github.com/vnphanquang/vnphanquang/commit/7a005969074f22a8bbf595445f0455afde71eb00), [`dc56a21`](https://github.com/vnphanquang/vnphanquang/commit/dc56a2161eb582ca57ef6f31c7f92a83acfaf5b9)]:
+  - @vnphanquang/markdown@2.0.0
+
 ## 1.2.1
 
 ### Patch Changes
