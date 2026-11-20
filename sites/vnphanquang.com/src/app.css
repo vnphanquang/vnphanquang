@@ -1,5 +1,6 @@
 @import '@vnphanquang/gach/styles';
 @import './lib/assets/fonts/quang/quang.css';
+@import '@vnphanquang/gach/styles/custom-medias';
 
 /* stylelint-disable at-rule-no-unknown */
 @theme {
@@ -9,6 +10,10 @@
 @layer base {
 	:root {
 		--header-height: 4.5rem;
+
+		@media (--desktop) {
+			--header-height: 6.25rem;
+		}
 	}
 }
 
