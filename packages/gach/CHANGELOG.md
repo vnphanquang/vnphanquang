@@ -1,5 +1,11 @@
 # @vnphanquang/gach
 
+## 2.0.1
+
+### Patch Changes
+
+- [`03678f1`](https://github.com/vnphanquang/vnphanquang/commit/03678f1dfeece15209e4a727e1297b44dc80d1c4) Thanks [@vnphanquang](https://github.com/vnphanquang)! - pull git ref from `CF_PAGES_BRANCH` or `WORKERS_CI_BRANCH` to support build in Cloudflare
+
 ## 2.0.0
 
 ### Major Changes
