@@ -38,6 +38,8 @@ function getCurrentBranch(fallback) {
 		return (
 			process.env.GITHUB_REF_NAME ||
 			process.env.CI_COMMIT_REF_NAME ||
+			process.env.CF_PAGES_BRANCH ||
+			process.env.WORKERS_CI_BRANCH ||
 			child_process.execSync('git branch --show-current').toString().trim() ||
 			child_process.execSync('git rev-parse --abbrev-ref HEAD').toString().trim()
 		);
