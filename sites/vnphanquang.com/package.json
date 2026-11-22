@@ -33,7 +33,7 @@
 		"docker:run": "docker run --rm --name=vnphanquang.com --publish 3000:3000 vnphanquang.com:latest"
 	},
 	"devDependencies": {
-		"@atproto/api": "^0.29.4",
+		"@atproto/api": "^0.32.5",
 		"@svelte-put/avatar": "^4.1.0",
 		"@svelte-put/copy": "^4.0.1",
 		"@svelte-put/preprocess-external-link": "2.0.0",
