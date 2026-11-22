@@ -130,8 +130,8 @@
 		"@vnphanquang/markdown": "workspace:*",
 		"fontless": "^1.3.4",
 		"postcss-color-scheme": "^2.1.0",
-		"postcss-custom-media": "^12.0.3",
-		"postcss-custom-selectors": "^9.0.4",
+		"postcss-custom-media": "^12.0.4",
+		"postcss-custom-selectors": "^9.0.5",
 		"tailwindcss": "^4.3.5"
 	},
 	"devDependencies": {
