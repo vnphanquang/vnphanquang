@@ -107,13 +107,13 @@
 		"twoslash": "^0.3.9",
 		"twoslash-svelte": "^0.3.9",
 		"unist-builder": "^4.0.0",
-		"unist-util-visit-parents": "^6.0.2"
+		"unist-util-visit-parents": "^6.1.0"
 	},
 	"devDependencies": {
 		"@shikijs/types": "^4.5.0",
 		"@types/mdast": "^4.0.4",
 		"svelte": "^5.57.2",
 		"unified": "^11.0.5",
-		"unist-util-visit": "^5.1.0"
+		"unist-util-visit": "^5.2.0"
 	}
 }
