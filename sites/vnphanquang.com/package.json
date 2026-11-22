@@ -47,7 +47,6 @@
 		"@vnphanquang/gach": "workspace:*",
 		"@vnphanquang/markdown": "workspace:*",
 		"github-slugger": "^2.0.0",
-		"magic-string": "^1.4.3",
 		"node-addon-api": "^8.9.2",
 		"node-gyp": "^13.1.0",
 		"schema-dts": "^2.1.0",
