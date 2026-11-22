@@ -42,7 +42,6 @@
 		"@sveltejs/enhanced-img": "^1.0.0",
 		"@sveltejs/kit": "^3.1.0",
 		"@sveltejs/vite-plugin-svelte": "^7.3.1",
-		"@types/estree": "^1.0.9",
 		"@types/umami-browser": "^2.18.1",
 		"@vnphanquang/gach": "workspace:*",
 		"@vnphanquang/markdown": "workspace:*",
