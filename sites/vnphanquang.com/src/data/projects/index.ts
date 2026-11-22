@@ -75,17 +75,17 @@ export const projects: Project[] = [
 	},
 ];
 
-export function filterProjectsByTag(projects: Project[], tag: string) {
-	const found: Project[] = [];
-	for (const project of projects) {
-		if (!project.tags.includes(tag)) continue;
-		found.push({
-			...project,
-			tags: project.tags.filter((t) => t !== tag),
-		});
-	}
-	return found;
-}
+// export function filterProjectsByTag(projects: Project[], tag: string) {
+// 	const found: Project[] = [];
+// 	for (const project of projects) {
+// 		if (!project.tags.includes(tag)) continue;
+// 		found.push({
+// 			...project,
+// 			tags: project.tags.filter((t) => t !== tag),
+// 		});
+// 	}
+// 	return found;
+// }
 
 export function groupProjectsByTags<T extends string>(
 	projects: Project[],

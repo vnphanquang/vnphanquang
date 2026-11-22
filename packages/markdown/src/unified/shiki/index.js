@@ -16,7 +16,7 @@ import { createTwoslasher as createTwoslasherSvelte } from 'twoslash-svelte';
 import { transformerIndent } from './transformers/indent.js';
 import { transformerRecordMaxLine } from './transformers/record-max-line.js';
 
-export const highlighter = await createHighlighterCore({
+const highlighter = await createHighlighterCore({
 	themes: [import('shiki/themes/dark-plus.mjs'), import('shiki/themes/light-plus.mjs')],
 	langs: [
 		import('shiki/langs/css.mjs'),

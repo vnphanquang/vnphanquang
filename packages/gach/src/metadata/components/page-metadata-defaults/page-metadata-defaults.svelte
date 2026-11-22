@@ -1,14 +1,13 @@
 <script lang="ts" module>
 	import { type Snippet, getContext, setContext } from 'svelte';
 
-	import type { PageMetadataProps } from '../page-metadata';
+	import type { PageMetadataProps } from '../page-metadata/page-metadata.svelte';
 
 	const CONTEXT_KEY = Symbol('page-metadata');
-	export type PageMetadataDefaults = () => PageMetadataProps;
-	function setPageMetadataDefaults(input: PageMetadataDefaults) {
+	function setPageMetadataDefaults(input: () => PageMetadataProps) {
 		return setContext(CONTEXT_KEY, input);
 	}
-	export function getPageMetadataDefaults(): PageMetadataDefaults {
+	export function getPageMetadataDefaults(): () => PageMetadataProps {
 		return getContext(CONTEXT_KEY);
 	}
 </script>

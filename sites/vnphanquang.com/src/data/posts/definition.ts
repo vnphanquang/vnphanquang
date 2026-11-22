@@ -2,7 +2,7 @@ import type { CompileTimeToc } from '@svelte-put/toc';
 import type { Language } from '@vnphanquang/gach/constants';
 import type { Component } from 'svelte';
 
-export interface BlogPostMetadata {
+interface BlogPostMetadata {
 	/** h1 on the page and title in SEO */
 	title: string;
 	/**
@@ -83,7 +83,7 @@ export interface BlogPost {
 	ogImage?: string;
 }
 
-export type AutoDetectedFields = 'slug' | 'language' | 'ogImage';
+type AutoDetectedFields = 'slug' | 'language' | 'ogImage';
 export type PerDefinedPostMetadata = Omit<BlogPostMetadata, AutoDetectedFields>;
 
 export function defineBlogPostMetadata(metadata: PerDefinedPostMetadata): PerDefinedPostMetadata {

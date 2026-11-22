@@ -4,16 +4,16 @@
 	import { formatTimeDiff } from '#lib/utils/datetime';
 	import { browser } from '$app/env';
 
-	import * as bluesky from '../../api';
+	import { type AggregatedPost, aggregatePostThread, buildPostUri, getPostThread } from '../../api';
 	import { BlueskyPostStats } from '../post-stats';
 
 	let { linkage }: { linkage: BlueskyPostLinkage } = $props();
 
-	let postUrl = $derived(bluesky.buildPostUri(linkage.accountId, linkage.postId, 'http'));
+	let postUrl = $derived(buildPostUri(linkage.accountId, linkage.postId, 'http'));
 	let threadPromise = $derived(
 		browser
-			? bluesky.getPostThread(linkage).then(bluesky.aggregatePostThread)
-			: new Promise<bluesky.AggregatedPost>(() => {}),
+			? getPostThread(linkage).then(aggregatePostThread)
+			: new Promise<AggregatedPost>(() => {}),
 	);
 </script>
 
@@ -106,7 +106,7 @@
 	<ul class={cls}>
 		<!-- render actual comments here -->
 		{#each aggregated.replies ?? [] as reply, i (reply.post.uri)}
-			{@const thread = bluesky.aggregatePostThread(reply)}
+			{@const thread = aggregatePostThread(reply)}
 			{@const hasNext = !!aggregated.replies[i + 1] || !!thread.replies?.length}
 			{@const profileUrl = `https://bsky.app/profile/${thread.post.author.did}`}
 			{@const postUrl = `${profileUrl}/post/${thread.id}`}

@@ -1,5 +1,5 @@
 <script>
-	import { Penguin } from '$lib/components';
+	import { Penguin } from '#lib/components';
 </script>
 
 # mdsvex svelte in markdown

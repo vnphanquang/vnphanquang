@@ -134,11 +134,11 @@ is already a great way to provide metadata. This also has better typesafety. Con
 
 > [!CODEGROUP]
 >
-> ~~~svelte #title="content.svelte" src="fs:./includes/examples/frontmatter-usage.svelte"
+> ~~~svelte #title="content.svelte" src="fs:./includes/examples/frontmatter/usage.svelte"
 >
 > ~~~
 >
-> ~~~typescript #title="definition.ts" src="fs:./includes/examples/frontmatter-definition.ts"
+> ~~~typescript #title="definition.ts" src="fs:./includes/examples/frontmatter/definition.ts"
 >
 > ~~~
 

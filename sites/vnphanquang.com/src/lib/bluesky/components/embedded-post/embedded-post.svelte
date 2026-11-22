@@ -4,7 +4,7 @@
 	import type { BlueskyPostLinkage } from '#data/posts/definition';
 	import { Avatar } from '#lib/components/avatar';
 
-	import * as bluesky from '../../api';
+	import { getPost } from '../../api';
 	import { BlueskyPostStats } from '../post-stats';
 
 	export type BlueskyEmbeddedPostProps = BlueskyPostLinkage & HTMLAttributes<HTMLElement>;
@@ -13,7 +13,7 @@
 <script lang="ts">
 	let { accountId, postId, class: cls, ...rest }: BlueskyEmbeddedPostProps = $props();
 
-	let post = $derived(await bluesky.getPost({ accountId, postId }));
+	let post = $derived(await getPost({ accountId, postId }));
 
 	let profileUrl = $derived(`https://bsky.app/profile/${accountId}`);
 	let postUrl = $derived(`${profileUrl}/post/${postId}`);

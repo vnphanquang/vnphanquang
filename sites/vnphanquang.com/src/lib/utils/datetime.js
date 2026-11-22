@@ -2,7 +2,7 @@
  * @param {Date | number | string} value
  * @returns {boolean}
  */
-export function isValidDate(value) {
+function isValidDate(value) {
 	return !isNaN(new Date(value).getTime());
 }
 
