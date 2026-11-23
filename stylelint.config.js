@@ -31,6 +31,17 @@ export default {
 				'nesting-selector-no-missing-scoping-root': null,
 			},
 		},
+		{
+			files: ['**/*.svelte'],
+			rules: {
+				'selector-pseudo-class-no-unknown': [
+					true,
+					{
+						ignorePseudoClasses: ['global'],
+					},
+				],
+			},
+		},
 	],
 	ignoreFiles: ['**/app.html'],
 };

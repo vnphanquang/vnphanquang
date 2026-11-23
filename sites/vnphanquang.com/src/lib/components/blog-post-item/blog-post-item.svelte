@@ -14,7 +14,7 @@
 >
 	<div class="space-y-2">
 		{#if post.thumbnail}
-			<a class="@container block p-4" {href} aria-hidden={true}>
+			<a class="thumbnail @container block p-4" {href} aria-hidden={true}>
 				<post.thumbnail />
 			</a>
 		{/if}
