@@ -5,6 +5,7 @@ import { toc } from '@svelte-put/toc/vite';
 import adapter from '@sveltejs/adapter-node';
 import { enhancedImages } from '@sveltejs/enhanced-img';
 import { sveltekit } from '@sveltejs/kit/vite';
+import { svelteDevtools } from '@sveltejs/vite-devtools-svelte';
 import { gach } from '@vnphanquang/gach/vite';
 import { defineConfig } from 'vite';
 import { qrcode } from 'vite-plugin-qrcode';
@@ -14,10 +15,12 @@ import pkg from './package.json' with { type: 'json' };
 const commitHash = child_process.execSync('git rev-parse --short HEAD').toString().trim();
 
 export default defineConfig({
+	devtools: { apply: 'serve' },
 	server: {
 		port: 5300,
 	},
 	plugins: [
+		svelteDevtools(),
 		qrcode(),
 		gach({ markdown: true }),
 		enhancedImages(),
@@ -43,12 +46,6 @@ export default defineConfig({
 			},
 			experimental: {
 				remoteFunctions: true,
-			},
-			inspector: {
-				toggleKeyCombo: 'alt-shift',
-				holdMode: true,
-				showToggleButton: 'always',
-				toggleButtonPos: 'bottom-left',
 			},
 		}),
 	],

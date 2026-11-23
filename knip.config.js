@@ -22,7 +22,7 @@ export default defineConfig({
 		},
 		'sites/*': {
 			entry: ['src/env.ts'],
-			ignoreDependencies: ['tailwindcss', 'node-addon-api', 'node-gyp'],
+			ignoreDependencies: ['tailwindcss', 'node-addon-api', 'node-gyp', '@vitejs/devtools'],
 		},
 	},
 });
