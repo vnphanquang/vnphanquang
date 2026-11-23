@@ -7,6 +7,15 @@
 
 	let { children, codeless }: import('./markdown.svelte').MarkdownProps = $props();
 
+	function getTextExcludingClasses(rootNode: HTMLElement, classNames: string[] = []) {
+		if (!rootNode) return '';
+		if (!classNames.length) return rootNode.textContent;
+		const selector = classNames.map((cls) => `.${CSS.escape(cls)}`).join(', ');
+		const clone = rootNode.cloneNode(true) as HTMLElement;
+		clone.querySelectorAll(selector).forEach((el) => el.remove());
+		return clone.textContent;
+	}
+
 	onMount(() => {
 		if (!codeless) {
 			enhanceCodeblock({
@@ -14,13 +23,7 @@
 					fn({ pre }) {
 						const codeNode = pre.getElementsByTagName('code')[0];
 						if (!codeNode) return '';
-						let text = '';
-						for (const lineNode of codeNode.children) {
-							// assuming ../../../shiki setup
-							if ((lineNode as HTMLElement).classList.contains('remove')) continue;
-							text += (lineNode.textContent || '') + '\n';
-						}
-						return text;
+						return getTextExcludingClasses(codeNode, ['remove', 'twoslash-popup-container']);
 					},
 				},
 			});
