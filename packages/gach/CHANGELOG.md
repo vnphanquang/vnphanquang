@@ -1,5 +1,17 @@
 # @vnphanquang/gach
 
+## 2.0.2
+
+### Patch Changes
+
+- [`78cd27f`](https://github.com/vnphanquang/vnphanquang/commit/78cd27f0b7da014419c2713eb215833352ff8dbe) Thanks [@vnphanquang](https://github.com/vnphanquang)! - bump tailwindcss dependnecies
+
+- [`6fd9bec`](https://github.com/vnphanquang/vnphanquang/commit/6fd9bec8a6e9c034262be05079a1543498a699d7) Thanks [@vnphanquang](https://github.com/vnphanquang)! - bump postcss dependencies
+
+- [`a5299f3`](https://github.com/vnphanquang/vnphanquang/commit/a5299f388ee0117609fb20861e49d666e90d66d8) Thanks [@vnphanquang](https://github.com/vnphanquang)! - bump iconify version
+- Updated dependencies [[`48287ff`](https://github.com/vnphanquang/vnphanquang/commit/48287ffb7c0307b277dab2138bbf3692cf988215), [`4e276c3`](https://github.com/vnphanquang/vnphanquang/commit/4e276c369c1762e13959ca39133ab803c84dc8f7), [`c7c7888`](https://github.com/vnphanquang/vnphanquang/commit/c7c78881d2a4e3c63949dcead6bc110c69127ef2)]:
+  - @vnphanquang/markdown@2.0.2
+
 ## 2.0.1
 
 ### Patch Changes

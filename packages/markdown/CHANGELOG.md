@@ -1,5 +1,15 @@
 # @vnphanquang/markdown
 
+## 2.0.2
+
+### Patch Changes
+
+- [`48287ff`](https://github.com/vnphanquang/vnphanquang/commit/48287ffb7c0307b277dab2138bbf3692cf988215) Thanks [@vnphanquang](https://github.com/vnphanquang)! - exclude content within twoslash during copy in code blocks
+
+- [`4e276c3`](https://github.com/vnphanquang/vnphanquang/commit/4e276c369c1762e13959ca39133ab803c84dc8f7) Thanks [@vnphanquang](https://github.com/vnphanquang)! - bump unist util dependencies
+
+- [`c7c7888`](https://github.com/vnphanquang/vnphanquang/commit/c7c78881d2a4e3c63949dcead6bc110c69127ef2) Thanks [@vnphanquang](https://github.com/vnphanquang)! - bump shiki dependencies
+
 ## 2.0.0
 
 ### Major Changes
