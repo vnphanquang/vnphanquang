@@ -1,5 +1,13 @@
 # @vnphanquang/eslint-config
 
+## 5.0.2
+
+### Patch Changes
+
+- [`63e5b90`](https://github.com/vnphanquang/vnphanquang/commit/63e5b90e59b8a28e3994f149ca0d79f037e62369) Thanks [@vnphanquang](https://github.com/vnphanquang)! - update eslint dependencies
+
+- [`6341007`](https://github.com/vnphanquang/vnphanquang/commit/63410076addcff68ff7e24396ff67de3d5d9d4d8) Thanks [@vnphanquang](https://github.com/vnphanquang)! - bump `globals`
+
 ## 5.0.1
 
 ### Patch Changes
