@@ -12,9 +12,9 @@
 	let { version }: { version: string } = $props();
 </script>
 
-<footer class="from-fill-50 to-primary-fill-100 space-y-2 bg-linear-to-b to-120% pbs-14 pbe-10">
-	<div class="main max-w-pad grid text-sm">
-		<div class="notes tablet:self-end leading-relaxed">
+<footer class="max-w-pad pbs-20">
+	<div class="main border-fill-200 grid border-bs-4 pbs-6 pbe-14 text-sm">
+		<div class="notes self-center leading-relaxed">
 			<p>{version}</p>
 			<p>
 				made possible by
@@ -53,11 +53,11 @@
 		>
 			<Ascii class="leading-normal tracking-wider">{ascii_owl}</Ascii>
 			<input class="peer" type="checkbox" hidden />
-			<Ascii class="leading-normal"
-				>{ascii_bubble_prefix}<span class="hovered">{ascii_hovered}</span><span class="clicked"
-					>{ascii_clicked}</span
-				><span class="default">{ascii_default}</span>{ascii_bubble_suffix}</Ascii
-			>
+			<Ascii class="leading-normal">
+				{ascii_bubble_prefix}<span class="hovered">{ascii_hovered}</span><span class="clicked">
+					{ascii_clicked}
+				</span><span class="default">{ascii_default}</span>{ascii_bubble_suffix}
+			</Ascii>
 		</label>
 	</div>
 </footer>
