@@ -7,7 +7,7 @@
 	import { Footer } from '#lib/components/footer';
 	import { Header } from '#lib/components/header';
 	import { version } from '$app/env';
-	import { UMAMI_SCRIPT_URL, UMAMI_WEBSITE_ID } from '$app/env/public';
+	import { UMAMI_SCRIPT_ROOT, UMAMI_WEBSITE_ID } from '$app/env/public';
 	import { COOKIE_NAME_COLOR_SCHEME } from '$app/env/public';
 	import { navigating, page } from '$app/state';
 
@@ -42,13 +42,14 @@
 </script>
 
 <svelte:head>
-	{#if UMAMI_SCRIPT_URL && UMAMI_WEBSITE_ID}
+	{#if UMAMI_SCRIPT_ROOT && UMAMI_WEBSITE_ID}
 		<script
 			id="umami-script"
 			defer
-			src={UMAMI_SCRIPT_URL}
+			src="{UMAMI_SCRIPT_ROOT}/script.js"
 			data-website-id={UMAMI_WEBSITE_ID}
 		></script>
+		<script defer src="{UMAMI_SCRIPT_ROOT}/recorder.js" data-website-id={UMAMI_WEBSITE_ID}></script>
 	{/if}
 </svelte:head>
 
